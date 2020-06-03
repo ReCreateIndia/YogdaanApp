@@ -8,7 +8,12 @@
         android:minSdkVersion="16"
         android:targetSdkVersion="29" />
 
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
+        android:name="androidx.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -18,17 +23,18 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="recreate.india.yogdaan.LoginActivity" >
+        <activity android:name="recreate.india.yogdaan.BlogActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="recreate.india.yogdaan.MainActivity" >
+        <activity android:name="recreate.india.yogdaan.AddPostActivity" />
+        <activity android:name="recreate.india.yogdaan.LoginActivity" >
         </activity>
-        <activity android:name="recreate.india.yogdaan.OtpActivity" >
-        </activity>
+        <activity android:name="recreate.india.yogdaan.MainActivity" />
+        <activity android:name="recreate.india.yogdaan.OtpActivity" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"
@@ -43,6 +49,9 @@
             android:exported="false" >
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
 
