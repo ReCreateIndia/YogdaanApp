@@ -8,6 +8,7 @@
         android:minSdkVersion="16"
         android:targetSdkVersion="29" />
 
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -18,6 +19,9 @@
 
     <application
         android:name="androidx.multidex.MultiDexApplication"
+=======
+    <application
+>>>>>>> 5bac2c85ea44c411c351b34ff8484e88b32b6022
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -27,23 +31,33 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+<<<<<<< HEAD
         <activity
             android:name="recreate.india.yogdaan.NewPostActivity"
             android:parentActivityName="recreate.india.yogdaan.BlogActivity" >
         </activity>
         <activity android:name="recreate.india.yogdaan.BlogActivity" >
+=======
+        <activity android:name="recreate.india.yogdaan.OtpActivity" >
+        </activity>
+        <activity android:name="recreate.india.yogdaan.LoginActivity" />
+        <activity android:name="recreate.india.yogdaan.MainActivity" >
+>>>>>>> 5bac2c85ea44c411c351b34ff8484e88b32b6022
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name="recreate.india.yogdaan.MainActivity" >
         </activity>
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" >
         </activity>
+=======
+>>>>>>> 5bac2c85ea44c411c351b34ff8484e88b32b6022
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"
@@ -54,11 +68,15 @@
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
+<<<<<<< HEAD
             android:directBootAware="true"
+=======
+>>>>>>> 5bac2c85ea44c411c351b34ff8484e88b32b6022
             android:exported="false" >
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
+<<<<<<< HEAD
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
@@ -67,17 +85,29 @@
                 android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
 
-        <provider
-            android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="recreate.india.yogdaan.firebaseinitprovider"
-            android:exported="false"
-            android:initOrder="100" />
+=======
+        </service>
 
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
+>>>>>>> 5bac2c85ea44c411c351b34ff8484e88b32b6022
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="recreate.india.yogdaan.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+<<<<<<< HEAD
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+=======
+>>>>>>> 5bac2c85ea44c411c351b34ff8484e88b32b6022
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />

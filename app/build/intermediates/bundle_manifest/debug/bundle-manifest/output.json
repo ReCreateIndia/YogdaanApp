@@ -1,1 +1,32 @@
+<<<<<<< HEAD
 [{"outputType":{"type":"BUNDLE_MANIFEST"},"apkData":{"type":"MAIN","splits":[],"versionCode":1,"versionName":"1.0","enabled":true,"outputFile":"app-debug.apk","fullName":"debug","baseName":"debug","dirName":""},"path":"AndroidManifest.xml","properties":{"packageId":"recreate.india.yogdaan","split":"","minSdkVersion":"16"}}]
+=======
+{
+  "version": 1,
+  "applicationId": "recreate.india.yogdaan",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "BUNDLE_MANIFEST"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 1,
+        "versionName": "1.0",
+        "outputFile": "app-debug.apk",
+        "fullName": "debug",
+        "baseName": "debug",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "recreate.india.yogdaan",
+        "split": "",
+        "minSdkVersion": "16"
+      }
+    }
+  ]
+}
+>>>>>>> 5bac2c85ea44c411c351b34ff8484e88b32b6022
