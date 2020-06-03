@@ -1277,6 +1277,7 @@ id im6
 id im7
 id im9
 id image
+id imageView
 id image_slider
 id image_view
 id info
@@ -1399,6 +1400,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
+id textView4
 id text_input_password_toggle
 id text_view
 id textinput_counter

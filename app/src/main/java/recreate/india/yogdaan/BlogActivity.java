@@ -55,8 +55,8 @@ public class BlogActivity extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(@NonNull PostViewHolder postViewHolder, int i, @NonNull PostModal postModal) {
 
-                postViewHolder.list_username.setText("yes");
-                postViewHolder.list_password.setText("yes");
+                postViewHolder.list_username.setText(postModal.getUsername());
+                postViewHolder.list_password.setText(postModal.getPassword());
 
             }
         };
@@ -72,8 +72,8 @@ public class BlogActivity extends AppCompatActivity {
         private TextView list_password;
         public PostViewHolder(@NonNull View itemView) {
             super(itemView);
-            list_username=findViewById(R.id.name);
-            list_password=findViewById(R.id.pass);
+            list_username=itemView.findViewById(R.id.name);
+            list_password=itemView.findViewById(R.id.pass);
 
         }
     }
