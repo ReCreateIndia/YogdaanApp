@@ -14,7 +14,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/open_sans_bold"
+
         android:gravity="center_horizontal"
         android:text="Verify Your Number"
         android:textColor="#6177FC"
@@ -33,7 +33,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:fontFamily="@font/open_sans_semibold"
+
         android:gravity="center_horizontal"
         android:text="Please enter your phone number for verification"
         android:textAlignment="center"
@@ -51,7 +51,7 @@
         android:layout_marginTop="32dp"
         android:background="@drawable/text_input_bg"
         android:ems="10"
-        android:fontFamily="@font/open_sans_semibold"
+
         android:hint="+91"
         android:inputType="number"
         android:padding="16dp"
@@ -70,7 +70,7 @@
         android:layout_marginRight="32dp"
         android:background="@drawable/text_input_bg"
         android:ems="10"
-        android:fontFamily="@font/open_sans_semibold"
+
         android:hint="Your Phone Number"
         android:inputType="phone"
         android:padding="16dp"
@@ -87,7 +87,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/primary_btn_bg"
-        android:fontFamily="@font/open_sans_semibold"
+
         android:text="Generate OTP"
         android:textAllCaps="false"
         android:textColor="@android:color/background_light"

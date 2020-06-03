@@ -625,8 +625,15 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <string name="default_web_client_id" translatable="false">812802346911-gs45r46n6ir8n9tjdr4ff7o008omk38p.apps.googleusercontent.com</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="firebase_database_url" translatable="false">https://yogdaan-268ac.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">812802346911</string>
+    <string name="google_api_key" translatable="false">AIzaSyDzmuiPB1YFDE9hmHO22zr6WaziQB2UEyU</string>
+    <string name="google_app_id" translatable="false">1:812802346911:android:191d1d961efa77ca7037aa</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDzmuiPB1YFDE9hmHO22zr6WaziQB2UEyU</string>
+    <string name="google_storage_bucket" translatable="false">yogdaan-268ac.appspot.com</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
     <string name="open">Open</string>
@@ -635,6 +642,7 @@
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
+    <string name="project_id" translatable="false">yogdaan-268ac</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

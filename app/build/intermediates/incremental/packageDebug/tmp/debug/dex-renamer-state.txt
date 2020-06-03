@@ -1,0 +1,4 @@
+#Wed Jun 03 23:37:28 IST 2020
+base.0=C\:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

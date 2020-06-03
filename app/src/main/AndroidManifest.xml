@@ -19,6 +19,8 @@
 
         <activity android:name=".MainActivity">
         </activity>
+        <activity android:name=".OtpActivity">
+        </activity>
     </application>
 
 </manifest>
