@@ -3,4 +3,6 @@
     app:fontProviderAuthority="com.google.android.gms.fonts"
     app:fontProviderCerts="@string/common_google_play_services_enable_title"
     app:fontProviderPackage="com.google.android.gms"
-    app:fontProviderQuery="name=Open Sans&amp;weight=600"></font-family>
+    app:fontProviderQuery="name=Open Sans&amp;weight=600">
+    app:fontProviderCerts="@array/com_google_android_gms_fonts_certs"
+</font-family>
