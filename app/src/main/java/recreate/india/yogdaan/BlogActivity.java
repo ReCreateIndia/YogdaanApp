@@ -26,6 +26,7 @@ public class BlogActivity extends AppCompatActivity {
     FirebaseFirestore ff;
     private RecyclerView mfirestorelist;
     FirestoreRecyclerAdapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,4 +90,5 @@ public class BlogActivity extends AppCompatActivity {
         super.onStop();
         adapter.stopListening();
     }
+
 }
