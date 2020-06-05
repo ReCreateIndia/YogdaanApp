@@ -1,5 +1,7 @@
 package recreate.india.yogdaan;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -7,6 +9,7 @@ import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -22,10 +25,13 @@ import android.graphics.Color;
 import java.util.ArrayList;
 import java.util.List;
 
+import io.paperdb.Paper;
+
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private ActionBarDrawerToggle toggle;
+    AlertDialog alertDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,8 +56,47 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         NavigationView navigationView=(NavigationView)findViewById(R.id.n1);
 
+        onFirst();
+
 
     }
+
+    private void onFirst() {
+
+        Paper.init(this);
+        String isFirstRun = Paper.book().read("isFirstRun");
+        if (isFirstRun == null)
+            Paper.book().write("isFirstRun", "false");
+
+
+        if (isFirstRun.equals("false")) {
+            Intent intent = new Intent(MainActivity.this, TandC.class);
+            startActivity(intent);
+
+            new AlertDialog.Builder(MainActivity.this)
+                    .setTitle("Terms and Conditions")
+                    .setMessage("T&C")
+                    .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            finish();
+                            System.exit(0);
+                        }
+                    })
+                    .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+
+                            Paper.book().write("isFirstRun", "true");
+
+                        }
+                    }).show();
+
+        }
+    }
+
+
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (toggle.onOptionsItemSelected(item)) {
