@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+    //Checking if the User is logged in or not
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
