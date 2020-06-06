@@ -16,6 +16,9 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
@@ -31,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private ActionBarDrawerToggle toggle;
+    private FirebaseAuth mAuth;
     AlertDialog alertDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         slideModels.add(new SlideModel(R.drawable.d4));
         slideModels.add(new SlideModel(R.drawable.d3));
         slideModels.add(new SlideModel(R.drawable.d1));
-
+        mAuth = FirebaseAuth.getInstance();
         slideModels.add(new SlideModel(R.drawable.d2));
         imageslider.setImageList(slideModels, true);
 
@@ -58,6 +62,17 @@ public class MainActivity extends AppCompatActivity {
 
         onFirst();
 
+
+    }
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if (currentUser==null){
+            Intent logIntent= new Intent(MainActivity.this,LoginActivity.class);
+            logIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(logIntent);
+        }
 
     }
 

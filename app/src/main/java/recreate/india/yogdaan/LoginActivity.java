@@ -87,7 +87,7 @@ public class LoginActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onCodeSent(final String s, PhoneAuthProvider.ForceResendingToken forceResendingToken) {
+            public void onCodeSent(@NonNull final String s, @NonNull PhoneAuthProvider.ForceResendingToken forceResendingToken) {
                 super.onCodeSent(s, forceResendingToken);
 
                 new android.os.Handler().postDelayed(

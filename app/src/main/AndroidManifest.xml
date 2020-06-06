@@ -3,7 +3,7 @@
     package="recreate.india.yogdaan">
 
     <application
-        android:allowBackup="true"
+
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -14,13 +14,12 @@
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
-<<<<<<< HEAD
+
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
         <activity android:name=".BlogActivity">
-=======
-        <activity android:name=".BlogActivity" >
+
 
         </activity>
         <activity android:name=".AddPostActivity" />
@@ -29,23 +28,17 @@
         </activity>
         <activity android:name=".MainActivity" >
 
->>>>>>> 046f4ffc8e2d7b233b197b532adf7e5690e4c25a
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-        <activity android:name=".AddPostActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".OtpActivity" />
-=======
-        <activity android:name=".OtpActivity">
 
-        </activity>
->>>>>>> 046f4ffc8e2d7b233b197b532adf7e5690e4c25a
+
+
+
     </application>
 
 </manifest>
