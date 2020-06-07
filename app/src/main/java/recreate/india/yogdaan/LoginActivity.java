@@ -31,7 +31,6 @@ public class LoginActivity extends AppCompatActivity {
     private ProgressBar log_progress;
     private FirebaseAuth mAuth;
     private FirebaseUser mCurrentUser;
-
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
 
 
@@ -39,11 +38,9 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
         phone_number_edittext = findViewById(R.id.phone_number_text);
         create_btn = findViewById(R.id.generate_btn);
         log_progress = findViewById(R.id.login_progress);
-
         mAuth = FirebaseAuth.getInstance();
         mCurrentUser = mAuth.getCurrentUser();
 
@@ -101,10 +98,7 @@ public class LoginActivity extends AppCompatActivity {
                         5000);
             }
         };
-
-
     }
-
     private void signInWithPhoneAuthCredential(PhoneAuthCredential phoneAuthCredential) {
 
         mAuth.signInWithCredential(phoneAuthCredential)
