@@ -24,25 +24,20 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="recreate.india.yogdaan.HelpPage" >
+        <activity android:name="recreate.india.yogdaan.FundRaiseActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity android:name="recreate.india.yogdaan.HelpPage" />
         <activity android:name="recreate.india.yogdaan.TandC" />
         <activity android:name="recreate.india.yogdaan.SplashScreen" />
         <activity android:name="recreate.india.yogdaan.BlogActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name="recreate.india.yogdaan.AddPostActivity" />
-        <activity android:name="recreate.india.yogdaan.LoginActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name="recreate.india.yogdaan.LoginActivity" />
         <activity android:name="recreate.india.yogdaan.MainActivity" />
         <activity android:name="recreate.india.yogdaan.OtpActivity" />
 
