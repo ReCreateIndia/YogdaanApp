@@ -7,23 +7,13 @@
     tools:context=".Volunteer">
 
 
-    <com.denzcoskun.imageslider.ImageSlider
-        android:id="@+id/image_slider_volunteer"
+
+    <ImageView
+        android:id="@+id/volunteer_image"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        app:auto_cycle="true"
-        app:corner_radius="20"
-        android:layout_alignParentTop="true"
-        app:period="1000"
-        app:delay="0"
-        tools:ignore="MissingConstraints" />
-<!--    <ImageView-->
-<!--        android:id="@+id/volunteer_image"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="300sp"-->
-<!--        android:background="@drawable/volunteer1"-->
-<!--        -->
-<!--        />-->
+        android:layout_height="300sp"
+        android:background="@drawable/volunteer1"
+        />
 <!--    <TextView-->
 <!--        android:id="@+id/volunteer_image"-->
 <!--        android:layout_width="match_parent"-->
@@ -38,7 +28,7 @@
 <!--        />-->
 
     <EditText
-        android:layout_below="@+id/image_slider_volunteer"
+        android:layout_below="@+id/volunteer_image"
         android:id="@+id/volunteer_name"
         android:layout_width="match_parent"
         android:layout_height="25sp"

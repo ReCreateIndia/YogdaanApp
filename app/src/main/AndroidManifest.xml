@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="recreate.india.yogdaan">
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,8 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
-        <activity android:name=".Volunteer"></activity>
+
+        <activity android:name=".Volunteer" />
         <activity android:name=".TandC" />
         <activity android:name=".SplashScreen">
             <intent-filter>
@@ -21,47 +22,31 @@
                 <!-- <<<<<<< HEAD -->
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity> <!-- <activity android:name=".BlogActivity"> -->
-        <!-- ======= -->
-        <activity android:name=".BlogActivity"></activity>
+        </activity>
+        <activity android:name=".BlogActivity" />
         <activity android:name=".AddPostActivity" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity">
+        <activity android:name=".FundRaiseActivity" />
+        <activity android:name=".HelpPage" />
 
-            <!-- &gt;>>>>>> 046f4ffc8e2d7b233b197b532adf7e5690e4c25a -->
-=======
-        <activity android:name=".FundRaiseActivity">
 
-        </activity>
-        <activity android:name=".HelpPage"></activity>
-        <activity android:name=".TandC" />
-        <activity android:name=".SplashScreen" />
-        <activity android:name=".BlogActivity">
-        </activity>
-        <activity android:name=".AddPostActivity" >
-
-        </activity>
-
-        <activity android:name=".LoginActivity"></activity>
-        <activity android:name=".MainActivity" >
->>>>>>> 50d734812a372129add7cd3c098e8ccac02d8d9b
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-<<<<<<< HEAD
+
         </activity> <!-- <<<<<<< HEAD -->
         <!-- <activity android:name=".AddPostActivity" /> -->
         <!-- <activity android:name=".LoginActivity" /> -->
         <!-- <activity android:name=".MainActivity" /> -->
         <!-- <activity android:name=".OtpActivity" /> -->
         <!-- ======= -->
-        <activity android:name=".OtpActivity"></activity>
-=======
-        </activity>
-        <activity android:name=".OtpActivity" />
->>>>>>> 50d734812a372129add7cd3c098e8ccac02d8d9b
+    <activity android:name=".OtpActivity" />
+
     </application>
+
+
 
 </manifest>
