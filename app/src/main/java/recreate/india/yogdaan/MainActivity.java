@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
             Paper.book().write("isFirstRun", "false");
 
 
+        assert isFirstRun != null;
         if (isFirstRun.equals("false")) {
             Intent intent = new Intent(MainActivity.this, TandC.class);
             startActivity(intent);
@@ -93,6 +94,8 @@ public class MainActivity extends AppCompatActivity {
                     }).show();
 
         }
+//        Intent intent = new Intent(MainActivity.this,LoginActivity.class);
+//        startActivity(intent);
     }
 
 

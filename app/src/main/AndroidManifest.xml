@@ -9,43 +9,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Volunteer"></activity>
         <activity android:name=".TandC" />
-        <activity android:name=".SplashScreen" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-<<<<<<< HEAD
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
-        <activity android:name=".BlogActivity">
-=======
-        <activity android:name=".BlogActivity" >
-
-        </activity>
+                <!-- <<<<<<< HEAD -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- <activity android:name=".BlogActivity"> -->
+        <!-- ======= -->
+        <activity android:name=".BlogActivity"></activity>
         <activity android:name=".AddPostActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".MainActivity">
 
-        </activity>
-        <activity android:name=".MainActivity" >
-
->>>>>>> 046f4ffc8e2d7b233b197b532adf7e5690e4c25a
+            <!-- &gt;>>>>>> 046f4ffc8e2d7b233b197b532adf7e5690e4c25a -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-        </activity>
-<<<<<<< HEAD
-        <activity android:name=".AddPostActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".OtpActivity" />
-=======
-        <activity android:name=".OtpActivity">
-
-        </activity>
->>>>>>> 046f4ffc8e2d7b233b197b532adf7e5690e4c25a
+        </activity> <!-- <<<<<<< HEAD -->
+        <!-- <activity android:name=".AddPostActivity" /> -->
+        <!-- <activity android:name=".LoginActivity" /> -->
+        <!-- <activity android:name=".MainActivity" /> -->
+        <!-- <activity android:name=".OtpActivity" /> -->
+        <!-- ======= -->
+        <activity android:name=".OtpActivity"></activity>
     </application>
 
 </manifest>

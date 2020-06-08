@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Volunteer">
+
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/image_slider_volunteer"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:auto_cycle="true"
+        app:corner_radius="20"
+        android:layout_alignParentTop="true"
+        app:period="1000"
+        app:delay="0"
+        tools:ignore="MissingConstraints" />
+<!--    <ImageView-->
+<!--        android:id="@+id/volunteer_image"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300sp"-->
+<!--        android:background="@drawable/volunteer1"-->
+<!--        -->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:id="@+id/volunteer_image"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300sp"-->
+<!--        android:background="@drawable/ThoughtCloud"-->
+<!--        android:text="Be A Volunteer For Betterment Of Humankind"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginTop="20sp"-->
+<!--        android:layout_marginLeft="20sp"-->
+<!--        android:layout_marginRight="20sp"-->
+<!--        android:textSize="20sp"-->
+<!--        />-->
+
+    <EditText
+        android:layout_below="@+id/image_slider_volunteer"
+        android:id="@+id/volunteer_name"
+        android:layout_width="match_parent"
+        android:layout_height="25sp"
+        android:textSize="20sp"
+        android:background="@drawable/input"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="60sp"
+        android:hint="   Name"
+        />
+    <EditText
+        android:layout_below="@+id/volunteer_name"
+        android:id="@+id/volunteer_dob"
+        android:layout_width="match_parent"
+        android:layout_height="25sp"
+        android:textSize="20sp"
+        android:background="@drawable/input"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20sp"
+        android:hint="   Date Of Birth"
+        />
+    <EditText
+        android:layout_below="@+id/volunteer_dob"
+        android:id="@+id/volunteer_type_of_work"
+        android:layout_width="match_parent"
+        android:layout_height="25sp"
+        android:textSize="20sp"
+        android:background="@drawable/input"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20sp"
+        android:hint="   Type Of Work"
+        />
+    <EditText
+        android:layout_below="@+id/volunteer_type_of_work"
+        android:id="@+id/volunteer_occupation"
+        android:layout_width="match_parent"
+        android:layout_height="25sp"
+        android:textSize="20sp"
+        android:background="@drawable/input"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20sp"
+        android:hint="   Occupation"
+        />
+    <EditText
+        android:layout_below="@+id/volunteer_occupation"
+        android:id="@+id/volunteer_address"
+        android:layout_width="match_parent"
+        android:layout_height="25sp"
+        android:textSize="20sp"
+        android:background="@drawable/input"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20sp"
+        android:hint="   Address"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/volunteer_submit"
+        android:textAllCaps="false"
+        android:text="Proceed To Become A Volunteer"
+        android:textSize="25sp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        />
+
+
+
+</RelativeLayout>

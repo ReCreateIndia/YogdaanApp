@@ -1370,6 +1370,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable button
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1424,6 +1425,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_person_black_24dp
 drawable ic_settings_black_24dp
+drawable input
 drawable macbookpro
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
@@ -1455,6 +1457,9 @@ drawable test_custom_background
 drawable text_input_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable volunteer1
+drawable volunteer2
+drawable volunteer3
 font open_sans_bold
 font open_sans_semibold
 id ALT
@@ -1620,6 +1625,7 @@ id im9
 id image
 id imageView
 id image_slider
+id image_slider_volunteer
 id image_view
 id info
 id invisible
@@ -1805,6 +1811,12 @@ id verify_btn
 id view_offset_helper
 id view_pager
 id visible
+id volunteer_address
+id volunteer_dob
+id volunteer_name
+id volunteer_occupation
+id volunteer_submit
+id volunteer_type_of_work
 id wide
 id withText
 id wrap
@@ -1877,6 +1889,7 @@ layout activity_main
 layout activity_otp
 layout activity_splash_screen
 layout activity_tand_c
+layout activity_volunteer
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
