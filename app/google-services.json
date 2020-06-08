@@ -8,12 +8,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:812802346911:android:191d1d961efa77ca7037aa",
+        "mobilesdk_app_id": "1:812802346911:android:ce5c68ead43a21797037aa",
         "android_client_info": {
           "package_name": "recreate.india.yogdaan"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "812802346911-34ierhr7op02u99sa73tjup8rq576en8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "recreate.india.yogdaan",
+            "certificate_hash": "894ea858a077083167049cce4d23a0421a47f3f2"
+          }
+        },
         {
           "client_id": "812802346911-gs45r46n6ir8n9tjdr4ff7o008omk38p.apps.googleusercontent.com",
           "client_type": 3

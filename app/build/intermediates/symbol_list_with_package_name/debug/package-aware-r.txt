@@ -197,6 +197,10 @@ attr chipStrokeWidth
 attr chipStyle
 attr chipSurfaceColor
 attr circleCrop
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr closeIcon
 attr closeIconEnabled
 attr closeIconEndPadding
@@ -1361,6 +1365,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable border
 drawable btn
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -1543,7 +1548,10 @@ id beginning
 id blocking
 id bottom
 id btn
+id button
 id buttonPanel
+id c1
+id c2
 id cancel_action
 id cancel_button
 id center
@@ -1555,6 +1563,7 @@ id checked
 id chip
 id chip_group
 id chronometer
+id circleImageView
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -1572,6 +1581,7 @@ id dark
 id date_picker_actions
 id decor_content_parent
 id default_activity_button
+id desc
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1605,6 +1615,7 @@ id forever
 id generate_btn
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
@@ -1621,7 +1632,6 @@ id im3
 id im5
 id im6
 id im7
-id im9
 id image
 id imageView
 id image_slider
@@ -1636,6 +1646,11 @@ id labeled
 id lang
 id largeLabel
 id left
+id lh1
+id lh2
+id lh3
+id lh8
+id li1
 id light
 id line1
 id line3
@@ -1683,6 +1698,8 @@ id n1
 id name
 id navigation_header_container
 id never
+id new_desc
+id new_post
 id noScroll
 id none
 id normal
@@ -1695,6 +1712,7 @@ id otp_desc
 id otp_progress
 id otp_text_view
 id otp_title
+id ourWork
 id outline
 id packed
 id pager_dots
@@ -1703,7 +1721,6 @@ id parent
 id parentPanel
 id parent_matrix
 id pass
-id password
 id password_toggle
 id peekHeight
 id percent
@@ -1712,6 +1729,7 @@ id pin
 id progress_circular
 id progress_horizontal
 id radio
+id radio1
 id right
 id right_icon
 id right_side
@@ -1750,6 +1768,7 @@ id snackbar_text
 id snap
 id snapMargins
 id spacer
+id spinner2
 id split_action_bar
 id spread
 id spread_inside
@@ -1781,7 +1800,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
-id textView4
 id text_input_end_icon
 id text_input_start_icon
 id text_view
@@ -1806,7 +1824,6 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id username
 id verify_btn
 id view_offset_helper
 id view_pager
@@ -1884,6 +1901,8 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_post
 layout activity_blog
+layout activity_fund_raise
+layout activity_help_page
 layout activity_login
 layout activity_main
 layout activity_otp
@@ -1956,6 +1975,7 @@ layout pager_row
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout single_fund_item
 layout support_simple_spinner_dropdown_item
 layout test_action_chip
 layout test_design_checkbox
@@ -2786,6 +2806,7 @@ styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha

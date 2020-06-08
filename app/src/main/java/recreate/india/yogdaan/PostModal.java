@@ -3,29 +3,32 @@ package recreate.india.yogdaan;
 import com.google.firebase.firestore.ServerTimestamp;
 
 public class PostModal {
-    private String username;
-    private String password;
+    private String url;
 
-    public String getUsername() {
-        return username;
+    public String getUrl() {
+        return url;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUrl(String url) {
+        this.url = url;
     }
 
-    public String getPassword() {
-        return password;
+    public String getDesc() {
+        return desc;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 
-    public PostModal(String username, String password) {
-        this.username = username;
-        this.password = password;
+    public PostModal(String url, String desc) {
+        this.url = url;
+        this.desc = desc;
     }
+
+    private String desc;
+
+
     public PostModal() {
 
     }

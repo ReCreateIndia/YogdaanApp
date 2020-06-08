@@ -6,13 +6,17 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -41,7 +45,7 @@ public class BlogActivity extends AppCompatActivity {
         ff=FirebaseFirestore.getInstance();
         mfirestorelist=findViewById(R.id.firestore_list);
         //Query
-        Query query=ff.collection("users");
+        Query query=ff.collection("OurWorkPost");
         //RecyclerOptions
         FirestoreRecyclerOptions<PostModal> options=new FirestoreRecyclerOptions.Builder<PostModal>().setQuery(query,PostModal.class).build();
          adapter= new FirestoreRecyclerAdapter<PostModal, PostViewHolder>(options) {
@@ -56,25 +60,24 @@ public class BlogActivity extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(@NonNull PostViewHolder postViewHolder, int i, @NonNull PostModal postModal) {
 
-                postViewHolder.list_username.setText(postModal.getUsername());
-                postViewHolder.list_password.setText(postModal.getPassword());
-
+                postViewHolder.description.setText(postModal.getDesc());
+                String url=postModal.getUrl();
+                Glide.with(BlogActivity.this).load(url).into(postViewHolder.postImage);
             }
         };
          mfirestorelist.setLayoutManager(new LinearLayoutManager(this));
          mfirestorelist.setAdapter(adapter);
          mfirestorelist.setHasFixedSize(true);
-
-        //ViewHolder
-    }
+         //ViewHolder
+        }
 
     private class PostViewHolder extends RecyclerView.ViewHolder{
-        private TextView list_username;
-        private TextView list_password;
+        private TextView description;
+        private ImageView postImage;
         public PostViewHolder(@NonNull View itemView) {
             super(itemView);
-            list_username=itemView.findViewById(R.id.name);
-            list_password=itemView.findViewById(R.id.pass);
+           description=itemView.findViewById(R.id.desc);
+           postImage=itemView.findViewById(R.id.imageView);
 
         }
     }
