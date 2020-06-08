@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -29,11 +31,19 @@ public class MainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle toggle;
     private FirebaseAuth mAuth;
     AlertDialog alertDialog;
+    private ImageButton our_work;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        our_work=findViewById(R.id.ourWork);
+        our_work.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,BlogActivity.class));
+            }
+        });
 
 
         ImageSlider imageslider = findViewById(R.id.image_slider);
@@ -46,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
         slideModels.add(new SlideModel(R.drawable.d2));
         imageslider.setImageList(slideModels, true);
 
-
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(toggle);
@@ -54,15 +63,15 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         NavigationView navigationView = (NavigationView) findViewById(R.id.n1);
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
-        boolean isFirstTime = prefs.getBoolean("isFirstTime", true);
-        if (isFirstTime) {
-            onFirst();
-        } else {
-            FirebaseUser currentUser = mAuth.getCurrentUser();
-            if (currentUser == null) {
-                gotoLoginActivity();
-            }
-        }
+//        boolean isFirstTime = prefs.getBoolean("isFirstTime", true);
+//        if (isFirstTime) {
+//            onFirst();
+//        } else {
+//            FirebaseUser currentUser = mAuth.getCurrentUser();
+//            if (currentUser == null) {
+//                gotoLoginActivity();
+//            }
+//        }
 
     }
 
@@ -114,6 +123,9 @@ public class MainActivity extends AppCompatActivity {
         if (toggle.onOptionsItemSelected(item)) {
 
             return true;
+        }
+        switch (item.getItemId()){
+
         }
         return super.onOptionsItemSelected(item);
     }

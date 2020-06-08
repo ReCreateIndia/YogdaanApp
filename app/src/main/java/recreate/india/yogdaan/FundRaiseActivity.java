@@ -11,8 +11,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -50,8 +53,9 @@ public class FundRaiseActivity extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(@NonNull PostViewHolder postViewHolder, int i, @NonNull PostModal postModal) {
 
-                postViewHolder.list_username.setText(postModal.getUsername());
-                postViewHolder.list_password.setText(postModal.getPassword());
+                postViewHolder.description.setText(postModal.getDesc());
+                String url=postModal.getUrl();
+                Glide.with(FundRaiseActivity.this).load(url).into(postViewHolder.postImage);
 
             }
         };
@@ -63,12 +67,12 @@ public class FundRaiseActivity extends AppCompatActivity {
     }
 
     private class PostViewHolder extends RecyclerView.ViewHolder{
-        private TextView list_username;
-        private TextView list_password;
+        private EditText description;
+        private ImageView postImage;
         public PostViewHolder(@NonNull View itemView) {
             super(itemView);
-            list_username=itemView.findViewById(R.id.name);
-            list_password=itemView.findViewById(R.id.pass);
+            description=itemView.findViewById(R.id.new_desc);
+            postImage=itemView.findViewById(R.id.new_post);
 
         }
     }
