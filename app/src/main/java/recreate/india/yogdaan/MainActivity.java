@@ -44,6 +44,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,BlogActivity.class));
             }
         });
+        our_work=findViewById(R.id.ourWork);
+        our_work.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,BlogActivity.class));
+            }
+        });
 
 
         ImageSlider imageslider = findViewById(R.id.image_slider);
@@ -76,19 +83,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onFirst() {
-
-
-        Intent intent = new Intent(MainActivity.this, TandC.class);
-        startActivity(intent);
-
-<<<<<<< HEAD
-        assert isFirstRun != null;
-        if (isFirstRun.equals("false")) {
-            Intent intent = new Intent(MainActivity.this, TandC.class);
-            startActivity(intent);
-=======
->>>>>>> 50d734812a372129add7cd3c098e8ccac02d8d9b
-
             new AlertDialog.Builder(MainActivity.this)
                     .setTitle("Terms and Conditions")
                     .setMessage("T&C")
@@ -115,12 +109,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         }
-<<<<<<< HEAD
-//        Intent intent = new Intent(MainActivity.this,LoginActivity.class);
-//        startActivity(intent);
-    }
-=======
->>>>>>> 50d734812a372129add7cd3c098e8ccac02d8d9b
 
 
 

@@ -15,35 +15,23 @@
 
         <activity android:name=".Volunteer" />
         <activity android:name=".TandC" />
-        <activity android:name=".SplashScreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".SplashScreen"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
 
-                <!-- <<<<<<< HEAD -->
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".BlogActivity" />
         <activity android:name=".AddPostActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity">
-        <activity android:name=".FundRaiseActivity" />
-        <activity android:name=".HelpPage" />
-
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-        </activity> <!-- <<<<<<< HEAD -->
-        <!-- <activity android:name=".AddPostActivity" /> -->
-        <!-- <activity android:name=".LoginActivity" /> -->
-        <!-- <activity android:name=".MainActivity" /> -->
-        <!-- <activity android:name=".OtpActivity" /> -->
-        <!-- ======= -->
-    <activity android:name=".OtpActivity" />
+        </activity>
+        <activity android:name=".FundRaiseActivity" />
+        <activity android:name=".HelpPage" />
+        <activity android:name=".OtpActivity" />
 
     </application>
 

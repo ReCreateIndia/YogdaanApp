@@ -847,6 +847,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color lightGray
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1635,16 +1636,16 @@ id im7
 id image
 id imageView
 id image_slider
-id image_slider_volunteer
 id image_view
 id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
-id l1
+id l11
 id labeled
 id lang
 id largeLabel
+id layout1
 id left
 id lh1
 id lh2
@@ -1654,6 +1655,7 @@ id li1
 id light
 id line1
 id line3
+id linearLayout
 id linear_layout
 id listMode
 id list_item
@@ -1730,6 +1732,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id radio1
+id resend_btn
 id right
 id right_icon
 id right_side
@@ -1830,6 +1833,7 @@ id view_pager
 id visible
 id volunteer_address
 id volunteer_dob
+id volunteer_image
 id volunteer_name
 id volunteer_occupation
 id volunteer_submit

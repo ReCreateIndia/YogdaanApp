@@ -4,7 +4,7 @@
     <string name="firebase_database_url" translatable="false">https://yogdaan-268ac.firebaseio.com</string>
     <string name="gcm_defaultSenderId" translatable="false">812802346911</string>
     <string name="google_api_key" translatable="false">AIzaSyDzmuiPB1YFDE9hmHO22zr6WaziQB2UEyU</string>
-    <string name="google_app_id" translatable="false">1:812802346911:android:191d1d961efa77ca7037aa</string>
+    <string name="google_app_id" translatable="false">1:812802346911:android:ce5c68ead43a21797037aa</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDzmuiPB1YFDE9hmHO22zr6WaziQB2UEyU</string>
     <string name="google_storage_bucket" translatable="false">yogdaan-268ac.appspot.com</string>
     <string name="project_id" translatable="false">yogdaan-268ac</string>

@@ -19,9 +19,10 @@
         >
 
     </com.google.android.material.navigation.NavigationView>
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".MainActivity"
         >
         <com.denzcoskun.imageslider.ImageSlider
@@ -36,22 +37,21 @@
             tools:ignore="MissingConstraints" />
 
         <ScrollView
+            android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="380dp"
             >
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:orientation="vertical"
+                android:layout_marginTop="20dp"
                 tools:ignore="RtlCompat">
 
                 <LinearLayout
-                    android:id="@+id/ll1"
+                    android:id="@+id/l11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="25dp"
@@ -119,9 +119,31 @@
                             />
                     </LinearLayout>
 
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+
+                    >
+
                     <LinearLayout
                         android:layout_width="80dp"
-                        android:layout_marginStart="42dp"
+                        android:layout_marginStart="30dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical"
@@ -148,30 +170,9 @@
                             android:layout_marginTop="8dp"
                             />
                     </LinearLayout>
-
-
-
-
-
-
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:id="@+id/ll2"
-                    android:layout_width="match_parent"
-                    android:layout_below="@id/ll1"
-                    android:layout_marginTop="60dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginEnd="25dp"
-                    android:orientation="horizontal"
-                    android:weightSum="3"
-
-                    >
                     <LinearLayout
                         android:layout_width="80dp"
-
+                        android:layout_marginLeft="30dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical"
@@ -198,6 +199,20 @@
                             android:layout_marginTop="8dp"
                             />
                     </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/ll1"
+                    android:layout_marginTop="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+
+                    >
+
                     <LinearLayout
                         android:layout_width="80dp"
                         android:layout_marginStart="45dp"
@@ -265,11 +280,11 @@
 
 
 
-            </RelativeLayout>
+            </LinearLayout>
 
 
         </ScrollView>
-    </RelativeLayout>
+    </LinearLayout>
 
 
 

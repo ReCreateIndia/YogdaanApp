@@ -144,6 +144,14 @@ androidx/viewpager/widget/ViewPager$DecorView.class
 androidx/viewpager2/widget/ViewPager2$OffscreenPageLimit.class
 androidx/viewpager2/widget/ViewPager2$Orientation.class
 androidx/viewpager2/widget/ViewPager2$ScrollState.class
+com/bumptech/glide/annotation/Excludes.class
+com/bumptech/glide/annotation/GlideExtension.class
+com/bumptech/glide/annotation/GlideModule.class
+com/bumptech/glide/annotation/GlideOption.class
+com/bumptech/glide/annotation/GlideType.class
+com/bumptech/glide/annotation/compiler/Index.class
+com/bumptech/glide/gifdecoder/GifDecoder$GifDecodeStatus.class
+com/bumptech/glide/util/Synthetic.class
 com/esotericsoftware/kryo/DefaultSerializer.class
 com/esotericsoftware/kryo/Kryo.class
 com/esotericsoftware/kryo/KryoException.class
@@ -242,6 +250,12 @@ com/google/errorprone/annotations/concurrent/UnlockMethod.class
 com/google/firebase/annotations/PublicApi.class
 com/google/firebase/auth/ActionCodeResult$ActionDataKey.class
 com/google/firebase/auth/ActionCodeResult$Operation.class
+com/google/firebase/database/Exclude.class
+com/google/firebase/database/IgnoreExtraProperties.class
+com/google/firebase/database/PropertyName.class
+com/google/firebase/database/ThrowOnExtraProperties.class
+com/google/firebase/database/annotations/NotNull.class
+com/google/firebase/database/annotations/Nullable.class
 com/google/firebase/firestore/DocumentId.class
 com/google/firebase/firestore/Exclude.class
 com/google/firebase/firestore/IgnoreExtraProperties.class

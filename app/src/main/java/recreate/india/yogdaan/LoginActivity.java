@@ -30,12 +30,16 @@ public class LoginActivity extends AppCompatActivity {
     private EditText phone_number_edittext;
     private Button create_btn;
     private ProgressBar log_progress;
+    FirebaseAuth firebaseAuth;
+    FirebaseUser firebaseUser;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        firebaseAuth=FirebaseAuth.getInstance();
+        firebaseUser=firebaseAuth.getCurrentUser();
         phone_number_edittext = findViewById(R.id.phone_number_text);
         create_btn = findViewById(R.id.generate_btn);
         log_progress = findViewById(R.id.login_progress);
@@ -68,5 +72,14 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if(firebaseUser!=null){
+            startActivity(new Intent(LoginActivity.this,MainActivity.class));
+        }
+
     }
 }
