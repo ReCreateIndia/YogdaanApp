@@ -1592,6 +1592,7 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
+id donate
 id drawer
 id dropdown_menu
 id edit_query
@@ -1620,6 +1621,7 @@ id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
+id help
 id hideable
 id hindi
 id home
@@ -1628,11 +1630,6 @@ id icon
 id icon_group
 id icon_only
 id ifRoom
-id im1
-id im3
-id im5
-id im6
-id im7
 id image
 id imageView
 id image_slider
@@ -1675,6 +1672,7 @@ id month_navigation_fragment_toggle
 id month_navigation_next
 id month_navigation_previous
 id month_title
+id more
 id mtrl_calendar_day_selector_frame
 id mtrl_calendar_days_of_week
 id mtrl_calendar_frame
@@ -1714,6 +1712,7 @@ id otp_desc
 id otp_progress
 id otp_text_view
 id otp_title
+id ourHelpers
 id ourWork
 id outline
 id packed
@@ -1831,6 +1830,7 @@ id verify_btn
 id view_offset_helper
 id view_pager
 id visible
+id volunteer
 id volunteer_address
 id volunteer_dob
 id volunteer_image

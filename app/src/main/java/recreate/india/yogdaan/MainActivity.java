@@ -31,28 +31,40 @@ public class MainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle toggle;
     private FirebaseAuth mAuth;
     AlertDialog alertDialog;
-    private ImageButton our_work;
+    private ImageButton donate,help,volunteer,ourWork;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        our_work=findViewById(R.id.ourWork);
-        our_work.setOnClickListener(new View.OnClickListener() {
+        donate=findViewById(R.id.donate);
+        help=findViewById(R.id.help);
+        volunteer=findViewById(R.id.volunteer);
+        ourWork=findViewById(R.id.ourWork);
+        donate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,MainActivity.class));
+            }
+        });
+        help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,HelpPage.class));
+            }
+        });
+        ourWork.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,BlogActivity.class));
             }
         });
-        our_work=findViewById(R.id.ourWork);
-        our_work.setOnClickListener(new View.OnClickListener() {
+        volunteer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,BlogActivity.class));
+                startActivity(new Intent(MainActivity.this,Volunteer.class));
             }
         });
-
-
         ImageSlider imageslider = findViewById(R.id.image_slider);
         List<SlideModel> slideModels = new ArrayList<>();
         slideModels.add(new SlideModel(R.drawable.d5));
