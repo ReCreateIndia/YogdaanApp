@@ -14,7 +14,7 @@
         android:id="@+id/n1"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        app:headerLayout="@layout/menu_header"
+        app:headerLayout="@layout/header"
         app:menu="@menu/nav_menu"
         >
 

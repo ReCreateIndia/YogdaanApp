@@ -1,29 +1,62 @@
 package recreate.india.yogdaan;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
+
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class HelpPage extends AppCompatActivity {
     Spinner spin;
     RadioGroup radioGroup;
     RadioButton radioButton;
+    FirebaseFirestore ff;
+    FirebaseAuth firebaseAuth;
+    FirebaseUser firebaseUser;
+    private String item="yo";
+    private Button submit_request;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_page);
-
+        ff=FirebaseFirestore.getInstance();
+        submit_request=findViewById(R.id.submitRequest);
+        submit_request.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Map<Object,String>map=new HashMap<>();
+                map.put("yo","yo");
+                ff.collection("AllRequest").document(item).collection("presentRequest").document(firebaseUser.getUid()).set(map).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if(task.isSuccessful()){
+                            Toast.makeText(HelpPage.this,"hogye",Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
+            }
+        });
+        firebaseAuth=FirebaseAuth.getInstance();
+        firebaseUser=firebaseAuth.getCurrentUser();
         radioGroup=findViewById(R.id.radio1);
         spin=(Spinner)findViewById(R.id.spinner2);
         List<String> list=new ArrayList<String>();
@@ -104,7 +137,7 @@ public class HelpPage extends AppCompatActivity {
                 }
                 else
                 {
-                    String item=parent.getItemAtPosition(position).toString();
+                    item=parent.getItemAtPosition(position).toString();
                     Toast.makeText(parent.getContext(), "Selected:"+item, Toast.LENGTH_SHORT).show();
                 }
             }
