@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Yogdaan</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
-//VolunteerPage
+    //VolunteerPage
     <string name="Name">Name</string>
     <string name="Date_Of_Birth">Date Of Birth</string>
     <string name="Type_Of_Work">Type Of Work</string>
@@ -10,15 +11,15 @@
     <string name="Address">Address</string>
     <string name="Submit">Submit</string>
 
-//AddPostPage
+    //AddPostPage
     <string name="Add_Some_Description">Add Some Description</string>
 
-//DonatePage
+    //DonatePage
     <string name="Donate_Food">Donate Food</string>
     <string name="Donate_Clothes">Donate Clothes</string>
     <string name="Donate_Money">Donate Money</string>
 
-//HelpPage
+    //HelpPage
     <string name="Select_Problem">Select Problem</string>
     <string name="Help_For_Others">Help For Others</string>
     <string name="Help_For_Yourself">Help For Yourself</string>
@@ -29,13 +30,13 @@
     <string name="Pin_Code">Pin Code</string>
     <string name="State">State</string>
 
-//LoginPage
+    //LoginPage
     <string name="Verify_Your_Number">Verify Your Number</string>
     <string name="Please_Enter_Your_Phone_Number_For_Verification">Please Enter Your Phone Number For Verification</string>
     <string name="Your_Phone_Number">Your Phone Number</string>
     <string name="Generate_OTP">Generate OTP</string>
 
-//MainActivity
+    //MainActivity
     <string name="Donate">Donate</string>
     <string name="Help">Help</string>
     <string name="Our_Work">Our Work</string>
@@ -43,22 +44,21 @@
     <string name="Volunteers">Volunteers</string>
     <string name="More">More</string>
 
-//OTPActivity
+    //OTPActivity
     <string name="Enter_OTP">Enter OTP</string>
     <string name="Resend_OTP">Resend OTP</string>
     <string name="Verify_OTP">Verify OTP</string>
     <string name="We_Have_Sent_You_An_OTP_For_Phone_Number_Verification">We Have Sent You An OTP \n For Phone Number Verification</string>
 
-//PaymentActivity
+    //PaymentActivity
     <string name="Amount">Amount</string>
     <string name="Donate_Now">Donate Now</string>
 
-//header.xml
+    //header.xml
     <string name="Net_Credit">Net Credit</string>
     <string name="Net_Value">Net Value</string>
 
-//listItemSingle.xml
+    //listItemSingle.xml
     <string name="Description">Description</string>
-
 
 </resources>
