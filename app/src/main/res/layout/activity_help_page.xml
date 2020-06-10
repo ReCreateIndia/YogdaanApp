@@ -16,6 +16,7 @@
         tools:ignore="RtlCompat">
 
         <TextView
+            android:id="@+id/Select_Problem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Select Problem"
@@ -37,12 +38,9 @@
                 android:id="@+id/c1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-
                 android:checked="true"
                 android:onClick="onClickRadiobutton"
                 android:text="Help for others"
-
                 android:textSize="28sp" />
 
             <RadioButton
@@ -67,6 +65,7 @@
 
         >
         <TextView
+            android:id="@+id/TypeOfHelp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Type of help"
@@ -108,6 +107,7 @@
                 android:orientation="horizontal"
                 >
                 <TextView
+                    android:id="@+id/NameHelpPage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Name :"
@@ -133,6 +133,7 @@
                 android:layout_below="@id/lh1"
                 android:orientation="horizontal">
                 <TextView
+                    android:id="@+id/Date_Of_Birth_Help_Page"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="DOB :"
@@ -142,7 +143,6 @@
 
                     />
                 <EditText
-
                     android:layout_marginStart="40dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -160,6 +160,7 @@
                 android:orientation="vertical"
                 >
                 <TextView
+                    android:id="@+id/Area_Of_Help"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Area of help"
@@ -176,6 +177,7 @@
 
 
                     <TextView
+                        android:id="@+id/Flat_House_No1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Flat/house no"
@@ -194,6 +196,7 @@
                         android:layout_marginEnd="20dp"
                         android:textColor="#000000"/>
                     <TextView
+                        android:id="@+id/Flat_House_No2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Flat/house no"
@@ -218,7 +221,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-
+                            android:id="@+id/City_Help_Page"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="City"
@@ -244,10 +247,9 @@
 
 
                         <TextView
-
+                            android:id="@+id/Pin_Code_Help_Page"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-
                             android:text="Pin Code :"
                             android:textColor="#000000"
                             android:textSize="24sp" />
@@ -272,10 +274,9 @@
 
 
                         <TextView
-
+                            android:id="@+id/State_Help_Page"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-
                             android:text="State :"
                             android:textColor="#000000"
                             android:textSize="24sp" />

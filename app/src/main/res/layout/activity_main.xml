@@ -80,6 +80,7 @@
 
                             />
                         <TextView
+                            android:id="@+id/Donate"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Donate"
@@ -101,14 +102,12 @@
                             android:id="@+id/help"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-
                             android:background="@drawable/btn"
                             android:scaleType="centerCrop"
-
                             android:src="@drawable/ow"
-
                             />
                         <TextView
+                            android:id="@+id/Help"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Help"
@@ -151,6 +150,7 @@
 
                             />
                         <TextView
+                            android:id="@+id/Our_Work"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Our Work"
@@ -180,6 +180,7 @@
 
                             />
                         <TextView
+                            android:id="@+id/Our_Helpers"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Our helpers"
@@ -223,6 +224,7 @@
 
                             />
                         <TextView
+                            android:id="@+id/Volunteers"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Volunteers"
@@ -243,14 +245,13 @@
                             android:id="@+id/more"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-
                             android:background="@drawable/btn"
                             android:scaleType="centerCrop"
-
                             android:src="@drawable/ow"
 
                             />
                         <TextView
+                            android:id="@+id/More"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="More"

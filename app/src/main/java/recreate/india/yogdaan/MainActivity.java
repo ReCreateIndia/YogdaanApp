@@ -1,14 +1,17 @@
 package recreate.india.yogdaan;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -25,6 +28,9 @@ import com.google.firebase.auth.FirebaseUser;
 import java.util.ArrayList;
 import java.util.List;
 
+import Helper.LocaleHelper;
+import io.paperdb.Paper;
+
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
@@ -32,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     AlertDialog alertDialog;
     private ImageButton donate,help,volunteer,ourWork;
+    TextView Help,Our_Work,Volunteers,More,Our_Helpers,Donate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +48,14 @@ public class MainActivity extends AppCompatActivity {
         help=findViewById(R.id.help);
         volunteer=findViewById(R.id.volunteer);
         ourWork=findViewById(R.id.ourWork);
+
+        Help=findViewById(R.id.Help);
+        Our_Work=findViewById(R.id.Our_Work);
+        Volunteers=findViewById(R.id.Volunteers);
+        More=findViewById(R.id.More);
+        Our_Helpers=findViewById(R.id.Our_Helpers);
+        Donate=findViewById(R.id.Donate);
+
         donate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -91,6 +106,25 @@ public class MainActivity extends AppCompatActivity {
 //                gotoLoginActivity();
 //            }
 //        }
+
+        Paper.init(this);
+        String language = Paper.book().read("language");
+        if(language==null)
+            Paper.book().write("language","en");
+        updateView((String)Paper.book().read("language"));
+
+    }
+
+    private void updateView(String lang) {
+        Context context = LocaleHelper.setLocale(this,lang);
+        Resources resources = context.getResources();
+
+        Help.setText(resources.getString(R.string.Help));
+        Donate.setText(resources.getString(R.string.Donate));
+        Volunteers.setText(resources.getString(R.string.Volunteers));
+        Our_Helpers.setText(resources.getString(R.string.Our_Helpers));
+        Our_Work.setText(resources.getString(R.string.Our_Work));
+        More.setText(resources.getString(R.string.More));
 
     }
 

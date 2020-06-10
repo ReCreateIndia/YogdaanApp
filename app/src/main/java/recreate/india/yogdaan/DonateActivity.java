@@ -2,10 +2,15 @@ package recreate.india.yogdaan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import Helper.LocaleHelper;
+import io.paperdb.Paper;
 
 public class DonateActivity extends AppCompatActivity {
 
@@ -34,6 +39,7 @@ public class DonateActivity extends AppCompatActivity {
 //                startActivity(intent);
 //            }
 //        });
+
         donateMoney.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,5 +51,20 @@ public class DonateActivity extends AppCompatActivity {
             }
         });
 
+        Paper.init(this);
+        String language = Paper.book().read("language");
+        if(language==null)
+            Paper.book().write("language","en");
+        updateView((String)Paper.book().read("language"));
+
+    }
+
+    private void updateView(String lang) {
+        Context context = LocaleHelper.setLocale(this,lang);
+        Resources resources = context.getResources();
+
+        donateClothes.setText(resources.getString(R.string.Donate_Clothes));
+        donateFood.setText(resources.getString(R.string.Donate_Food));
+        donateMoney.setText(resources.getString(R.string.Donate_Money));
     }
 }

@@ -6,8 +6,10 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -30,6 +32,9 @@ import com.google.gson.internal.$Gson$Preconditions;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import Helper.LocaleHelper;
+import io.paperdb.Paper;
 
 public class AddPostActivity extends AppCompatActivity {
 
@@ -104,7 +109,23 @@ public class AddPostActivity extends AppCompatActivity {
                 });
             }
         });
+
+        Paper.init(this);
+        String language = Paper.book().read("language");
+        if(language==null)
+            Paper.book().write("language","en");
+        updateView((String)Paper.book().read("language"));
+        
     }
+
+    private void updateView(String lang) {
+        Context context = LocaleHelper.setLocale(this,lang);
+        Resources resources = context.getResources();
+
+        description.setHint(resources.getString(R.string.Add_Some_Description));
+
+    }
+
     private void checkAndRequestForPermission() {
         if (ContextCompat.checkSelfPermission(AddPostActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED) {

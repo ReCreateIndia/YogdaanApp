@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <string name="app_name">Yogdaan</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
@@ -60,5 +61,4 @@
 
     //listItemSingle.xml
     <string name="Description">Description</string>
-
 </resources>

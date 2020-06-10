@@ -10,7 +10,6 @@
         android:id="@+id/otp_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:text="Enter OTP"
         android:textColor="@color/colorPrimary"
         android:textSize="22sp"
@@ -45,7 +44,6 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/text_input_bg"
         android:ems="10"
-
         android:hint="Enter OTP"
         android:inputType="phone"
         android:maxLength="10"
@@ -78,12 +76,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-
         android:layout_marginTop="32dp"
         android:background="@drawable/primary_btn_bg"
         android:padding="16dp"
         android:text="Resend OTP"
-
         android:textAllCaps="false"
         android:textColor="@android:color/background_light"
         android:textSize="16sp"

@@ -1,12 +1,15 @@
 package recreate.india.yogdaan;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -25,6 +28,9 @@ import com.google.firebase.auth.PhoneAuthProvider;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
+import Helper.LocaleHelper;
+import io.paperdb.Paper;
+
 
 public class LoginActivity extends AppCompatActivity {
     private EditText phone_number_edittext;
@@ -32,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
     private ProgressBar log_progress;
     FirebaseAuth firebaseAuth;
     FirebaseUser firebaseUser;
-
+    TextView textView,login_desc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +49,10 @@ public class LoginActivity extends AppCompatActivity {
         phone_number_edittext = findViewById(R.id.phone_number_text);
         create_btn = findViewById(R.id.generate_btn);
         log_progress = findViewById(R.id.login_progress);
+
+        textView = findViewById(R.id.text_view);
+        login_desc = findViewById(R.id.login_desc);
+
 
 
         create_btn.setOnClickListener(new View.OnClickListener() {
@@ -72,6 +82,22 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+
+        Paper.init(this);
+        String language = Paper.book().read("language");
+        if(language==null)
+            Paper.book().write("language","en");
+        updateView((String)Paper.book().read("language"));
+    }
+
+    private void updateView(String lang) {
+        Context context = LocaleHelper.setLocale(this,lang);
+        Resources resources = context.getResources();
+
+        textView.setText(resources.getString(R.string.Verify_Your_Number));
+        login_desc.setText(resources.getString(R.string.Please_Enter_Your_Phone_Number_For_Verification));
+        phone_number_edittext.setHint(resources.getString(R.string.Your_Phone_Number));
+        create_btn.setText(resources.getString(R.string.Generate_OTP));
     }
 
     @Override
