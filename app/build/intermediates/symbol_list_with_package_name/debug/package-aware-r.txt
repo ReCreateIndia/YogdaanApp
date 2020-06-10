@@ -1409,7 +1409,10 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable donate
 drawable donate3
+drawable donateclothes
+drawable donatefood
 drawable error
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
@@ -1542,6 +1545,7 @@ id adjust_width
 id alertTitle
 id all
 id always
+id amount_et
 id async
 id auto
 id barrier
@@ -1593,6 +1597,9 @@ id dimensions
 id direct
 id disableHome
 id donate
+id donate_clothes_btn
+id donate_food_btn
+id donate_money_btn
 id drawer
 id dropdown_menu
 id edit_query
@@ -1638,7 +1645,10 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id l1
 id l11
+id l2
+id l3
 id labeled
 id lang
 id largeLabel
@@ -1703,6 +1713,7 @@ id new_post
 id noScroll
 id none
 id normal
+id note
 id notification_background
 id notification_main_column
 id notification_main_column_container
@@ -1757,6 +1768,7 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id send
 id setting
 id shortcut
 id showCustom
@@ -1829,6 +1841,7 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id upi_id
 id useLogo
 id verify_btn
 id view_offset_helper
@@ -1909,11 +1922,13 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_post
 layout activity_blog
+layout activity_donate
 layout activity_fund_raise
 layout activity_help_page
 layout activity_login
 layout activity_main
 layout activity_otp
+layout activity_payment
 layout activity_splash_screen
 layout activity_tand_c
 layout activity_volunteer
