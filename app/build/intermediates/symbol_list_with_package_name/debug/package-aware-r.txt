@@ -84,6 +84,9 @@ attr actionProviderClass
 attr actionTextColorAlpha
 attr actionViewClass
 attr activityChooserViewStyle
+attr adSize
+attr adSizes
+attr adUnitId
 attr alertDialogButtonGroupStyle
 attr alertDialogCenterButtons
 attr alertDialogStyle
@@ -778,6 +781,10 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color browser_actions_bg_grey
+color browser_actions_divider_color
+color browser_actions_text_color
+color browser_actions_title_color
 color button_material_dark
 color button_material_light
 color cardview_dark_background
@@ -845,9 +852,11 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
-color lightGray
+color introslidertext
+color lightgreen
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -948,6 +957,7 @@ color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
+color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1028,6 +1038,8 @@ dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
 dimen appcompat_dialog_background_inset
+dimen browser_actions_context_menu_max_width
+dimen browser_actions_context_menu_min_padding
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -1364,8 +1376,11 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable add
+drawable amitneogi
 drawable avd_hide_password
 drawable avd_show_password
+drawable back
 drawable border
 drawable btn
 drawable btn_checkbox_checked_mtrl
@@ -1396,6 +1411,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable contacts
 drawable d1
 drawable d2
 drawable d3
@@ -1409,11 +1425,14 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable developers
 drawable donate
 drawable donate3
 drawable donateclothes
 drawable donatefood
+drawable download
 drawable error
+drawable filters
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable gradient
@@ -1421,6 +1440,9 @@ drawable ic_android_black_24dp
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
+drawable ic_frame_27
+drawable ic_healing_black_24dp
+drawable ic_home_black_24dp
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_keyboard_return_black_24dp
@@ -1433,8 +1455,12 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_person_black_24dp
+drawable ic_remove_circle_outline_black_24dp
 drawable ic_settings_black_24dp
+drawable imageswitchernavidot1
 drawable input
+drawable loginbutton
+drawable logout
 drawable macbookpro
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
@@ -1462,10 +1488,21 @@ drawable ourhelpers
 drawable ow
 drawable placeholder
 drawable primary_btn_bg
+drawable profile
+drawable rahulbanerjee
+drawable right
+drawable ruchirsodhani
+drawable search
+drawable searchicon
+drawable slide1image
+drawable slide2dots
+drawable slide2image
+drawable tag
 drawable test_custom_background
 drawable text_input_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable usestudentaccount
 drawable volunteer1
 drawable volunteer2
 drawable volunteer3
@@ -1538,8 +1575,9 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
+id adView
 id add
-id add_post_button
+id addressId
 id adjust_height
 id adjust_width
 id alertTitle
@@ -1552,6 +1590,12 @@ id barrier
 id beginning
 id blocking
 id bottom
+id bottomnavview
+id browser_actions_header_text
+id browser_actions_menu_item_icon
+id browser_actions_menu_item_text
+id browser_actions_menu_items
+id browser_actions_menu_view
 id btn
 id button
 id buttonPanel
@@ -1583,6 +1627,7 @@ id custom
 id customPanel
 id cut
 id dark
+id date
 id date_picker_actions
 id decor_content_parent
 id default_activity_button
@@ -1597,6 +1642,7 @@ id dimensions
 id direct
 id disableHome
 id donate
+id donate_add
 id donate_clothes_btn
 id donate_food_btn
 id donate_money_btn
@@ -1621,7 +1667,9 @@ id firestore_list
 id fitToContents
 id fixed
 id forever
+id fragment_container
 id generate_btn
+id getCurrentLocation
 id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag
@@ -1649,13 +1697,14 @@ id l1
 id l11
 id l2
 id l3
+id l4
 id labeled
 id lang
 id largeLabel
 id layout1
 id left
+id lgn
 id lh1
-id lh2
 id lh3
 id lh8
 id li1
@@ -1663,6 +1712,7 @@ id light
 id line1
 id line3
 id linearLayout
+id linearLayout2
 id linear_layout
 id listMode
 id list_item
@@ -1671,6 +1721,7 @@ id ll2
 id login_desc
 id login_progress
 id logout
+id manualAddress
 id masked
 id media_actions
 id message
@@ -1708,8 +1759,6 @@ id n1
 id name
 id navigation_header_container
 id never
-id new_desc
-id new_post
 id noScroll
 id none
 id normal
@@ -1725,7 +1774,9 @@ id otp_text_view
 id otp_title
 id ourHelpers
 id ourWork
+id ourWorkRecyclerView
 id outline
+id ow
 id packed
 id pager_dots
 id parallax
@@ -1738,11 +1789,14 @@ id peekHeight
 id percent
 id phone_number_text
 id pin
+id postImage
 id progress_circular
 id progress_horizontal
 id radio
 id radio1
+id raiseFundRecyclerView
 id resend_btn
+id rf
 id right
 id right_icon
 id right_side
@@ -1794,7 +1848,6 @@ id start
 id status_bar_latest_event_content
 id stretch
 id submenuarrow
-id submit
 id submitRequest
 id submit_area
 id tabMode
@@ -1818,6 +1871,8 @@ id textView
 id textView2
 id textView3
 id textView4
+id textView5
+id textView6
 id text_input_end_icon
 id text_input_start_icon
 id text_view
@@ -1843,9 +1898,12 @@ id unlabeled
 id up
 id upi_id
 id useLogo
+id userImage
+id username
 id verify_btn
 id view_offset_helper
 id view_pager
+id viewpager
 id visible
 id volunteer
 id volunteer_address
@@ -1920,11 +1978,11 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_add_post
 layout activity_blog
 layout activity_donate
 layout activity_fund_raise
 layout activity_help_page
+layout activity_introduction_
 layout activity_login
 layout activity_main
 layout activity_otp
@@ -1932,6 +1990,8 @@ layout activity_payment
 layout activity_splash_screen
 layout activity_tand_c
 layout activity_volunteer
+layout browser_actions_context_menu_page
+layout browser_actions_context_menu_row
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1948,8 +2008,14 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_our_work
+layout fragment_raise_fund
 layout header
 layout image_slider
+layout introslide1
+layout introslide2
+layout introslide3
+layout introslidelang
 layout list_item_single
 layout menu_header
 layout mtrl_alert_dialog
@@ -2013,6 +2079,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu bottommeny
 menu example_menu
 menu nav_menu
 mipmap ic_launcher
@@ -2047,6 +2114,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
+string banner_ad_unit_id
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_overflowed_content_description
@@ -2083,8 +2151,10 @@ string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
 string google_storage_bucket
+string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string interstitial_ad_unit_id
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_suffix
@@ -2126,6 +2196,13 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string project_id
+string s1
+string s2
+string s3
+string s4
+string s5
+string s6
+string s7
 string search_menu_title
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
@@ -2532,6 +2609,7 @@ style Theme_Design_Light
 style Theme_Design_Light_BottomSheetDialog
 style Theme_Design_Light_NoActionBar
 style Theme_Design_NoActionBar
+style Theme_IAPTheme
 style Theme_MaterialComponents
 style Theme_MaterialComponents_BottomSheetDialog
 style Theme_MaterialComponents_Bridge
@@ -2810,6 +2888,7 @@ styleable ActionMenuItemView android_minWidth
 styleable ActionMenuView
 styleable ActionMode background backgroundSplit closeItemLayout height subtitleTextStyle titleTextStyle
 styleable ActivityChooserView expandActivityOverflowButtonDrawable initialActivityCount
+styleable AdsAttrs adSize adSizes adUnitId
 styleable AlertDialog android_layout buttonIconDimen buttonPanelSideLayout listItemLayout listLayout multiChoiceItemLayout showTitle singleChoiceItemLayout
 styleable AnimatedStateListDrawableCompat android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable AnimatedStateListDrawableItem android_id android_drawable

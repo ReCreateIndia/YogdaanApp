@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class DonateActivity extends AppCompatActivity {
 
     private Button donateMoney,donateClothes,donateFood;
@@ -19,6 +22,10 @@ public class DonateActivity extends AppCompatActivity {
         donateMoney=(Button)findViewById(R.id.donate_money_btn);
         donateClothes=(Button)findViewById(R.id.donate_clothes_btn);
         donateFood=(Button)findViewById(R.id.donate_food_btn);
+        AdView adView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder()
+                .setRequestAgent("android_studio:ad_template").build();
+        adView.loadAd(adRequest);
 
 //        donateClothes.setOnClickListener(new View.OnClickListener() {
 //            @Override

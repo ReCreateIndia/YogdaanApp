@@ -1,23 +1,45 @@
 package recreate.india.yogdaan;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GoogleApiAvailability;
+import com.google.android.gms.location.FusedLocationProviderClient;
+
+import android.Manifest;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.location.Location;
+import android.location.LocationManager;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.GeoPoint;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -31,36 +53,67 @@ public class HelpPage extends AppCompatActivity {
     FirebaseFirestore ff;
     FirebaseAuth firebaseAuth;
     FirebaseUser firebaseUser;
-    private String item="yo";
+    public static final int PERMISSION_REQUEST_CODE = 9001;
+    private static final int PLAY_SERVICES_ERROR_CODE = 9002;
+    public static final int GPS_REQUEST_CODE = 9003;
+
+    private String item = "yo";
+    LocationManager locationManager;
     private Button submit_request;
+    private FusedLocationProviderClient fusedLocationProviderClient;
+    private double lat, lng;
+    private Button get_current_location;
+    private boolean mLocationPermissionGranted;
+    private Button manualAddress;
+    LinearLayout ll;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_page);
-        ff=FirebaseFirestore.getInstance();
-        submit_request=findViewById(R.id.submitRequest);
+        ll=findViewById(R.id.addressId);
+        manualAddress=findViewById(R.id.manualAddress);
+        manualAddress.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ll.setVisibility(View.VISIBLE);
+            }
+        });
+        get_current_location = findViewById(R.id.getCurrentLocation);
+        get_current_location.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                initGoogleMap();
+                getLocation();
+            }
+        });
+        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+            OnGPS();
+        }
+        ff = FirebaseFirestore.getInstance();
+        submit_request = findViewById(R.id.submitRequest);
         submit_request.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Map<Object,String>map=new HashMap<>();
-                map.put("yo","yo");
+                Map<Object, String> map = new HashMap<>();
+                map.put("yo", "yo");
                 ff.collection("AllRequest").document(item).collection("presentRequest").document(firebaseUser.getUid()).set(map).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                        if(task.isSuccessful()){
-                            Toast.makeText(HelpPage.this,"hogye",Toast.LENGTH_LONG).show();
+                        if (task.isSuccessful()) {
+                            Toast.makeText(HelpPage.this, "hogye", Toast.LENGTH_LONG).show();
                         }
                     }
                 });
             }
         });
-        firebaseAuth=FirebaseAuth.getInstance();
-        firebaseUser=firebaseAuth.getCurrentUser();
-        radioGroup=findViewById(R.id.radio1);
-        spin=(Spinner)findViewById(R.id.spinner2);
-        List<String> list=new ArrayList<String>();
-        list.add(0,"Select problem");
+        firebaseAuth = FirebaseAuth.getInstance();
+        firebaseUser = firebaseAuth.getCurrentUser();
+        radioGroup = findViewById(R.id.radio1);
+        spin = (Spinner) findViewById(R.id.spinner2);
+        List<String> list = new ArrayList<String>();
+        list.add(0, "Select problem");
         list.add("Education");
         list.add("Food");
         list.add("Medical faciltites");
@@ -125,20 +178,17 @@ public class HelpPage extends AppCompatActivity {
         list.add("Any other");
 
 
-
-        ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,list);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, list);
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spin.setAdapter(arrayAdapter);
         spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if(parent.getItemAtPosition(position).equals("Select problem")){
+                if (parent.getItemAtPosition(position).equals("Select problem")) {
 
-                }
-                else
-                {
-                    item=parent.getItemAtPosition(position).toString();
-                    Toast.makeText(parent.getContext(), "Selected:"+item, Toast.LENGTH_SHORT).show();
+                } else {
+                    item = parent.getItemAtPosition(position).toString();
+                    Toast.makeText(parent.getContext(), "Selected:" + item, Toast.LENGTH_SHORT).show();
                 }
             }
 
@@ -152,8 +202,136 @@ public class HelpPage extends AppCompatActivity {
     }
 
     public void onClickRadiobutton(View view) {
-        int radioid=radioGroup.getCheckedRadioButtonId();
-        radioButton=findViewById(radioid);
-        Toast.makeText(this, radioButton.getText()+"is selected", Toast.LENGTH_SHORT).show();
+        int radioid = radioGroup.getCheckedRadioButtonId();
+        radioButton = findViewById(radioid);
+        Toast.makeText(this, radioButton.getText() + "is selected", Toast.LENGTH_SHORT).show();
+    }
+
+    private void initGoogleMap() {
+
+        if (isGPSEnabled()) {
+            if (checkLocationPermission()) {
+            } else {
+                requestLocationPermission();
+            }
+        }
+    }
+
+    private void OnGPS() {
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Enable GPS").setCancelable(false).setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                startActivity(new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS));
+            }
+        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+        final AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+    }
+
+    private boolean isGPSEnabled() {
+
+        LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+
+        boolean providerEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
+
+        if (providerEnabled) {
+
+            return true;
+
+        } else {
+
+            androidx.appcompat.app.AlertDialog alertDialog = new androidx.appcompat.app.AlertDialog.Builder(this)
+                    .setTitle("GPS Permissions")
+                    .setMessage("GPS is required for this app to work. Please enable GPS.")
+                    .setPositiveButton("Yes", (new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                            HelpPage.this.startActivityForResult(intent, GPS_REQUEST_CODE);
+                        }
+                    }))
+                    .setCancelable(false)
+                    .show();
+
+        }
+
+        return false;
+    }
+
+    private boolean checkLocationPermission() {
+
+        return ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                == PackageManager.PERMISSION_GRANTED;
+    }
+
+
+    private void requestLocationPermission() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, PERMISSION_REQUEST_CODE);
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        if (requestCode == PERMISSION_REQUEST_CODE && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            mLocationPermissionGranted = true;
+
+        } else {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, PERMISSION_REQUEST_CODE);
+            }
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == GPS_REQUEST_CODE) {
+
+            LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+
+            boolean providerEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);
+
+            if (providerEnabled) {
+                Toast.makeText(this, "GPS is enabled", Toast.LENGTH_SHORT).show();
+                initGoogleMap();
+            } else {
+                initGoogleMap();
+            }
+        }
+    }
+
+    private void getLocation() {
+        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        fusedLocationProviderClient.getLastLocation().addOnSuccessListener(new OnSuccessListener<Location>() {
+            @Override
+            public void onSuccess(Location location) {
+                GeoPoint geoPoint = new GeoPoint(location.getLatitude(), location.getLongitude());
+                lat = geoPoint.getLatitude();
+                lng = geoPoint.getLongitude();
+            }
+        });
     }
 }

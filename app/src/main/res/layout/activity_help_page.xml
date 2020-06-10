@@ -127,32 +127,7 @@
 
             </LinearLayout>
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/lh2"
-                android:layout_below="@id/lh1"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="DOB :"
-                    android:textSize="26sp"
-                    android:textStyle="bold"
-                    android:textColor="#00008B"
-
-                    />
-                <EditText
-
-                    android:layout_marginStart="40dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="26sp"
-                    android:textStyle="bold"
-
-                    tools:ignore="RtlCompat" />
-
-            </LinearLayout>
-            <LinearLayout
+                android:layout_marginTop="40dp"
                 android:layout_marginBottom="80dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -160,18 +135,47 @@
                 android:orientation="vertical"
                 >
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Area of help"
-                    android:textSize="22sp"
-                    android:textStyle="bold"
-                    android:textColor="#00008B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:text="Enter Your Adress"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#00008B"
                     />
                 <LinearLayout
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical|center_horizontal">
+                    <Button
+                        android:id="@+id/manualAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:layout_gravity="center"
+                        android:text="Manual">
+                    </Button>
+                    <Button
+                        android:id="@+id/getCurrentLocation"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Get Current Location">
+                    </Button>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/addressId"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
+                    android:visibility="gone"
                     android:background="@drawable/border">
 
 
