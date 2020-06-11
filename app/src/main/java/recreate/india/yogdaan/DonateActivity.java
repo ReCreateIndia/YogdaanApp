@@ -6,13 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 
 public class DonateActivity extends AppCompatActivity {
 
-    private Button donateMoney,donateClothes,donateFood;
+    private Button donateMoney,donateAdds;
+    private InterstitialAd mInterstitialAd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,27 +24,22 @@ public class DonateActivity extends AppCompatActivity {
         setContentView(R.layout.activity_donate);
 
         donateMoney=(Button)findViewById(R.id.donate_money_btn);
-        donateClothes=(Button)findViewById(R.id.donate_clothes_btn);
-        donateFood=(Button)findViewById(R.id.donate_food_btn);
+        donateAdds=findViewById(R.id.donate_add);
+        donateAdds.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadInterstitial();
+                showInterstitial();
+            }
+        });
+        mInterstitialAd = newInterstitialAd();
+        loadInterstitial();
+
         AdView adView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
                 .setRequestAgent("android_studio:ad_template").build();
         adView.loadAd(adRequest);
 
-//        donateClothes.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(DonateActivity.this,frequency.class);
-//                startActivity(intent);
-//            }
-//        });
-//        donateFood.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(DonateActivity.this,frequency.class);
-//                startActivity(intent);
-//            }
-//        });
         donateMoney.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,5 +51,45 @@ public class DonateActivity extends AppCompatActivity {
             }
         });
 
+    }
+    private InterstitialAd newInterstitialAd() {
+        InterstitialAd interstitialAd = new InterstitialAd(this);
+        interstitialAd.setAdUnitId(getString(R.string.interstitial_ad_unit_id));
+        interstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+
+            }
+
+            @Override
+            public void onAdFailedToLoad(int errorCode) {
+
+            }
+
+            @Override
+            public void onAdClosed() {
+                // Proceed to the next level.
+
+            }
+        });
+        return interstitialAd;
+    }
+
+    private void showInterstitial() {
+        // Show the ad if it"s ready. Otherwise toast and reload the ad.
+        if (mInterstitialAd != null && mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+            loadInterstitial();
+        } else {
+            Toast.makeText(this, "Ad did not load", Toast.LENGTH_SHORT).show();
+
+        }
+    }
+
+    private void loadInterstitial() {
+        // Disable the next level button and load the ad.
+        AdRequest adRequest = new AdRequest.Builder()
+                .setRequestAgent("android_studio:ad_template").build();
+        mInterstitialAd.loadAd(adRequest);
     }
 }

@@ -16,11 +16,27 @@ android {
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    signingConfigs {
+        release {
+            storeFile file("C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\releaseApp.jks")
+            storePassword "yogdaan"
+            keyAlias "key0"
+            keyPassword "yogdaan"
+            if (project.hasProperty("RELEASE_STORE_FILE")) {
+                storeFile file("C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\releaseApp.jks")
+                storePassword "yogdaan"
+                keyAlias "key0"
+                keyPassword "yogdaan"
+            }
+
+        }
+    }
 
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 

@@ -2,8 +2,8 @@
     <string name="app_name">Yogdaan</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
-    <string name="banner_ad_unit_id">ca-app-pub-8169027776894810/7487679689</string>
-    <string name="interstitial_ad_unit_id"></string>
+    <string name="banner_ad_unit_id">ca-app-pub-8169027776894810/2094347234</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-8169027776894810/9781265569</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
