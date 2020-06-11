@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Yogdaan</string>
+    <string name="open">Open</string>
+    <string name="close">बंद करे</string>
+    //VolunteerPage
+    <string name="Name">नाम</string>
+    <string name="Date_Of_Birth">जन्म की तारीख</string>
+    <string name="Type_Of_Work">काम के प्रकार</string>
+    <string name="Occupation">व्यवसाय</string>
+    <string name="Address">पता</string>
+    <string name="Submit">जमा करना</string>
+
+    //AddPostPage
+    <string name="Add_Some_Description">कुछ विवरण जोड़ें</string>
+
+    //DonatePage
+    <string name="Donate_Food">अन्न का दान करें</string>
+    <string name="Donate_Clothes">कपड़े दान करें</string>
+    <string name="Donate_Money">पैसे दान करो</string>
+
+    //HelpPage
+    <string name="Select_Problem">समस्या का चयन करें</string>
+    <string name="Help_For_Others">दूसरों की मदद करें</string>
+    <string name="Help_For_Yourself">खुद के लिए मदद</string>
+    <string name="Type_Of_Help">मदद का प्रकार</string>
+    <string name="Area_of_Help">सहायता का क्षेत्र</string>
+    <string name="Flat_House_No">फ्लैट / मकान नं</string>
+    <string name="City">शहर</string>
+    <string name="Pin_Code">पिन कोड</string>
+    <string name="State">राज्य</string>
+
+    //LoginPage
+    <string name="Verify_Your_Number">अपना नंबर सत्यापित करें</string>
+    <string name="Please_Enter_Your_Phone_Number_For_Verification">कृपया सत्यापन के लिए अपना फ़ोन नंबर दर्ज करें</string>
+    <string name="Your_Phone_Number">आपकी दूरभाष संख्या</string>
+    <string name="Generate_OTP">ओटीपी जनरेट करें</string>
+
+    //MainActivity
+    <string name="Donate">दान</string>
+    <string name="Help">मदद</string>
+    <string name="Our_Work">हमारा काम</string>
+    <string name="Our_Helpers">हमारे सहायक</string>
+    <string name="Volunteers">स्वयंसेवकों</string>
+    <string name="More">अधिक</string>
+
+    //OTPActivity
+    <string name="Enter_OTP">OTP दर्ज करें</string>
+    <string name="Resend_OTP">OTP पुनः भेजें</string>
+    <string name="Verify_OTP">OTP को सत्यापित करें</string>
+    <string name="We_Have_Sent_You_An_OTP_For_Phone_Number_Verification">हमने आपको फ़ोन नंबर सत्यापन के लिए एक ओटीपी \ n भेजा है</string>
+
+    //PaymentActivity
+    <string name="Amount">रकम</string>
+    <string name="Donate_Now">अभी दान कीजिए</string>
+
+    //header.xml
+    <string name="Net_Credit">नेट क्रेडिट</string>
+    <string name="Net_Value">कुल कीमत</string>
+
+    //listItemSingle.xml
+    <string name="Description">विवरण</string>
+</resources>

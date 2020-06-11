@@ -16,6 +16,7 @@
         tools:ignore="RtlCompat">
 
         <TextView
+            android:id="@+id/Select_Problem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Select Problem"
@@ -37,12 +38,9 @@
                 android:id="@+id/c1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-
                 android:checked="true"
                 android:onClick="onClickRadiobutton"
                 android:text="Help for others"
-
                 android:textSize="28sp" />
 
             <RadioButton
@@ -67,6 +65,7 @@
 
         >
         <TextView
+            android:id="@+id/TypeOfHelp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Type of help"
@@ -108,6 +107,7 @@
                 android:orientation="horizontal"
                 >
                 <TextView
+                    android:id="@+id/NameHelpPage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Name :"
@@ -127,7 +127,34 @@
 
             </LinearLayout>
             <LinearLayout
+
                 android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lh2"
+                android:layout_below="@id/lh1"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/Date_Of_Birth_Help_Page"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DOB :"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#00008B"
+
+                    />
+                <EditText
+                    android:layout_marginStart="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+            <LinearLayout
                 android:layout_marginBottom="80dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -135,6 +162,7 @@
                 android:orientation="vertical"
                 >
                 <TextView
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="90dp"
@@ -142,6 +170,7 @@
                         android:textSize="22sp"
                         android:textStyle="bold"
                         android:textColor="#00008B"
+
                     />
                 <LinearLayout
                     android:layout_marginTop="10dp"
@@ -180,6 +209,7 @@
 
 
                     <TextView
+                        android:id="@+id/Flat_House_No1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Flat/house no"
@@ -198,6 +228,7 @@
                         android:layout_marginEnd="20dp"
                         android:textColor="#000000"/>
                     <TextView
+                        android:id="@+id/Flat_House_No2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Flat/house no"
@@ -222,7 +253,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-
+                            android:id="@+id/City_Help_Page"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="City"
@@ -248,10 +279,9 @@
 
 
                         <TextView
-
+                            android:id="@+id/Pin_Code_Help_Page"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-
                             android:text="Pin Code :"
                             android:textColor="#000000"
                             android:textSize="24sp" />
@@ -276,10 +306,9 @@
 
 
                         <TextView
-
+                            android:id="@+id/State_Help_Page"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-
                             android:text="State :"
                             android:textColor="#000000"
                             android:textSize="24sp" />

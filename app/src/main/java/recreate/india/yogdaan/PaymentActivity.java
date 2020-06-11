@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
@@ -14,9 +15,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+
+import Helper.LocaleHelper;
+import io.paperdb.Paper;
 
 public class PaymentActivity extends AppCompatActivity {
 
@@ -52,6 +57,20 @@ public class PaymentActivity extends AppCompatActivity {
             }
         });
 
+        Paper.init(this);
+        String language = Paper.book().read("language");
+        if(language==null)
+            Paper.book().write("language","en");
+        updateView((String)Paper.book().read("language"));
+
+    }
+
+    private void updateView(String lang) {
+        Context context = LocaleHelper.setLocale(this,lang);
+        Resources resources = context.getResources();
+
+        send.setText(resources.getString(R.string.Donate_Now));
+        amount.setHint(resources.getString(R.string.Amount));
     }
 
     void payUsingUpi(String name, String upiId, String note, String amount) {

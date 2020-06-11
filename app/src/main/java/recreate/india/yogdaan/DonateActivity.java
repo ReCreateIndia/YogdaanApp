@@ -2,7 +2,9 @@ package recreate.india.yogdaan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +14,9 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
+
+import Helper.LocaleHelper;
+import io.paperdb.Paper;
 
 public class DonateActivity extends AppCompatActivity {
 
@@ -24,6 +29,7 @@ public class DonateActivity extends AppCompatActivity {
         setContentView(R.layout.activity_donate);
 
         donateMoney=(Button)findViewById(R.id.donate_money_btn);
+
         donateAdds=findViewById(R.id.donate_add);
         donateAdds.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +46,22 @@ public class DonateActivity extends AppCompatActivity {
                 .setRequestAgent("android_studio:ad_template").build();
         adView.loadAd(adRequest);
 
+//        donateClothes.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(DonateActivity.this,frequency.class);
+//                startActivity(intent);
+//            }
+//        });
+//        donateFood.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(DonateActivity.this,frequency.class);
+//                startActivity(intent);
+//            }
+//        });
+
+
         donateMoney.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,6 +73,18 @@ public class DonateActivity extends AppCompatActivity {
             }
         });
 
+        Paper.init(this);
+        String language = Paper.book().read("language");
+        if(language==null)
+            Paper.book().write("language","en");
+        updateView((String)Paper.book().read("language"));
+
+    }
+
+    private void updateView(String lang) {
+        Context context = LocaleHelper.setLocale(this,lang);
+        Resources resources = context.getResources();
+        donateMoney.setText(resources.getString(R.string.Donate_Money));
     }
     private InterstitialAd newInterstitialAd() {
         InterstitialAd interstitialAd = new InterstitialAd(this);

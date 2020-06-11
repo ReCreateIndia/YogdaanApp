@@ -57,10 +57,10 @@ dependencies {
 //>>>>>>> 046f4ffc8e2d7b233b197b532adf7e5690e4c25a
 
 
-    implementation 'com.google.firebase:firebase-database:16.0.4'
+    implementation 'com.google.firebase:firebase-database:19.3.0'
     testImplementation 'junit:junit:4.13'
     implementation 'com.google.firebase:firebase-storage:19.1.1'
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13'
 
 
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
@@ -80,7 +80,7 @@ dependencies {
     implementation "com.google.android.material:material:1.1.0"
 
 
-    implementation "com.google.android.material:material:1.0.0"
+    implementation "com.google.android.material:material:1.1.0"
     implementation 'com.firebaseui:firebase-ui-firestore:4.3.1'
 
 

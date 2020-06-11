@@ -1,11 +1,14 @@
 package recreate.india.yogdaan;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -23,6 +26,9 @@ import com.google.firebase.auth.PhoneAuthProvider;
 
 import java.util.concurrent.TimeUnit;
 
+import Helper.LocaleHelper;
+import io.paperdb.Paper;
+
 public class OtpActivity extends AppCompatActivity {
     private Button otp_btn;
     private ProgressBar otp_progressbar;
@@ -32,20 +38,21 @@ public class OtpActivity extends AppCompatActivity {
     private String mVerificationId;
     private PhoneAuthProvider.ForceResendingToken mResendToken;
     private Button resendBtn;
+    TextView otp_title,otp_desc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otp);
         otp_btn = findViewById(R.id.verify_btn);
-
         mPhoneNumber = getIntent().getStringExtra("phone_number");
         otp_progressbar = findViewById(R.id.otp_progress);
         otp = findViewById(R.id.otp_text_view);
         mAuth = FirebaseAuth.getInstance();
         sendVerificationCode(mPhoneNumber);
         resendBtn = findViewById(R.id.resend_btn);
-
+        otp_desc = findViewById(R.id.otp_desc);
+        otp_title = findViewById(R.id.otp_title);
 
 
         resendBtn.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +85,24 @@ public class OtpActivity extends AppCompatActivity {
 
             }
         });
+
+        Paper.init(this);
+        String language = Paper.book().read("language");
+        if(language==null)
+            Paper.book().write("language","en");
+        updateView((String)Paper.book().read("language"));
+
+    }
+
+    private void updateView(String lang) {
+        Context context = LocaleHelper.setLocale(this,lang);
+        Resources resources = context.getResources();
+
+        otp_title.setText(resources.getString(R.string.Enter_OTP));
+        otp_desc.setText(resources.getString(R.string.We_Have_Sent_You_An_OTP_For_Phone_Number_Verification));
+        resendBtn.setText(resources.getString(R.string.Resend_OTP));
+        otp_btn.setText(resources.getString(R.string.Verify_OTP));
+        otp.setHint(resources.getString(R.string.Enter_OTP));
 
     }
 
