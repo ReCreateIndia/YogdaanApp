@@ -1456,6 +1456,7 @@ drawable imageswitchernavidot1
 drawable input
 drawable loginbutton
 drawable logout
+drawable logoyogdaan
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1496,6 +1497,7 @@ drawable text_input_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable usestudentaccount
+drawable yogdaanlogo
 font open_sans_bold
 font open_sans_semibold
 id ALT
@@ -1524,7 +1526,6 @@ id Status
 id TOP_END
 id TOP_START
 id TypeOfHelp
-id Verify_Your_Number
 id Volunteers
 id Your
 id about
@@ -1691,6 +1692,7 @@ id icon_only
 id ifRoom
 id image
 id imageView
+id imageView2
 id image_slider
 id image_view
 id info
@@ -1717,12 +1719,12 @@ id line1
 id line3
 id linearLayout
 id linearLayout2
+id linearLayout3
 id linear_layout
 id listMode
 id list_item
 id ll1
 id ll2
-id login_desc
 id login_progress
 id logout
 id manualAddress
@@ -1880,6 +1882,9 @@ id textView3
 id textView4
 id textView5
 id textView6
+id textView7
+id textView8
+id textView9
 id text_input_end_icon
 id text_input_start_icon
 id text_view

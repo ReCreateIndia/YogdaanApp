@@ -71,8 +71,8 @@
                         >
                         <ImageButton
                             android:id="@+id/help"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
 
                             android:background="@drawable/btn"
                             android:scaleType="centerCrop"
@@ -81,13 +81,13 @@
 
                             />
                         <TextView
-                            android:id="@+id/Donate"
+                            android:id="@+id/Help"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Help"
-                            android:textSize="27sp"
+                            android:textSize="25sp"
                             android:textStyle="bold"
-                            android:textColor="#0000A0"
+                            android:textColor="#013220"
                             android:layout_marginTop="8dp"
                             />
                     </LinearLayout>
@@ -102,22 +102,21 @@
                         <ImageButton
 
                             android:id="@+id/donate"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
                             android:background="@drawable/btn"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ow"
                             />
                         <TextView
-                            android:id="@+id/Help"
+                            android:id="@+id/Donate"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Donate"
-                            android:textSize="27sp"
+                            android:textSize="25sp"
                             android:textStyle="bold"
-                            android:textColor="#0000A0"
+                            android:textColor="#013220"
                             android:layout_marginTop="8dp"
-                            android:gravity="center"
                             />
                     </LinearLayout>
                 </LinearLayout>
@@ -142,8 +141,8 @@
                         >
                         <ImageButton
                             android:id="@+id/ourWork"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
 
                             android:background="@drawable/btn"
                             android:scaleType="centerCrop"
@@ -155,11 +154,10 @@
                             android:id="@+id/Our_Work"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Raise Funds"
+                            android:text="Funds"
                             android:textSize="25sp"
-                            android:gravity="center"
                             android:textStyle="bold"
-                            android:textColor="#0000A0"
+                            android:textColor="#013220"
                             android:layout_marginTop="8dp"
                             />
                     </LinearLayout>
@@ -172,8 +170,8 @@
                         >
                         <ImageButton
                             android:id="@+id/ourHelpers"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
 
                             android:background="@drawable/btn"
                             android:scaleType="centerCrop"
@@ -187,9 +185,8 @@
                             android:layout_height="wrap_content"
                             android:text="Our helpers"
                             android:textSize="25sp"
-                            android:gravity="center"
                             android:textStyle="bold"
-                            android:textColor="#0000A0"
+                            android:textColor="#013220"
                             android:layout_marginTop="8dp"
                             />
                     </LinearLayout>
@@ -216,8 +213,8 @@
                         >
                         <ImageButton
                             android:id="@+id/volunteer"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
 
                             android:background="@drawable/btn"
                             android:scaleType="centerCrop"
@@ -230,9 +227,9 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Volunteers"
-                            android:textSize="27sp"
+                            android:textSize="25sp"
                             android:textStyle="bold"
-                            android:textColor="#0000A0"
+                            android:textColor="#013220"
                             android:layout_marginTop="8dp"
                             />
                     </LinearLayout>
@@ -245,8 +242,8 @@
                         >
                         <ImageButton
                             android:id="@+id/more"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
                             android:background="@drawable/btn"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ow"
@@ -257,9 +254,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="More"
-                            android:textSize="27sp"
+                            android:textSize="25sp"
                             android:textStyle="bold"
-                            android:textColor="#0000A0"
+                            android:layout_marginTop="8dp"
+                            android:textColor="#013220"
                             />
                     </LinearLayout>
                 </LinearLayout>

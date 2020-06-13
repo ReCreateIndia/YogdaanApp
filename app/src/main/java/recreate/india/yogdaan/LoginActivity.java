@@ -50,8 +50,7 @@ public class LoginActivity extends AppCompatActivity {
         create_btn = findViewById(R.id.generate_btn);
         log_progress = findViewById(R.id.login_progress);
 
-        Verify_Your_Number = findViewById(R.id.Verify_Your_Number);
-        login_desc = findViewById(R.id.login_desc);
+
 
 
 
@@ -93,9 +92,6 @@ public class LoginActivity extends AppCompatActivity {
     private void updateView(String lang) {
         Context context = LocaleHelper.setLocale(this,lang);
         Resources resources = context.getResources();
-
-        Verify_Your_Number.setText(resources.getString(R.string.Verify_Your_Number));
-        login_desc.setText(resources.getString(R.string.Please_Enter_Your_Phone_Number_For_Verification));
         phone_number_edittext.setHint(resources.getString(R.string.Your_Phone_Number));
         create_btn.setText(resources.getString(R.string.Generate_OTP));
     }

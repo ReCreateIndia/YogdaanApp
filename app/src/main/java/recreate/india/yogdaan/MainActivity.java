@@ -119,12 +119,12 @@ public class MainActivity extends AppCompatActivity {
         Context context = LocaleHelper.setLocale(this,lang);
         Resources resources = context.getResources();
 
-//        Help.setText(resources.getString(R.string.Help));
-//        Donate.setText(resources.getString(R.string.Donate));
-//        Volunteers.setText(resources.getString(R.string.Volunteers));
-//        Our_Helpers.setText(resources.getString(R.string.Our_Helpers));
-//        Our_Work.setText(resources.getString(R.string.Our_Work));
-//        More.setText(resources.getString(R.string.More));
+        Help.setText(resources.getString(R.string.Help));
+        Donate.setText(resources.getString(R.string.Donate));
+        Volunteers.setText(resources.getString(R.string.Volunteers));
+        Our_Helpers.setText(resources.getString(R.string.Our_Helpers));
+        Our_Work.setText(resources.getString(R.string.Our_Work));
+        More.setText(resources.getString(R.string.More));
 
     }
 

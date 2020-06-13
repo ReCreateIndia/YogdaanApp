@@ -108,6 +108,10 @@
         "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\slide2image.png"
     },
     {
+        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_yogdaanlogo.jpeg.flat",
+        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable-v24\\yogdaanlogo.jpeg"
+    },
+    {
         "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_contacts.png.flat",
         "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\contacts.png"
     },
@@ -602,6 +606,10 @@
     {
         "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_slide1image.png.flat",
         "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\slide1image.png"
+    },
+    {
+        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logoyogdaan.jpg.flat",
+        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable\\logoyogdaan.jpg"
     },
     {
         "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_nav_menu.xml.flat",

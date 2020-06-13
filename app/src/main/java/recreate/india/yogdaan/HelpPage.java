@@ -66,7 +66,6 @@ public class HelpPage extends AppCompatActivity {
     public static final int PERMISSION_REQUEST_CODE = 9001;
     private static final int PLAY_SERVICES_ERROR_CODE = 9002;
     public static final int GPS_REQUEST_CODE = 9003;
-
     private String item = "yo";
     LocationManager locationManager;
     private Button submit_request;

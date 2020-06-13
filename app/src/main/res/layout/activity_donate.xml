@@ -19,9 +19,10 @@
         android:weightSum="1"
         app:layout_constraintBottom_toTopOf="@+id/adView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25">
+        app:layout_constraintVertical_bias="0.525">
 
         <LinearLayout
             android:id="@+id/l1"
@@ -29,6 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:layout_weight=".25"
+            android:gravity="center"
             android:orientation="horizontal">
 
 
@@ -39,14 +41,12 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginRight="10dp"
-                android:background="@drawable/button"
+                android:background="@drawable/text_input_bg"
+                android:textColor="#ffffff"
                 android:text="Donate Money"
                 android:textAllCaps="false"
                 android:textSize="18sp" />
         </LinearLayout>
-
-
-
 
 
         <LinearLayout
@@ -54,9 +54,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/l2"
+            android:layout_gravity="center"
             android:layout_marginBottom="30dp"
             android:layout_weight=".25"
-            android:layout_gravity="center"
+            android:gravity="center"
             android:orientation="horizontal"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="214dp">
@@ -68,7 +69,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginRight="5dp"
-                android:background="@drawable/button"
+                android:background="@drawable/text_input_bg"
+                android:textColor="#ffffff"
                 android:text="Donate By Watching adds"
                 android:textAllCaps="false"
                 android:textSize="18sp" />
