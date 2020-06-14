@@ -9,9 +9,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="414dp"
+        android:layout_width="match_parent"
         android:layout_height="495dp"
-        android:layout_marginTop="4dp"
+
         android:background="@drawable/text_input_bg"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/generate_btn"
@@ -54,7 +54,7 @@
             android:layout_marginTop="16dp"
             android:text="Login"
             android:textColor="#FFA500"
-            android:textSize="5s0sp"
+            android:textSize="50sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -82,13 +82,6 @@ public class HelpPage extends AppCompatActivity {
         setContentView(R.layout.activity_help_page);
 
         ll=findViewById(R.id.addressId);
-        manualAddress=findViewById(R.id.manualAddress);
-        manualAddress.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ll.setVisibility(View.VISIBLE);
-            }
-        });
         get_current_location = findViewById(R.id.getCurrentLocation);
         get_current_location.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -107,8 +100,7 @@ public class HelpPage extends AppCompatActivity {
         c1 = (RadioButton) findViewById(R.id.c1);
         c2 = (RadioButton) findViewById(R.id.c2);
         SelectProblem = (TextView)findViewById(R.id.Select_Problem);
-        NameHelpPage = (TextView)findViewById(R.id.NameHelpPage);
-        Date_Of_Birth_Help_Page = (TextView)findViewById(R.id.Date_Of_Birth_Help_Page);
+
 //        Area_Of_Help = (TextView)findViewById(R.id.Area_Of_Help);
         Flat_House_No1 = (TextView)findViewById(R.id.Flat_House_No1);
         Flat_House_No2 = (TextView)findViewById(R.id.Flat_House_No2);
@@ -203,8 +195,6 @@ public class HelpPage extends AppCompatActivity {
         list.add("Biotechnology");
         list.add("Dalit Upliftment");
         list.add("Any other");
-
-
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, list);
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spin.setAdapter(arrayAdapter);
@@ -238,18 +228,18 @@ public class HelpPage extends AppCompatActivity {
         Context context = LocaleHelper.setLocale(this,lang);
         Resources resources = context.getResources();
 
-        SelectProblem.setText(resources.getString(R.string.Select_Problem));
-        c1.setText(resources.getString(R.string.Help_For_Others));
-        c2.setText(resources.getString(R.string.Help_For_Yourself));
-        TypeOfHelp.setText(resources.getString(R.string.Type_Of_Help));
-        Area_Of_Help.setText(resources.getString(R.string.Area_of_Help));
-        Flat_House_No1.setText(resources.getString(R.string.Flat_House_No));
-        Flat_House_No2.setText(resources.getString(R.string.Flat_House_No));
-        Pin_Code_Help_Page.setText(resources.getString(R.string.Pin_Code));
-        City_Help_Page.setText(resources.getString(R.string.City));
-        State_Help_Page.setText(resources.getString(R.string.State));
-        NameHelpPage.setText(resources.getString(R.string.Name));
-        Date_Of_Birth_Help_Page.setText(resources.getString(R.string.Date_Of_Birth));
+//        SelectProblem.setText(resources.getString(R.string.Select_Problem));
+//        c1.setText(resources.getString(R.string.Help_For_Others));
+//        c2.setText(resources.getString(R.string.Help_For_Yourself));
+//        TypeOfHelp.setText(resources.getString(R.string.Type_Of_Help));
+//        Area_Of_Help.setText(resources.getString(R.string.Area_of_Help));
+//        Flat_House_No1.setText(resources.getString(R.string.Flat_House_No));
+//        Flat_House_No2.setText(resources.getString(R.string.Flat_House_No));
+//        Pin_Code_Help_Page.setText(resources.getString(R.string.Pin_Code));
+//        City_Help_Page.setText(resources.getString(R.string.City));
+//        State_Help_Page.setText(resources.getString(R.string.State));
+//        NameHelpPage.setText(resources.getString(R.string.Name));
+//        Date_Of_Birth_Help_Page.setText(resources.getString(R.string.Date_Of_Birth));
 
     }
 

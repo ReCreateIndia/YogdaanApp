@@ -46,13 +46,14 @@
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
         </activity>
         <activity android:name="recreate.india.yogdaan.MainActivity" >
+        </activity>
+        <activity android:name="recreate.india.yogdaan.HelpPage" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="recreate.india.yogdaan.HelpPage" />
         <activity android:name="recreate.india.yogdaan.OtpActivity" />
 
         <meta-data
