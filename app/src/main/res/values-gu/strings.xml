@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Yogdaan</string>
+    <string name="open">ખુલ્લા</string>
+    <string name="close">બંધ</string>
+
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-8169027776894810/2094347234</string>
+    <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-8169027776894810/9781265569</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    //VolunteerPage
+    <string name="Name">નામ</string>
+    <string name="Date_Of_Birth">જન્મ તારીખ</string>
+    <string name="Type_Of_Work">કામનો પ્રકાર</string>
+    <string name="Occupation">વ્યવસાય</string>
+    <string name="Address">સરનામું</string>
+    <string name="Submit">સબમિટ કરો</string>
+
+    //AddPostPage
+    <string name="Add_Some_Description">થોડું વર્ણન ઉમેરો</string>
+
+    //DonatePage
+    <string name="Donate_Food">ખોરાક દાન કરો</string>
+    <string name="Donate_Clothes">કપડા દાન કરો</string>
+    <string name="Donate_Money">પૈસા દાન કરો</string>
+
+    //HelpPage
+    <string name="Select_Problem">સમસ્યા પસંદ કરો</string>
+    <string name="Help_For_Others">અન્ય લોકો માટે મદદ</string>
+    <string name="Help_For_Yourself">તમારા માટે સહાય કરો</string>
+    <string name="Type_Of_Help">સહાયનો પ્રકાર</string>
+    <string name="Area_of_Help">સહાય ક્ષેત્ર</string>
+    <string name="Flat_House_No">ફ્લેટ / મકાન નં</string>
+    <string name="City">શહેર</string>
+    <string name="Pin_Code">પીન કોડ</string>
+    <string name="State">રાજ્ય</string>
+
+
+    <string name="Verify_Your_Number">તમારી સંખ્યા ચકાસો</string>
+    <string name="Please_Enter_Your_Phone_Number_For_Verification">કૃપા કરીને ચકાસણી માટે તમારો ફોન નંબર દાખલ કરો</string>
+    <string name="Your_Phone_Number">તમારો ફોન નંબર</string>
+    <string name="Generate_OTP">ઓટીપી બનાવો</string>
+
+
+    <string name="Donate">દાન કરો</string>
+    <string name="Help">સહાય કરો</string>
+    <string name="Our_Work">આપણુ કામ</string>
+    <string name="Our_Helpers">અમારા સહાયકો</string>
+    <string name="Volunteers">સ્વયંસેવકો</string>
+    <string name="More">More</string>
+
+
+    <string name="Enter_OTP">ઓટીપી દાખલ કરો</string>
+    <string name="Resend_OTP">OTP ફરીથી મોકલો</string>
+    <string name="Verify_OTP">ઓટીપી ચકાસો</string>
+    <string name="We_Have_Sent_You_An_OTP_For_Phone_Number_Verification">ફોન નંબરની ચકાસણી માટે અમે તમને એક ઓટીપી મોકલેલ છે</string>
+
+
+    <string name="Amount">રકમ</string>
+    <string name="Donate_Now">હવે દાન કરો</string>
+
+    <string name="Net_Credit">નેટ ક્રેડિટ</string>
+    <string name="Net_Value">ચોખ્ખી કિંમત</string>
+
+
+    <string name="Description">વર્ણન</string>
+</resources>

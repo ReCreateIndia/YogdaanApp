@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Yogdaan</string>
+    <string name="open">খোলা</string>
+    <string name="close">ঘনিষ্ঠ</string>
+
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-8169027776894810/2094347234</string>
+    <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-8169027776894810/9781265569</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    //VolunteerPage
+    <string name="Name">নাম</string>
+    <string name="Date_Of_Birth">জন্ম তারিখ</string>
+    <string name="Type_Of_Work">কাজের ধরন</string>
+    <string name="Occupation">পেশা</string>
+    <string name="Address">ঠিকানা</string>
+    <string name="Submit">জমা দিন</string>
+
+    //AddPostPage
+    <string name="Add_Some_Description">কিছু বিবরণ যুক্ত করুন</string>
+
+    //DonatePage
+    <string name="Donate_Food">খাদ্য দান করুন</string>
+    <string name="Donate_Clothes">কাপড় দান করুন</string>
+    <string name="Donate_Money">অর্থ দান করা</string>
+
+    //HelpPage
+    <string name="Select_Problem">সমস্যা নির্বাচন করুন</string>
+    <string name="Help_For_Others">অন্যদের জন্য সহায়তা</string>
+    <string name="Help_For_Yourself">নিজের জন্য সাহায্য করুন</string>
+    <string name="Type_Of_Help">সহায়তার ধরণ</string>
+    <string name="Area_of_Help">সহায়তার ক্ষেত্র</string>
+    <string name="Flat_House_No">ফ্ল্যাট / বাড়ি নং</string>
+    <string name="City">শহর</string>
+    <string name="Pin_Code">পিনকোড</string>
+    <string name="State">রাষ্ট্র</string>
+
+
+    <string name="Verify_Your_Number">আপনার নম্বর যাচাই করুন</string>
+    <string name="Please_Enter_Your_Phone_Number_For_Verification">যাচাই করার জন্য দয়া করে আপনার ফোন নম্বর প্রবেশ করান</string>
+    <string name="Your_Phone_Number">আপনার ফোন নম্বর</string>
+    <string name="Generate_OTP">ওটিপি উত্পন্ন করুন</string>
+
+
+    <string name="Donate">দান করা</string>
+    <string name="Help">সাহায্য</string>
+    <string name="Our_Work">আমাদের কাজ</string>
+    <string name="Our_Helpers">আমাদের সহায়ক</string>
+    <string name="Volunteers">ভলান্টিয়ার্স</string>
+    <string name="More">অধিক</string>
+
+
+    <string name="Enter_OTP">ওটিপি প্রবেশ করান</string>
+    <string name="Resend_OTP">ওটিপি পুনরায় পাঠান</string>
+    <string name="Verify_OTP">OTP যাচাই করুন</string>
+    <string name="We_Have_Sent_You_An_OTP_For_Phone_Number_Verification">ফোন নম্বর যাচাইয়ের জন্য আমরা আপনাকে একটি OTP /n প্রেরণ করেছি </string>
+
+
+    <string name="Amount">পরিমাণ</string>
+    <string name="Donate_Now">এখনি দান করো</string>
+
+    <string name="Net_Credit">নেট ক্রেডিট</string>
+    <string name="Net_Value">নিট মূল্য</string>
+
+
+    <string name="Description">বিবরণ</string>
+</resources>
