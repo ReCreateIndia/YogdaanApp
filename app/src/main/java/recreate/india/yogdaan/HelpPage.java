@@ -30,6 +30,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -70,53 +71,44 @@ public class HelpPage extends AppCompatActivity {
     LocationManager locationManager;
     private Button submit_request;
     private FusedLocationProviderClient fusedLocationProviderClient;
-    private double lat, lng;
+    private double lat=0, lng=0;
     private Button get_current_location;
     private boolean mLocationPermissionGranted;
     private Button manualAddress;
     LinearLayout ll;
+    String help_domain;
+    EditText name,city,locality;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_page);
-
-        ll=findViewById(R.id.addressId);
-        get_current_location = findViewById(R.id.getCurrentLocation);
-        get_current_location.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                initGoogleMap();
-                getLocation();
-            }
-        });
-        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-            OnGPS();
-        }
-        ff = FirebaseFirestore.getInstance();
-        submit_request = findViewById(R.id.submitRequest);
-
+        name=findViewById(R.id.name);
+        city=findViewById(R.id.city);
+        locality=findViewById(R.id.locality);
         c1 = (RadioButton) findViewById(R.id.c1);
         c2 = (RadioButton) findViewById(R.id.c2);
-        SelectProblem = (TextView)findViewById(R.id.Select_Problem);
+        radioGroup = findViewById(R.id.radio1);
+        int radioid = radioGroup.getCheckedRadioButtonId();
+        radioButton = findViewById(radioid);
 
-//        Area_Of_Help = (TextView)findViewById(R.id.Area_Of_Help);
-        Flat_House_No1 = (TextView)findViewById(R.id.Flat_House_No1);
-        Flat_House_No2 = (TextView)findViewById(R.id.Flat_House_No2);
-        City_Help_Page = (TextView)findViewById(R.id.City_Help_Page);
-        Pin_Code_Help_Page = (TextView)findViewById(R.id.Pin_Code_Help_Page);
-        State_Help_Page = (TextView)findViewById(R.id.State_Help_Page);
-        TypeOfHelp = (TextView)findViewById(R.id.TypeOfHelp);
-
+        //initialise database
         ff=FirebaseFirestore.getInstance();
-        submit_request=findViewById(R.id.submitRequest);
-
+        firebaseAuth = FirebaseAuth.getInstance();
+        firebaseUser = firebaseAuth.getCurrentUser();
+        //
+        submit_request = findViewById(R.id.submitRequest);
         submit_request.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Map<Object, String> map = new HashMap<>();
-                map.put("yo", "yo");
+                Map<String,Object> map = new HashMap<>();
+                map.put("name",name.getText().toString());
+                map.put("city",city.getText().toString());
+                map.put("locality",locality.getText().toString());
+                map.put("lat",lat);
+                map.put("lng",lng);
+                map.put("help_domain",radioButton.getText().toString());
+                map.put("phone number",firebaseUser.getPhoneNumber());
                 ff.collection("AllRequest").document(item).collection("presentRequest").document(firebaseUser.getUid()).set(map).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
@@ -127,9 +119,34 @@ public class HelpPage extends AppCompatActivity {
                 });
             }
         });
-        firebaseAuth = FirebaseAuth.getInstance();
-        firebaseUser = firebaseAuth.getCurrentUser();
-        radioGroup = findViewById(R.id.radio1);
+        ll=findViewById(R.id.addressId);
+        get_current_location = findViewById(R.id.getCurrentLocation);
+        get_current_location.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                initGoogleMap();
+                getLocation();
+                submit_request.setVisibility(View.VISIBLE);
+            }
+        });
+        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+            OnGPS();
+        }
+        ff = FirebaseFirestore.getInstance();
+
+
+
+        SelectProblem = (TextView)findViewById(R.id.Select_Problem);
+
+//        Area_Of_Help = (TextView)findViewById(R.id.Area_Of_Help);
+        City_Help_Page = (TextView)findViewById(R.id.City_Help_Page);
+        Pin_Code_Help_Page = (TextView)findViewById(R.id.Pin_Code_Help_Page);
+        State_Help_Page = (TextView)findViewById(R.id.State_Help_Page);
+        TypeOfHelp = (TextView)findViewById(R.id.TypeOfHelp);
+
+
+
         spin = (Spinner) findViewById(R.id.spinner2);
         List<String> list = new ArrayList<String>();
         list.add(0, "Select problem");
@@ -243,11 +260,10 @@ public class HelpPage extends AppCompatActivity {
 
     }
 
-    public void onClickRadiobutton(View view) {
-        int radioid = radioGroup.getCheckedRadioButtonId();
-        radioButton = findViewById(radioid);
-        Toast.makeText(this, radioButton.getText() + "is selected", Toast.LENGTH_SHORT).show();
-    }
+//    public void onClickRadiobutton(View view) {
+//        int radioid = radioGroup.getCheckedRadioButtonId();
+//        radioButton = findViewById(radioid);
+//    }
 
     private void initGoogleMap() {
 

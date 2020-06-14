@@ -25,10 +25,11 @@ import io.paperdb.Paper;
 
 public class PaymentActivity extends AppCompatActivity {
 
-    EditText amount, note, name, upiVirtualID;
+    EditText amount, note, upiVirtualID;
     Button send;
     String TAG = "main";
     final int UPI_PAYMENT = 0;
+    TextView name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,6 @@ public class PaymentActivity extends AppCompatActivity {
 
         send = (Button) findViewById(R.id.send);
         amount = (EditText) findViewById(R.id.amount_et);
-        note = (EditText) findViewById(R.id.note);
         name = (EditText) findViewById(R.id.name);
         upiVirtualID = (EditText) findViewById(R.id.upi_id);
 
