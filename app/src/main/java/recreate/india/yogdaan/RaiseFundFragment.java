@@ -36,6 +36,8 @@ public class RaiseFundFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_raise_fund, container, false);
         ff=FirebaseFirestore.getInstance();
         list=new ArrayList<>();
+        FundRaiseModel ourWorkModel=new FundRaiseModel();
+        list.add(ourWorkModel);
         blogRecyclerAdapter=new RaiseFundBlogRecyclerAdapter(list);
         blog_list_view=view.findViewById(R.id.raiseFundRecyclerView);
         blog_list_view.setLayoutManager(new LinearLayoutManager(getActivity()));

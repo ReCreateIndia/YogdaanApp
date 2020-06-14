@@ -1708,7 +1708,6 @@ id li1
 id light
 id line1
 id line3
-id linearLayout
 id linearLayout2
 id linearLayout3
 id linear_layout
@@ -1870,6 +1869,7 @@ id textStart
 id textView
 id textView10
 id textView11
+id textView12
 id textView2
 id textView3
 id textView4
