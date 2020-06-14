@@ -1696,10 +1696,7 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
-id l1
 id l11
-id l2
-id l4
 id labeled
 id lang
 id largeLabel
