@@ -48,7 +48,6 @@ public class LoginActivity extends AppCompatActivity {
         firebaseUser=firebaseAuth.getCurrentUser();
         phone_number_edittext = findViewById(R.id.phone_number_text);
         create_btn = findViewById(R.id.generate_btn);
-        log_progress = findViewById(R.id.login_progress);
 
 
 

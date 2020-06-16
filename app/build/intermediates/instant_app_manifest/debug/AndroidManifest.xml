@@ -12,7 +12,8 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
     <!-- <uses-sdk android:minSdkVersion="14"/> -->
@@ -30,23 +31,24 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="recreate.india.yogdaan.OurHelpers" />
         <activity android:name="recreate.india.yogdaan.PaymentActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name="recreate.india.yogdaan.DonateActivity" />
+        <activity android:name="recreate.india.yogdaan.DonateActivity" >
+        </activity>
         <activity android:name="recreate.india.yogdaan.Volunteer" />
         <activity android:name="recreate.india.yogdaan.TandC" />
         <activity
             android:name="recreate.india.yogdaan.SplashScreen"
             android:configChanges="orientation|keyboardHidden"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name="recreate.india.yogdaan.BlogActivity" />
+        <activity android:name="recreate.india.yogdaan.BlogActivity" >
+        </activity>
         <activity android:name="recreate.india.yogdaan.Introduction_Activity" />
         <activity
             android:name="recreate.india.yogdaan.LoginActivity"

@@ -28,7 +28,7 @@
         android:id="@+id/bottomnavview"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#013220"
+        android:background="#006766"
         android:gravity="center_horizontal"
         app:itemHorizontalTranslationEnabled="true"
         app:itemTextColor="#ffffff"

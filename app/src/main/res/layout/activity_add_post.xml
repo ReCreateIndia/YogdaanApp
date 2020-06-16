@@ -41,8 +41,8 @@
 
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Add Some Description"
-        android:inputType="textMultiLine"
+            android:hint="Add Some Description"
+            android:inputType="textMultiLine"
         app:layout_constraintBottom_toTopOf="@+id/submit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"

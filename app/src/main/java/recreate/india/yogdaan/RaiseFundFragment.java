@@ -38,7 +38,9 @@ public class RaiseFundFragment extends Fragment {
         list=new ArrayList<>();
         FundRaiseModel ourWorkModel=new FundRaiseModel();
         list.add(ourWorkModel);
-        blogRecyclerAdapter=new RaiseFundBlogRecyclerAdapter(list);
+        list.add(ourWorkModel);
+        list.add(ourWorkModel);
+        blogRecyclerAdapter=new RaiseFundBlogRecyclerAdapter(list,getActivity());
         blog_list_view=view.findViewById(R.id.raiseFundRecyclerView);
         blog_list_view.setLayoutManager(new LinearLayoutManager(getActivity()));
         blog_list_view.setAdapter(blogRecyclerAdapter);
