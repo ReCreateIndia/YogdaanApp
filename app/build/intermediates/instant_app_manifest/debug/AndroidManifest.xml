@@ -12,8 +12,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
-    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
     <!-- <uses-sdk android:minSdkVersion="14"/> -->
@@ -25,15 +24,14 @@
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
-        android:icon="@drawable/btn"
+        android:icon="@drawable/logoyogdaan"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/btn"
+        android:roundIcon="@drawable/logoyogdaan"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="recreate.india.yogdaan.OurHelpers" />
         <activity android:name="recreate.india.yogdaan.PaymentActivity" />
-        <activity android:name="recreate.india.yogdaan.DonateActivity" >
-        </activity>
+        <activity android:name="recreate.india.yogdaan.DonateActivity" />
         <activity android:name="recreate.india.yogdaan.Volunteer" />
         <activity android:name="recreate.india.yogdaan.TandC" />
         <activity
@@ -50,12 +48,9 @@
         <activity android:name="recreate.india.yogdaan.Introduction_Activity" />
         <activity
             android:name="recreate.india.yogdaan.LoginActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
-        </activity>
-        <activity android:name="recreate.india.yogdaan.MainActivity" >
-        </activity>
-        <activity android:name="recreate.india.yogdaan.HelpPage" >
-        </activity>
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name="recreate.india.yogdaan.MainActivity" />
+        <activity android:name="recreate.india.yogdaan.HelpPage" />
         <activity android:name="recreate.india.yogdaan.OtpActivity" />
 
         <meta-data

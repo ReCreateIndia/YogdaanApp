@@ -8,7 +8,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
 
-//VolunteerPage
+    //VolunteerPage
     <string name="Name">Name</string>
     <string name="Date_Of_Birth">Date Of Birth</string>
     <string name="Type_Of_Work">Type Of Work</string>
@@ -16,15 +16,15 @@
     <string name="Address">Address</string>
     <string name="Submit">Submit</string>
 
-//AddPostPage
+    //AddPostPage
     <string name="Add_Some_Description">Add Some Description</string>
 
-//DonatePage
+    //DonatePage
     <string name="Donate_Food">Donate Food</string>
     <string name="Donate_Clothes">Donate Clothes</string>
     <string name="Donate_Money">Donate Money</string>
 
-//HelpPage
+    //HelpPage
     <string name="Select_Problem">Select Problem</string>
     <string name="Help_For_Others">Help For Others</string>
     <string name="Help_For_Yourself">Help For Yourself</string>

@@ -35,6 +35,9 @@ public class BlogActivity extends AppCompatActivity {
     FirestoreRecyclerAdapter adapter;
     private BottomNavigationView bottomNavigationView;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
