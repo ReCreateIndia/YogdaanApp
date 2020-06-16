@@ -25,11 +25,11 @@ import io.paperdb.Paper;
 
 public class PaymentActivity extends AppCompatActivity {
 
-    EditText amount, note;
-    Button send;
+    private EditText amount, note;
+    private Button send;
     String TAG = "main",upiVirtualID = "virensaroha123@okhdfcbank";
     final int UPI_PAYMENT = 0;
-    TextView name;
+    private EditText name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

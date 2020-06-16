@@ -16,7 +16,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".OurHelpers"></activity>
-        <activity android:name=".PaymentActivity" />
+        <activity android:name=".PaymentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".DonateActivity"></activity>
         <activity android:name=".Volunteer" />
         <activity android:name=".TandC" />
@@ -24,11 +30,7 @@
             android:name=".SplashScreen"
             android:configChanges="orientation|keyboardHidden"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".BlogActivity" />
         <activity android:name=".Introduction_Activity" />
