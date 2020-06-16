@@ -50,11 +50,13 @@ public class PaymentActivity extends AppCompatActivity {
 //                else if (TextUtils.isEmpty(upiVirtualID.getText().toString().trim())) {
 //                    Toast.makeText(PaymentActivity.this, "UPI ID  is invalid", Toast.LENGTH_SHORT).show();
 //                }
-                else if (TextUtils.isEmpty(note.getText().toString().trim())) {
-                    Toast.makeText(PaymentActivity.this, "Note is invalid", Toast.LENGTH_SHORT).show();
-                } else {
-                    payUsingUpi("viren n", "virensaroha123@okhdfcbank",
-                            note.getText().toString(), amount.getText().toString());
+//                else if (TextUtils.isEmpty(note.getText().toString().trim())) {
+//                    Toast.makeText(PaymentActivity.this, "Note is invalid", Toast.LENGTH_SHORT).show();
+//                }
+                else {
+                    payUsingUpi("viren n" ,amount.getText().toString() );
+//                            note.getText().toString(),
+
                 }
             }
         });
@@ -75,15 +77,15 @@ public class PaymentActivity extends AppCompatActivity {
         amount.setHint(resources.getString(R.string.Amount));
     }
 
-    void payUsingUpi(String name, String upiId, String note, String amount) {
-        Log.e("main", "name " + "--up--" + upiId + "--" + note + "--" + amount);
+    void payUsingUpi(String name, /*String note,*/ String amount) {
+        Log.e("main", "name " + "--up--" + "virensaroha123@okhdfcbank" + "--" + note + "--" + amount);
 
         Uri uri = Uri.parse("upi://pay").buildUpon()
-                .appendQueryParameter("pa", upiId)
+                .appendQueryParameter("pa", "virensaroha123@okhdfcbank")
                 .appendQueryParameter("pn", name)
 //                         .appendQueryParameter("mc", "your-merchant-code")
 //                         .appendQueryParameter("tr", "your-transaction-ref-id")
-                .appendQueryParameter("tn", note)
+//                .appendQueryParameter("tn", note)
                 .appendQueryParameter("am", amount)
                 .appendQueryParameter("cu", "INR")
 //                         .appendQueryParameter("url", "your-transaction-url")
@@ -106,28 +108,26 @@ public class PaymentActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         Log.e("main", "response" + resultCode);
 
-        switch (requestCode) {
-            case UPI_PAYMENT:
-                if ((RESULT_OK == resultCode) || (resultCode == 11)) {
-                    if (data != null) {
-                        String trxt = data.getStringExtra("response");
-                        Log.e("UPI", "onActivityResult: " + trxt);
-                        ArrayList<String> dataList = new ArrayList<>();
-                        dataList.add(trxt);
-                        upiPaymentDataOperation(dataList);
-                    } else {
-                        Log.e("UPI", "onActivityResult: " + "Return data is null");
-                        ArrayList<String> dataList = new ArrayList<>();
-                        dataList.add("nothing");
-                        upiPaymentDataOperation(dataList);
-                    }
+        if (requestCode == UPI_PAYMENT) {
+            if ((RESULT_OK == resultCode) || (resultCode == 11)) {
+                if (data != null) {
+                    String trxt = data.getStringExtra("response");
+                    Log.e("UPI", "onActivityResult: " + trxt);
+                    ArrayList<String> dataList = new ArrayList<>();
+                    dataList.add(trxt);
+                    upiPaymentDataOperation(dataList);
                 } else {
                     Log.e("UPI", "onActivityResult: " + "Return data is null");
                     ArrayList<String> dataList = new ArrayList<>();
                     dataList.add("nothing");
                     upiPaymentDataOperation(dataList);
                 }
-                break;
+            } else {
+                Log.e("UPI", "onActivityResult: " + "Return data is null");
+                ArrayList<String> dataList = new ArrayList<>();
+                dataList.add("nothing");
+                upiPaymentDataOperation(dataList);
+            }
         }
     }
 
@@ -139,9 +139,9 @@ public class PaymentActivity extends AppCompatActivity {
             if (str == null) str = "discard";
             String status = "";
             String approvalRefNo = "";
-            String response[] = str.split("&");
+            String[] response = str.split("&");
             for (int i = 0; i < response.length; i++) {
-                String equalStr[] = response[i].split("=");
+                String[] equalStr = response[i].split("=");
                 if (equalStr.length >= 2) {
                     if (equalStr[0].toLowerCase().equals("Status".toLowerCase())) {
                         status = equalStr[i].toLowerCase();
@@ -167,12 +167,8 @@ public class PaymentActivity extends AppCompatActivity {
 
     public static boolean isConnectionAvailable(Context context) {
         ConnectivityManager connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        assert connectivityManager != null;
         NetworkInfo networkInfo =connectivityManager.getActiveNetworkInfo();
-        if(networkInfo!=null && networkInfo.isConnectedOrConnecting()){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return networkInfo != null && networkInfo.isConnectedOrConnecting();
     }
 }
