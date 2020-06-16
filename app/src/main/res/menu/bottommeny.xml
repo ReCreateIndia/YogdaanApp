@@ -4,7 +4,8 @@
 
     <item
         android:id="@+id/rf"
-        android:title="Raise Funds" />
+        android:title="Raise Funds"
+        />
     <item
         android:id="@+id/ow"
         android:title="Our Work" />
