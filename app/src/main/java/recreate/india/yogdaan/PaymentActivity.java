@@ -25,9 +25,9 @@ import io.paperdb.Paper;
 
 public class PaymentActivity extends AppCompatActivity {
 
-    EditText amount, note, upiVirtualID;
+    EditText amount, note;
     Button send;
-    String TAG = "main";
+    String TAG = "main",upiVirtualID = "virensaroha123@okhdfcbank";
     final int UPI_PAYMENT = 0;
     TextView name;
 
@@ -39,16 +39,18 @@ public class PaymentActivity extends AppCompatActivity {
         send = (Button) findViewById(R.id.send);
         amount = (EditText) findViewById(R.id.amount_et);
         name = (EditText) findViewById(R.id.name);
-        upiVirtualID = (EditText) findViewById(R.id.upi_id);
+//        upiVirtualID = (EditText) findViewById(R.id.upi_id);
 
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (TextUtils.isEmpty(name.getText().toString().trim())) {
                     Toast.makeText(PaymentActivity.this, "Name is invalid", Toast.LENGTH_SHORT).show();
-                } else if (TextUtils.isEmpty(upiVirtualID.getText().toString().trim())) {
-                    Toast.makeText(PaymentActivity.this, "UPI ID  is invalid", Toast.LENGTH_SHORT).show();
-                } else if (TextUtils.isEmpty(note.getText().toString().trim())) {
+                }
+//                else if (TextUtils.isEmpty(upiVirtualID.getText().toString().trim())) {
+//                    Toast.makeText(PaymentActivity.this, "UPI ID  is invalid", Toast.LENGTH_SHORT).show();
+//                }
+                else if (TextUtils.isEmpty(note.getText().toString().trim())) {
                     Toast.makeText(PaymentActivity.this, "Note is invalid", Toast.LENGTH_SHORT).show();
                 } else {
                     payUsingUpi("viren n", "virensaroha123@okhdfcbank",

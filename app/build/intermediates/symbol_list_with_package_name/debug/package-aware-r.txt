@@ -1722,6 +1722,7 @@ id ll8
 id locality
 id login_progress
 id logout
+id lv1
 id masked
 id media_actions
 id message
@@ -1905,7 +1906,6 @@ id unchecked
 id uniform
 id unlabeled
 id up
-id upi_id
 id useLogo
 id userImage
 id verify_btn
@@ -1916,7 +1916,6 @@ id visible
 id volunteer
 id volunteer_address
 id volunteer_dob
-id volunteer_image
 id volunteer_name
 id volunteer_occupation
 id volunteer_submit

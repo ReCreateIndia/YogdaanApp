@@ -86,7 +86,7 @@
             android:textColorHint="#013220"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/upi_id"
+
             android:hint="Enter Name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -101,7 +101,7 @@
             android:textColorHint="#013220"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/upi_id"
+
             android:hint="Enter PhoneNumber"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -114,7 +114,7 @@
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/upi_id"
+
             android:hint="Enter Amount"
             android:textColorHint="#013220"
             app:layout_constraintEnd_toEndOf="parent"
