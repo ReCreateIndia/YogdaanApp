@@ -61,7 +61,6 @@ public class LoginActivity extends AppCompatActivity {
                 final String complete_phone_number = code + phone_number;
                 if (phone_number.length() == 10) {
                     create_btn.setEnabled(false);
-                    log_progress.setVisibility(View.VISIBLE);
                     new android.os.Handler().postDelayed(
                             new Runnable() {
                                 public void run() {

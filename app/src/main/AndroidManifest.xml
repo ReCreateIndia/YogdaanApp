@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION">
     </uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <application
@@ -32,7 +33,7 @@
         <activity
             android:name=".SplashScreen"
             android:configChanges="orientation|keyboardHidden"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            android:theme="@style/FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -46,6 +47,7 @@
 
         <activity android:name=".LoginActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+
 
         <activity android:name=".MainActivity"></activity>
 

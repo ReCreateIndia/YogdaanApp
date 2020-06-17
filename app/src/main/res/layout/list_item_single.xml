@@ -9,6 +9,7 @@
     android:background="#ffffff">
 
     <ScrollView
+        android:background="@drawable/text_background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -64,7 +65,8 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:layout_marginTop="56dp"
-            android:background="@drawable/slide2image"
+            android:src="@drawable/slide2image"
+            android:background="@drawable/text_background"
             android:contentDescription="TODO"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -75,6 +77,7 @@
 
         <TextView
             android:id="@+id/desc"
+            android:padding="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"

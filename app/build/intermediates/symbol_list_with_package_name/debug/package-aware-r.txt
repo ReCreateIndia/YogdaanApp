@@ -1607,6 +1607,7 @@ id btn
 id buttonPanel
 id c1
 id c2
+id cameraIntent
 id cancel_action
 id cancel_button
 id center
@@ -1619,7 +1620,6 @@ id chip
 id chip_group
 id chronometer
 id circleImageView
-id city
 id clear_text
 id clip_horizontal
 id clip_vertical
@@ -1688,6 +1688,7 @@ id homeAsUp
 id icon
 id icon_group
 id icon_only
+id idProof
 id ifRoom
 id image
 id imageView
@@ -1718,7 +1719,6 @@ id list_item
 id ll1
 id ll2
 id ll8
-id locality
 id logout
 id lv1
 id masked
@@ -2471,6 +2471,7 @@ style CardView
 style CardView_Dark
 style CardView_Light
 style EmptyTheme
+style FullScreen
 style MaterialAlertDialog_MaterialComponents
 style MaterialAlertDialog_MaterialComponents_Body_Text
 style MaterialAlertDialog_MaterialComponents_Picker_Date_Calendar

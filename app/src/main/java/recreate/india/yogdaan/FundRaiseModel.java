@@ -8,6 +8,15 @@ public class FundRaiseModel {
     String desc;
     String currentDonation;
     String totalNeed;
+    String phoneNumber;
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
 
     public String getCurrentDonation() {
         return currentDonation;
@@ -35,7 +44,7 @@ public class FundRaiseModel {
 
     String userId;
 
-    public FundRaiseModel(String username, String date, String userImageUrl, String postImageUrl, String desc, String currentDonation, String totalNeed, String userId) {
+    public FundRaiseModel(String username, String date, String userImageUrl, String postImageUrl, String desc, String currentDonation, String totalNeed, String userId,String phoneNumber) {
         this.username = username;
         this.date = date;
         this.userImageUrl = userImageUrl;
@@ -44,6 +53,7 @@ public class FundRaiseModel {
         this.currentDonation = currentDonation;
         this.totalNeed = totalNeed;
         this.userId = userId;
+        this.phoneNumber=phoneNumber;
     }
 
     public String getUsername() {
