@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Statuspage">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#006766"
+            android:orientation="horizontal"
+
+            android:id="@+id/layout1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center_vertical"
+            >
+
+
+
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/layout1"
+            android:layout_marginTop="30dp">
+
+
+
+
+
+
+            <View
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:id="@+id/order"
+
+
+                android:layout_marginLeft="30dp"
+                app:layout_constraintBottom_toBottomOf="@id/orderplaced"
+                app:layout_constraintTop_toTopOf="@id/orderplaced"
+                android:background="@drawable/shape_status_selected"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/orderplaced"
+                android:contentDescription="@string/app_name"
+
+
+                app:layout_constraintStart_toEndOf="@id/order"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/ow"
+                tools:ignore="MissingConstraints" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:id="@+id/ordersupporter"
+                app:layout_constraintStart_toStartOf="@id/orderplaced"
+                app:layout_constraintBottom_toBottomOf="@id/orderplaced"
+                app:layout_constraintTop_toTopOf="@id/orderplaced"
+                app:layout_constraintEnd_toEndOf="@id/orderplaced"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Request reaches to Ngo"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/ordersupporter"
+                app:layout_constraintTop_toTopOf="@id/ordersupporter"
+                app:layout_constraintStart_toEndOf="@id/orderplaced"
+                />
+            <View
+                android:id="@+id/orderconfirmed"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+
+                android:background="@drawable/shape_status_selected"
+                app:layout_constraintStart_toStartOf="@id/order"
+                app:layout_constraintTop_toTopOf="@id/imageorderconfirmed"
+                app:layout_constraintBottom_toBottomOf="@id/imageorderconfirmed"
+                tools:ignore="MissingConstraints" />
+            <ImageView
+                android:id="@+id/imageorderconfirmed"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ourhelpers"
+                app:layout_constraintTop_toBottomOf="@id/orderplaced"
+                app:layout_constraintStart_toEndOf="@id/orderconfirmed"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:id="@+id/ordersupporterconfirmed"
+                app:layout_constraintStart_toStartOf="@id/imageorderconfirmed"
+                app:layout_constraintBottom_toBottomOf="@id/imageorderconfirmed"
+                app:layout_constraintTop_toTopOf="@id/imageorderconfirmed"
+                app:layout_constraintEnd_toEndOf="@id/imageorderconfirmed"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="NGO accepts request"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/ordersupporterconfirmed"
+                app:layout_constraintTop_toTopOf="@id/ordersupporterconfirmed"
+                app:layout_constraintStart_toEndOf="@id/imageorderconfirmed"
+                />
+            <View
+                android:layout_width="4dp"
+                android:layout_height="0dp"
+                android:background="@drawable/shape_status_selected"
+                app:layout_constraintTop_toBottomOf="@id/order"
+                app:layout_constraintBottom_toTopOf="@id/orderconfirmed"
+                app:layout_constraintStart_toStartOf="@id/order"
+                app:layout_constraintEnd_toEndOf="@id/order"
+                />
+            <View
+                android:id="@+id/processed"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+
+                android:background="@drawable/shape_status"
+                app:layout_constraintStart_toStartOf="@id/order"
+                app:layout_constraintTop_toTopOf="@id/imageorderprocessed"
+                app:layout_constraintBottom_toBottomOf="@id/imageorderprocessed"
+                tools:ignore="MissingConstraints" />
+            <ImageView
+                android:id="@+id/imageorderprocessed"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ourhelpers"
+                app:layout_constraintTop_toBottomOf="@id/imageorderconfirmed"
+                app:layout_constraintStart_toStartOf="@id/processed"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="40dp"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:id="@+id/ordersupporterprocesses"
+                app:layout_constraintStart_toStartOf="@id/imageorderprocessed"
+                app:layout_constraintBottom_toBottomOf="@id/imageorderprocessed"
+                app:layout_constraintTop_toTopOf="@id/imageorderprocessed"
+                app:layout_constraintEnd_toEndOf="@id/imageorderprocessed"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Requested Work Done"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/ordersupporterprocesses"
+                app:layout_constraintTop_toTopOf="@id/ordersupporterprocesses"
+                app:layout_constraintStart_toEndOf="@id/imageorderprocessed"
+                android:layout_marginLeft="10dp"
+                />
+            <View
+                android:layout_width="4dp"
+                android:layout_height="0dp"
+                android:background="@drawable/shape_status"
+                app:layout_constraintTop_toBottomOf="@id/orderconfirmed"
+                app:layout_constraintBottom_toTopOf="@id/processed"
+                app:layout_constraintStart_toStartOf="@id/orderconfirmed"
+                app:layout_constraintEnd_toEndOf="@id/orderconfirmed"
+                />
+
+            <View
+                android:id="@+id/yogdaan"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+
+                android:background="@drawable/shape_status"
+                app:layout_constraintStart_toStartOf="@id/order"
+                app:layout_constraintTop_toTopOf="@id/imageyogdaan"
+                app:layout_constraintBottom_toBottomOf="@id/imageyogdaan"
+                tools:ignore="MissingConstraints" />
+            <ImageView
+                android:id="@+id/imageyogdaan"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ourhelpers"
+                app:layout_constraintTop_toBottomOf="@id/imageorderprocessed"
+                app:layout_constraintStart_toStartOf="@id/processed"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="40dp"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:id="@+id/yogdaan_supporter"
+                app:layout_constraintStart_toStartOf="@id/imageyogdaan"
+                app:layout_constraintBottom_toBottomOf="@id/imageyogdaan"
+                app:layout_constraintTop_toTopOf="@id/imageyogdaan"
+                app:layout_constraintEnd_toEndOf="@id/imageyogdaan"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Requested Work Done"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/yogdaan_supporter"
+                app:layout_constraintTop_toTopOf="@id/yogdaan_supporter"
+                app:layout_constraintStart_toEndOf="@id/imageyogdaan"
+                android:layout_marginLeft="10dp"
+                />
+            <View
+                android:layout_width="4dp"
+                android:layout_height="0dp"
+                android:background="@drawable/shape_status"
+                app:layout_constraintTop_toBottomOf="@id/processed"
+                app:layout_constraintBottom_toTopOf="@id/yogdaan"
+                app:layout_constraintStart_toStartOf="@id/processed"
+                app:layout_constraintEnd_toEndOf="@id/processed"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

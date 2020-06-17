@@ -5,9 +5,8 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION">
-    </uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -16,10 +15,9 @@
         android:roundIcon="@drawable/btn"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Statuspage"></activity>
         <activity android:name=".PaymentActivity" />
-        <activity android:name=".DonateActivity" >
-
-        </activity>
+        <activity android:name=".DonateActivity"></activity>
         <activity android:name=".Volunteer" />
         <activity android:name=".TandC" />
         <activity
@@ -28,28 +26,22 @@
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".BlogActivity" />
-        <activity android:name=".Introduction_Activity"/>
-        <activity android:name=".LoginActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-
-        </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
-
-        <activity android:name=".HelpPage" >
-
-        </activity>
+        <activity android:name=".Introduction_Activity" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".HelpPage"></activity>
         <activity android:name=".OtpActivity" />
+
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-8169027776894810~7067472313"/>
-
+            android:value="ca-app-pub-8169027776894810~7067472313" />
     </application>
 
 </manifest>
