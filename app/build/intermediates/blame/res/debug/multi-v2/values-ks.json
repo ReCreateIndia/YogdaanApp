@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ks\\values-ks.xml",
+            "outputFile": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ks\\values-ks.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\values-ks\\strings.xml",
+                    "source": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\values-ks\\strings.xml",
                     "from": {
                         "startLines": "20,16,59,32,34,13,66,45,24,23,25,60,53,33,42,46,29,30,50,12,62,63,15,48,47,35,40,54,28,36,17,31,14,55,39,49,56,41,2,6,4,9,7,3",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

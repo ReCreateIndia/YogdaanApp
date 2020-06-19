@@ -98,6 +98,8 @@ public class MainActivity extends AppCompatActivity {
         NavigationView navigationView = (NavigationView) findViewById(R.id.n1);
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
         boolean isFirstTime = prefs.getBoolean("isFirstTime", true);
+
+
         if (isFirstTime) {
             onFirst();
         } else {
@@ -143,8 +145,7 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.dismiss();
-                            gotoLoginActivity();
-
+//                            gotoLoginActivity();
 
                         }
                     }).create().show();
@@ -152,10 +153,7 @@ public class MainActivity extends AppCompatActivity {
             SharedPreferences.Editor editor = prefs.edit();
             editor.putBoolean("isFirstTime", false);
             editor.apply();
-
-
         }
-
 
 
     private void gotoLoginActivity() {
