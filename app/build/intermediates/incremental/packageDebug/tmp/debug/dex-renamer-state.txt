@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #Fri Jun 19 19:01:21 IST 2020
+=======
+#Thu Jun 18 22:09:31 IST 2020
+>>>>>>> 94f6af2bebbab0a7ec6e925a49e32250df564f1f
 path.3=classes3.dex
 path.2=classes2.dex
 path.1=classes.dex
@@ -7,7 +11,7 @@ renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.3=C\:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
-base.2=C\:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.1=C\:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
-base.0=C\:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.3=C\:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+base.2=C\:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.1=C\:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+base.0=C\:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex

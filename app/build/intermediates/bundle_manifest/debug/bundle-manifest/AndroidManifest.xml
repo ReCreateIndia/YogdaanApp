@@ -29,9 +29,15 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+<<<<<<< HEAD
         <activity android:name="recreate.india.yogdaan.PaymentActivity" />
         <activity android:name="recreate.india.yogdaan.DonateActivity" >
         </activity>
+=======
+        <activity android:name="recreate.india.yogdaan.Statuspage" />
+        <activity android:name="recreate.india.yogdaan.PaymentActivity" />
+        <activity android:name="recreate.india.yogdaan.DonateActivity" />
+>>>>>>> 94f6af2bebbab0a7ec6e925a49e32250df564f1f
         <activity android:name="recreate.india.yogdaan.Volunteer" />
         <activity android:name="recreate.india.yogdaan.TandC" />
         <activity
@@ -48,11 +54,23 @@
         <activity android:name="recreate.india.yogdaan.Introduction_Activity" />
         <activity
             android:name="recreate.india.yogdaan.LoginActivity"
+<<<<<<< HEAD
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
         </activity>
         <activity android:name="recreate.india.yogdaan.MainActivity" />
         <activity android:name="recreate.india.yogdaan.HelpPage" >
         </activity>
+=======
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name="recreate.india.yogdaan.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="recreate.india.yogdaan.HelpPage" />
+>>>>>>> 94f6af2bebbab0a7ec6e925a49e32250df564f1f
         <activity android:name="recreate.india.yogdaan.OtpActivity" />
 
         <meta-data

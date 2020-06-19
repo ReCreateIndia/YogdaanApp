@@ -1,39 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Volunteer"
-    android:weightSum="3">
-    <LinearLayout
+    >
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
 
 
         <LinearLayout
             android:id="@+id/layout1"
             android:layout_width="match_parent"
-            android:layout_height="10dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+
             android:background="@drawable/text_input_bg"
 
-            android:gravity="center_vertical"
+
             android:orientation="vertical"
             app:layout_constraintTop_toTopOf="parent"
 
             >
+            <ImageView
+                android:id="@+id/volunteerback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"
+                android:layout_gravity="left"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                />
 
             <TextView
                 android:id="@+id/textView7"
+                android:layout_marginTop="15dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="70dp"
-                android:gravity="center"
+                android:gravity="center_horizontal"
                 android:text="Yogdaan"
                 android:textColor="#ffffff"
                 android:textSize="60sp"
@@ -42,23 +51,26 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70dp"
+                android:layout_marginLeft="50dp"
                 android:layout_marginTop="19dp"
-                android:layout_marginRight="70dp"
+                android:layout_marginRight="50dp"
                 android:gravity="center"
                 android:text="The best way to persue happiness is to help others!"
                 android:textColor="#FFFFFF"
                 android:textSize="28sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginBottom="30dp"/>
 
         </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="10dp"
-            android:layout_weight="2"
 
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout1"
+
+            android:orientation="vertical"
+            tools:ignore="NotSibling">
 
             <LinearLayout
                 android:id="@+id/lv1"
@@ -69,12 +81,7 @@
 
             </LinearLayout>
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="0dp">
+
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/volunteer_name"
@@ -120,6 +127,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/volunteer_name"
                     android:layout_marginLeft="40dp"
+                    android:layout_marginTop="15dp"
 
                     android:layout_marginRight="40dp"
                     app:cardBackgroundColor="#FFFFFF">
@@ -154,6 +162,7 @@
                     android:layout_below="@+id/volunteer_dob"
                     android:layout_marginLeft="40dp"
                     android:layout_marginRight="40dp"
+                    android:layout_marginTop="15dp"
                     app:cardBackgroundColor="#FFFFFF">
 
                     <LinearLayout
@@ -184,6 +193,7 @@
                     android:id="@+id/volunteer_occupation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
                     android:layout_below="@+id/volunteer_type_of_work"
                     android:layout_marginLeft="40dp"
                     android:layout_marginRight="40dp"
@@ -214,6 +224,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/volunteer_address"
+                    android:layout_marginTop="15dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/volunteer_occupation"
@@ -257,7 +268,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginStart="96dp"
                     android:layout_marginLeft="96dp"
-                    android:layout_marginTop="13dp"
+                    android:layout_marginTop="18dp"
 
                     android:layout_marginEnd="77dp"
                     android:layout_marginRight="71dp"
@@ -274,11 +285,11 @@
 
         </RelativeLayout>
 
-    </LinearLayout>
 
 
 
 
 
 
-</RelativeLayout>
+
+</ScrollView>

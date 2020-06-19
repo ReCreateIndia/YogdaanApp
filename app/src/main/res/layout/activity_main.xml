@@ -20,45 +20,58 @@
         >
 
     </com.google.android.material.navigation.NavigationView>
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         tools:context=".MainActivity"
         >
-        <com.denzcoskun.imageslider.ImageSlider
-            android:id="@+id/image_slider"
-            android:layout_width="wrap_content"
-            android:layout_height="300dp"
-            app:auto_cycle="true"
-            app:corner_radius="20"
-            android:layout_alignParentTop="true"
-            app:period="1000"
-            app:delay="0"
-            tools:ignore="MissingConstraints" />
-
-        <ScrollView
-            android:layout_marginTop="30dp"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/lhmp1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sliderback">
+
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider"
+                android:layout_width="wrap_content"
+                android:layout_height="280dp"
+
+                app:auto_cycle="true"
+                app:corner_radius="20"
+                android:layout_alignParentTop="true"
+                app:period="1000"
+                app:delay="0"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/lhmp1"
+            android:layout_marginTop="80dp"
             >
 
-            <LinearLayout
-                android:layout_marginBottom="60dp"
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:orientation="vertical"
-                android:layout_marginTop="30dp"
                 tools:ignore="RtlCompat">
 
                 <LinearLayout
-                    android:id="@+id/l11"
+                    android:id="@+id/ll1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
                     android:orientation="horizontal"
                     android:weightSum="3"
-                    android:layout_gravity="center"
 
                     >
 
@@ -66,28 +79,31 @@
                         android:layout_width="80dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:layout_marginLeft="70dp"
                         android:orientation="vertical"
                         >
+
                         <ImageButton
                             android:id="@+id/help"
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+
 
                             android:background="@drawable/btn"
                             android:scaleType="centerCrop"
 
-                            android:src="@drawable/ow"
+                            android:src="@drawable/help"
+                            android:elevation="10dp"
 
                             />
                         <TextView
-                            android:id="@+id/Help"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Help"
-                            android:textSize="25sp"
+                            android:gravity="center"
+                                android:id="@+id/Help"
+                            android:textSize="27sp"
                             android:textStyle="bold"
-                            android:textColor="#013220"
+                            android:textColor="#000000"
                             android:layout_marginTop="8dp"
                             />
                     </LinearLayout>
@@ -100,136 +116,143 @@
                         android:orientation="vertical"
                         >
                         <ImageButton
-
                             android:id="@+id/donate"
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+
                             android:background="@drawable/btn"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/ow"
+
+                            android:src="@drawable/donation"
+                            android:elevation="8dp"
+
                             />
                         <TextView
-                            android:id="@+id/Donate"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Donate"
-                            android:textSize="25sp"
+                            android:id="@+id/Donate"
+                            android:textSize="27sp"
                             android:textStyle="bold"
-                            android:textColor="#013220"
+                            android:textColor="#000000"
                             android:layout_marginTop="8dp"
+                            android:gravity="center"
                             />
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/ll1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:orientation="horizontal"
-                    android:weightSum="3"
-                    android:layout_gravity="center"
-
-                    >
 
                     <LinearLayout
                         android:layout_width="80dp"
+                        android:layout_marginStart="42dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:layout_marginLeft="60dp"
                         android:orientation="vertical"
                         >
                         <ImageButton
                             android:id="@+id/ourWork"
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
 
                             android:background="@drawable/btn"
                             android:scaleType="centerCrop"
 
-                            android:src="@drawable/ourhelpers"
+                            android:src="@drawable/ourwork"
+                            android:elevation="8dp"
+
+
 
                             />
                         <TextView
-                            android:id="@+id/Our_Work"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Funds"
+                            android:text="Our Work"
                             android:textSize="25sp"
+                            android:gravity="center"
+                            android:id="@+id/Our_Work"
                             android:textStyle="bold"
-                            android:textColor="#013220"
+                            android:textColor="#000000"
                             android:layout_marginTop="8dp"
                             />
                     </LinearLayout>
+
+
+
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/ll1"
+                    android:layout_marginTop="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+
+                    >
                     <LinearLayout
                         android:layout_width="80dp"
-                        android:layout_marginLeft="30dp"
+
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical"
                         >
                         <ImageButton
                             android:id="@+id/ourHelpers"
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
 
                             android:background="@drawable/btn"
                             android:scaleType="centerCrop"
 
-                            android:src="@drawable/ow"
+                            android:src="@drawable/ourhelpers"
+                            android:elevation="7dp"
 
                             />
                         <TextView
-                            android:id="@+id/Our_Helpers"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Our helpers"
+                            android:id="@+id/Our_Helpers"
                             android:textSize="25sp"
+                            android:gravity="center"
                             android:textStyle="bold"
-                            android:textColor="#013220"
+                            android:textColor="#000000"
                             android:layout_marginTop="8dp"
                             />
                     </LinearLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/ll2"
-                    android:layout_width="match_parent"
-                    android:layout_below="@id/ll1"
-                    android:layout_marginTop="20dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="3"
-                    android:layout_marginBottom="100dp"
-
-                    >
-
                     <LinearLayout
                         android:layout_width="80dp"
-                        android:layout_marginLeft="60dp"
+                        android:layout_marginStart="45dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical"
                         >
                         <ImageButton
                             android:id="@+id/volunteer"
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
 
                             android:background="@drawable/btn"
                             android:scaleType="centerCrop"
 
-                            android:src="@drawable/ourhelpers"
+                            android:src="@drawable/volunteer"
+                            android:elevation="7dp"
 
                             />
                         <TextView
-                            android:id="@+id/Volunteers"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Volunteers"
-                            android:textSize="25sp"
+                            android:text="Volunteer"
+                            android:id="@+id/Volunteers"
+
+                            android:textSize="27sp"
                             android:textStyle="bold"
-                            android:textColor="#013220"
+                            android:textColor="#000000"
                             android:layout_marginTop="8dp"
                             />
                     </LinearLayout>
@@ -242,28 +265,44 @@
                         >
                         <ImageButton
                             android:id="@+id/more"
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="75dp"
+
                             android:background="@drawable/btn"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/ow"
+
+                            android:src="@drawable/more"
+                            android:elevation="7dp"
 
                             />
                         <TextView
-                            android:id="@+id/More"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="More"
-                            android:textSize="25sp"
+                            android:id="@+id/More"
+                            android:textSize="27sp"
                             android:textStyle="bold"
+                            android:textColor="#000000"
                             android:layout_marginTop="8dp"
-                            android:textColor="#013220"
                             />
                     </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
         </ScrollView>
-    </LinearLayout>
+    </RelativeLayout>
+
 
 
 

@@ -18,6 +18,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Build;
@@ -31,6 +33,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -64,6 +67,10 @@ public class HelpPage extends AppCompatActivity {
     FirebaseFirestore ff;
     FirebaseAuth firebaseAuth;
     FirebaseUser firebaseUser;
+    Dialog epicdialog;
+    Button box;
+
+    ImageView closenew;
     public static final int PERMISSION_REQUEST_CODE = 9001;
     private static final int PLAY_SERVICES_ERROR_CODE = 9002;
     public static final int GPS_REQUEST_CODE = 9003;
@@ -144,6 +151,15 @@ public class HelpPage extends AppCompatActivity {
         Pin_Code_Help_Page = (TextView)findViewById(R.id.Pin_Code_Help_Page);
         State_Help_Page = (TextView)findViewById(R.id.State_Help_Page);
         TypeOfHelp = (TextView)findViewById(R.id.TypeOfHelp);
+
+        epicdialog=new Dialog(this);
+        box=(Button) findViewById(R.id.submitRequest);
+        box.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Shownewpopup();
+            }
+        });
 
 
 
@@ -391,5 +407,18 @@ public class HelpPage extends AppCompatActivity {
                 lng = geoPoint.getLongitude();
             }
         });
+    }
+    public void Shownewpopup(){
+        epicdialog.setContentView(R.layout.new_card);
+        closenew=(ImageView) epicdialog.findViewById(R.id.closePopyu);
+
+        closenew.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                epicdialog.dismiss();
+            }
+        });
+        epicdialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.DKGRAY));
+        epicdialog.show();
     }
 }
