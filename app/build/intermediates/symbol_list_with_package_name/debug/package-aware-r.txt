@@ -1426,13 +1426,16 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable developers
 drawable donate3
+drawable donation
 drawable download
 drawable error
 drawable filters
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable gradient
+drawable help
 drawable ic_android_black_24dp
+drawable ic_baseline_keyboard_backspace_24
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
@@ -1457,6 +1460,7 @@ drawable input
 drawable loginbutton
 drawable logout
 drawable logoyogdaan
+drawable more
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
 drawable mtrl_ic_arrow_drop_down
@@ -1480,6 +1484,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable ourhelpers
+drawable ourwork
 drawable ow
 drawable placeholder
 drawable primary_btn_bg
@@ -1493,6 +1498,7 @@ drawable shape_status_selected
 drawable slide1image
 drawable slide2dots
 drawable slide2image
+drawable sliderback
 drawable tag
 drawable test_custom_background
 drawable text_background
@@ -1500,6 +1506,7 @@ drawable text_input_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable usestudentaccount
+drawable volunteer
 drawable yogdaanlogo
 font open_sans_bold
 font open_sans_semibold
@@ -1704,7 +1711,6 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
-id l11
 id labeled
 id lang
 id largeLabel
@@ -1712,6 +1718,7 @@ id layout1
 id left
 id lgn
 id lh3
+id lhmp1
 id li1
 id light
 id line1
@@ -1932,6 +1939,7 @@ id volunteer_name
 id volunteer_occupation
 id volunteer_submit
 id volunteer_type_of_work
+id volunteerback
 id wide
 id withText
 id wrap
