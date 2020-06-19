@@ -14,19 +14,23 @@ import com.google.android.gms.location.FusedLocationProviderClient;
 import android.Manifest;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.location.Location;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Build;
 import android.content.Context;
 import android.content.res.Resources;
 
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.provider.Settings;
 import android.view.View;
 import android.widget.AdapterView;
@@ -69,7 +73,6 @@ public class HelpPage extends AppCompatActivity {
     FirebaseUser firebaseUser;
     Dialog epicdialog;
     Button box;
-
     ImageView closenew;
     public static final int PERMISSION_REQUEST_CODE = 9001;
     private static final int PLAY_SERVICES_ERROR_CODE = 9002;
@@ -85,14 +88,37 @@ public class HelpPage extends AppCompatActivity {
     LinearLayout ll;
     String help_domain;
     EditText name,city,locality;
+    private Button takeimage;
+    Uri uri;
+    private ImageView idproof;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_page);
+        idproof=findViewById(R.id.idProof);
         name=findViewById(R.id.name);
-        city=findViewById(R.id.city);
-        locality=findViewById(R.id.locality);
+        takeimage=findViewById(R.id.cameraIntent);
+        takeimage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(Build.VERSION.SDK_INT>Build.VERSION_CODES.M){
+                    if(checkSelfPermission(Manifest.permission.CAMERA)!=PackageManager.PERMISSION_GRANTED||
+                    checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)!=PackageManager.PERMISSION_GRANTED){
+                        String[] permissions={Manifest.permission.CAMERA,Manifest.permission.WRITE_EXTERNAL_STORAGE};
+                        requestPermissions(permissions,004);
+                    }
+                    else{
+                        openCamera();
+                    }
+                }
+                else{
+                    openCamera();
+                }
+            }
+        });
+//        city=findViewById(R.id.city);
+//        locality=findViewById(R.id.locality);
         c1 = (RadioButton) findViewById(R.id.c1);
         c2 = (RadioButton) findViewById(R.id.c2);
         radioGroup = findViewById(R.id.radio1);
@@ -120,7 +146,7 @@ public class HelpPage extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
-                            Toast.makeText(HelpPage.this, "hogye", Toast.LENGTH_LONG).show();
+                            Shownewpopup();
                         }
                     }
                 });
@@ -151,15 +177,7 @@ public class HelpPage extends AppCompatActivity {
         Pin_Code_Help_Page = (TextView)findViewById(R.id.Pin_Code_Help_Page);
         State_Help_Page = (TextView)findViewById(R.id.State_Help_Page);
         TypeOfHelp = (TextView)findViewById(R.id.TypeOfHelp);
-
         epicdialog=new Dialog(this);
-        box=(Button) findViewById(R.id.submitRequest);
-        box.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Shownewpopup();
-            }
-        });
 
 
 
@@ -254,6 +272,17 @@ public class HelpPage extends AppCompatActivity {
         if(language==null)
             Paper.book().write("language","en");
         updateView((String)Paper.book().read("language"));
+
+    }
+
+    private void openCamera() {
+        ContentValues values=new ContentValues();
+        values.put(MediaStore.Images.Media.TITLE,"new");
+        values.put(MediaStore.Images.Media.DESCRIPTION,"year");
+        uri=getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,values);
+        Intent cameraIntent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT,uri);
+        startActivityForResult(cameraIntent,0033);
 
     }
 
@@ -361,11 +390,16 @@ public class HelpPage extends AppCompatActivity {
         if (requestCode == PERMISSION_REQUEST_CODE && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
             mLocationPermissionGranted = true;
 
-        } else {
+        }
+        else {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, PERMISSION_REQUEST_CODE);
             }
         }
+        if(requestCode==005 && grantResults[0]==PackageManager.PERMISSION_GRANTED){
+
+        }
+
     }
 
     @Override
@@ -384,6 +418,10 @@ public class HelpPage extends AppCompatActivity {
             } else {
                 initGoogleMap();
             }
+        }
+        if(resultCode==RESULT_OK){
+            idproof.setVisibility(View.VISIBLE);
+            idproof.setImageURI(uri);
         }
     }
 

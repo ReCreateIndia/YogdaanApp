@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -27,13 +28,7 @@
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
 
         </activity>
-<<<<<<< HEAD
-        <activity android:name=".MainActivity" />
 
-        <activity android:name=".HelpPage" >
-
-        </activity>
-=======
         <activity android:name=".BlogActivity" />
         <activity android:name=".Introduction_Activity" />
         <activity
@@ -47,7 +42,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".HelpPage"></activity>
->>>>>>> 94f6af2bebbab0a7ec6e925a49e32250df564f1f
         <activity android:name=".OtpActivity" />
 
         <meta-data
