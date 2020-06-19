@@ -1488,6 +1488,8 @@ drawable rahulbanerjee
 drawable right
 drawable ruchirsodhani
 drawable search
+drawable shape_status
+drawable shape_status_selected
 drawable slide1image
 drawable slide2dots
 drawable slide2image
@@ -1695,6 +1697,9 @@ id imageView
 id imageView2
 id image_slider
 id image_view
+id imageorderconfirmed
+id imageorderprocessed
+id imageyogdaan
 id info
 id invisible
 id italic
@@ -1771,6 +1776,12 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id order
+id orderconfirmed
+id orderplaced
+id ordersupporter
+id ordersupporterconfirmed
+id ordersupporterprocesses
 id otp_desc
 id otp_progress
 id otp_text_view
@@ -1794,6 +1805,7 @@ id phone_number_text
 id phonenumber
 id pin
 id postImage
+id processed
 id progress_circular
 id progress_horizontal
 id radio
@@ -1924,6 +1936,8 @@ id wide
 id withText
 id wrap
 id wrap_content
+id yogdaan
+id yogdaan_supporter
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -1996,10 +2010,12 @@ layout activity_otp
 layout activity_our_helpers
 layout activity_payment
 layout activity_splash_screen
+layout activity_statuspage
 layout activity_tand_c
 layout activity_volunteer
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
+layout custom_actionbar
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
