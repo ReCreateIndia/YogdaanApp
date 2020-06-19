@@ -1,12 +1,16 @@
 package recreate.india.yogdaan;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.viewpager.widget.ViewPager;
 
+import io.paperdb.Paper;
 
 
 public class Introduction_Activity extends AppCompatActivity {
@@ -24,4 +28,5 @@ public class Introduction_Activity extends AppCompatActivity {
         viewPager.setAdapter(intro_adapter);
 
     }
+
 }

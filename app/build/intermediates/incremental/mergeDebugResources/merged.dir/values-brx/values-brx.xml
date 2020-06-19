@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Add_Some_Description">Add Some Description</string>
+    <string name="Address">Address</string>
+    <string name="Amount">Amount</string>
+    <string name="Area_of_Help">Area Of Help</string>
+    <string name="City">City</string>
+    <string name="Date_Of_Birth">Date Of Birth</string>
+    <string name="Description">Description</string>
+    <string name="Donate">Donate</string>
+    <string name="Donate_Clothes">Donate Clothes</string>
+    <string name="Donate_Food">Donate Food</string>
+    <string name="Donate_Money">Donate Money</string>
+    <string name="Donate_Now">Donate Now</string>
+    <string name="Enter_OTP">Enter OTP</string>
+    <string name="Flat_House_No">Flat/HouseNo</string>
+    <string name="Generate_OTP">Generate OTP</string>
+    <string name="Help">Help</string>
+    <string name="Help_For_Others">Help For Others</string>
+    <string name="Help_For_Yourself">Help For Yourself</string>
+    <string name="More">More</string>
+    <string name="Name">Name</string>
+    <string name="Net_Credit">Net Credit</string>
+    <string name="Net_Value">Net Value</string>
+    <string name="Occupation">Occupation</string>
+    <string name="Our_Helpers">Our Helpers</string>
+    <string name="Our_Work">Our Work</string>
+    <string name="Pin_Code">Pin Code</string>
+    <string name="Please_Enter_Your_Phone_Number_For_Verification">Please Enter Your Phone Number For Verification</string>
+    <string name="Resend_OTP">Resend OTP</string>
+    <string name="Select_Problem">Select Problem</string>
+    <string name="State">State</string>
+    <string name="Submit">Submit</string>
+    <string name="Type_Of_Help">Type OF Help</string>
+    <string name="Type_Of_Work">Type Of Work</string>
+    <string name="Verify_OTP">Verify OTP</string>
+    <string name="Verify_Your_Number">Verify Your Number</string>
+    <string name="Volunteers">Volunteers</string>
+    <string name="We_Have_Sent_You_An_OTP_For_Phone_Number_Verification">We Have Sent You An OTP \n For Phone Number Verification</string>
+    <string name="Your_Phone_Number">Your Phone Number</string>
+    <string name="app_name">Yogdaan</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-8169027776894810/2094347234</string>
+    <string name="close">Close</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-8169027776894810/9781265569</string>
+    <string name="open">Open</string>
+</resources>

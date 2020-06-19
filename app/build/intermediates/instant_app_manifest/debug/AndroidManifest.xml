@@ -10,13 +10,13 @@
         android:targetSdkVersion="29" />
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-    <!-- <uses-sdk android:minSdkVersion="14"/> -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
@@ -29,9 +29,15 @@
         android:roundIcon="@drawable/btn"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+<<<<<<< HEAD
+        <activity android:name="recreate.india.yogdaan.PaymentActivity" />
+        <activity android:name="recreate.india.yogdaan.DonateActivity" >
+        </activity>
+=======
         <activity android:name="recreate.india.yogdaan.Statuspage" />
         <activity android:name="recreate.india.yogdaan.PaymentActivity" />
         <activity android:name="recreate.india.yogdaan.DonateActivity" />
+>>>>>>> 94f6af2bebbab0a7ec6e925a49e32250df564f1f
         <activity android:name="recreate.india.yogdaan.Volunteer" />
         <activity android:name="recreate.india.yogdaan.TandC" />
         <activity
@@ -48,6 +54,13 @@
         <activity android:name="recreate.india.yogdaan.Introduction_Activity" />
         <activity
             android:name="recreate.india.yogdaan.LoginActivity"
+<<<<<<< HEAD
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+        </activity>
+        <activity android:name="recreate.india.yogdaan.MainActivity" />
+        <activity android:name="recreate.india.yogdaan.HelpPage" >
+        </activity>
+=======
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity android:name="recreate.india.yogdaan.MainActivity" >
             <intent-filter>
@@ -57,6 +70,7 @@
             </intent-filter>
         </activity>
         <activity android:name="recreate.india.yogdaan.HelpPage" />
+>>>>>>> 94f6af2bebbab0a7ec6e925a49e32250df564f1f
         <activity android:name="recreate.india.yogdaan.OtpActivity" />
 
         <meta-data

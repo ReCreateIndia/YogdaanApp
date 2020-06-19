@@ -2,6 +2,7 @@ package recreate.india.yogdaan;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
@@ -49,8 +50,12 @@ public class LoginActivity extends AppCompatActivity {
         phone_number_edittext = findViewById(R.id.phone_number_text);
         create_btn = findViewById(R.id.generate_btn);
 
+        SharedPreferences intro = getSharedPreferences("intro", MODE_PRIVATE);
+        boolean FirstTime = intro.getBoolean("FirstTime", true);
 
-
+        if (FirstTime) {
+            First();
+        }
 
 
         create_btn.setOnClickListener(new View.OnClickListener() {
@@ -85,6 +90,20 @@ public class LoginActivity extends AppCompatActivity {
         if(language==null)
             Paper.book().write("language","en");
         updateView((String)Paper.book().read("language"));
+    }
+
+    private void First() {
+        gotoIntroActivity();
+        SharedPreferences intro = getSharedPreferences("intro", MODE_PRIVATE);
+        SharedPreferences.Editor editor = intro.edit();
+        editor.putBoolean("FirstTime", false);
+        editor.apply();
+    }
+
+    private void gotoIntroActivity() {
+        Intent intent = new Intent(LoginActivity.this, Introduction_Activity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
     }
 
     private void updateView(String lang) {
