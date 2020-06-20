@@ -22,6 +22,8 @@ import android.content.pm.PackageManager;
 import android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.location.Address;
+import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationManager;
 import android.net.Uri;
@@ -54,9 +56,11 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.GeoPoint;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 import Helper.LocaleHelper;
@@ -91,6 +95,7 @@ public class HelpPage extends AppCompatActivity {
     private Button takeimage;
     Uri uri;
     private ImageView idproof;
+    List<Address> addresses;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,12 +139,32 @@ public class HelpPage extends AppCompatActivity {
         submit_request.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+                Geocoder geocoder;
+
+                geocoder = new Geocoder(HelpPage.this, Locale.getDefault());
+
+                try {
+                    addresses = geocoder.getFromLocation(lat, lng, 1); // Here 1 represent max location result to returned, by documents it recommended 1 to 5
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                String address = addresses.get(0).getAddressLine(0); // If any additional address line present than only, check with max available address lines by getMaxAddressLineIndex()
+                String city = addresses.get(0).getLocality();
+                String state = addresses.get(0).getAdminArea();
+                String country = addresses.get(0).getCountryName();
+                String postalCode = addresses.get(0).getPostalCode();
+                String knownName = addresses.get(0).getFeatureName();
                 Map<String,Object> map = new HashMap<>();
+
                 map.put("name",name.getText().toString());
-                map.put("city",city.getText().toString());
-                map.put("locality",locality.getText().toString());
                 map.put("lat",lat);
                 map.put("lng",lng);
+                map.put("city",city);
+                map.put("state",state);
+                map.put("complete_address",address);
                 map.put("help_domain",radioButton.getText().toString());
                 map.put("phone number",firebaseUser.getPhoneNumber());
                 ff.collection("AllRequest").document(item).collection("presentRequest").document(firebaseUser.getUid()).set(map).addOnCompleteListener(new OnCompleteListener<Void>() {
