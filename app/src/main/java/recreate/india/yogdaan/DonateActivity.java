@@ -8,6 +8,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdListener;
@@ -22,7 +23,8 @@ public class DonateActivity extends AppCompatActivity {
 
     private Button donateMoney,donateAdds;
     private InterstitialAd mInterstitialAd;
-
+    public int counter=0;
+   
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +36,8 @@ public class DonateActivity extends AppCompatActivity {
         donateAdds.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                counter++;
+
                 loadInterstitial();
                 showInterstitial();
             }

@@ -1517,7 +1517,6 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
-id Certificates
 id City_Help_Page
 id Donate
 id FUNCTION
@@ -1539,7 +1538,7 @@ id TOP_END
 id TOP_START
 id TypeOfHelp
 id Volunteers
-id Your
+id YourDonation
 id about
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -1853,8 +1852,8 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
+id selectlanguage
 id send
-id setting
 id shortcut
 id showCustom
 id showHome

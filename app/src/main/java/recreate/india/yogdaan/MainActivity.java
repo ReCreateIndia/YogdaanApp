@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -97,6 +98,31 @@ public class MainActivity extends AppCompatActivity {
         toggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         NavigationView navigationView = (NavigationView) findViewById(R.id.n1);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                int id=item.getItemId();
+                if(id==R.id.YourDonation)
+                {
+                    return false;
+                }
+                if(id==R.id.Status)
+                {
+                    Intent intent=new Intent(MainActivity.this,Statuspage.class);
+                    startActivity(intent);
+                    return true;
+                }
+                if(id==R.id.selectlanguage)
+                {
+                    Intent intent=new Intent(MainActivity.this,Intro_Adapter.class);
+                    startActivity(intent);
+                    return true;
+                }
+
+                return false;
+            }
+        });
+
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
         boolean isFirstTime = prefs.getBoolean("isFirstTime", true);
 
@@ -175,6 +201,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
