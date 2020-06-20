@@ -49,7 +49,6 @@ public class LoginActivity extends AppCompatActivity {
         firebaseUser=firebaseAuth.getCurrentUser();
         phone_number_edittext = findViewById(R.id.phone_number_text);
         create_btn = findViewById(R.id.generate_btn);
-        log_progress = findViewById(R.id.login_progress);
 
         SharedPreferences intro = getSharedPreferences("intro", MODE_PRIVATE);
         boolean FirstTime = intro.getBoolean("FirstTime", true);
@@ -67,7 +66,6 @@ public class LoginActivity extends AppCompatActivity {
                 final String complete_phone_number = code + phone_number;
                 if (phone_number.length() == 10) {
                     create_btn.setEnabled(false);
-                    log_progress.setVisibility(View.VISIBLE);
                     new android.os.Handler().postDelayed(
                             new Runnable() {
                                 public void run() {

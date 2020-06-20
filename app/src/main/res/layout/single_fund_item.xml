@@ -9,6 +9,7 @@
     android:background="#ffffff">
     <ScrollView
         android:layout_width="match_parent"
+        android:background="@drawable/text_background"
         android:layout_height="wrap_content">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -21,7 +22,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:src="@drawable/logoyogdaan"
+            android:src="@drawable/slide1image"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -63,22 +64,24 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:layout_marginTop="56dp"
+            android:background="@drawable/text_background"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/name"
-            android:background="@drawable/logoyogdaan"
+            android:src= "@drawable/slide1image"
             android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/desc"
+            android:padding="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:layout_marginBottom="45dp"
-            android:text="Description"
+            android:text="ghghgghghg hggghhg hghghghg hghghgh ghhghg hghghg ahahha haahah ahahaha ahahah haahah sgsggs agagaga agagagag fdsfdshfsdgfhfgjshf shgfsdjhgysdgjhgshfsgdfhjsdgfsdhjhfgs fhdsgfsjhgfsdhfgsjhfgs jfgsfhsdgf hs"
 
-            android:textSize="17sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.045"
@@ -88,7 +91,7 @@
 
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/donate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
@@ -97,23 +100,26 @@
             android:background="#006766"
             android:onClick="GiveDonation"
             android:text="Donate"
+            android:layout_marginTop="10dp"
             android:textColor="#ffffff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
+
+            app:layout_constraintTop_toBottomOf="@+id/desc"
             app:layout_constraintVertical_bias="1.0" />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="8dp"
             android:text="Phone Number"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/desc" />
+            app:layout_constraintTop_toBottomOf="@+id/desc"
+            app:layout_constraintVertical_bias="0.34" />
     </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
