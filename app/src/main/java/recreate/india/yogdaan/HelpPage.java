@@ -414,6 +414,8 @@ public class HelpPage extends AppCompatActivity {
 
         if (requestCode == PERMISSION_REQUEST_CODE && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
             mLocationPermissionGranted = true;
+            getLocation();
+            submit_request.setVisibility(View.VISIBLE);
 
         }
         else {

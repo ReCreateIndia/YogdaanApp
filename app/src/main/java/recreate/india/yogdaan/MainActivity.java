@@ -1,5 +1,5 @@
 package recreate.india.yogdaan;
-
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -12,14 +12,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
-
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.google.android.material.navigation.NavigationView;
@@ -40,58 +37,66 @@ public class MainActivity extends AppCompatActivity {
     AlertDialog alertDialog;
     private ImageButton donate,help,volunteer,ourWork;
     TextView Help,Our_Work,Volunteers,More,Our_Helpers,Donate;
+    ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        donate=findViewById(R.id.donate);
-        help=findViewById(R.id.help);
-        volunteer=findViewById(R.id.volunteer);
-        ourWork=findViewById(R.id.ourWork);
+        actionBar = this.getActionBar();
 
-        Help=findViewById(R.id.Help);
-        Our_Work=findViewById(R.id.Our_Work);
-        Volunteers=findViewById(R.id.Volunteers);
-        More=findViewById(R.id.More);
-        Our_Helpers=findViewById(R.id.Our_Helpers);
-        Donate=findViewById(R.id.Donate);
+        donate = findViewById(R.id.donate);
+        help = findViewById(R.id.help);
+        volunteer = findViewById(R.id.volunteer);
+        ourWork = findViewById(R.id.ourWork);
+
+        Help = findViewById(R.id.Help);
+        Our_Work = findViewById(R.id.Our_Work);
+        Volunteers = findViewById(R.id.Volunteers);
+        More = findViewById(R.id.More);
+        Our_Helpers = findViewById(R.id.Our_Helpers);
+        Donate = findViewById(R.id.Donate);
 
         donate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,DonateActivity.class));
+                startActivity(new Intent(MainActivity.this, DonateActivity.class));
             }
         });
         help.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,HelpPage.class));
+                startActivity(new Intent(MainActivity.this, HelpPage.class));
             }
         });
         ourWork.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,BlogActivity.class));
+                startActivity(new Intent(MainActivity.this, BlogActivity.class));
             }
         });
         volunteer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,Volunteer.class));
+                startActivity(new Intent(MainActivity.this, Volunteer.class));
             }
         });
+        Our_Helpers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, OurHelpers.class));
+            }
+        });
+        mAuth = FirebaseAuth.getInstance();
         ImageSlider imageslider = findViewById(R.id.image_slider);
         List<SlideModel> slideModels = new ArrayList<>();
         slideModels.add(new SlideModel(R.drawable.d5));
         slideModels.add(new SlideModel(R.drawable.d4));
         slideModels.add(new SlideModel(R.drawable.d3));
         slideModels.add(new SlideModel(R.drawable.d1));
-        mAuth = FirebaseAuth.getInstance();
+
         slideModels.add(new SlideModel(R.drawable.d2));
         imageslider.setImageList(slideModels, true);
-
-
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(toggle);
@@ -101,40 +106,46 @@ public class MainActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int id=item.getItemId();
-                if(id==R.id.YourDonation)
-                {
-                    return false;
-                }
-                if(id==R.id.Status)
-                {
-                    Intent intent=new Intent(MainActivity.this,Statuspage.class);
-                    startActivity(intent);
-                    return true;
-                }
-                if(id==R.id.selectlanguage)
-                {
-                    Intent intent=new Intent(MainActivity.this,Intro_Adapter.class);
-                    startActivity(intent);
-                    return true;
-                }
 
+                switch (item.getItemId()) {
+
+                }
+//                int id=item.getItemId();
+//                if(id==R.id.YourDonation)
+//                {
+//                    return false;
+//                }
+//                if(id==R.id.Status)
+//                {
+//                    Intent intent=new Intent(MainActivity.this,Statuspage.class);
+//                    startActivity(intent);
+//                    return true;
+//                }
+//                if(id==R.id.selectlanguage)
+//                {
+//                    Intent intent=new Intent(MainActivity.this,Intro_Adapter.class);
+//                    startActivity(intent);
+//                    return true;
+//                }
+//
                 return false;
             }
+
         });
+
 
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
         boolean isFirstTime = prefs.getBoolean("isFirstTime", true);
 
 
-        if (isFirstTime) {
-            onFirst();
-        } else {
-            FirebaseUser currentUser = mAuth.getCurrentUser();
-            if (currentUser == null) {
-                gotoLoginActivity();
-            }
-        }
+//        if (isFirstTime) {
+//            onFirst();
+//        } else {
+//            FirebaseUser currentUser = mAuth.getCurrentUser();
+//            if (currentUser == null) {
+//                gotoLoginActivity();
+//            }
+//        }
 
         Paper.init(this);
         String language = Paper.book().read("language");
@@ -197,7 +208,9 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         switch (item.getItemId()){
-
+            case R.id.Status:
+                Intent intent = new Intent(MainActivity.this, Statuspage.class);
+                startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }
@@ -206,7 +219,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.example_menu, menu);
+        inflater.inflate(R.menu.nav_menu, menu);
         return true;
     }
 }
