@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer"
-    android:background="#006766"
+
 
     >
     <com.google.android.material.navigation.NavigationView
@@ -88,20 +88,26 @@
                         android:layout_weight="1"
                         android:orientation="vertical"
                         >
-
-                        <ImageButton
-                            android:id="@+id/help"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="75dp"
+                            android:layout_height="77dp"
+                            android:layout_gravity="center"
+                            >
+
+                            <ImageButton
+                                android:id="@+id/help"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
 
 
-                            android:background="@drawable/btn"
-                            android:scaleType="centerCrop"
+                                android:background="@drawable/heelp"
+                                android:scaleType="centerCrop"
 
-                            android:src="@drawable/help"
-                            android:elevation="7dp"
 
-                            />
+                                android:elevation="7dp"
+
+                                />
+                        </LinearLayout>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -119,21 +125,28 @@
                         android:layout_width="80dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:layout_marginStart="45dp"
+                        android:layout_marginStart="40dp"
                         android:orientation="vertical"
                         >
-                        <ImageButton
-                            android:id="@+id/donate"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="75dp"
+                            android:layout_height="77dp"
+                            android:layout_gravity="center"
+                            >
+                            <ImageButton
+                                android:id="@+id/donate"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
 
-                            android:background="@drawable/btn"
-                            android:scaleType="centerCrop"
+                                android:background="@drawable/donater"
+                                android:scaleType="centerCrop"
 
-                            android:src="@drawable/donation"
-                            android:elevation="8dp"
 
-                            />
+
+                                android:elevation="10dp"
+
+                                />
+                        </LinearLayout>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -149,25 +162,32 @@
 
                     <LinearLayout
                         android:layout_width="80dp"
-                        android:layout_marginStart="42dp"
+                        android:layout_marginStart="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical"
                         >
-                        <ImageButton
-                            android:id="@+id/ourWork"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="75dp"
+                            android:layout_height="77dp"
+                            android:layout_gravity="center"
+                            >
 
-                            android:background="@drawable/btn"
-                            android:scaleType="centerCrop"
+                            <ImageButton
+                                android:id="@+id/ourWork"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
 
-                            android:src="@drawable/ourwork"
-                            android:elevation="8dp"
+                                android:background="@drawable/ourworkk"
+                                android:scaleType="centerCrop"
+
+
+                                android:elevation="8dp"
 
 
 
-                            />
+                                />
+                        </LinearLayout>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -207,19 +227,24 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical"
+                        > <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="77dp"
+                        android:layout_gravity="center"
                         >
                         <ImageButton
                             android:id="@+id/ourHelpers"
                             android:layout_width="match_parent"
-                            android:layout_height="75dp"
+                            android:layout_height="match_parent"
 
-                            android:background="@drawable/btn"
+                            android:background="@drawable/ourhelperss"
                             android:scaleType="centerCrop"
 
-                            android:src="@drawable/ourhelpers"
+
                             android:elevation="7dp"
 
                             />
+                    </LinearLayout>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -234,23 +259,29 @@
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="80dp"
-                        android:layout_marginStart="45dp"
+                        android:layout_marginStart="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical"
                         >
-                        <ImageButton
-                            android:id="@+id/volunteer"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="75dp"
+                            android:layout_height="77dp"
+                            android:layout_gravity="center"
+                            >
+                            <ImageButton
+                                android:id="@+id/volunteer"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
 
-                            android:background="@drawable/btn"
-                            android:scaleType="centerCrop"
+                                android:background="@drawable/volunt"
+                                android:scaleType="centerCrop"
 
-                            android:src="@drawable/volunteer"
-                            android:elevation="7dp"
 
-                            />
+                                android:elevation="7dp"
+
+                                />
+                        </LinearLayout>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -265,23 +296,31 @@
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="80dp"
-                        android:layout_marginStart="45dp"
+                        android:layout_marginStart="40dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical"
                         >
-                        <ImageButton
-                            android:id="@+id/more"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="75dp"
+                            android:layout_height="77dp"
+                            android:layout_gravity="center"
+                            >
 
-                            android:background="@drawable/btn"
-                            android:scaleType="centerCrop"
 
-                            android:src="@drawable/more"
-                            android:elevation="7dp"
+                            <ImageButton
+                                android:id="@+id/more"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
 
-                            />
+
+                                android:scaleType="centerCrop"
+
+                                android:background="@drawable/more"
+                                android:elevation="7dp"
+
+                                />
+                        </LinearLayout>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
