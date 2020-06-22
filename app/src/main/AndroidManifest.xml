@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
@@ -16,29 +16,31 @@
         android:roundIcon="@drawable/btn"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Statuspage"></activity>
+        <activity android:name=".Statuspage" />
         <activity android:name=".PaymentActivity" />
-        <activity android:name=".DonateActivity"></activity>
+        <activity android:name=".DonateActivity" />
         <activity android:name=".Volunteer" />
         <activity android:name=".TandC" />
         <activity
             android:name=".SplashScreen"
             android:configChanges="orientation|keyboardHidden"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
-<<<<<<< HEAD
-        <activity android:name=".MainActivity" />
 
         <activity android:name=".HelpPage" >
 
         </activity>
-=======
+
         <activity android:name=".BlogActivity" />
         <activity android:name=".Introduction_Activity" />
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,8 +48,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HelpPage"></activity>
->>>>>>> 94f6af2bebbab0a7ec6e925a49e32250df564f1f
+
         <activity android:name=".OtpActivity" />
 
         <meta-data

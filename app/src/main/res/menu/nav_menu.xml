@@ -11,8 +11,7 @@
         android:title="Your Certificates/Receipt"
 
         android:icon="@drawable/ic_person_black_24dp"
-        android:iconTint="#330033"
-        ></item>
+        android:iconTint="#330033" />
 
     <item
         android:id="@+id/Status"
@@ -28,13 +27,11 @@
         android:id="@+id/setting"
         android:title="Setting"
         android:icon="@drawable/ic_settings_black_24dp"
-        android:iconTint="#330033"
-        ></item>
+        android:iconTint="#330033" />
     <item
         android:id="@+id/logout"
         android:title="logout"
         android:icon="@drawable/ic_person_black_24dp"
-        android:iconTint="#330033"
-        ></item>
+        android:iconTint="#330033" />
 
 </menu>

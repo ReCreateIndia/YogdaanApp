@@ -1381,6 +1381,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable back
 drawable border
+drawable bordercard
 drawable btn
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -1435,6 +1436,7 @@ drawable googleg_standard_color_18
 drawable gradient
 drawable help
 drawable ic_android_black_24dp
+drawable ic_baseline_close_24
 drawable ic_baseline_keyboard_backspace_24
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
@@ -1499,6 +1501,7 @@ drawable slide1image
 drawable slide2dots
 drawable slide2image
 drawable sliderback
+drawable suces
 drawable tag
 drawable test_custom_background
 drawable text_background
@@ -1633,6 +1636,7 @@ id city
 id clear_text
 id clip_horizontal
 id clip_vertical
+id closePopyu
 id collapseActionView
 id confirm_button
 id container
@@ -1707,6 +1711,7 @@ id image_view
 id imageorderconfirmed
 id imageorderprocessed
 id imageyogdaan
+id imgh
 id info
 id invisible
 id italic
@@ -1737,6 +1742,7 @@ id logout
 id lv1
 id masked
 id media_actions
+id messag324e
 id message
 id middle
 id mini
@@ -1813,6 +1819,7 @@ id percent
 id phone_number_text
 id phonenumber
 id pin
+id points435
 id postImage
 id processed
 id progress_circular
@@ -2079,6 +2086,7 @@ layout mtrl_picker_header_title_text
 layout mtrl_picker_header_toggle
 layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
+layout new_card
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action

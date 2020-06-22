@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Yogdaan</string>
+    <string name="open">کھلا</string>
+    <string name="close">بند کریں</string>
+    //VolunteerPage
+    <string name="Name">نام</string>
+    <string name="Date_Of_Birth">پیدائش کی تاریخ</string>
+    <string name="Type_Of_Work">کام کی نوعیت</string>
+    <string name="Occupation">قبضہ</string>
+    <string name="Address">پتہ</string>
+    <string name="Submit">جمع کرائیں</string>
+
+    //AddPostPage
+    <string name="Add_Some_Description">کچھ تفصیل شامل کریں</string>
+
+    //DonatePage
+
+
+    <string name="Donate_Money">پیسے کا عطیہ کریں</string>
+
+    //HelpPage
+    <string name="Select_Problem">مسئلہ منتخب کریں</string>
+    <string name="Help_For_Others">دوسروں کے لئے مدد کریں</string>
+    <string name="Help_For_Yourself">اپنے لئے مدد کریں</string>
+    <string name="Type_Of_Help">مسئلے کی قسم</string>
+    <string name="Area_of_Help">مدد کا علاقہ</string>
+
+    <string name="City">شہر</string>
+    <string name="Pin_Code">خفیہ نمبر</string>
+    <string name="State">حالت</string>
+
+    //LoginPage
+    <string name="Verify_Your_Number">اپنے نمبر کی تصدیق کریں</string>
+    <string name="Please_Enter_Your_Phone_Number_For_Verification">براہ کرم تصدیق کے لئے اپنا فون نمبر درج کریں</string>
+    <string name="Your_Phone_Number">آپ کا فون نمبر</string>
+    <string name="Generate_OTP">OTP بنائیں</string>
+
+    //MainActivity
+    <string name="Donate">عطیہ کریں</string>
+    <string name="Need_Help">مدد چاہیے</string>
+    <string name="Our_Work">ہمارا کام</string>
+    <string name="Our_Helpers">ہمارے مددگار</string>
+    <string name="Volunteers">رضا کار</string>
+    <string name="More">مزید</string>
+
+    //OTPActivity
+    <string name="Enter_OTP">OTP درج کریں</string>
+    <string name="Resend_OTP">او ٹی پی کو دوبارہ بھیجیں</string>
+    <string name="Verify_OTP">OTP کی تصدیق کریں</string>
+    <string name="We_Have_Sent_You_An_OTP_For_Phone_Number_Verification">ہم نے فون نمبر کی توثیق کے لئے آپ کو ایک او ٹی پی بھیجا ہے</string>
+
+    //PaymentActivity
+    <string name="Amount">رقم</string>
+    <string name="Donate_Now">ابھی عطیہ کیجیے</string>
+
+    //header.xml
+    <string name="Net_Credit">نیٹ کریڈٹ</string>
+    <string name="Net_Value">موجودہ قیمت</string>
+
+    //listItemSingle.xml
+    <string name="Description">تفصیل</string>
+</resources>

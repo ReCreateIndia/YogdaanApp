@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Yogdaan</string>
+    <string name="open">ਖੁੱਲਾ</string>
+    <string name="close">ਨੇੜੇ</string>
+    //VolunteerPage
+    <string name="Name">ਨਾਮ</string>
+    <string name="Date_Of_Birth">ਜਨਮ ਤਾਰੀਖ</string>
+    <string name="Type_Of_Work">ਕੰਮ ਦੀ ਕਿਸਮ</string>
+    <string name="Occupation">ਕਿੱਤਾ</string>
+    <string name="Address">ਪਤਾ</string>
+    <string name="Submit">ਜਮ੍ਹਾਂ ਕਰੋ</string>
+
+    //AddPostPage
+    <string name="Add_Some_Description">ਕੁਝ ਵੇਰਵਾ ਸ਼ਾਮਲ ਕਰੋ</string>
+
+    //DonatePage
+    <string name="Donate_Food"></string>
+    <string name="Donate_Clothes">பணத்தை தானம் செய்யுங்கள்</string>
+    <string name="Donate_Money">ਪੈਸੇ ਦਾਨ ਕਰੋ</string>
+
+    //HelpPage
+    <string name="Select_Problem">ਸਮੱਸਿਆ ਚੁਣੋ</string>
+    <string name="Help_For_Others">ਦੂਜਿਆਂ ਲਈ ਮਦਦ ਕਰੋ</string>
+    <string name="Help_For_Yourself">ਆਪਣੇ ਲਈ ਮਦਦ ਕਰੋ</string>
+    <string name="Type_Of_Help">ਮਦਦ ਦੀ ਕਿਸਮ</string>
+    <string name="Area_of_Help">ਮਦਦ ਦਾ ਖੇਤਰ</string>
+
+    <string name="City">ਸ਼ਹਿਰ</string>
+    <string name="Pin_Code">ਪਿੰਨ ਕੋਡ</string>
+    <string name="State">ਰਾਜ</string>
+
+    //LoginPage
+    <string name="Verify_Your_Number">ਆਪਣੇ ਨੰਬਰ ਦੀ ਤਸਦੀਕ ਕਰੋ</string>
+    <string name="Please_Enter_Your_Phone_Number_For_Verification">ਕਿਰਪਾ ਕਰਕੇ ਤਸਦੀਕ ਲਈ ਆਪਣਾ ਫੋਨ ਨੰਬਰ ਦਰਜ ਕਰੋ</string>
+    <string name="Your_Phone_Number">ਤੁਹਾਡਾ ਫੋਨ ਨੰਬਰ</string>
+    <string name="Generate_OTP">ਓਟੀਪੀ ਬਣਾਓ</string>
+
+    //MainActivity
+    <string name="Donate">ਦਾਨ ਕਰੋ</string>
+    <string name="Need_Help">ਮਦਦ ਦੀ ਲੋੜ ਹੈ</string>
+    <string name="Our_Work">ਸਾਡਾ ਕੰਮ</string>
+    <string name="Our_Helpers">ਸਾਡੇ ਸਹਾਇਕ</string>
+    <string name="Volunteers">ਵਲੰਟੀਅਰ</string>
+    <string name="More">ਹੋਰ</string>
+
+    //OTPActivity
+    <string name="Enter_OTP">ਓਟੀਪੀ ਦਰਜ ਕਰੋ</string>
+    <string name="Resend_OTP">ਓਟੀਪੀ ਨੂੰ ਦੁਬਾਰਾ ਭੇਜੋ</string>
+    <string name="Verify_OTP">OTP ਦੀ ਪੜਤਾਲ ਕਰੋ</string>
+    <string name="We_Have_Sent_You_An_OTP_For_Phone_Number_Verification">ਅਸੀਂ ਤੁਹਾਨੂੰ ਫੋਨ ਨੰਬਰ ਦੀ ਤਸਦੀਕ ਲਈ ਓਟੀਪੀ ਭੇਜਿਆ ਹੈ</string>
+
+    //PaymentActivity
+    <string name="Amount">ਦੀ ਰਕਮ</string>
+    <string name="Donate_Now">ਹੁਣ ਦਾਨ ਕਰੋ</string>
+
+    //header.xml
+    <string name="Net_Credit">ਸ਼ੁੱਧ ਕ੍ਰੈਡਿਟ</string>
+    <string name="Net_Value">ਸ਼ੁੱਧ ਮੁੱਲ</string>
+
+    //listItemSingle.xml
+    <string name="Description">ਵੇਰਵਾ</string>
+</resources>
