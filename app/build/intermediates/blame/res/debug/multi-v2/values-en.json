@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en\\values-en.xml",
             "map": [
                 {
                     "source": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\values-en\\strings.xml",
+=======
+            "outputFile": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en\\values-en.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\values-en\\strings.xml",
+>>>>>>> d105ba2bea2ca82e41c23fc0605084d863956e92
                     "from": {
                         "startLines": "14,10,53,26,28,7,61,39,18,17,19,54,47,27,36,40,23,24,44,6,57,58,9,42,41,29,34,48,22,30,11,25,8,49,33,43,50,35,2,4,3",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

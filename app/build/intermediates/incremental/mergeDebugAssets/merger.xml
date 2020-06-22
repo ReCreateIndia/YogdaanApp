@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\91941\AndroidStudioProjects\YogdaanApp\app\src\main\assets"/><source path="C:\Users\91941\AndroidStudioProjects\YogdaanApp\app\build\intermediates\shader_assets\debug\out"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\91941\AndroidStudioProjects\YogdaanApp\app\src\debug\assets"/></dataSet></merger>
+=======
+<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\assets"/><source path="C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\build\intermediates\shader_assets\debug\out"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\debug\assets"/></dataSet></merger>
+>>>>>>> d105ba2bea2ca82e41c23fc0605084d863956e92

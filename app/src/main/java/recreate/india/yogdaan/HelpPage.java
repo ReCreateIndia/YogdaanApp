@@ -14,19 +14,25 @@ import com.google.android.gms.location.FusedLocationProviderClient;
 import android.Manifest;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.sqlite.SQLiteBindOrColumnIndexOutOfRangeException;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.location.Address;
+import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Build;
 import android.content.Context;
 import android.content.res.Resources;
 
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.provider.Settings;
 import android.view.View;
 import android.widget.AdapterView;
@@ -50,9 +56,11 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.GeoPoint;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 import Helper.LocaleHelper;
@@ -69,7 +77,6 @@ public class HelpPage extends AppCompatActivity {
     FirebaseUser firebaseUser;
     Dialog epicdialog;
     Button box;
-
     ImageView closenew;
     public static final int PERMISSION_REQUEST_CODE = 9001;
     private static final int PLAY_SERVICES_ERROR_CODE = 9002;
@@ -85,14 +92,38 @@ public class HelpPage extends AppCompatActivity {
     LinearLayout ll;
     String help_domain;
     EditText name,city,locality;
+    private Button takeimage;
+    Uri uri;
+    private ImageView idproof;
+    List<Address> addresses;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_page);
+        idproof=findViewById(R.id.idProof);
         name=findViewById(R.id.name);
-        city=findViewById(R.id.city);
-        locality=findViewById(R.id.locality);
+        takeimage=findViewById(R.id.cameraIntent);
+        takeimage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(Build.VERSION.SDK_INT>Build.VERSION_CODES.M){
+                    if(checkSelfPermission(Manifest.permission.CAMERA)!=PackageManager.PERMISSION_GRANTED||
+                    checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)!=PackageManager.PERMISSION_GRANTED){
+                        String[] permissions={Manifest.permission.CAMERA,Manifest.permission.WRITE_EXTERNAL_STORAGE};
+                        requestPermissions(permissions,004);
+                    }
+                    else{
+                        openCamera();
+                    }
+                }
+                else{
+                    openCamera();
+                }
+            }
+        });
+//        city=findViewById(R.id.city);
+//        locality=findViewById(R.id.locality);
         c1 = (RadioButton) findViewById(R.id.c1);
         c2 = (RadioButton) findViewById(R.id.c2);
         radioGroup = findViewById(R.id.radio1);
@@ -108,19 +139,39 @@ public class HelpPage extends AppCompatActivity {
         submit_request.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+                Geocoder geocoder;
+
+                geocoder = new Geocoder(HelpPage.this, Locale.getDefault());
+
+                try {
+                    addresses = geocoder.getFromLocation(lat, lng, 1); // Here 1 represent max location result to returned, by documents it recommended 1 to 5
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                String address = addresses.get(0).getAddressLine(0); // If any additional address line present than only, check with max available address lines by getMaxAddressLineIndex()
+                String city = addresses.get(0).getLocality();
+                String state = addresses.get(0).getAdminArea();
+                String country = addresses.get(0).getCountryName();
+                String postalCode = addresses.get(0).getPostalCode();
+                String knownName = addresses.get(0).getFeatureName();
                 Map<String,Object> map = new HashMap<>();
+
                 map.put("name",name.getText().toString());
-                map.put("city",city.getText().toString());
-                map.put("locality",locality.getText().toString());
                 map.put("lat",lat);
                 map.put("lng",lng);
+                map.put("city",city);
+                map.put("state",state);
+                map.put("complete_address",address);
                 map.put("help_domain",radioButton.getText().toString());
                 map.put("phone number",firebaseUser.getPhoneNumber());
                 ff.collection("AllRequest").document(item).collection("presentRequest").document(firebaseUser.getUid()).set(map).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
-                            Toast.makeText(HelpPage.this, "hogye", Toast.LENGTH_LONG).show();
+                            Shownewpopup();
                         }
                     }
                 });
@@ -151,15 +202,7 @@ public class HelpPage extends AppCompatActivity {
         Pin_Code_Help_Page = (TextView)findViewById(R.id.Pin_Code_Help_Page);
         State_Help_Page = (TextView)findViewById(R.id.State_Help_Page);
         TypeOfHelp = (TextView)findViewById(R.id.TypeOfHelp);
-
         epicdialog=new Dialog(this);
-        box=(Button) findViewById(R.id.submitRequest);
-        box.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Shownewpopup();
-            }
-        });
 
 
 
@@ -254,6 +297,17 @@ public class HelpPage extends AppCompatActivity {
         if(language==null)
             Paper.book().write("language","en");
         updateView((String)Paper.book().read("language"));
+
+    }
+
+    private void openCamera() {
+        ContentValues values=new ContentValues();
+        values.put(MediaStore.Images.Media.TITLE,"new");
+        values.put(MediaStore.Images.Media.DESCRIPTION,"year");
+        uri=getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,values);
+        Intent cameraIntent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT,uri);
+        startActivityForResult(cameraIntent,0033);
 
     }
 
@@ -360,12 +414,19 @@ public class HelpPage extends AppCompatActivity {
 
         if (requestCode == PERMISSION_REQUEST_CODE && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
             mLocationPermissionGranted = true;
+            getLocation();
+            submit_request.setVisibility(View.VISIBLE);
 
-        } else {
+        }
+        else {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, PERMISSION_REQUEST_CODE);
             }
         }
+        if(requestCode==005 && grantResults[0]==PackageManager.PERMISSION_GRANTED){
+
+        }
+
     }
 
     @Override
@@ -384,6 +445,10 @@ public class HelpPage extends AppCompatActivity {
             } else {
                 initGoogleMap();
             }
+        }
+        if(resultCode==RESULT_OK){
+            idproof.setVisibility(View.VISIBLE);
+            idproof.setImageURI(uri);
         }
     }
 

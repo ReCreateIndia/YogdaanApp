@@ -2,16 +2,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/Your"
+        android:id="@+id/YourDonation"
         android:title="Your Donation"
         android:icon="@drawable/ic_keyboard_return_black_24dp"
         android:iconTint="#330033"/>
-    <item
-        android:id="@+id/Certificates"
-        android:title="Your Certificates/Receipt"
 
+<<<<<<< HEAD
         android:icon="@drawable/ic_person_black_24dp"
         android:iconTint="#330033" />
+=======
+>>>>>>> d105ba2bea2ca82e41c23fc0605084d863956e92
 
     <item
         android:id="@+id/Status"
@@ -24,8 +24,8 @@
 
     </item>
     <item
-        android:id="@+id/setting"
-        android:title="Setting"
+        android:id="@+id/selectlanguage"
+        android:title="Select Language"
         android:icon="@drawable/ic_settings_black_24dp"
         android:iconTint="#330033" />
     <item

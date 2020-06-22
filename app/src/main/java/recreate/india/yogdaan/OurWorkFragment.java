@@ -38,6 +38,8 @@ public class OurWorkFragment extends Fragment {
         list=new ArrayList<>();
         OurWorkModel ourWorkModel=new OurWorkModel();
         list.add(ourWorkModel);
+        list.add(ourWorkModel);
+        list.add(ourWorkModel);
         blogRecyclerAdapter=new OurWorkBlogRecyclerAdapter(list);
         blog_list_view=view.findViewById(R.id.ourWorkRecyclerView);
         blog_list_view.setLayoutManager(new LinearLayoutManager(getActivity()));

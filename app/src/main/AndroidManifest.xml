@@ -3,17 +3,22 @@
     package="recreate.india.yogdaan">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/btn"
+        android:icon="@drawable/logoyogdaan"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/btn"
+        android:roundIcon="@drawable/logoyogdaan"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Statuspage" />
@@ -31,24 +36,39 @@
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
         </activity>
+<<<<<<< HEAD
 
         <activity android:name=".HelpPage" >
 
         </activity>
 
+=======
+
+>>>>>>> d105ba2bea2ca82e41c23fc0605084d863956e92
         <activity android:name=".BlogActivity" />
         <activity android:name=".Introduction_Activity" />
         <activity
             android:name=".LoginActivity"
+<<<<<<< HEAD
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+=======
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+        </activity>
+>>>>>>> d105ba2bea2ca82e41c23fc0605084d863956e92
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
 
+        </activity>
+<<<<<<< HEAD
+
+=======
+        <activity android:name=".HelpPage"></activity>
+>>>>>>> d105ba2bea2ca82e41c23fc0605084d863956e92
         <activity android:name=".OtpActivity" />
 
         <meta-data

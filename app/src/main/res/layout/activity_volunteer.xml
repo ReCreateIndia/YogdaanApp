@@ -27,15 +27,7 @@
             app:layout_constraintTop_toTopOf="parent"
 
             >
-            <ImageView
-                android:id="@+id/volunteerback"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_keyboard_backspace_24"
-                android:layout_gravity="left"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="10dp"
-                />
+
 
             <TextView
                 android:id="@+id/textView7"

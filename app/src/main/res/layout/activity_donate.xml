@@ -15,7 +15,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="400dp"
             android:background="@drawable/text_input_bg"
             android:orientation="vertical"
             app:layout_constraintBottom_toTopOf="@+id/generate_btn"
@@ -35,7 +35,7 @@
                 android:textSize="60sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.416"
+                app:layout_constraintHorizontal_bias="0.417"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -55,8 +55,8 @@
 
             <TextView
                 android:id="@+id/textView11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="411dp"
+                android:layout_height="211dp"
                 android:layout_marginTop="20dp"
                 android:padding="15dp"
                 android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
@@ -81,7 +81,7 @@
                     android:id="@+id/donate_money_btn"
                     android:layout_width="150dp"
                     android:layout_height="50dp"
-                    android:layout_marginTop="70dp"
+                    android:layout_marginTop="40dp"
                     android:background="@drawable/text_input_bg"
                     android:textColor="#ffffff"
                     android:text="Donate Money"
