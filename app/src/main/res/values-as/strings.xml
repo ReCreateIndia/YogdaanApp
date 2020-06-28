@@ -23,8 +23,8 @@
 
     //DonatePage
     <string name="Donate_Food">Donate Food</string>
-    <string name="Donate_Clothes">Donate Clothes</string>
-    <string name="Donate_Money">Donate Money</string>
+
+    <string name="watch_adds_to_donate">Watch adds to Donate</string>
 
     //HelpPage
     <string name="Select_Problem">Select Problem</string>
@@ -66,5 +66,6 @@
 
 
     <string name="Description">Description</string>
+
 
 </resources>

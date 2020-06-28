@@ -11,6 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -29,7 +30,7 @@ import java.util.List;
 import Helper.LocaleHelper;
 import io.paperdb.Paper;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private ActionBarDrawerToggle toggle;
@@ -49,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
         help = findViewById(R.id.help);
         volunteer = findViewById(R.id.volunteer);
         ourWork = findViewById(R.id.ourWork);
+
+
+
+
 
         Help = findViewById(R.id.Help);
         Our_Work = findViewById(R.id.Our_Work);
@@ -103,35 +108,10 @@ public class MainActivity extends AppCompatActivity {
         toggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
          navigationView = (NavigationView) findViewById(R.id.n1);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        navigationView.setNavigationItemSelectedListener(this);
 
-                switch (item.getItemId()) {
 
-                }
-//                int id=item.getItemId();
-//                if(id==R.id.YourDonation)
-//                {
-//                    return false;
-//                }
-//                if(id==R.id.Status)
-//                {
-//                    Intent intent=new Intent(MainActivity.this,Statuspage.class);
-//                    startActivity(intent);
-//                    return true;
-//                }
-//                if(id==R.id.selectlanguage)
-//                {
-//                    Intent intent=new Intent(MainActivity.this,Intro_Adapter.class);
-//                    startActivity(intent);
-//                    return true;
-//                }
-//
-                return false;
-            }
 
-        });
 
 
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
@@ -168,37 +148,37 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void onFirst() {
-            new AlertDialog.Builder(MainActivity.this)
-                    .setTitle("Terms and Conditions")
-                    .setMessage("T&C")
-                    .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            finish();
-                            System.exit(0);
-                        }
-                    })
-                    .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.dismiss();
-//                            gotoLoginActivity();
-
-                        }
-                    }).create().show();
-            SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
-            SharedPreferences.Editor editor = prefs.edit();
-            editor.putBoolean("isFirstTime", false);
-            editor.apply();
-        }
-
-
-    private void gotoLoginActivity() {
-        Intent logIntent = new Intent(MainActivity.this, LoginActivity.class);
-        logIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(logIntent);
-    }
+//    public void onFirst() {
+//            new AlertDialog.Builder(MainActivity.this)
+//                    .setTitle("Terms and Conditions")
+//                    .setMessage("T&C")
+//                    .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            finish();
+//                            System.exit(0);
+//                        }
+//                    })
+//                    .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            dialog.dismiss();
+////                            gotoLoginActivity();
+//
+//                        }
+//                    }).create().show();
+//            SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+//            SharedPreferences.Editor editor = prefs.edit();
+//            editor.putBoolean("isFirstTime", false);
+//            editor.apply();
+//        }
+//
+//
+//    private void gotoLoginActivity() {
+//        Intent logIntent = new Intent(MainActivity.this, LoginActivity.class);
+//        logIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//        startActivity(logIntent);
+//    }
 
 
     @Override
@@ -207,11 +187,11 @@ public class MainActivity extends AppCompatActivity {
 
             return true;
         }
-        switch (item.getItemId()){
-            case R.id.Status:
-                Intent intent = new Intent(MainActivity.this, Statuspage.class);
-                startActivity(intent);
-        }
+//        switch (item.getItemId()){
+//            case R.id.Status:
+//                Intent intent = new Intent(MainActivity.this, Statuspage.class);
+//                startActivity(intent);
+//        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -220,6 +200,35 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.nav_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        switch(id)
+        {
+            case R.id.YourDonation:
+                Intent intent1 = new Intent(MainActivity.this, Statuspage.class);
+                startActivity(intent1);
+                break;
+
+            case R.id.Status:
+                Intent intent = new Intent(MainActivity.this, Statuspage.class);
+                startActivity(intent);
+                break;
+
+            case R.id.selectlanguage:
+                Intent intent0 = new Intent(MainActivity.this, Intro_Adapter.class);
+                startActivity(intent0);
+                break;
+            case R.id.logout:
+                Intent intent6 = new Intent(MainActivity.this, Intro_Adapter.class);
+                startActivity(intent6);
+                break;
+
+        }
+
         return true;
     }
 }
