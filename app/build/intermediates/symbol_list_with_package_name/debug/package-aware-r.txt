@@ -1377,6 +1377,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable add
+drawable addborder
 drawable avd_hide_password
 drawable avd_show_password
 drawable back
@@ -1427,9 +1428,11 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable developers
 drawable donate3
+drawable donateborder
 drawable donater
 drawable donation
 drawable download
+drawable edit_back
 drawable error
 drawable filters
 drawable googleg_disabled_color_18
@@ -1460,6 +1463,8 @@ drawable ic_person_black_24dp
 drawable ic_remove_circle_outline_black_24dp
 drawable ic_settings_black_24dp
 drawable imageswitchernavidot1
+drawable img1
+drawable img2
 drawable input
 drawable loginbutton
 drawable logout
@@ -1740,8 +1745,8 @@ id list_item
 id ll1
 id ll2
 id ll8
+id lll22
 id logout
-id lv1
 id masked
 id media_actions
 id messag324e
@@ -1932,6 +1937,8 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tt1
+id tt2
 id tv1
 id unchecked
 id uniform
@@ -1944,6 +1951,7 @@ id view_offset_helper
 id view_pager
 id viewpager
 id visible
+id volu
 id volunteer
 id volunteer_address
 id volunteer_dob
@@ -2285,6 +2293,7 @@ string s6
 string s7
 string search_menu_title
 string status_bar_notification_info_overflow
+string watch_adds_to_donate
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

@@ -80,8 +80,8 @@ public class Intro_Adapter extends PagerAdapter {
             spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 @Override
                 public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                    if(parent.getItemAtPosition(position).equals("Select problem")){
-
+                    if(parent.getItemAtPosition(position).equals("Select language")){
+                        Toast.makeText(context, "Please select a language", Toast.LENGTH_SHORT).show();
                     }
                     else
                     {

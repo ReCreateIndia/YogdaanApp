@@ -8,6 +8,9 @@
         android:iconTint="#330033"/>
 
 
+
+
+
     <item
         android:id="@+id/Status"
         android:title="Status of your request"
@@ -22,13 +25,11 @@
         android:id="@+id/selectlanguage"
         android:title="Select Language"
         android:icon="@drawable/ic_settings_black_24dp"
-        android:iconTint="#330033"
-        ></item>
+        android:iconTint="#330033" />
     <item
         android:id="@+id/logout"
         android:title="logout"
         android:icon="@drawable/ic_person_black_24dp"
-        android:iconTint="#330033"
-        ></item>
+        android:iconTint="#330033" />
 
 </menu>
