@@ -16,7 +16,7 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 
-import Helper.LocaleHelper;
+
 import io.paperdb.Paper;
 
 public class DonateActivity extends AppCompatActivity {
@@ -86,9 +86,9 @@ public class DonateActivity extends AppCompatActivity {
     }
 
     private void updateView(String lang) {
-        Context context = LocaleHelper.setLocale(this,lang);
-        Resources resources = context.getResources();
-        donateMoney.setText(resources.getString(R.string.Donate_Money));
+//        Context context = LocaleHelper.setLocale(this,lang);
+//        Resources resources = context.getResources();
+//        donateMoney.setText(resources.getString(R.string.Donate_Money));
     }
     private InterstitialAd newInterstitialAd() {
         InterstitialAd interstitialAd = new InterstitialAd(this);

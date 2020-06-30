@@ -1,34 +1,31 @@
 package recreate.india.yogdaan;
+
+import android.annotation.SuppressLint;
 import android.app.ActionBar;
-import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.Resources;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
+
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import Helper.LocaleHelper;
 import io.paperdb.Paper;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -41,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     TextView Help,Our_Work,Volunteers,More,Our_Helpers,Donate;
     ActionBar actionBar;
 
+    @SuppressLint("WrongConstant")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +49,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         help = findViewById(R.id.help);
         volunteer = findViewById(R.id.volunteer);
         ourWork = findViewById(R.id.ourWork);
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.abs_layout);
 
 
 
@@ -137,15 +137,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void updateView(String lang) {
-        Context context = LocaleHelper.setLocale(this,lang);
-        Resources resources = context.getResources();
-
-        Help.setText(resources.getString(R.string.Help));
-        Donate.setText(resources.getString(R.string.Donate));
-        Volunteers.setText(resources.getString(R.string.Volunteers));
-        Our_Helpers.setText(resources.getString(R.string.Our_Helpers));
-        Our_Work.setText(resources.getString(R.string.Our_Work));
-        More.setText(resources.getString(R.string.More));
+//        Context context = LocaleHelper.setLocale(this,lang);
+//        Resources resources = context.getResources();
+//
+//        Help.setText(resources.getString(R.string.Help));
+//        Donate.setText(resources.getString(R.string.Donate));
+//        Volunteers.setText(resources.getString(R.string.Volunteers));
+//        Our_Helpers.setText(resources.getString(R.string.Our_Helpers));
+//        Our_Work.setText(resources.getString(R.string.Our_Work));
+//        More.setText(resources.getString(R.string.More));
 
     }
 
@@ -188,19 +188,37 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             return true;
         }
-//        switch (item.getItemId()){
-//            case R.id.Status:
-//                Intent intent = new Intent(MainActivity.this, Statuspage.class);
-//                startActivity(intent);
-//        }
+        int id = item.getItemId();
+        switch(id)
+        {
+            case R.id.YourDonation:
+                Intent intent1 = new Intent(MainActivity.this, Statuspage.class);
+                startActivity(intent1);
+                break;
+
+            case R.id.Status:
+                Intent intent = new Intent(MainActivity.this, Statuspage.class);
+                startActivity(intent);
+                break;
+
+            case R.id.selectlanguage:
+                Intent intent0 = new Intent(MainActivity.this, Intro_Adapter.class);
+                startActivity(intent0);
+                break;
+            case R.id.logout:
+                Intent intent6 = new Intent(MainActivity.this, Intro_Adapter.class);
+                startActivity(intent6);
+                break;
+
+        }
         return super.onOptionsItemSelected(item);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.nav_menu, menu);
+//        MenuInflater inflater = getMenuInflater();
+//        inflater.inflate(R.menu.nav_menu, menu);
         return true;
     }
 

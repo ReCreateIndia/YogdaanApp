@@ -62,8 +62,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
-
-import Helper.LocaleHelper;
+//
+//import Helper.LocaleHelper;
 import io.paperdb.Paper;
 
 public class HelpPage extends AppCompatActivity {
@@ -177,14 +177,13 @@ public class HelpPage extends AppCompatActivity {
                 });
             }
         });
-        ll=findViewById(R.id.addressId);
+//        ll=findViewById(R.id.addressId);
         get_current_location = findViewById(R.id.getCurrentLocation);
         get_current_location.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 initGoogleMap();
                 getLocation();
-                submit_request.setVisibility(View.VISIBLE);
             }
         });
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
@@ -198,9 +197,9 @@ public class HelpPage extends AppCompatActivity {
         SelectProblem = (TextView)findViewById(R.id.Select_Problem);
 
 //        Area_Of_Help = (TextView)findViewById(R.id.Area_Of_Help);
-        City_Help_Page = (TextView)findViewById(R.id.City_Help_Page);
-        Pin_Code_Help_Page = (TextView)findViewById(R.id.Pin_Code_Help_Page);
-        State_Help_Page = (TextView)findViewById(R.id.State_Help_Page);
+//        City_Help_Page = (TextView)findViewById(R.id.City_Help_Page);
+//        Pin_Code_Help_Page = (TextView)findViewById(R.id.Pin_Code_Help_Page);
+//        State_Help_Page = (TextView)findViewById(R.id.State_Help_Page);
         TypeOfHelp = (TextView)findViewById(R.id.TypeOfHelp);
         epicdialog=new Dialog(this);
 
@@ -312,8 +311,8 @@ public class HelpPage extends AppCompatActivity {
     }
 
     private void updateView(String lang) {
-        Context context = LocaleHelper.setLocale(this,lang);
-        Resources resources = context.getResources();
+//        Context context = LocaleHelper.setLocale(this,lang);
+//        Resources resources = context.getResources();
 
 //        SelectProblem.setText(resources.getString(R.string.Select_Problem));
 //        c1.setText(resources.getString(R.string.Help_For_Others));
