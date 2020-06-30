@@ -22,20 +22,10 @@
     <string name="Add_Some_Description">Add Some Description</string>
 
     //DonatePage
-    <string name="Donate_Food">Donate Food</string>
 
-    <string name="watch_adds_to_donate">Watch adds to Donate</string>
 
     //HelpPage
     <string name="Select_Problem">Select Problem</string>
-    <string name="Help_For_Others">Help For Others</string>
-    <string name="Help_For_Yourself">Help For Yourself</string>
-    <string name="Type_Of_Help">Type OF Help</string>
-    <string name="Area_of_Help">Area Of Help</string>
-    <string name="Flat_House_No">Flat/HouseNo</string>
-    <string name="City">City</string>
-    <string name="Pin_Code">Pin Code</string>
-    <string name="State">State</string>
 
 
     <string name="Verify_Your_Number">Verify Your Number</string>

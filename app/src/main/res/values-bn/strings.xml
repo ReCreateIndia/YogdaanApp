@@ -22,20 +22,10 @@
     <string name="Add_Some_Description">কিছু বিবরণ যুক্ত করুন</string>
 
     //DonatePage
-    <string name="Donate_Food">খাদ্য দান করুন</string>
-    <string name="Donate_Clothes">কাপড় দান করুন</string>
-    <string name="Donate_Money">অর্থ দান করা</string>
+
 
     //HelpPage
     <string name="Select_Problem">সমস্যা নির্বাচন করুন</string>
-    <string name="Help_For_Others">অন্যদের জন্য সহায়তা</string>
-    <string name="Help_For_Yourself">নিজের জন্য সাহায্য করুন</string>
-    <string name="Type_Of_Help">সহায়তার ধরণ</string>
-    <string name="Area_of_Help">সহায়তার ক্ষেত্র</string>
-    <string name="Flat_House_No">ফ্ল্যাট / বাড়ি নং</string>
-    <string name="City">শহর</string>
-    <string name="Pin_Code">পিনকোড</string>
-    <string name="State">রাষ্ট্র</string>
 
 
     <string name="Verify_Your_Number">আপনার নম্বর যাচাই করুন</string>
@@ -45,7 +35,7 @@
 
 
     <string name="Donate">দান করা</string>
-    <string name="Help">সাহায্য</string>
+
     <string name="Our_Work">আমাদের কাজ</string>
     <string name="Our_Helpers">আমাদের সহায়ক</string>
     <string name="Volunteers">ভলান্টিয়ার্স</string>
@@ -66,7 +56,7 @@
 
 
     <string name="Description">বিবরণ</string>
-    <string name="watch_adds_to_donate">Watch adds to Donate</string>
+
     <string name="there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out">There is a free platform for everyone and always will be just select the problem and we will do or best to sort it out</string>
     <string name="need_help_for_others">Need help for others</string>
     <string name="need_help_for_yourself">Need Help for yourself</string>

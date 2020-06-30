@@ -15,21 +15,10 @@
     //AddPostPage
     <string name="Add_Some_Description">சில விளக்கத்தைச் சேர்க்கவும்</string>
 
-    //DonatePage
-    <string name="Donate_Food">பணத்தை தானம் செய்யுங்கள்</string>
-    <string name="Donate_Clothes">பணத்தை தானம் செய்யுங்கள்</string>
-    <string name="Donate_Money">பணத்தை தானம் செய்யுங்கள்</string>
 
     //HelpPage
     <string name="Select_Problem">சிக்கலைத் தேர்ந்தெடுக்கவும்</string>
-    <string name="Help_For_Others">மற்றவர்களுக்கு உதவுங்கள்</string>
-    <string name="Help_For_Yourself">நீங்களே உதவி செய்யுங்கள்</string>
-    <string name="Type_Of_Help">உதவி வகை</string>
-    <string name="Area_of_Help">ஆதரவு பகுதி</string>
-    <string name="Flat_House_No">பிளாட் / ஹவுஸ் எண்</string>
-    <string name="City">நகரம்</string>
-    <string name="Pin_Code">அஞ்சல் குறியீடு</string>
-    <string name="State">நிலை</string>
+
 
     //LoginPage
     <string name="Verify_Your_Number">உங்கள் எண்ணைச் சரிபார்க்கவும்</string>
@@ -39,7 +28,7 @@
 
     //MainActivity
     <string name="Donate">நன்கொடை</string>
-    <string name="Help">உதவி</string>
+
     <string name="Our_Work">எங்கள் வேலை</string>
     <string name="Our_Helpers">எங்கள் உதவியாளர்கள்</string>
     <string name="Volunteers">தன்னார்வ</string>

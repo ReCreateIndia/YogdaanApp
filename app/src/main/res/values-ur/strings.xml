@@ -18,18 +18,10 @@
     //DonatePage
 
 
-    <string name="Donate_Money">پیسے کا عطیہ کریں</string>
+
 
     //HelpPage
     <string name="Select_Problem">مسئلہ منتخب کریں</string>
-    <string name="Help_For_Others">دوسروں کے لئے مدد کریں</string>
-    <string name="Help_For_Yourself">اپنے لئے مدد کریں</string>
-    <string name="Type_Of_Help">مسئلے کی قسم</string>
-    <string name="Area_of_Help">مدد کا علاقہ</string>
-
-    <string name="City">شہر</string>
-    <string name="Pin_Code">خفیہ نمبر</string>
-    <string name="State">حالت</string>
 
     //LoginPage
     <string name="Verify_Your_Number">اپنے نمبر کی تصدیق کریں</string>
@@ -39,7 +31,7 @@
 
     //MainActivity
     <string name="Donate">عطیہ کریں</string>
-    <string name="Need_Help">مدد چاہیے</string>
+
     <string name="Our_Work">ہمارا کام</string>
     <string name="Our_Helpers">ہمارے مددگار</string>
     <string name="Volunteers">رضا کار</string>
@@ -71,7 +63,7 @@
     <string name="use_camera">Use camera</string>
     <string name="select_type_of_help">Select Type Of Help :</string>
     <string name="the_best_way_to_persue_happiness_is_to_help_others">The best way to persue happiness is to help others!</string>
-    <string name="need_help">Need Help</string>
+    <string name="need_help">مدد چاہیے</string>
     <string name="donate_money">Donate Money</string>
     <string name="donate_by_watching_ads">Donate by watching ads</string>
 </resources>

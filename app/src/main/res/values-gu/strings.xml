@@ -21,20 +21,11 @@
     <string name="Add_Some_Description">થોડું વર્ણન ઉમેરો</string>
 
     //DonatePage
-    <string name="Donate_Food">ખોરાક દાન કરો</string>
-    <string name="Donate_Clothes">કપડા દાન કરો</string>
-    <string name="Donate_Money">પૈસા દાન કરો</string>
+
 
     //HelpPage
     <string name="Select_Problem">સમસ્યા પસંદ કરો</string>
-    <string name="Help_For_Others">અન્ય લોકો માટે મદદ</string>
-    <string name="Help_For_Yourself">તમારા માટે સહાય કરો</string>
-    <string name="Type_Of_Help">સહાયનો પ્રકાર</string>
-    <string name="Area_of_Help">સહાય ક્ષેત્ર</string>
-    <string name="Flat_House_No">ફ્લેટ / મકાન નં</string>
-    <string name="City">શહેર</string>
-    <string name="Pin_Code">પીન કોડ</string>
-    <string name="State">રાજ્ય</string>
+
 
 
     <string name="Verify_Your_Number">તમારી સંખ્યા ચકાસો</string>
@@ -44,8 +35,7 @@
 
 
     <string name="Donate">દાન કરો</string>
-    <string name="Help">સહાય કરો</string>
-    <string name="Our_Work">આપણુ કામ</string>
+   <string name="Our_Work">આપણુ કામ</string>
     <string name="Our_Helpers">અમારા સહાયકો</string>
     <string name="Volunteers">સ્વયંસેવકો</string>
     <string name="More">More</string>
@@ -65,7 +55,7 @@
 
 
     <string name="Description">વર્ણન</string>
-    <string name="watch_adds_to_donate">Watch adds to Donate</string>
+
     <string name="there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out">There is a free platform for everyone and always will be just select the problem and we will do or best to sort it out</string>
     <string name="need_help_for_others">Need help for others</string>
     <string name="need_help_for_yourself">Need Help for yourself</string>

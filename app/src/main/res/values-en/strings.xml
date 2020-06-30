@@ -15,20 +15,11 @@
     <string name="Add_Some_Description">Add Some Description</string>
 
     //DonatePage
-    <string name="Donate_Food">Donate Food</string>
-    <string name="Donate_Clothes">Donate Clothes</string>
-    <string name="Donate_Money">Donate Money</string>
+
 
     //HelpPage
     <string name="Select_Problem">Select Problem</string>
-    <string name="Help_For_Others">Help For Others</string>
-    <string name="Help_For_Yourself">Help For Yourself</string>
-    <string name="Type_Of_Help">Type OF Help</string>
-    <string name="Area_of_Help">Area Of Help</string>
-    <string name="Flat_House_No">Flat/HouseNo</string>
-    <string name="City">City</string>
-    <string name="Pin_Code">Pin Code</string>
-    <string name="State">State</string>
+
 
     //LoginPage
     <string name="Verify_Your_Number">Verify Your Number</string>
@@ -38,7 +29,7 @@
 
     //MainActivity
     <string name="Donate">Donate</string>
-    <string name="Help">Help</string>
+
     <string name="Our_Work">Our Work</string>
     <string name="Our_Helpers">Our Helpers</string>
     <string name="Volunteers">Volunteers</string>
@@ -60,7 +51,7 @@
 
     //listItemSingle.xml
     <string name="Description">Description</string>
-    <string name="watch_adds_to_donate">Watch adds to Donate</string>
+
     <string name="there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out">There is a free platform for everyone and always will be just select the problem and we will do or best to sort it out</string>
     <string name="need_help_for_others">Need help for others</string>
     <string name="need_help_for_yourself">Need Help for yourself</string>

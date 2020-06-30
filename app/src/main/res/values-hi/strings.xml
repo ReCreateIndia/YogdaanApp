@@ -15,21 +15,10 @@
     //AddPostPage
     <string name="Add_Some_Description">कुछ विवरण जोड़ें</string>
 
-    //DonatePage
-    <string name="Donate_Food">अन्न का दान करें</string>
-    <string name="Donate_Clothes">कपड़े दान करें</string>
-    <string name="Donate_Money">पैसे दान करो</string>
+
 
     //HelpPage
     <string name="Select_Problem">समस्या का चयन करें</string>
-    <string name="Help_For_Others">दूसरों की मदद करें</string>
-    <string name="Help_For_Yourself">खुद के लिए मदद</string>
-    <string name="Type_Of_Help">मदद का प्रकार</string>
-    <string name="Area_of_Help">सहायता का क्षेत्र</string>
-    <string name="Flat_House_No">फ्लैट / मकान नं</string>
-    <string name="City">शहर</string>
-    <string name="Pin_Code">पिन कोड</string>
-    <string name="State">राज्य</string>
 
     //LoginPage
     <string name="Verify_Your_Number">अपना नंबर सत्यापित करें</string>
@@ -39,7 +28,7 @@
 
     //MainActivity
     <string name="Donate">दान</string>
-    <string name="Help">मदद</string>
+
     <string name="Our_Work">हमारा काम</string>
     <string name="Our_Helpers">हमारे सहायक</string>
     <string name="Volunteers">स्वयंसेवकों</string>
@@ -61,7 +50,7 @@
 
     //listItemSingle.xml
     <string name="Description">विवरण</string>
-    <string name="watch_adds_to_donate">Watch adds to Donate</string>
+
     <string name="there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out">There is a free platform for everyone and always will be just select the problem and we will do or best to sort it out</string>
     <string name="need_help_for_others">Need help for others</string>
     <string name="need_help_for_yourself">Need Help for yourself</string>
