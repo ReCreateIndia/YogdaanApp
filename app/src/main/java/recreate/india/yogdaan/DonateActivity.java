@@ -88,7 +88,7 @@ public class DonateActivity extends AppCompatActivity {
     private void updateView(String lang) {
         Context context = LocaleHelper.setLocale(this,lang);
         Resources resources = context.getResources();
-        donateMoney.setText(resources.getString(R.string.Donate_Money));
+        donateMoney.setText(resources.getString(R.string.donate_money));
     }
     private InterstitialAd newInterstitialAd() {
         InterstitialAd interstitialAd = new InterstitialAd(this);

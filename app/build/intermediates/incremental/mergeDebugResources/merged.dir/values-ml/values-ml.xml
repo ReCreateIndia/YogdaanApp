@@ -3,21 +3,12 @@
     <string name="Add_Some_Description">കുറച്ച് വിവരണം ചേർക്കുക</string>
     <string name="Address">വിലാസം</string>
     <string name="Amount">തുക</string>
-    <string name="Area_of_Help">സഹായ മേഖല</string>
-    <string name="City">നഗരം</string>
     <string name="Date_Of_Birth">ജന്മദിനം</string>
     <string name="Description">വിവരണം</string>
     <string name="Donate">സംഭാവനചെയ്യുക</string>
-    <string name="Donate_Clothes">വസ്ത്രങ്ങൾ സംഭാവന ചെയ്യുക</string>
-    <string name="Donate_Food">ഭക്ഷണം ദാനം ചെയ്യുക</string>
-    <string name="Donate_Money">പണം സംഭാവന ചെയ്യുക</string>
     <string name="Donate_Now">ഇപ്പോൾ സംഭാവനചെയ്യുക</string>
     <string name="Enter_OTP">OTP നൽകുക</string>
-    <string name="Flat_House_No">ഫ്ലാറ്റ് / വീട് നമ്പർ</string>
     <string name="Generate_OTP">OTP സൃഷ്ടിക്കുക</string>
-    <string name="Help">സഹായിക്കൂ</string>
-    <string name="Help_For_Others">മറ്റുള്ളവർക്ക് സഹായം</string>
-    <string name="Help_For_Yourself">സ്വയം സഹായിക്കുക</string>
     <string name="More">കൂടുതൽ</string>
     <string name="Name">പേര്</string>
     <string name="Net_Credit">നെറ്റ് ക്രെഡിറ്റ്</string>
@@ -25,13 +16,10 @@
     <string name="Occupation">തൊഴിൽ</string>
     <string name="Our_Helpers">ഞങ്ങളുടെ സഹായികൾ</string>
     <string name="Our_Work">നമ്മുടെ ജോലി</string>
-    <string name="Pin_Code">പിൻ കോഡ്</string>
     <string name="Please_Enter_Your_Phone_Number_For_Verification">സ്ഥിരീകരണത്തിനായി നിങ്ങളുടെ ഫോൺ നമ്പർ നൽകുക</string>
     <string name="Resend_OTP">OTP വീണ്ടും അയയ്‌ക്കുക</string>
     <string name="Select_Problem">പ്രശ്നം തിരഞ്ഞെടുക്കുക</string>
-    <string name="State">സംസ്ഥാനം</string>
     <string name="Submit">സമർപ്പിക്കുക</string>
-    <string name="Type_Of_Help">സഹായം ഓഫ് ചെയ്യുക</string>
     <string name="Type_Of_Work">വർക്ക് തരം</string>
     <string name="Verify_OTP">OTP പരിശോധിക്കുക</string>
     <string name="Verify_Your_Number">നിങ്ങളുടെ നമ്പർ പരിശോധിക്കുക</string>
@@ -86,9 +74,18 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"ഫോണിൽ തുറക്കുക"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"സൈൻ ഇൻ ചെയ്യുക"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Google ഉപയോഗിച്ച് സൈൻ ഇൻ ചെയ്യുക"</string>
+    <string name="donate_by_watching_ads">Donate by watching ads</string>
+    <string name="donate_money">Donate Money</string>
+    <string name="enter_information">Enter Information</string>
+    <string name="get_current_location">Get Current Location</string>
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-8169027776894810/9781265569</string>
+    <string name="need_help">Need Help</string>
+    <string name="need_help_for_others">Need help for others</string>
+    <string name="need_help_for_yourself">Need Help for yourself</string>
     <string name="open">തുറക്കുക</string>
+    <string name="or_give_address_below">Or give address below</string>
+    <string name="please_add_any_government_id_proof_like_aadhar_card_pan_card_voter_id_driving_liscence_rashan_card">Please add any government id proof like aadhar card,pan card,voter id,driving liscence,rashan card.</string>
     <string msgid="368094699078615544" name="s1">"ചിത്രം സംരക്ഷിക്കുക"</string>
     <string msgid="4550830452390689489" name="s2">"\'ചിത്ര ഗാലറി\'യിൽ ചിത്രം സംഭരിക്കാൻ പരസ്യത്തെ അനുവദിക്കണോ?"</string>
     <string msgid="2435407834265420668" name="s3">"അംഗീകരിക്കുക"</string>
@@ -97,6 +94,9 @@
     <string msgid="5996672174517137271" name="s6">"കലണ്ടർ ഇവന്റ് സൃഷ്ടിക്കാൻ പരസ്യത്തെ അനുവദിക്കണോ?"</string>
     <string msgid="7163549807207034258" name="s7">"പരസ്യം പരീക്ഷിക്കുക"</string>
     <string msgid="730395136688082741" name="search_menu_title">"തിരയുക"</string>
+    <string name="select_type_of_help">Select Type Of Help :</string>
     <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
-    <string name="watch_adds_to_donate">Watch adds to Donate</string>
+    <string name="the_best_way_to_persue_happiness_is_to_help_others">The best way to persue happiness is to help others!</string>
+    <string name="there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out">There is a free platform for everyone and always will be just select the problem and we will do or best to sort it out</string>
+    <string name="use_camera">Use camera</string>
 </resources>

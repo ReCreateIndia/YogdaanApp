@@ -3,34 +3,23 @@
     <string name="Add_Some_Description">ਕੁਝ ਵੇਰਵਾ ਸ਼ਾਮਲ ਕਰੋ</string>
     <string name="Address">ਪਤਾ</string>
     <string name="Amount">ਦੀ ਰਕਮ</string>
-    <string name="Area_of_Help">ਮਦਦ ਦਾ ਖੇਤਰ</string>
-    <string name="City">ਸ਼ਹਿਰ</string>
     <string name="Date_Of_Birth">ਜਨਮ ਤਾਰੀਖ</string>
     <string name="Description">ਵੇਰਵਾ</string>
     <string name="Donate">ਦਾਨ ਕਰੋ</string>
-    <string name="Donate_Clothes">பணத்தை தானம் செய்யுங்கள்</string>
-    <string name="Donate_Food"/>
-    <string name="Donate_Money">ਪੈਸੇ ਦਾਨ ਕਰੋ</string>
     <string name="Donate_Now">ਹੁਣ ਦਾਨ ਕਰੋ</string>
     <string name="Enter_OTP">ਓਟੀਪੀ ਦਰਜ ਕਰੋ</string>
     <string name="Generate_OTP">ਓਟੀਪੀ ਬਣਾਓ</string>
-    <string name="Help_For_Others">ਦੂਜਿਆਂ ਲਈ ਮਦਦ ਕਰੋ</string>
-    <string name="Help_For_Yourself">ਆਪਣੇ ਲਈ ਮਦਦ ਕਰੋ</string>
     <string name="More">ਹੋਰ</string>
     <string name="Name">ਨਾਮ</string>
-    <string name="Need_Help">ਮਦਦ ਦੀ ਲੋੜ ਹੈ</string>
     <string name="Net_Credit">ਸ਼ੁੱਧ ਕ੍ਰੈਡਿਟ</string>
     <string name="Net_Value">ਸ਼ੁੱਧ ਮੁੱਲ</string>
     <string name="Occupation">ਕਿੱਤਾ</string>
     <string name="Our_Helpers">ਸਾਡੇ ਸਹਾਇਕ</string>
     <string name="Our_Work">ਸਾਡਾ ਕੰਮ</string>
-    <string name="Pin_Code">ਪਿੰਨ ਕੋਡ</string>
     <string name="Please_Enter_Your_Phone_Number_For_Verification">ਕਿਰਪਾ ਕਰਕੇ ਤਸਦੀਕ ਲਈ ਆਪਣਾ ਫੋਨ ਨੰਬਰ ਦਰਜ ਕਰੋ</string>
     <string name="Resend_OTP">ਓਟੀਪੀ ਨੂੰ ਦੁਬਾਰਾ ਭੇਜੋ</string>
     <string name="Select_Problem">ਸਮੱਸਿਆ ਚੁਣੋ</string>
-    <string name="State">ਰਾਜ</string>
     <string name="Submit">ਜਮ੍ਹਾਂ ਕਰੋ</string>
-    <string name="Type_Of_Help">ਮਦਦ ਦੀ ਕਿਸਮ</string>
     <string name="Type_Of_Work">ਕੰਮ ਦੀ ਕਿਸਮ</string>
     <string name="Verify_OTP">OTP ਦੀ ਪੜਤਾਲ ਕਰੋ</string>
     <string name="Verify_Your_Number">ਆਪਣੇ ਨੰਬਰ ਦੀ ਤਸਦੀਕ ਕਰੋ</string>
@@ -84,7 +73,16 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"ਫ਼ੋਨ \'ਤੇ ਖੋਲ੍ਹੋ"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"ਸਾਈਨ-ਇਨ ਕਰੋ"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Google ਨਾਲ ਸਾਈਨ-ਇਨ ਕਰੋ"</string>
+    <string name="donate_by_watching_ads">Donate by watching ads</string>
+    <string name="donate_money">Donate Money</string>
+    <string name="enter_information">Enter Information</string>
+    <string name="get_current_location">Get Current Location</string>
+    <string name="need_help">Need Help</string>
+    <string name="need_help_for_others">Need help for others</string>
+    <string name="need_help_for_yourself">Need Help for yourself</string>
     <string name="open">ਖੁੱਲਾ</string>
+    <string name="or_give_address_below">Or give address below</string>
+    <string name="please_add_any_government_id_proof_like_aadhar_card_pan_card_voter_id_driving_liscence_rashan_card">Please add any government id proof like aadhar card,pan card,voter id,driving liscence,rashan card.</string>
     <string msgid="368094699078615544" name="s1">"ਚਿੱਤਰ ਰੱਖਿਅਤ ਕਰੋ"</string>
     <string msgid="4550830452390689489" name="s2">"ਕੀ ਇਸ਼ਤਿਹਾਰ ਨੂੰ ਤਸਵੀਰ ਗੈਲਰੀ ਵਿੱਚ ਚਿੱਤਰ ਸਟੋਰ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦੇਣੀ ਹੈ?"</string>
     <string msgid="2435407834265420668" name="s3">"ਸਵੀਕਾਰ ਕਰੋ"</string>
@@ -93,5 +91,9 @@
     <string msgid="5996672174517137271" name="s6">"ਕੀ ਇਸ਼ਤਿਹਾਰ ਨੂੰ ਇੱਕ ਕੈਲੰਡਰ ਵਰਤਾਰਾ ਬਣਾਉਣ ਦੀ ਇਜਾਜ਼ਤ ਦੇਣੀ ਹੈ?"</string>
     <string msgid="7163549807207034258" name="s7">"ਟੈਸਟ ਇਸ਼ਤਿਹਾਰ"</string>
     <string msgid="730395136688082741" name="search_menu_title">"ਖੋਜ"</string>
+    <string name="select_type_of_help">Select Type Of Help :</string>
     <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="the_best_way_to_persue_happiness_is_to_help_others">The best way to persue happiness is to help others!</string>
+    <string name="there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out">There is a free platform for everyone and always will be just select the problem and we will do or best to sort it out</string>
+    <string name="use_camera">Use camera</string>
 </resources>

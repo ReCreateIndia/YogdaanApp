@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Context context = LocaleHelper.setLocale(this,lang);
         Resources resources = context.getResources();
 
-        Help.setText(resources.getString(R.string.Help));
+        Help.setText(resources.getString(R.string.need_help));
         Donate.setText(resources.getString(R.string.Donate));
         Volunteers.setText(resources.getString(R.string.Volunteers));
         Our_Helpers.setText(resources.getString(R.string.Our_Helpers));
@@ -197,12 +197,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.nav_menu, menu);
-        return true;
-    }
+
+
+
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {

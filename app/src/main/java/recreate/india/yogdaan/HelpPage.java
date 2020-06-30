@@ -83,7 +83,7 @@ public class HelpPage extends AppCompatActivity {
     public static final int GPS_REQUEST_CODE = 9003;
     private String item = "yo";
     LocationManager locationManager;
-    private Button submit_request;
+   Button submit_request;
     private FusedLocationProviderClient fusedLocationProviderClient;
     private double lat=0, lng=0;
     private Button get_current_location;
@@ -177,7 +177,7 @@ public class HelpPage extends AppCompatActivity {
                 });
             }
         });
-        ll=findViewById(R.id.addressId);
+     //   ll=findViewById(R.id.addressId);
         get_current_location = findViewById(R.id.getCurrentLocation);
         get_current_location.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -198,9 +198,9 @@ public class HelpPage extends AppCompatActivity {
         SelectProblem = (TextView)findViewById(R.id.Select_Problem);
 
 //        Area_Of_Help = (TextView)findViewById(R.id.Area_Of_Help);
-        City_Help_Page = (TextView)findViewById(R.id.City_Help_Page);
-        Pin_Code_Help_Page = (TextView)findViewById(R.id.Pin_Code_Help_Page);
-        State_Help_Page = (TextView)findViewById(R.id.State_Help_Page);
+//        City_Help_Page = (TextView)findViewById(R.id.City_Help_Page);
+//        Pin_Code_Help_Page = (TextView)findViewById(R.id.Pin_Code_Help_Page);
+//        State_Help_Page = (TextView)findViewById(R.id.State_Help_Page);
         TypeOfHelp = (TextView)findViewById(R.id.TypeOfHelp);
         epicdialog=new Dialog(this);
 

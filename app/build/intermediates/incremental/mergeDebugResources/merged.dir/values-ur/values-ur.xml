@@ -3,32 +3,23 @@
     <string name="Add_Some_Description">کچھ تفصیل شامل کریں</string>
     <string name="Address">پتہ</string>
     <string name="Amount">رقم</string>
-    <string name="Area_of_Help">مدد کا علاقہ</string>
-    <string name="City">شہر</string>
     <string name="Date_Of_Birth">پیدائش کی تاریخ</string>
     <string name="Description">تفصیل</string>
     <string name="Donate">عطیہ کریں</string>
-    <string name="Donate_Money">پیسے کا عطیہ کریں</string>
     <string name="Donate_Now">ابھی عطیہ کیجیے</string>
     <string name="Enter_OTP">OTP درج کریں</string>
     <string name="Generate_OTP">OTP بنائیں</string>
-    <string name="Help_For_Others">دوسروں کے لئے مدد کریں</string>
-    <string name="Help_For_Yourself">اپنے لئے مدد کریں</string>
     <string name="More">مزید</string>
     <string name="Name">نام</string>
-    <string name="Need_Help">مدد چاہیے</string>
     <string name="Net_Credit">نیٹ کریڈٹ</string>
     <string name="Net_Value">موجودہ قیمت</string>
     <string name="Occupation">قبضہ</string>
     <string name="Our_Helpers">ہمارے مددگار</string>
     <string name="Our_Work">ہمارا کام</string>
-    <string name="Pin_Code">خفیہ نمبر</string>
     <string name="Please_Enter_Your_Phone_Number_For_Verification">براہ کرم تصدیق کے لئے اپنا فون نمبر درج کریں</string>
     <string name="Resend_OTP">او ٹی پی کو دوبارہ بھیجیں</string>
     <string name="Select_Problem">مسئلہ منتخب کریں</string>
-    <string name="State">حالت</string>
     <string name="Submit">جمع کرائیں</string>
-    <string name="Type_Of_Help">مسئلے کی قسم</string>
     <string name="Type_Of_Work">کام کی نوعیت</string>
     <string name="Verify_OTP">OTP کی تصدیق کریں</string>
     <string name="Verify_Your_Number">اپنے نمبر کی تصدیق کریں</string>
@@ -82,7 +73,16 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"فون پر کھولیں"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"سائن ان کریں"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"‏Google کے ساتھ سائن ان کریں"</string>
+    <string name="donate_by_watching_ads">Donate by watching ads</string>
+    <string name="donate_money">Donate Money</string>
+    <string name="enter_information">Enter Information</string>
+    <string name="get_current_location">Get Current Location</string>
+    <string name="need_help">مدد چاہیے</string>
+    <string name="need_help_for_others">Need help for others</string>
+    <string name="need_help_for_yourself">Need Help for yourself</string>
     <string name="open">کھلا</string>
+    <string name="or_give_address_below">Or give address below</string>
+    <string name="please_add_any_government_id_proof_like_aadhar_card_pan_card_voter_id_driving_liscence_rashan_card">Please add any government id proof like aadhar card,pan card,voter id,driving liscence,rashan card.</string>
     <string msgid="368094699078615544" name="s1">"تصویر محفوظ کریں"</string>
     <string msgid="4550830452390689489" name="s2">"اشتہار کو تصویری گیلری میں تصویر محفوظ کرنے کی اجازت دیں؟"</string>
     <string msgid="2435407834265420668" name="s3">"قبول کریں"</string>
@@ -91,5 +91,9 @@
     <string msgid="5996672174517137271" name="s6">"اشتہار کو ایک کیلنڈر ایونٹ بنانے کی اجازت دیں؟"</string>
     <string msgid="7163549807207034258" name="s7">"اشتہار ٹیسٹ کریں"</string>
     <string msgid="730395136688082741" name="search_menu_title">"تلاش کریں"</string>
+    <string name="select_type_of_help">Select Type Of Help :</string>
     <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"+999"</string>
+    <string name="the_best_way_to_persue_happiness_is_to_help_others">The best way to persue happiness is to help others!</string>
+    <string name="there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out">There is a free platform for everyone and always will be just select the problem and we will do or best to sort it out</string>
+    <string name="use_camera">Use camera</string>
 </resources>
