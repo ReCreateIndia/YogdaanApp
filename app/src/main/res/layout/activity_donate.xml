@@ -111,7 +111,7 @@
 
                 android:background="@drawable/donateborder"
                 android:textColor="#000000"
-                android:text="@string/Donate_Money"
+                android:text="@string/donate_money"
                 android:textAllCaps="false"
                 android:textSize="20sp" />
 
@@ -133,7 +133,7 @@
         android:background="@drawable/addborder"
         android:textColor="#ffffff"
         android:elevation="10dp"
-        android:text="@string/watch_adds_to_donate"
+        android:text="@string/donate_by_watching_ads"
         android:textAllCaps="false"
         android:textSize="18sp"
         android:layout_marginBottom="30dp"
