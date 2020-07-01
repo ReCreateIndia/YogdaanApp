@@ -18,6 +18,8 @@ import androidx.viewpager.widget.PagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
+import io.paperdb.Paper;
+
 public class Intro_Adapter extends PagerAdapter {
     private Context context;
     private int[] layouts;
@@ -86,6 +88,7 @@ public class Intro_Adapter extends PagerAdapter {
                     else
                     {
                         String item=parent.getItemAtPosition(position).toString();
+                        Paper.book().write("language","en");
                         Toast.makeText(parent.getContext(), "Selected:"+item, Toast.LENGTH_SHORT).show();
                     }
                 }

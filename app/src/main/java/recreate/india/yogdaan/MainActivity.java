@@ -105,6 +105,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         imageslider.setImageList(slideModels, true);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
+      //  toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

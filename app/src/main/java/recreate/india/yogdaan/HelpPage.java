@@ -140,11 +140,8 @@ public class HelpPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
                 Geocoder geocoder;
-
                 geocoder = new Geocoder(HelpPage.this, Locale.getDefault());
-
                 try {
                     addresses = geocoder.getFromLocation(lat, lng, 1); // Here 1 represent max location result to returned, by documents it recommended 1 to 5
                 } catch (IOException e) {
@@ -190,9 +187,6 @@ public class HelpPage extends AppCompatActivity {
             OnGPS();
         }
         ff = FirebaseFirestore.getInstance();
-
-
-
         SelectProblem = (TextView)findViewById(R.id.Select_Problem);
 
 //        Area_Of_Help = (TextView)findViewById(R.id.Area_Of_Help);
@@ -201,9 +195,6 @@ public class HelpPage extends AppCompatActivity {
 //        State_Help_Page = (TextView)findViewById(R.id.State_Help_Page);
         TypeOfHelp = (TextView)findViewById(R.id.TypeOfHelp);
         epicdialog=new Dialog(this);
-
-
-
         spin = (Spinner) findViewById(R.id.spinner2);
         List<String> list = new ArrayList<String>();
         list.add(0, "Select problem");

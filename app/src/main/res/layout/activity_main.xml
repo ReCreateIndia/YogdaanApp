@@ -7,8 +7,6 @@
     android:layout_height="match_parent"
     android:id="@+id/drawer"
     tools:context=".MainActivity"
-
-
     >
     <com.google.android.material.navigation.NavigationView
 
@@ -25,6 +23,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#ffffff"
 
         >
 

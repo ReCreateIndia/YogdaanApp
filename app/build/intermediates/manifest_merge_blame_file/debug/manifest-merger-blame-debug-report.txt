@@ -66,178 +66,179 @@
 32-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:21:9-50
 33        android:supportsRtl="true"
 33-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:22:9-35
-34        android:theme="@style/AppTheme" >
-34-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:23:9-40
-35        <activity android:name="recreate.india.yogdaan.Statuspage" />
-35-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:24:9-57
-35-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:24:19-45
-36        <activity android:name="recreate.india.yogdaan.PaymentActivity" />
-36-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:25:9-53
-36-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:25:19-50
-37        <activity android:name="recreate.india.yogdaan.DonateActivity" />
-37-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:26:9-61
-37-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:26:19-49
-38        <activity android:name="recreate.india.yogdaan.Volunteer" />
-38-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:27:9-47
-38-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:27:19-44
-39        <activity android:name="recreate.india.yogdaan.TandC" />
-39-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:28:9-43
-39-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:28:19-40
-40        <activity
-40-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:29:9-34:20
-41            android:name="recreate.india.yogdaan.SplashScreen"
-41-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:30:13-41
-42            android:configChanges="orientation|keyboardHidden"
-42-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:31:13-63
-43            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
-43-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:32:13-72
-44        </activity>
-45        <activity android:name="recreate.india.yogdaan.BlogActivity" />
-45-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:36:9-50
-45-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:36:19-47
-46        <activity android:name="recreate.india.yogdaan.Introduction_Activity" />
-46-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:37:9-59
-46-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:37:19-56
-47        <activity
-47-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:38:9-42:20
-48            android:name="recreate.india.yogdaan.LoginActivity"
-48-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:39:13-42
-49            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
-49-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:40:13-72
-50        </activity>
-51        <activity android:name="recreate.india.yogdaan.MainActivity" >
-51-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:43:9-50:20
-51-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:43:19-47
-52            <intent-filter>
-52-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:44:13-48:29
-53                <action android:name="android.intent.action.MAIN" />
-53-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:45:17-69
-53-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:45:25-66
-54
-55                <category android:name="android.intent.category.LAUNCHER" />
-55-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:47:17-77
-55-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:47:27-74
-56            </intent-filter>
-57        </activity>
-58        <activity android:name="recreate.india.yogdaan.HelpPage" />
-58-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:51:9-55
-58-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:51:19-43
-59        <activity android:name="recreate.india.yogdaan.OtpActivity" />
-59-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:52:9-49
-59-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:52:19-46
-60
-61        <meta-data
-61-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:54:9-56:70
-62            android:name="com.google.android.gms.ads.APPLICATION_ID"
-62-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:55:13-69
-63            android:value="ca-app-pub-8169027776894810~7067472313" />
-63-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:56:13-67
-64
-65        <service
-65-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:30:9-36:19
-66            android:name="com.google.firebase.components.ComponentDiscoveryService"
-66-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:31:13-84
-67            android:directBootAware="true"
-67-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
-68            android:exported="false" >
-68-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:32:13-37
-69            <meta-data
-69-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
-70                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-70-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
-71                android:value="com.google.firebase.components.ComponentRegistrar" />
-71-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
-72            <meta-data
-72-->[com.google.firebase:firebase-database:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f41aa971764c4aef5caf485efddbcecd\jetified-firebase-database-19.3.0\AndroidManifest.xml:32:13-34:85
-73                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-73-->[com.google.firebase:firebase-database:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f41aa971764c4aef5caf485efddbcecd\jetified-firebase-database-19.3.0\AndroidManifest.xml:33:17-109
-74                android:value="com.google.firebase.components.ComponentRegistrar" />
-74-->[com.google.firebase:firebase-database:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f41aa971764c4aef5caf485efddbcecd\jetified-firebase-database-19.3.0\AndroidManifest.xml:34:17-82
-75            <meta-data
-75-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:36:13-38:85
-76                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-76-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:37:17-109
-77                android:value="com.google.firebase.components.ComponentRegistrar" />
-77-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:38:17-82
-78            <meta-data
-78-->[com.google.firebase:firebase-firestore:21.4.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\0ddcaf10dc5750388d9b46f51244da44\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:20:13-22:85
-79                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-79-->[com.google.firebase:firebase-firestore:21.4.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\0ddcaf10dc5750388d9b46f51244da44\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:21:17-111
-80                android:value="com.google.firebase.components.ComponentRegistrar" />
-80-->[com.google.firebase:firebase-firestore:21.4.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\0ddcaf10dc5750388d9b46f51244da44\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:22:17-82
-81        </service>
-82
-83        <activity
-83-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:24:9-31:50
-84            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-84-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:25:13-85
-85            android:excludeFromRecents="true"
-85-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:26:13-46
-86            android:exported="true"
-86-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:27:13-36
-87            android:launchMode="singleTask"
-87-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:28:13-44
-88            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-88-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:29:13-102
-89            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-89-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:30:13-72
-90
-91        <provider
-91-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
-92            android:name="com.google.firebase.provider.FirebaseInitProvider"
-92-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-93            android:authorities="recreate.india.yogdaan.firebaseinitprovider"
-93-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
-94            android:exported="false"
-94-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
-95            android:initOrder="100" />
-95-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
-96
-97        <activity
-97-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\78b13228d1b7806e4595749364e08dfc\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-98            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-98-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\78b13228d1b7806e4595749364e08dfc\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
-99            android:exported="false"
-99-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\78b13228d1b7806e4595749364e08dfc\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-100            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
-100-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\78b13228d1b7806e4595749364e08dfc\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-101        <activity
-101-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:29:9-33:64
-102            android:name="com.google.android.gms.ads.AdActivity"
-102-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:30:13-65
-103            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-103-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:31:13-122
-104            android:exported="false"
-104-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:32:13-37
-105            android:theme="@android:style/Theme.Translucent" />
-105-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:33:13-61
-106
-107        <provider
-107-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:35:9-39:39
-108            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
-108-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:36:13-76
-109            android:authorities="recreate.india.yogdaan.mobileadsinitprovider"
-109-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:37:13-73
-110            android:exported="false"
-110-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:38:13-37
-111            android:initOrder="100" />
-111-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:39:13-36
-112
-113        <meta-data
-113-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\ad072bd06501b4ced252e97ed9ee745e\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-114            android:name="com.google.android.gms.version"
-114-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\ad072bd06501b4ced252e97ed9ee745e\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-115            android:value="@integer/google_play_services_version" />
-115-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\ad072bd06501b4ced252e97ed9ee745e\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-116
-117        <provider
-117-->[com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3cfdd4a7ced58c4138f518d12f2a1f0\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-118            android:name="com.squareup.picasso.PicassoProvider"
-118-->[com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3cfdd4a7ced58c4138f518d12f2a1f0\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-119            android:authorities="recreate.india.yogdaan.com.squareup.picasso"
-119-->[com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3cfdd4a7ced58c4138f518d12f2a1f0\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-120            android:exported="false" />
-120-->[com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3cfdd4a7ced58c4138f518d12f2a1f0\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
-121    </application>
-122
-123</manifest>
+34        android:testOnly="true"
+35        android:theme="@style/AppTheme" >
+35-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:23:9-40
+36        <activity android:name="recreate.india.yogdaan.Statuspage" />
+36-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:24:9-57
+36-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:24:19-45
+37        <activity android:name="recreate.india.yogdaan.PaymentActivity" />
+37-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:25:9-53
+37-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:25:19-50
+38        <activity android:name="recreate.india.yogdaan.DonateActivity" />
+38-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:26:9-61
+38-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:26:19-49
+39        <activity android:name="recreate.india.yogdaan.Volunteer" />
+39-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:27:9-47
+39-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:27:19-44
+40        <activity android:name="recreate.india.yogdaan.TandC" />
+40-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:28:9-43
+40-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:28:19-40
+41        <activity
+41-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:29:9-34:20
+42            android:name="recreate.india.yogdaan.SplashScreen"
+42-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:30:13-41
+43            android:configChanges="orientation|keyboardHidden"
+43-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:31:13-63
+44            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+44-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:32:13-72
+45        </activity>
+46        <activity android:name="recreate.india.yogdaan.BlogActivity" />
+46-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:36:9-50
+46-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:36:19-47
+47        <activity android:name="recreate.india.yogdaan.Introduction_Activity" />
+47-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:37:9-59
+47-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:37:19-56
+48        <activity
+48-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:38:9-42:20
+49            android:name="recreate.india.yogdaan.LoginActivity"
+49-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:39:13-42
+50            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+50-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:40:13-72
+51        </activity>
+52        <activity android:name="recreate.india.yogdaan.MainActivity" >
+52-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:43:9-50:20
+52-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:43:19-47
+53            <intent-filter>
+53-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:44:13-48:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:45:17-69
+54-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:45:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:47:17-77
+56-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:47:27-74
+57            </intent-filter>
+58        </activity>
+59        <activity android:name="recreate.india.yogdaan.HelpPage" />
+59-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:51:9-55
+59-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:51:19-43
+60        <activity android:name="recreate.india.yogdaan.OtpActivity" />
+60-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:52:9-49
+60-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:52:19-46
+61
+62        <meta-data
+62-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:54:9-56:70
+63            android:name="com.google.android.gms.ads.APPLICATION_ID"
+63-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:55:13-69
+64            android:value="ca-app-pub-8169027776894810~7067472313" />
+64-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:56:13-67
+65
+66        <service
+66-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:30:9-36:19
+67            android:name="com.google.firebase.components.ComponentDiscoveryService"
+67-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:31:13-84
+68            android:directBootAware="true"
+68-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+69            android:exported="false" >
+69-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:32:13-37
+70            <meta-data
+70-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
+71                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+71-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
+72                android:value="com.google.firebase.components.ComponentRegistrar" />
+72-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
+73            <meta-data
+73-->[com.google.firebase:firebase-database:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f41aa971764c4aef5caf485efddbcecd\jetified-firebase-database-19.3.0\AndroidManifest.xml:32:13-34:85
+74                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+74-->[com.google.firebase:firebase-database:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f41aa971764c4aef5caf485efddbcecd\jetified-firebase-database-19.3.0\AndroidManifest.xml:33:17-109
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[com.google.firebase:firebase-database:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f41aa971764c4aef5caf485efddbcecd\jetified-firebase-database-19.3.0\AndroidManifest.xml:34:17-82
+76            <meta-data
+76-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:36:13-38:85
+77                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+77-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:37:17-109
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:38:17-82
+79            <meta-data
+79-->[com.google.firebase:firebase-firestore:21.4.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\0ddcaf10dc5750388d9b46f51244da44\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:20:13-22:85
+80                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+80-->[com.google.firebase:firebase-firestore:21.4.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\0ddcaf10dc5750388d9b46f51244da44\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:21:17-111
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[com.google.firebase:firebase-firestore:21.4.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\0ddcaf10dc5750388d9b46f51244da44\jetified-firebase-firestore-21.4.3\AndroidManifest.xml:22:17-82
+82        </service>
+83
+84        <activity
+84-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:24:9-31:50
+85            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+85-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:25:13-85
+86            android:excludeFromRecents="true"
+86-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:26:13-46
+87            android:exported="true"
+87-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:27:13-36
+88            android:launchMode="singleTask"
+88-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:28:13-44
+89            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+89-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:29:13-102
+90            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+90-->[com.google.firebase:firebase-auth:19.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\35d59384e5f94fa3a8b66cea2c1872ae\jetified-firebase-auth-19.3.1\AndroidManifest.xml:30:13-72
+91
+92        <provider
+92-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+93            android:name="com.google.firebase.provider.FirebaseInitProvider"
+93-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+94            android:authorities="recreate.india.yogdaan.firebaseinitprovider"
+94-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+95            android:exported="false"
+95-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+96            android:initOrder="100" />
+96-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+97
+98        <activity
+98-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\78b13228d1b7806e4595749364e08dfc\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+99            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+99-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\78b13228d1b7806e4595749364e08dfc\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+100            android:exported="false"
+100-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\78b13228d1b7806e4595749364e08dfc\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+101            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+101-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\78b13228d1b7806e4595749364e08dfc\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+102        <activity
+102-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:29:9-33:64
+103            android:name="com.google.android.gms.ads.AdActivity"
+103-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:30:13-65
+104            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+104-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:31:13-122
+105            android:exported="false"
+105-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:32:13-37
+106            android:theme="@android:style/Theme.Translucent" />
+106-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:33:13-61
+107
+108        <provider
+108-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:35:9-39:39
+109            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+109-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:36:13-76
+110            android:authorities="recreate.india.yogdaan.mobileadsinitprovider"
+110-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:37:13-73
+111            android:exported="false"
+111-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:38:13-37
+112            android:initOrder="100" />
+112-->[com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\2da607c74449a6bceac839bdc4f98aa3\jetified-play-services-ads-lite-19.1.0\AndroidManifest.xml:39:13-36
+113
+114        <meta-data
+114-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\ad072bd06501b4ced252e97ed9ee745e\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+115            android:name="com.google.android.gms.version"
+115-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\ad072bd06501b4ced252e97ed9ee745e\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+116            android:value="@integer/google_play_services_version" />
+116-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\ad072bd06501b4ced252e97ed9ee745e\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+117
+118        <provider
+118-->[com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3cfdd4a7ced58c4138f518d12f2a1f0\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+119            android:name="com.squareup.picasso.PicassoProvider"
+119-->[com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3cfdd4a7ced58c4138f518d12f2a1f0\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+120            android:authorities="recreate.india.yogdaan.com.squareup.picasso"
+120-->[com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3cfdd4a7ced58c4138f518d12f2a1f0\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+121            android:exported="false" />
+121-->[com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3cfdd4a7ced58c4138f518d12f2a1f0\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+122    </application>
+123
+124</manifest>
