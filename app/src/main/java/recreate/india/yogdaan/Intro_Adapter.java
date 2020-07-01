@@ -88,7 +88,7 @@ public class Intro_Adapter extends PagerAdapter {
                     else
                     {
                         String item=parent.getItemAtPosition(position).toString();
-                        Paper.book().write("language","en");
+                        Paper.book().write("language","hi");
                         Toast.makeText(parent.getContext(), "Selected:"+item, Toast.LENGTH_SHORT).show();
                     }
                 }

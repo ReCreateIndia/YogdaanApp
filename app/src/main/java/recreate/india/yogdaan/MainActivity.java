@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -13,6 +14,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -38,12 +40,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     TextView Help,Our_Work,Volunteers,More,Our_Helpers,Donate;
     ActionBar actionBar;
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @SuppressLint("WrongConstant")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         actionBar = this.getActionBar();
+        getSupportActionBar().setElevation(0);
 
         donate = findViewById(R.id.donate);
         help = findViewById(R.id.help);
@@ -105,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         imageslider.setImageList(slideModels, true);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
-      //  toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
+        toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -148,7 +152,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //        Our_Helpers.setText(resources.getString(R.string.Our_Helpers));
 //        Our_Work.setText(resources.getString(R.string.Our_Work));
 //        More.setText(resources.getString(R.string.More));
-//>>>>>>> fa576027607901822fd73825f141e18f44ecf2d4
+
 
     }
 
