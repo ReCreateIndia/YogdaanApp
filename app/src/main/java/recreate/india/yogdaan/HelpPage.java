@@ -83,7 +83,7 @@ public class HelpPage extends AppCompatActivity {
     public static final int GPS_REQUEST_CODE = 9003;
     private String item = "yo";
     LocationManager locationManager;
-    private Button submit_request;
+   Button submit_request;
     private FusedLocationProviderClient fusedLocationProviderClient;
     private double lat=0, lng=0;
     private Button get_current_location;
@@ -177,7 +177,6 @@ public class HelpPage extends AppCompatActivity {
                 });
             }
         });
-//        ll=findViewById(R.id.addressId);
         get_current_location = findViewById(R.id.getCurrentLocation);
         get_current_location.setOnClickListener(new View.OnClickListener() {
             @Override

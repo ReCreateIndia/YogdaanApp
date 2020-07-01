@@ -1545,7 +1545,6 @@ id TOP_START
 id TypeOfHelp
 id Volunteers
 id YourDonation
-id about
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
 id accessibility_custom_action_1
@@ -1674,7 +1673,6 @@ id dropdown_menu
 id edit_query
 id end
 id end_padder
-id eng
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
@@ -1700,7 +1698,6 @@ id group_divider
 id groups
 id help
 id hideable
-id hindi
 id home
 id homeAsUp
 id icon
@@ -1722,7 +1719,6 @@ id invisible
 id italic
 id item_touch_helper_previous_elevation
 id labeled
-id lang
 id largeLabel
 id layout1
 id left
@@ -2131,7 +2127,6 @@ layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu bottommeny
-menu example_menu
 menu nav_menu
 plurals mtrl_badge_content_description
 string Add_Some_Description

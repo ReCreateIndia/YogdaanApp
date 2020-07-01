@@ -309,7 +309,7 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
 
-                    android:background="@drawable/addborder"
+                    android:background="#E46E48"
                     >
 
                 </Button>
