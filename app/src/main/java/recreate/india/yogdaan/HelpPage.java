@@ -49,12 +49,16 @@ import android.widget.Toast;
 
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.GeoPoint;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -67,31 +71,32 @@ import Helper.LocaleHelper;
 import io.paperdb.Paper;
 
 public class HelpPage extends AppCompatActivity {
-    TextView SelectProblem,NameHelpPage,Date_Of_Birth_Help_Page,Area_Of_Help,Flat_House_No1,Flat_House_No2,City_Help_Page,Pin_Code_Help_Page,State_Help_Page,TypeOfHelp;
+    TextView SelectProblem, NameHelpPage, Date_Of_Birth_Help_Page, Area_Of_Help, Flat_House_No1, Flat_House_No2, City_Help_Page, Pin_Code_Help_Page, State_Help_Page, TypeOfHelp;
     Spinner spin;
     RadioGroup radioGroup;
     RadioButton radioButton;
-    RadioButton c1,c2;
+    RadioButton c1, c2;
     FirebaseFirestore ff;
     FirebaseAuth firebaseAuth;
     FirebaseUser firebaseUser;
     Dialog epicdialog;
     Button box;
+    String imageDownlaodLink;
     ImageView closenew;
     public static final int PERMISSION_REQUEST_CODE = 9001;
     private static final int PLAY_SERVICES_ERROR_CODE = 9002;
     public static final int GPS_REQUEST_CODE = 9003;
     private String item = "yo";
     LocationManager locationManager;
-   Button submit_request;
+    Button submit_request;
     private FusedLocationProviderClient fusedLocationProviderClient;
-    private double lat=0, lng=0;
+    private double lat = 0, lng = 0;
     private Button get_current_location;
     private boolean mLocationPermissionGranted;
     private Button manualAddress;
     LinearLayout ll;
     String help_domain;
-    EditText name,city,locality;
+    EditText name, city, locality;
     private Button takeimage;
     Uri uri;
     private ImageView idproof;
@@ -101,23 +106,21 @@ public class HelpPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_page);
-        idproof=findViewById(R.id.idProof);
-        name=findViewById(R.id.name);
-        takeimage=findViewById(R.id.cameraIntent);
+        idproof = findViewById(R.id.idProof);
+        name = findViewById(R.id.name);
+        takeimage = findViewById(R.id.cameraIntent);
         takeimage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(Build.VERSION.SDK_INT>Build.VERSION_CODES.M){
-                    if(checkSelfPermission(Manifest.permission.CAMERA)!=PackageManager.PERMISSION_GRANTED||
-                    checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)!=PackageManager.PERMISSION_GRANTED){
-                        String[] permissions={Manifest.permission.CAMERA,Manifest.permission.WRITE_EXTERNAL_STORAGE};
-                        requestPermissions(permissions,004);
-                    }
-                    else{
+                if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) {
+                    if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED ||
+                            checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                        String[] permissions = {Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE};
+                        requestPermissions(permissions, 004);
+                    } else {
                         openCamera();
                     }
-                }
-                else{
+                } else {
                     openCamera();
                 }
             }
@@ -131,7 +134,7 @@ public class HelpPage extends AppCompatActivity {
         radioButton = findViewById(radioid);
 
         //initialise database
-        ff=FirebaseFirestore.getInstance();
+        ff = FirebaseFirestore.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseUser = firebaseAuth.getCurrentUser();
         //
@@ -154,16 +157,44 @@ public class HelpPage extends AppCompatActivity {
                 String country = addresses.get(0).getCountryName();
                 String postalCode = addresses.get(0).getPostalCode();
                 String knownName = addresses.get(0).getFeatureName();
-                Map<String,Object> map = new HashMap<>();
 
-                map.put("name",name.getText().toString());
-                map.put("lat",lat);
-                map.put("lng",lng);
-                map.put("city",city);
-                map.put("state",state);
-                map.put("complete_address",address);
-                map.put("help_domain",radioButton.getText().toString());
-                map.put("phone number",firebaseUser.getPhoneNumber());
+                StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("images");
+                final StorageReference imageFilePath = storageReference.child(uri.getLastPathSegment());
+                imageFilePath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                    @Override
+                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+
+                        imageFilePath.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                            @Override
+                            public void onSuccess(Uri uri) {
+                                imageDownlaodLink = uri.toString();
+                            }
+                                });
+
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                // something goes wrong uploading picture
+                                Toast.makeText(HelpPage.this,"error",Toast.LENGTH_LONG).show();
+                            }
+                        });
+
+
+                Map<String, Object> map = new HashMap<>();
+
+                map.put("name", name.getText().toString());
+                map.put("lat", lat);
+                map.put("lng", lng);
+                map.put("city", city);
+                map.put("state", state);
+                map.put("complete_address", address);
+                map.put("help_domain", radioButton.getText().toString());
+                map.put("phone number", firebaseUser.getPhoneNumber());
+                map.put("image",imageDownlaodLink);
+                map.put("day",1);
+
+
                 ff.collection("AllRequest").document(item).collection("presentRequest").document(firebaseUser.getUid()).set(map).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
@@ -187,14 +218,14 @@ public class HelpPage extends AppCompatActivity {
             OnGPS();
         }
         ff = FirebaseFirestore.getInstance();
-        SelectProblem = (TextView)findViewById(R.id.Select_Problem);
+        SelectProblem = (TextView) findViewById(R.id.Select_Problem);
 
 //        Area_Of_Help = (TextView)findViewById(R.id.Area_Of_Help);
 //        City_Help_Page = (TextView)findViewById(R.id.City_Help_Page);
 //        Pin_Code_Help_Page = (TextView)findViewById(R.id.Pin_Code_Help_Page);
 //        State_Help_Page = (TextView)findViewById(R.id.State_Help_Page);
-        TypeOfHelp = (TextView)findViewById(R.id.TypeOfHelp);
-        epicdialog=new Dialog(this);
+        TypeOfHelp = (TextView) findViewById(R.id.TypeOfHelp);
+        epicdialog = new Dialog(this);
         spin = (Spinner) findViewById(R.id.spinner2);
         List<String> list = new ArrayList<String>();
         list.add(0, "Select problem");
@@ -283,47 +314,21 @@ public class HelpPage extends AppCompatActivity {
 
         Paper.init(this);
         String language = Paper.book().read("language");
-        if(language==null)
-            Paper.book().write("language","en");
-        updateView((String)Paper.book().read("language"));
+        if (language == null)
+            Paper.book().write("language", "en");
 
     }
 
     private void openCamera() {
-        ContentValues values=new ContentValues();
-        values.put(MediaStore.Images.Media.TITLE,"new");
-        values.put(MediaStore.Images.Media.DESCRIPTION,"year");
-        uri=getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,values);
-        Intent cameraIntent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT,uri);
-        startActivityForResult(cameraIntent,0033);
+        ContentValues values = new ContentValues();
+        values.put(MediaStore.Images.Media.TITLE, "new");
+        values.put(MediaStore.Images.Media.DESCRIPTION, "year");
+        uri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+        Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, uri);
+        startActivityForResult(cameraIntent, 0033);
 
     }
-
-    private void updateView(String lang) {
-//        Context context = LocaleHelper.setLocale(this,lang);
-//        Resources resources = context.getResources();
-
-//        SelectProblem.setText(resources.getString(R.string.Select_Problem));
-//        c1.setText(resources.getString(R.string.Help_For_Others));
-//        c2.setText(resources.getString(R.string.Help_For_Yourself));
-//        TypeOfHelp.setText(resources.getString(R.string.Type_Of_Help));
-//        Area_Of_Help.setText(resources.getString(R.string.Area_of_Help));
-//        Flat_House_No1.setText(resources.getString(R.string.Flat_House_No));
-//        Flat_House_No2.setText(resources.getString(R.string.Flat_House_No));
-//        Pin_Code_Help_Page.setText(resources.getString(R.string.Pin_Code));
-//        City_Help_Page.setText(resources.getString(R.string.City));
-//        State_Help_Page.setText(resources.getString(R.string.State));
-//        NameHelpPage.setText(resources.getString(R.string.Name));
-//        Date_Of_Birth_Help_Page.setText(resources.getString(R.string.Date_Of_Birth));
-
-    }
-
-//    public void onClickRadiobutton(View view) {
-//        int radioid = radioGroup.getCheckedRadioButtonId();
-//        radioButton = findViewById(radioid);
-//    }
-
     private void initGoogleMap() {
 
         if (isGPSEnabled()) {
