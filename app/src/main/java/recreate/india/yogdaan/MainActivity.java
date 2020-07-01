@@ -2,8 +2,10 @@ package recreate.india.yogdaan;
 
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -26,6 +28,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import java.util.ArrayList;
 import java.util.List;
 
+import Helper.LocaleHelper;
 import io.paperdb.Paper;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -130,25 +133,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //        }
 
         Paper.init(this);
-        String language = Paper.book().read("language");
-        if(language==null)
-            Paper.book().write("language","en");
+//        String language = Paper.book().read("language");
+//        if(language==null)
+//            Paper.book().write("language","en");
         updateView((String)Paper.book().read("language"));
 
     }
 
     private void updateView(String lang) {
-
-//        Context context = LocaleHelper.setLocale(this,lang);
-//        Resources resources = context.getResources();
-//
-//        Help.setText(resources.getString(R.string.need_help));
-//        Donate.setText(resources.getString(R.string.Donate));
-//        Volunteers.setText(resources.getString(R.string.Volunteers));
-//        Our_Helpers.setText(resources.getString(R.string.Our_Helpers));
-//        Our_Work.setText(resources.getString(R.string.Our_Work));
-//        More.setText(resources.getString(R.string.More));
-//>>>>>>> fa576027607901822fd73825f141e18f44ecf2d4
+        Context context = LocaleHelper.setLocale(this,lang);
+        Resources resources = context.getResources();
+        Help.setText(resources.getString(R.string.need_help));
 
     }
 

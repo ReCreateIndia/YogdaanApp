@@ -3,6 +3,7 @@ package recreate.india.yogdaan;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,10 +16,13 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
+import java.security.AccessController;
 import java.util.ArrayList;
 import java.util.List;
 
+import Helper.LocaleHelper;
 import io.paperdb.Paper;
+import android.content.SharedPreferences;
 
 public class Intro_Adapter extends PagerAdapter {
     private Context context;
@@ -27,12 +31,24 @@ public class Intro_Adapter extends PagerAdapter {
     private ImageButton lgn;
     private Spinner spin;
     private Activity activity;
+
+
     public Intro_Adapter(Context context, int[] layouts, Activity activity)
     {
         this.context = context;
         this.layouts = layouts;
         this.activity = activity;
         inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+//        Context context = LocaleHelper.setLocale(this,lang);
+        Paper.init(context);
+        String language = Paper.book().read("language");
+        if(language==null)
+            Paper.book().write("language","en");
+
+
+
+
     }
     @Override
     public int getCount() {
@@ -85,10 +101,16 @@ public class Intro_Adapter extends PagerAdapter {
                     if(parent.getItemAtPosition(position).equals("Select language")){
                         Toast.makeText(context, "Please select a language", Toast.LENGTH_SHORT).show();
                     }
+
+                    else if(parent.getItemAtPosition(position).equals("Hindi")){
+                        Toast.makeText(context, "Hindi Selected as a Language", Toast.LENGTH_SHORT).show();
+                        Paper.book().write("language","hi");
+
+                    }
+
                     else
                     {
                         String item=parent.getItemAtPosition(position).toString();
-                        Paper.book().write("language","en");
                         Toast.makeText(parent.getContext(), "Selected:"+item, Toast.LENGTH_SHORT).show();
                     }
                 }
@@ -106,7 +128,7 @@ public class Intro_Adapter extends PagerAdapter {
             lgn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(v.getContext(), LoginActivity.class);
+                    Intent intent = new Intent(v.getContext(), MainActivity.class);
                     context.startActivity(intent);
                     activity.finish();
 

@@ -63,7 +63,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 //
-//import Helper.LocaleHelper;
+import Helper.LocaleHelper;
 import io.paperdb.Paper;
 
 public class HelpPage extends AppCompatActivity {

@@ -28,12 +28,11 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.google.gson.internal.$Gson$Preconditions;
 
 import java.util.HashMap;
 import java.util.Map;
-
 import Helper.LocaleHelper;
+
 import io.paperdb.Paper;
 
 public class AddPostActivity extends AppCompatActivity {

@@ -44,16 +44,20 @@
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
         </activity>
         <activity android:name="recreate.india.yogdaan.BlogActivity" />
-        <activity android:name="recreate.india.yogdaan.Introduction_Activity" />
+        <activity android:name="recreate.india.yogdaan.Introduction_Activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="recreate.india.yogdaan.LoginActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
         </activity>
         <activity android:name="recreate.india.yogdaan.MainActivity" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name="recreate.india.yogdaan.HelpPage" />
