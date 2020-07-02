@@ -1382,7 +1382,9 @@ drawable addborder
 drawable avd_hide_password
 drawable avd_show_password
 drawable back
+drawable book
 drawable border
+drawable border45
 drawable bordercard
 drawable btn
 drawable btn_checkbox_checked_mtrl
@@ -1436,6 +1438,8 @@ drawable download
 drawable edit_back
 drawable error
 drawable filters
+drawable food
+drawable foof1
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable gradient
@@ -1498,11 +1502,14 @@ drawable ourhelperss
 drawable ourwork
 drawable ourworkk
 drawable ow
+drawable paymentbord
+drawable pen2
 drawable placeholder
 drawable primary_btn_bg
 drawable profile
 drawable rahulbanerjee
 drawable right
+drawable rs
 drawable ruchirsodhani
 drawable search
 drawable shape_status
@@ -1613,6 +1620,7 @@ id auto
 id barrier
 id beginning
 id blocking
+id bookmoney
 id bottom
 id bottomnavview
 id browser_actions_header_text
@@ -1687,6 +1695,7 @@ id filled
 id filter_chip
 id fitToContents
 id fixed
+id foodmoney
 id forever
 id fragment_container
 id generate_btn
@@ -1746,6 +1755,7 @@ id messag324e
 id message
 id middle
 id mini
+id money
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -1879,6 +1889,7 @@ id src_in
 id src_over
 id standard
 id start
+id stationarymoney
 id status_bar_latest_event_content
 id stretch
 id submenuarrow
@@ -1906,6 +1917,8 @@ id textView
 id textView10
 id textView11
 id textView12
+id textView13
+id textView14
 id textView2
 id textView3
 id textView4
@@ -2032,6 +2045,7 @@ layout activity_main
 layout activity_otp
 layout activity_our_helpers
 layout activity_payment
+layout activity_payment_suggestion
 layout activity_splash_screen
 layout activity_statuspage
 layout activity_tand_c
@@ -2186,6 +2200,7 @@ string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
 string banner_ad_unit_id
+string books_money
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_overflowed_content_description
@@ -2220,6 +2235,7 @@ string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string firebase_database_url
+string food_money
 string gcm_defaultSenderId
 string get_current_location
 string google_api_key
@@ -2230,6 +2246,7 @@ string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string interstitial_ad_unit_id
+string money_directly
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_suffix
@@ -2284,7 +2301,9 @@ string s5
 string s6
 string s7
 string search_menu_title
+string select_the_money_range
 string select_type_of_help
+string stationary_money
 string status_bar_notification_info_overflow
 string the_best_way_to_persue_happiness_is_to_help_others
 string there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out

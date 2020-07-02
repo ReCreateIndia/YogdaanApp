@@ -10,6 +10,10 @@
     android:orientation="vertical"
 
     >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
@@ -20,7 +24,7 @@
             android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:orientation="vertical"
             android:gravity="center"
             app:layout_constraintBottom_toTopOf="@+id/generate_btn"
@@ -326,6 +330,8 @@
         </LinearLayout>
 
         </LinearLayout>
+    </RelativeLayout>
+
 
 
 

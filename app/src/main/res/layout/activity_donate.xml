@@ -8,21 +8,22 @@
     android:orientation="vertical"
     tools:context=".DonateActivity"
 
-   >
-
+   ><ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:weightSum="3"
             android:orientation="vertical"
             >
-
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_weight="1"
+                android:layout_height="320dp"
+
                 android:orientation="vertical"
 
                 android:id="@+id/lll22"
@@ -58,7 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="22dp"
 
 
 
@@ -69,19 +70,62 @@
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
-
                 android:text="The best way to persue happiness is to help others"
                 android:textColor="#000000"
                 android:textSize="20sp"
-                android:layout_marginRight="15dp"
-                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="18dp"
                 android:gravity="center"
 
 
                android:layout_below="@id/lll22"
                  />
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="60dp"
+                >
+                <Button
+                    android:id="@+id/donate_money_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="48dp"
+                    android:elevation="10dp"
+
+
+
+                    android:background="@drawable/donateborder"
+                    android:textColor="#000000"
+                    android:text="@string/donate_money"
+                    android:textAllCaps="false"
+                    android:textSize="20sp" />
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/donate_add"
+                    android:layout_width="200dp"
+                    android:layout_marginTop="25dp"
+
+                    android:layout_height="48dp"
+                    android:background="@drawable/border45"
+                    android:textColor="#ffffff"
+                    android:elevation="10dp"
+                    android:text="@string/donate_by_watching_ads"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="30dp"
+
+
+                    />  </LinearLayout>
 
 
 
@@ -89,6 +133,8 @@
 
 
         </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -96,50 +142,7 @@
         android:id="@+id/add"
         android:orientation="vertical"
         >
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            >
-            <Button
-                android:id="@+id/donate_money_btn"
-                android:layout_width="200dp"
-                android:layout_height="48dp"
-                android:elevation="10dp"
 
-
-
-                android:background="@drawable/donateborder"
-                android:textColor="#000000"
-                android:text="@string/donate_money"
-                android:textAllCaps="false"
-                android:textSize="20sp" />
-
-
-
-
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
-        <Button
-        android:id="@+id/donate_add"
-        android:layout_width="200dp"
-        android:layout_marginTop="25dp"
-
-        android:layout_height="48dp"
-        android:background="@drawable/addborder"
-        android:textColor="#ffffff"
-        android:elevation="10dp"
-        android:text="@string/donate_by_watching_ads"
-        android:textAllCaps="false"
-        android:textSize="18sp"
-        android:layout_marginBottom="30dp"
-
-
-        />  </LinearLayout>
         <com.google.android.gms.ads.AdView
             app:layout_constraintHorizontal_weight="1"
             app:layout_constraintVertical_weight="1"

@@ -64,4 +64,9 @@
     <string name="need_help">मदद की ज़रूरत है</string>
     <string name="donate_money">Donate Money</string>
     <string name="donate_by_watching_ads">Donate by watching ads</string>
+    <string name="select_the_money_range">Select the Money Range</string>
+    <string name="stationary_money">Stationary Money</string>
+    <string name="books_money">Books Money</string>
+    <string name="food_money">Food Money</string>
+    <string name="money_directly">Money Directly</string>
 </resources>

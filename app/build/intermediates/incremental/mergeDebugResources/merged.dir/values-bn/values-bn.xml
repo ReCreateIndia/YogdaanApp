@@ -55,6 +55,7 @@
     <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"সঙ্কুচিত করুন"</string>
     <string name="app_name">Yogdaan</string>
     <string name="banner_ad_unit_id" translatable="false">ca-app-pub-8169027776894810/2094347234</string>
+    <string name="books_money">Books Money</string>
     <string name="close">ঘনিষ্ঠ</string>
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"সক্ষম করুন"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"আপনি Google Play পরিষেবা সক্ষম না করা পর্যন্ত <ns1:g id="APP_NAME">%1$s</ns1:g> কাজ করবে না।"</string>
@@ -77,9 +78,11 @@
     <string name="donate_by_watching_ads">Donate by watching ads</string>
     <string name="donate_money">Donate Money</string>
     <string name="enter_information">Enter Information</string>
+    <string name="food_money">Food Money</string>
     <string name="get_current_location">Get Current Location</string>
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-8169027776894810/9781265569</string>
+    <string name="money_directly">Money Directly</string>
     <string name="need_help">Need Help</string>
     <string name="need_help_for_others">Need help for others</string>
     <string name="need_help_for_yourself">Need Help for yourself</string>
@@ -94,7 +97,9 @@
     <string msgid="5996672174517137271" name="s6">"বিজ্ঞাপনকে একটি ক্যালেন্ডার ইভেন্ট তৈরি করার অনুমতি দেবেন?"</string>
     <string msgid="7163549807207034258" name="s7">"পরীক্ষামূলক বিজ্ঞাপন"</string>
     <string msgid="730395136688082741" name="search_menu_title">"সার্চ করুন"</string>
+    <string name="select_the_money_range">Select the Money Range</string>
     <string name="select_type_of_help">Select Type Of Help :</string>
+    <string name="stationary_money">Stationary Money</string>
     <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"৯৯৯+"</string>
     <string name="the_best_way_to_persue_happiness_is_to_help_others">The best way to persue happiness is to help others!</string>
     <string name="there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out">There is a free platform for everyone and always will be just select the problem and we will do or best to sort it out</string>

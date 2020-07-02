@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".PaymentActivity">
     <LinearLayout
@@ -11,73 +11,44 @@
         android:layout_width="match_parent"
         android:orientation="vertical"
         android:layout_height="wrap_content">
+
         <LinearLayout
-            android:layout_weight=".8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:padding="10dp"
-                android:id="@+id/linearLayout3"
-                android:layout_width="match_parent"
+         android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:background="#000000"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/text_input_bg"
-                android:orientation="vertical"
-                app:layout_constraintBottom_toTopOf="@+id/generate_btn"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0">
+                android:text="Donate"
+                android:textColor="#3C9E94"
+                android:textSize="42sp"
 
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="Yogdaan"
-                    android:textColor="#ffffff"
-                    android:textSize="60sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.416"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+                />
+        </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Donate"
-                    android:textColor="#ffffff"
-                    android:textSize="40sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.469"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-                <TextView
+            <TextView
                     android:id="@+id/textView11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="45dp"
                     android:padding="15dp"
-                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
-                    android:textColor="#ffffff"
+                    android:text="Lorem Ipsum is simply dumm Lor took a galley of type and scrambled it to make a type specimen book"
+                    android:textColor="#000000"
                     android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </LinearLayout>
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center_horizontal"
+                    />
 
         <LinearLayout
             android:gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="70dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
@@ -85,68 +56,83 @@
 
             <EditText
                 android:layout_marginTop="20dp"
-                android:background="@drawable/text_background"
+
                 android:id="@+id/name"
-                android:gravity="center"
-                android:textColorHint="#013220"
+
+                android:textColorHint="#000000"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
 
-                android:hint="Enter Name"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="211dp" />
+                android:textSize="22sp"
+                android:padding="10dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/paymentbord"
+                android:gravity="left|bottom"
+
+                android:hint="@string/Name"
+                 />
 
             <EditText
                 android:layout_marginTop="20dp"
-                android:background="@drawable/text_background"
+
                 android:id="@+id/phonenumber"
-                android:gravity="center"
-                android:textColorHint="#013220"
+
+                android:textColorHint="#000000"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:textSize="22sp"
+                android:padding="10dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/paymentbord"
+                android:gravity="left|bottom"
 
-                android:hint="Enter PhoneNumber"
+                android:hint="Phone Number"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:layout_editor_absoluteY="211dp" />
             <EditText
                 android:layout_marginTop="20dp"
-                android:background="@drawable/text_background"
+
                 android:id="@+id/amount_et"
-                android:gravity="center"
+
+                android:textSize="22sp"
+                android:padding="10dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/paymentbord"
+                android:gravity="left|bottom"
+
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
 
                 android:hint="Enter Amount"
-                android:textColorHint="#013220"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="211dp" />
+                android:textColorHint="#000000"
+                 />
 
             <Button
                 android:id="@+id/send"
-                android:layout_marginTop="20dp"
-                android:layout_width="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:background="@drawable/text_input_bg"
-                android:text="Donate Now"
-                android:textSize="25sp"
-                android:textColor="#ffffff"
+                android:background="@drawable/donateborder"
+                android:text="@string/Donate_Now"
+                android:textSize="22sp"
+
+                android:textColor="#000000"
+                android:elevation="10dp"
                 android:padding="10dp"
 
-                tools:layout_editor_absoluteX="123dp"
-                tools:layout_editor_absoluteY="367dp" />
+                />
         </LinearLayout>
     </LinearLayout>
 
 
 
 
-</LinearLayout>
+</ScrollView>
