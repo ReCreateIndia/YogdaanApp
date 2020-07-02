@@ -1,28 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HelpPage"
+    android:background="#ffffff"
+    android:orientation="vertical"
+
     >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/generate_btn"
+           >
+
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out"
+                android:textColor="#000000"
+
+                android:textSize="19sp"
+                android:gravity="center"
+
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+
+
+         />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:background="#E46E48"
+                android:layout_marginTop="10dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/img1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+        <LinearLayout
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="70dp"
-        android:layout_marginStart="30dp"
+            android:gravity="center"
+
         android:id="@+id/li1"
         tools:ignore="RtlCompat">
 
         <TextView
+            android:id="@+id/Select_Problem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select Problem"
-            android:textSize="26sp"
+            android:text="@string/Select_Problem"
+            android:textSize="27sp"
             android:textStyle="bold"
-            android:textColor="	#00008B"
+
+            android:textColor="#E46E48"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -38,272 +107,232 @@
                 android:id="@+id/c1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+           android:buttonTint="#E46E48"
+                android:textStyle="bold|italic"
+                android:paddingLeft="18dip"
 
 
-                android:checked="true"
-                android:onClick="onClickRadiobutton"
-                android:text="Help for others"
+               android:checked="true"
 
-                android:textSize="28sp" />
+
+
+                android:text="@string/need_help_for_others"
+                android:textSize="24sp" />
 
             <RadioButton
                 android:id="@+id/c2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold|italic"
+                android:buttonTint="#E46E48"
+                android:paddingLeft="18dip"
 
 
-                android:onClick="onClickRadiobutton"
-                android:text="Help for yourself"
-                android:textSize="28sp" />
+                android:text="@string/need_help_for_yourself"
+                android:textSize="24sp" />
         </RadioGroup>
     </LinearLayout>
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/li1"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:orientation="vertical">
-        <RelativeLayout
-            android:layout_width="match_parent"
+        android:orientation ="horizontal"
+        android:id="@+id/ll8"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        android:layout_below="@id/lh3"
+        android:layout_marginTop="30dp"
+
+        >
+        <TextView
+            android:id="@+id/TypeOfHelp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation ="vertical">
+            android:text="@string/select_type_of_help"
+            android:textSize="23sp"
+
+            android:textColor="#000000"/>
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+
+            android:fontFamily="sans-serif-medium"
+            android:spinnerMode="dialog"
+            android:textSize="20sp"
+            android:background="@drawable/spinnerbord"
+            android:splitMotionEvents="true"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            tools:ignore="RtlCompat" />
+
+
+    </LinearLayout>
+
+
             <LinearLayout
+                android:layout_marginBottom="80dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/lh1"
-                android:orientation="horizontal"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Name :"
-                    android:textSize="26sp"
-                    android:textStyle="bold"
-                    android:textColor="#00008B"
-
-                    />
-                <EditText
-                    android:layout_marginStart="25dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="26sp"
-                    android:textStyle="bold"
-
-                    tools:ignore="RtlCompat" />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/lh2"
-                android:layout_below="@id/lh1"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="DOB :"
-                    android:textSize="26sp"
-                    android:textStyle="bold"
-                    android:textColor="#00008B"
-
-                    />
-                <EditText
-
-                    android:layout_marginStart="40dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textSize="26sp"
-                    android:textStyle="bold"
-
-                    tools:ignore="RtlCompat" />
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/lh2"
                 android:id="@+id/lh3"
                 android:orientation="vertical"
                 >
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Area of help"
-                    android:textSize="22sp"
-                    android:textStyle="bold"
-                    android:textColor="#00008B"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/enter_information"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                    android:textColor="#E46E48"
+                    android:layout_gravity="center_horizontal"
+
                     />
                 <LinearLayout
                     android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:background="@drawable/border">
-
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Flat/house no"
-                        android:textSize="24sp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:layout_marginTop="10dp"
-                        android:textColor="#000000"/>
+                    android:orientation="vertical">
                     <EditText
+                        android:id="@+id/name"
+                        android:layout_marginTop="20dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/text_background"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:gravity="left|center"
+                        android:hint="@string/Name"
+                        android:paddingLeft="10dp"
 
-                        android:textSize="24sp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:textColor="#000000"/>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Flat/house no"
-                        android:textSize="24sp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:layout_marginTop="5dp"
-                        android:textColor="#000000"/>
+                        ></EditText>
                     <EditText
+                        android:id="@+id/occupation"
+                        android:layout_marginTop="28dp"
                         android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/text_background"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:gravity="left|center"
+                        android:paddingLeft="10dp"
+                        android:hint="@string/Occupation"
+
+                        ></EditText>
+
+                    <Button
+                        android:layout_marginTop="30dp"
+                        android:id="@+id/getCurrentLocation"
+                        android:layout_width="220dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/addborder"
+                        android:text="@string/get_current_location"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:padding="10dp">
+                    </Button>
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:textColor="#000000"
-                        android:textSize="24sp" />
+
+                        android:text="@string/or_give_address_below"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="19sp"
+                        android:layout_marginTop="20dp"/>
+                    <EditText
+                        android:id="@+id/address"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/text_background"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:gravity="left|center"
+                        android:paddingLeft="10dp"
+                        android:hint="@string/Address"
+
+                        ></EditText>
+
+
+
                     <LinearLayout
+                        android:layout_marginTop="25dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:orientation="horizontal">
-
+                        android:orientation="vertical"
+                        >
                         <TextView
-
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="City"
-                            android:textColor="#000000"
-                            android:textSize="24sp" />
-                        <EditText
+                            android:padding="10dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="40dp"
-                            android:textSize="24sp"
-                            android:textColor="#000000"
-                            tools:ignore="RtlCompat" />
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:orientation="horizontal">
-
-
-                        <TextView
-
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:text="Pin Code :"
-                            android:textColor="#000000"
-                            android:textSize="24sp" />
-
-                        <EditText
+                            android:text="@string/please_add_any_government_id_proof_like_aadhar_card_pan_card_voter_id_driving_liscence_rashan_card"
+                            android:textSize="20sp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_gravity="center_horizontal">
+                        </TextView>
+                        <ImageView
+                            android:id="@+id/idProof"
+                            android:layout_marginTop="10dp"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:textSize="24sp"
-                            android:textColor="#000000"
-                            tools:ignore="RtlCompat" />
-
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-
-                        android:orientation="horizontal">
-
-
-                        <TextView
-
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-                            android:text="State :"
-                            android:textColor="#000000"
-                            android:textSize="24sp" />
-
-                        <EditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:textSize="24sp"
-                            android:textColor="#000000"
-                            tools:ignore="RtlCompat" />
-
-
+                            android:layout_height="300dp"
+                            android:visibility="gone"
+                            >
+                        </ImageView>
+                        <Button
+                            android:id="@+id/cameraIntent"
+                            android:layout_marginTop="17dp"
+                            android:layout_width="200dp"
+                            android:layout_height="45dp"
+                            android:background="@drawable/donateborder"
+                            android:text="@string/use_camera"
+                            android:textSize="18sp"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="#000000"></Button>
                     </LinearLayout>
 
                 </LinearLayout>
 
+"
 
 
 
+                <Button
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation ="horizontal"
-                android:id="@+id/lh8"
-                android:layout_below="@id/lh3"
-                android:layout_marginTop="30dp"
-
-                >
-                <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/submitRequest"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:text="Type of help"
-                    android:textSize="26sp"
+                    android:text="@string/Submit"
+
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
                     android:textStyle="bold"
-                    android:textColor="#00008B"/>
-                <Spinner
-                    android:id="@+id/spinner2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
+
+                    android:background="#E46E48"
+                    >
+
+                </Button>
 
 
-                    android:fontFamily="sans-serif-medium"
 
-                    android:spinnerMode="dialog"
-
-                    android:textSize="25sp"
-                    android:textColor="#000000"
-                    tools:ignore="RtlCompat" />
 
 
             </LinearLayout>
 
-        </RelativeLayout>
 
-    </ScrollView>
+        </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
 
 
-</RelativeLayout>
+
+
+</ScrollView>

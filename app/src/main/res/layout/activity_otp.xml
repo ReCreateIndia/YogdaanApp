@@ -10,15 +10,14 @@
         android:id="@+id/otp_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:text="Enter OTP"
-        android:textColor="@color/colorPrimary"
-        android:textSize="22sp"
+        android:textColor="#006766"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.425" />
+        app:layout_constraintVertical_bias="0.409" />
 
     <TextView
         android:id="@+id/otp_desc"
@@ -27,11 +26,11 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-
+        android:textColor="#006766"
         android:gravity="center_horizontal"
         android:text="We have sent you an OTP \n for phone number verification"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/otp_title" />
@@ -43,11 +42,12 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:background="@drawable/text_input_bg"
+        android:background="@drawable/text_background"
         android:ems="10"
-
         android:hint="Enter OTP"
+        android:textColorHint="#013220"
         android:inputType="phone"
+        android:textColor="#013220"
         android:maxLength="10"
         android:padding="16dp"
         android:textSize="16sp"
@@ -60,10 +60,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
 
-        android:layout_marginRight="16dp"
-        android:background="@drawable/primary_btn_bg"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/text_input_bg"
         android:padding="16dp"
         android:text="Verify OTP"
         android:textAllCaps="false"
@@ -76,14 +76,12 @@
         android:id="@+id/resend_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
-        android:background="@drawable/primary_btn_bg"
+        android:background="@drawable/text_input_bg"
         android:padding="16dp"
         android:text="Resend OTP"
-
         android:textAllCaps="false"
         android:textColor="@android:color/background_light"
         android:textSize="16sp"

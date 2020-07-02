@@ -9,41 +9,143 @@
         android:minSdkVersion="16"
         android:targetSdkVersion="29" />
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<<<<<<< HEAD
 
     <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
     <!-- <uses-sdk android:minSdkVersion="14"/> -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+||||||| 89126a3
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+=======
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+>>>>>>> d632e34dbfca486440fdb23cc962bb07f7cfa112
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:name="androidx.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logoyogdaan"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logoyogdaan"
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+<<<<<<< HEAD
+||||||| 89126a3
+<<<<<<< HEAD
+=======
+        <activity android:name="recreate.india.yogdaan.PaymentSuggestion" />
+        <activity android:name="recreate.india.yogdaan.Statuspage" />
+        <activity android:name="recreate.india.yogdaan.PaymentActivity" />
+        <activity android:name="recreate.india.yogdaan.DonateActivity" />
+>>>>>>> d632e34dbfca486440fdb23cc962bb07f7cfa112
         <activity android:name="recreate.india.yogdaan.Volunteer" />
         <activity android:name="recreate.india.yogdaan.TandC" />
+<<<<<<< HEAD
         <activity android:name="recreate.india.yogdaan.SplashScreen" >
+||||||| 89126a3
+        <activity android:name="recreate.india.yogdaan.SplashScreen" >
+=======
+        <activity android:name="recreate.india.yogdaan.FundRaiseActivity" >
+        </activity>
+        <activity android:name="recreate.india.yogdaan.HelpPage" />
+        <activity android:name="recreate.india.yogdaan.TandC" />
+        <activity android:name="recreate.india.yogdaan.SplashScreen" />
+        <activity android:name="recreate.india.yogdaan.BlogActivity" >
+        </activity>
+        <activity android:name="recreate.india.yogdaan.AddPostActivity" >
+        </activity>
+        <activity android:name="recreate.india.yogdaan.LoginActivity" />
+        <activity android:name="recreate.india.yogdaan.MainActivity" >
+>>>>>>> 50d734812a372129add7cd3c098e8ccac02d8d9b
+=======
+        <activity
+            android:name="recreate.india.yogdaan.SplashScreen"
+            android:configChanges="orientation|keyboardHidden"
+<<<<<<< HEAD
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+=======
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+>>>>>>> d632e34dbfca486440fdb23cc962bb07f7cfa112
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+<<<<<<< HEAD
         </activity>
+||||||| 89126a3
+<<<<<<< HEAD
+        </activity> <!-- <activity android:name=".BlogActivity"> -->
+        <!-- ======= -->
+=======
+        </activity>
+>>>>>>> 0dbab1524354a896d452e98959545fab063e2a45
+>>>>>>> d632e34dbfca486440fdb23cc962bb07f7cfa112
         <activity android:name="recreate.india.yogdaan.BlogActivity" />
+<<<<<<< HEAD
         <activity android:name="recreate.india.yogdaan.AddPostActivity" />
         <activity android:name="recreate.india.yogdaan.LoginActivity" />
         <activity android:name="recreate.india.yogdaan.MainActivity" />
         <activity android:name="recreate.india.yogdaan.FundRaiseActivity" />
         <activity android:name="recreate.india.yogdaan.HelpPage" />
+||||||| 89126a3
+        <activity android:name="recreate.india.yogdaan.AddPostActivity" />
+        <activity android:name="recreate.india.yogdaan.LoginActivity" />
+        <activity android:name="recreate.india.yogdaan.MainActivity" >
+
+            <!-- &gt;>>>>>> 046f4ffc8e2d7b233b197b532adf7e5690e4c25a -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- <<<<<<< HEAD -->
+        <!-- <activity android:name=".AddPostActivity" /> -->
+        <!-- <activity android:name=".LoginActivity" /> -->
+        <!-- <activity android:name=".MainActivity" /> -->
+        <!-- <activity android:name=".OtpActivity" /> -->
+        <!-- ======= -->
+=======
+        </activity>
+>>>>>>> 50d734812a372129add7cd3c098e8ccac02d8d9b
+=======
+        <activity android:name="recreate.india.yogdaan.Introduction_Activity" />
+        <activity
+            android:name="recreate.india.yogdaan.LoginActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name="recreate.india.yogdaan.MainActivity" >
+<<<<<<< HEAD
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+=======
+        </activity>
+        <activity android:name="recreate.india.yogdaan.HelpPage" >
+>>>>>>> 0dbab1524354a896d452e98959545fab063e2a45
+        </activity>
+        <activity android:name="recreate.india.yogdaan.HelpPage" />
+>>>>>>> d632e34dbfca486440fdb23cc962bb07f7cfa112
         <activity android:name="recreate.india.yogdaan.OtpActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8169027776894810~7067472313" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
@@ -51,6 +153,9 @@
             android:exported="false" >
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
@@ -67,14 +172,26 @@
             android:launchMode="singleTask"
             android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
             android:authorities="recreate.india.yogdaan.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <provider
+            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+            android:authorities="recreate.india.yogdaan.mobileadsinitprovider"
             android:exported="false"
             android:initOrder="100" />
 

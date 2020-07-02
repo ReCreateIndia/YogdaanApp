@@ -30,38 +30,5 @@ public class TandC extends AppCompatActivity {
     }
 
 
-//    private void onFirst() {
-//
-//        Paper.init(this);
-//        String isFirstRun = Paper.book().read("isFirstRun");
-//        if (isFirstRun == null)
-//            Paper.book().write("isFirstRun", "false");
-//
-//
-//        assert isFirstRun != null;
-//        if (isFirstRun.equals("false")) {
-//            Intent intent = new Intent(MainActivity.this, TandC.class);
-//            startActivity(intent);
-//
-//            new AlertDialog.Builder(MainActivity.this)
-//                    .setTitle("Terms and Conditions")
-//                    .setMessage("T&C")
-//                    .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
-//                        @Override
-//                        public void onClick(DialogInterface dialog, int which) {
-//                            finish();
-//                            System.exit(0);
-//                        }
-//                    })
-//                    .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
-//                        @Override
-//                        public void onClick(DialogInterface dialog, int which) {
-//
-//                            Paper.book().write("isFirstRun", "true");
-//                        }
-//                    }).show();
-//
-//        }
-//
-//    }
+
 }

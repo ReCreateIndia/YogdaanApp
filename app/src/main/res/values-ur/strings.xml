@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Yogdaan</string>
+    <string name="open">کھلا</string>
+    <string name="close">بند کریں</string>
+    //VolunteerPage
+    <string name="Name">نام</string>
+    <string name="Date_Of_Birth">پیدائش کی تاریخ</string>
+    <string name="Type_Of_Work">کام کی نوعیت</string>
+    <string name="Occupation">قبضہ</string>
+    <string name="Address">پتہ</string>
+    <string name="Submit">جمع کرائیں</string>
+
+    //AddPostPage
+    <string name="Add_Some_Description">کچھ تفصیل شامل کریں</string>
+
+    //DonatePage
+
+
+
+
+    //HelpPage
+    <string name="Select_Problem">مسئلہ منتخب کریں</string>
+
+    //LoginPage
+    <string name="Verify_Your_Number">اپنے نمبر کی تصدیق کریں</string>
+    <string name="Please_Enter_Your_Phone_Number_For_Verification">براہ کرم تصدیق کے لئے اپنا فون نمبر درج کریں</string>
+    <string name="Your_Phone_Number">آپ کا فون نمبر</string>
+    <string name="Generate_OTP">OTP بنائیں</string>
+
+    //MainActivity
+    <string name="Donate">عطیہ کریں</string>
+
+    <string name="Our_Work">ہمارا کام</string>
+    <string name="Our_Helpers">ہمارے مددگار</string>
+    <string name="Volunteers">رضا کار</string>
+    <string name="More">مزید</string>
+
+    //OTPActivity
+    <string name="Enter_OTP">OTP درج کریں</string>
+    <string name="Resend_OTP">او ٹی پی کو دوبارہ بھیجیں</string>
+    <string name="Verify_OTP">OTP کی تصدیق کریں</string>
+    <string name="We_Have_Sent_You_An_OTP_For_Phone_Number_Verification">ہم نے فون نمبر کی توثیق کے لئے آپ کو ایک او ٹی پی بھیجا ہے</string>
+
+    //PaymentActivity
+    <string name="Amount">رقم</string>
+    <string name="Donate_Now">ابھی عطیہ کیجیے</string>
+
+    //header.xml
+    <string name="Net_Credit">نیٹ کریڈٹ</string>
+    <string name="Net_Value">موجودہ قیمت</string>
+
+    //listItemSingle.xml
+    <string name="Description">تفصیل</string>
+    <string name="there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out">There is a free platform for everyone and always will be just select the problem and we will do or best to sort it out</string>
+    <string name="need_help_for_others">Need help for others</string>
+    <string name="need_help_for_yourself">Need Help for yourself</string>
+    <string name="enter_information">Enter Information</string>
+    <string name="get_current_location">Get Current Location</string>
+    <string name="or_give_address_below">Or give address below</string>
+    <string name="please_add_any_government_id_proof_like_aadhar_card_pan_card_voter_id_driving_liscence_rashan_card">Please add any government id proof like aadhar card,pan card,voter id,driving liscence,rashan card.</string>
+    <string name="use_camera">Use camera</string>
+    <string name="select_type_of_help">Select Type Of Help :</string>
+    <string name="the_best_way_to_persue_happiness_is_to_help_others">The best way to persue happiness is to help others!</string>
+    <string name="need_help">مدد چاہیے</string>
+    <string name="donate_money">Donate Money</string>
+    <string name="donate_by_watching_ads">Donate by watching ads</string>
+    <string name="select_the_money_range">Select the Money Range</string>
+    <string name="stationary_money">Stationary Money</string>
+    <string name="books_money">Books Money</string>
+    <string name="food_money">Food Money</string>
+    <string name="money_directly">Money Directly</string>
+</resources>

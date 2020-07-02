@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Yogdaan</string>
+    <string name="open">ખુલ્લા</string>
+    <string name="close">બંધ</string>
+
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-8169027776894810/2094347234</string>
+    <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-8169027776894810/9781265569</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    //VolunteerPage
+    <string name="Name">નામ</string>
+    <string name="Date_Of_Birth">જન્મ તારીખ</string>
+    <string name="Type_Of_Work">કામનો પ્રકાર</string>
+    <string name="Occupation">વ્યવસાય</string>
+    <string name="Address">સરનામું</string>
+    <string name="Submit">સબમિટ કરો</string>
+
+    //AddPostPage
+    <string name="Add_Some_Description">થોડું વર્ણન ઉમેરો</string>
+
+    //DonatePage
+
+
+    //HelpPage
+    <string name="Select_Problem">સમસ્યા પસંદ કરો</string>
+
+
+
+    <string name="Verify_Your_Number">તમારી સંખ્યા ચકાસો</string>
+    <string name="Please_Enter_Your_Phone_Number_For_Verification">કૃપા કરીને ચકાસણી માટે તમારો ફોન નંબર દાખલ કરો</string>
+    <string name="Your_Phone_Number">તમારો ફોન નંબર</string>
+    <string name="Generate_OTP">ઓટીપી બનાવો</string>
+
+
+    <string name="Donate">દાન કરો</string>
+   <string name="Our_Work">આપણુ કામ</string>
+    <string name="Our_Helpers">અમારા સહાયકો</string>
+    <string name="Volunteers">સ્વયંસેવકો</string>
+    <string name="More">More</string>
+
+
+    <string name="Enter_OTP">ઓટીપી દાખલ કરો</string>
+    <string name="Resend_OTP">OTP ફરીથી મોકલો</string>
+    <string name="Verify_OTP">ઓટીપી ચકાસો</string>
+    <string name="We_Have_Sent_You_An_OTP_For_Phone_Number_Verification">ફોન નંબરની ચકાસણી માટે અમે તમને એક ઓટીપી મોકલેલ છે</string>
+
+
+    <string name="Amount">રકમ</string>
+    <string name="Donate_Now">હવે દાન કરો</string>
+
+    <string name="Net_Credit">નેટ ક્રેડિટ</string>
+    <string name="Net_Value">ચોખ્ખી કિંમત</string>
+
+
+    <string name="Description">વર્ણન</string>
+
+    <string name="there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out">There is a free platform for everyone and always will be just select the problem and we will do or best to sort it out</string>
+    <string name="need_help_for_others">Need help for others</string>
+    <string name="need_help_for_yourself">Need Help for yourself</string>
+    <string name="enter_information">Enter Information</string>
+    <string name="get_current_location">Get Current Location</string>
+    <string name="or_give_address_below">Or give address below</string>
+    <string name="please_add_any_government_id_proof_like_aadhar_card_pan_card_voter_id_driving_liscence_rashan_card">Please add any government id proof like aadhar card,pan card,voter id,driving liscence,rashan card.</string>
+    <string name="use_camera">Use camera</string>
+    <string name="select_type_of_help">Select Type Of Help :</string>
+    <string name="the_best_way_to_persue_happiness_is_to_help_others">The best way to persue happiness is to help others!</string>
+    <string name="need_help">Need Help</string>
+    <string name="donate_money">Donate Money</string>
+    <string name="donate_by_watching_ads">Donate by watching ads</string>
+    <string name="select_the_money_range">Select the Money Range</string>
+    <string name="stationary_money">Stationary Money</string>
+    <string name="books_money">Books Money</string>
+    <string name="food_money">Food Money</string>
+    <string name="money_directly">Money Directly</string>
+</resources>

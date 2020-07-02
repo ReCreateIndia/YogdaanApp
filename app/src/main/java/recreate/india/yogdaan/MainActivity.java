@@ -1,15 +1,18 @@
 package recreate.india.yogdaan;
 
+import android.annotation.SuppressLint;
+import android.app.ActionBar;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -29,51 +32,114 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import Helper.LocaleHelper;
+import io.paperdb.Paper;
+
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private ActionBarDrawerToggle toggle;
     private FirebaseAuth mAuth;
     AlertDialog alertDialog;
+
     private boolean isFirstTime;
     private ImageButton our_work;
 
+
+    private ImageButton donate, help, volunteer, ourWork;
+    TextView Help, Our_Work, Volunteers, More, Our_Helpers, Donate;
+    ActionBar actionBar;
+
+
+    @SuppressLint("WrongConstant")
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        our_work=findViewById(R.id.ourWork);
-        our_work.setOnClickListener(new View.OnClickListener() {
+        actionBar = this.getActionBar();
+        getSupportActionBar().setElevation(0);
+
+        donate = findViewById(R.id.donate);
+        help = findViewById(R.id.help);
+        volunteer = findViewById(R.id.volunteer);
+        ourWork = findViewById(R.id.ourWork);
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.abs_layout);
+
+
+        Help = findViewById(R.id.Help);
+        Our_Work = findViewById(R.id.Our_Work);
+        Volunteers = findViewById(R.id.Volunteers);
+        More = findViewById(R.id.More);
+        Our_Helpers = findViewById(R.id.Our_Helpers);
+        Donate = findViewById(R.id.Donate);
+
+        donate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,BlogActivity.class));
+                startActivity(new Intent(MainActivity.this, DonateActivity.class));
             }
         });
-
-
+        help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, HelpPage.class));
+            }
+        });
+        ourWork.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, BlogActivity.class));
+            }
+        });
+        volunteer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Volunteer.class));
+            }
+        });
+        Our_Helpers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, OurHelpers.class));
+            }
+        });
+        mAuth = FirebaseAuth.getInstance();
         ImageSlider imageslider = findViewById(R.id.image_slider);
         List<SlideModel> slideModels = new ArrayList<>();
         slideModels.add(new SlideModel(R.drawable.d5));
         slideModels.add(new SlideModel(R.drawable.d4));
         slideModels.add(new SlideModel(R.drawable.d3));
         slideModels.add(new SlideModel(R.drawable.d1));
-        mAuth = FirebaseAuth.getInstance();
+
         slideModels.add(new SlideModel(R.drawable.d2));
         imageslider.setImageList(slideModels, true);
-
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
+        toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
-        navigationView =  findViewById(R.id.n1);
+        navigationView = findViewById(R.id.n1);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        navigationView = findViewById(R.id.n1);
+
+
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
-      isFirstTime = prefs.getBoolean("isFirstTime", true);
+
+        isFirstTime = prefs.getBoolean("isFirstTime", true);
         if (isFirstTime) {
             onFirst();
         } else {
-           FirebaseUser currentUser = mAuth.getCurrentUser();
+            FirebaseUser currentUser = mAuth.getCurrentUser();
             if (currentUser == null) {
                 gotoLoginActivity();
             }
@@ -82,19 +148,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
-                    case R.id.logout: mAuth.signOut(); gotoLoginActivity();
+                    case R.id.logout:
+                        mAuth.signOut();
+                        gotoLoginActivity();
                         break;
-                    case R.id.Your:
-                        Toast.makeText(MainActivity.this,"Your Donation",Toast.LENGTH_SHORT).show();
+                    case R.id.YourDonation:
+                        Toast.makeText(MainActivity.this, "Your Donation", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.Certificates:
-                        Toast.makeText(MainActivity.this,"Your Certificates/Receipt",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Your Certificates/Receipt", Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.Status:
-                        Toast.makeText(MainActivity.this,"Status of your request",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Status of your request", Toast.LENGTH_SHORT).show();
                         break;
-                    case R.id.setting:
-                        Toast.makeText(MainActivity.this,"Setting",Toast.LENGTH_SHORT).show();
+                    case R.id.selectlanguage:
+                        Toast.makeText(MainActivity.this, "Choose language", Toast.LENGTH_SHORT).show();
                         break;
 
 
@@ -105,7 +173,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        Paper.init(this);
+        String language = Paper.book().read("language");
+        if (language == null)
+            Paper.book().write("language", "en");
+        updateView((String) Paper.book().read("language"));
+
     }
+
 
     public void onFirst() {
 
@@ -114,44 +189,43 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
 
-       
-        if (!isFirstTime) {
-            Intent intent1 = new Intent(MainActivity.this, TandC.class);
-            startActivity(intent1);
+        new AlertDialog.Builder(MainActivity.this)
+                .setTitle("Terms and Conditions")
+                .setMessage("T&C")
+                .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                        System.exit(0);
+                    }
+                })
+                .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        gotoLoginActivity();
 
 
-            new AlertDialog.Builder(MainActivity.this)
-                    .setTitle("Terms and Conditions")
-                    .setMessage("T&C")
-                    .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            finish();
-                            System.exit(0);
-                        }
-                    })
-                    .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.dismiss();
-                            gotoLoginActivity();
+                    }
+                }).create().show();
+        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putBoolean("isFirstTime", false);
+        editor.apply();
 
 
-                        }
-                    }).create().show();
-            SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
-            SharedPreferences.Editor editor = prefs.edit();
-            editor.putBoolean("isFirstTime", false);
-            editor.apply();
+        Context context = LocaleHelper.setLocale(this, lang);
+        Resources resources = context.getResources();
+
+        Help.setText(resources.getString(R.string.need_help));
+        Donate.setText(resources.getString(R.string.Donate));
+        Volunteers.setText(resources.getString(R.string.Volunteers));
+        Our_Helpers.setText(resources.getString(R.string.Our_Helpers));
+        Our_Work.setText(resources.getString(R.string.Our_Work));
+        More.setText(resources.getString(R.string.More));
 
 
-        }
-
-      Intent intent2 = new Intent(MainActivity.this,LoginActivity.class);
-      startActivity(intent2);
     }
-
-
 
 
     private void gotoLoginActivity() {
@@ -159,7 +233,6 @@ public class MainActivity extends AppCompatActivity {
         logIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(logIntent);
     }
-
 
 
 }

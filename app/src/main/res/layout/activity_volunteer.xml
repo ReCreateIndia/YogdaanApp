@@ -1,108 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Volunteer">
-
-
-
-    <ImageView
-        android:id="@+id/volunteer_image"
+    tools:context=".Volunteer"
+    >
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="300sp"
-        android:background="@drawable/volunteer1"
-        />
-<!--    <TextView-->
-<!--        android:id="@+id/volunteer_image"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="300sp"-->
-<!--        android:background="@drawable/ThoughtCloud"-->
-<!--        android:text="Be A Volunteer For Betterment Of Humankind"-->
-<!--        android:gravity="center"-->
-<!--        android:layout_marginTop="20sp"-->
-<!--        android:layout_marginLeft="20sp"-->
-<!--        android:layout_marginRight="20sp"-->
-<!--        android:textSize="20sp"-->
-<!--        />-->
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginRight="18dp"
+            android:gravity="center"
+            android:id="@+id/tt1"
+            android:text="@string/the_best_way_to_persue_happiness_is_to_help_others"
+            android:textColor="#000000"
+            android:textSize="28sp"
 
-    <EditText
-        android:layout_below="@+id/volunteer_image"
-        android:id="@+id/volunteer_name"
-        android:layout_width="match_parent"
-        android:layout_height="25sp"
-        android:textSize="20sp"
-        android:background="@drawable/input"
-        android:layout_marginLeft="20sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginTop="60sp"
-        android:hint="   Name"
-        />
-    <EditText
-        android:layout_below="@+id/volunteer_name"
-        android:id="@+id/volunteer_dob"
-        android:layout_width="match_parent"
-        android:layout_height="25sp"
-        android:textSize="20sp"
-        android:background="@drawable/input"
-        android:layout_marginLeft="20sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginTop="20sp"
-        android:hint="   Date Of Birth"
-        />
-    <EditText
-        android:layout_below="@+id/volunteer_dob"
-        android:id="@+id/volunteer_type_of_work"
-        android:layout_width="match_parent"
-        android:layout_height="25sp"
-        android:textSize="20sp"
-        android:background="@drawable/input"
-        android:layout_marginLeft="20sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginTop="20sp"
-        android:hint="   Type Of Work"
-        />
-    <EditText
-        android:layout_below="@+id/volunteer_type_of_work"
-        android:id="@+id/volunteer_occupation"
-        android:layout_width="match_parent"
-        android:layout_height="25sp"
-        android:textSize="20sp"
-        android:background="@drawable/input"
-        android:layout_marginLeft="20sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginTop="20sp"
-        android:hint="   Occupation"
-        />
-    <EditText
-        android:layout_below="@+id/volunteer_occupation"
-        android:id="@+id/volunteer_address"
-        android:layout_width="match_parent"
-        android:layout_height="25sp"
-        android:textSize="20sp"
-        android:background="@drawable/input"
-        android:layout_marginLeft="20sp"
-        android:layout_marginRight="20sp"
-        android:layout_marginTop="20sp"
-        android:hint="   Address"
-        />
+            />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:id="@+id/volunteer_submit"
-        android:textAllCaps="false"
-        android:text="Proceed To Become A Volunteer"
-        android:textSize="25sp"
-        android:background="@drawable/button"
-        android:gravity="center"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30sp"
-        android:layout_marginLeft="20sp"
-        android:layout_marginRight="20sp"
-        />
+        <LinearLayout
+            android:layout_below="@id/tt1"
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="4dp"
+
+
+            android:background="@drawable/img2"
+
+
+            android:orientation="vertical"
+            >
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout1"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tt2"
+            >
+
+
+            <TextView
+                android:id="@+id/volu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/Volunteers"
+                android:textColor="#E46E48"
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                tools:ignore="MissingConstraints" />
 
 
 
-</RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+                        <EditText
+                            android:id="@+id/volunteer_name"
+
+                            android:layout_below="@id/tt2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_back"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:gravity="left|bottom"
+                            android:hint="@string/Name"
+                            android:textColorHint="#000000"
+                            android:layout_marginTop="30dp"/>
+
+
+
+
+
+                        >
+
+                        <EditText
+                            android:id="@+id/volunteer_dob"
+
+                            android:layout_below="@+id/volunteer_name"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:gravity="left|bottom"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/edit_back"
+                            android:layout_marginTop="8dp"
+
+                            android:hint="@string/Type_Of_Work"
+                            android:textColorHint="#000000" />
+
+
+
+
+
+                        <EditText
+                            android:id="@+id/volunteer_type_of_work"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:gravity="left|bottom"
+                            android:layout_below="@+id/volunteer_dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edit_back"
+                            android:layout_marginTop="8dp"
+                            android:hint="@string/Date_Of_Birth"
+                            android:textColorHint="#000000" />
+
+
+
+
+
+
+
+                        <EditText
+                            android:id="@+id/volunteer_occupation"
+
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:gravity="left|bottom"
+                            android:layout_below="@+id/volunteer_type_of_work"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edit_back"
+                            android:hint="@string/Occupation"
+                            android:layout_marginTop="8dp"
+                            android:textColorHint="#000000" />
+
+
+
+
+
+
+                        <EditText
+                            android:id="@+id/volunteer_address"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginRight="40dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="left|bottom"
+                            android:layout_below="@+id/volunteer_occupation"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/edit_back"
+
+                            android:hint="@string/Address"
+                            android:textColorHint="#000000" />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/volunteer_address"
+    android:gravity="center"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="40dp">
+
+
+                <Button
+                    android:id="@+id/volunteer_submit"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+
+
+
+
+                    android:gravity="center"
+
+
+
+
+                    android:background="@drawable/addborder"
+                    android:text="@string/Submit"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textColorLink="#40CDC9"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+</LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+</ScrollView>

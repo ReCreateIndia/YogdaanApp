@@ -1,10 +1,43 @@
+<<<<<<< HEAD
 #Fri Jul 03 00:05:21 IST 2020
+||||||| 89126a3
+<<<<<<< HEAD
+#Mon Jun 08 15:37:07 IST 2020
+=======
+#Mon Jun 08 09:46:17 IST 2020
+>>>>>>> 50d734812a372129add7cd3c098e8ccac02d8d9b
+=======
+<<<<<<< HEAD
+#Thu Jul 02 19:28:18 IST 2020
+=======
+#Wed Jul 01 22:28:30 IST 2020
+>>>>>>> 0dbab1524354a896d452e98959545fab063e2a45
+path.3=classes3.dex
+>>>>>>> d632e34dbfca486440fdb23cc962bb07f7cfa112
 path.2=classes2.dex
 path.1=classes.dex
 path.0=classes.dex
+renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
+<<<<<<< HEAD
 base.2=C\:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 base.1=C\:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
 base.0=C\:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+||||||| 89126a3
+<<<<<<< HEAD
+base.2=C\:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.1=C\:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+base.0=C\:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+=======
+base.2=C\:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.1=C\:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+base.0=C\:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+>>>>>>> 50d734812a372129add7cd3c098e8ccac02d8d9b
+=======
+base.3=C\:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+base.2=C\:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.1=C\:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+base.0=C\:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+>>>>>>> d632e34dbfca486440fdb23cc962bb07f7cfa112
