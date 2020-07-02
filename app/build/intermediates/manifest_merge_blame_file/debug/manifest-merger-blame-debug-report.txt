@@ -85,45 +85,45 @@
 40-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:28:9-43
 40-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:28:19-40
 41        <activity
-41-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:29:9-34:20
+41-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:29:9-37:20
 42            android:name="recreate.india.yogdaan.SplashScreen"
 42-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:30:13-41
 43            android:configChanges="orientation|keyboardHidden"
 43-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:31:13-63
 44            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
 44-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:32:13-72
-45        </activity>
-46        <activity android:name="recreate.india.yogdaan.BlogActivity" />
-46-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:36:9-50
-46-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:36:19-47
-47        <activity android:name="recreate.india.yogdaan.Introduction_Activity" >
-47-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:37:9-39:20
-47-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:37:19-56
-48        </activity>
-49        <activity
-49-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:40:9-44:20
-50            android:name="recreate.india.yogdaan.LoginActivity"
-50-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:41:13-42
-51            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
-51-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:42:13-72
-52        </activity>
-53        <activity android:name="recreate.india.yogdaan.MainActivity" >
-53-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:45:9-46:20
-53-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:45:19-47
-54        </activity>
-55        <activity android:name="recreate.india.yogdaan.HelpPage" >
-55-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:47:9-52:20
-55-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:47:19-43
-56            <intent-filter>
-56-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:48:13-51:29
-57                <action android:name="android.intent.action.MAIN" />
-57-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:49:17-68
-57-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:49:25-66
-58
-59                <category android:name="android.intent.category.LAUNCHER" />
-59-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:50:17-77
-59-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:50:27-74
-60            </intent-filter>
+45            <intent-filter>
+45-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:33:13-36:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:34:17-68
+46-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:34:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:35:17-77
+48-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:35:27-74
+49            </intent-filter>
+50        </activity>
+51        <activity android:name="recreate.india.yogdaan.BlogActivity" />
+51-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:39:9-50
+51-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:39:19-47
+52        <activity android:name="recreate.india.yogdaan.Introduction_Activity" >
+52-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:40:9-42:20
+52-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:40:19-56
+53        </activity>
+54        <activity
+54-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:43:9-47:20
+55            android:name="recreate.india.yogdaan.LoginActivity"
+55-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:44:13-42
+56            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+56-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:45:13-72
+57        </activity>
+58        <activity android:name="recreate.india.yogdaan.MainActivity" >
+58-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:48:9-49:20
+58-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:48:19-47
+59        </activity>
+60        <activity android:name="recreate.india.yogdaan.HelpPage" >
+60-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:50:9-52:20
+60-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:50:19-43
 61        </activity>
 62        <activity android:name="recreate.india.yogdaan.OtpActivity" />
 62-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:53:9-49
