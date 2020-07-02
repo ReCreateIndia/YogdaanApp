@@ -68,6 +68,7 @@
 33-->C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:22:9-35
 34        android:testOnly="true"
 35        android:theme="@style/AppTheme" >
+<<<<<<< HEAD
 35-->C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:23:9-40
 36        <activity android:name="recreate.india.yogdaan.PaymentSuggestion" />
 36-->C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:24:9-64
@@ -149,6 +150,84 @@
 70-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Prachi Singhal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
 71                android:value="com.google.firebase.components.ComponentRegistrar" />
 71-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Prachi Singhal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
+=======
+35-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:23:9-40
+36        <activity android:name="recreate.india.yogdaan.Statuspage" />
+36-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:24:9-48
+36-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:24:19-45
+37        <activity android:name="recreate.india.yogdaan.PaymentActivity" />
+37-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:25:9-53
+37-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:25:19-50
+38        <activity android:name="recreate.india.yogdaan.DonateActivity" />
+38-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:26:9-52
+38-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:26:19-49
+39        <activity android:name="recreate.india.yogdaan.Volunteer" />
+39-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:27:9-47
+39-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:27:19-44
+40        <activity android:name="recreate.india.yogdaan.TandC" />
+40-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:28:9-43
+40-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:28:19-40
+41        <activity
+41-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:29:9-37:20
+42            android:name="recreate.india.yogdaan.SplashScreen"
+42-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:30:13-41
+43            android:configChanges="orientation|keyboardHidden"
+43-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:31:13-63
+44            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+44-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:32:13-72
+45            <intent-filter>
+45-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:33:13-36:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:34:17-68
+46-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:34:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:35:17-77
+48-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:35:27-74
+49            </intent-filter>
+50        </activity>
+51        <activity android:name="recreate.india.yogdaan.BlogActivity" />
+51-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:39:9-50
+51-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:39:19-47
+52        <activity android:name="recreate.india.yogdaan.Introduction_Activity" >
+52-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:40:9-42:20
+52-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:40:19-56
+53        </activity>
+54        <activity
+54-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:43:9-47:20
+55            android:name="recreate.india.yogdaan.LoginActivity"
+55-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:44:13-42
+56            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+56-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:45:13-72
+57        </activity>
+58        <activity android:name="recreate.india.yogdaan.MainActivity" >
+58-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:48:9-49:20
+58-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:48:19-47
+59        </activity>
+60        <activity android:name="recreate.india.yogdaan.HelpPage" >
+60-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:50:9-52:20
+60-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:50:19-43
+61        </activity>
+62        <activity android:name="recreate.india.yogdaan.OtpActivity" />
+62-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:53:9-49
+62-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:53:19-46
+63
+64        <meta-data
+64-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:55:9-57:70
+65            android:name="com.google.android.gms.ads.APPLICATION_ID"
+65-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:56:13-69
+66            android:value="ca-app-pub-8169027776894810~7067472313" />
+66-->C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:57:13-67
+67
+68        <service
+68-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:30:9-36:19
+69            android:name="com.google.firebase.components.ComponentDiscoveryService"
+69-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:31:13-84
+70            android:directBootAware="true"
+70-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+71            android:exported="false" >
+71-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:32:13-37
+>>>>>>> 0dbab1524354a896d452e98959545fab063e2a45
 72            <meta-data
 72-->[com.google.firebase:firebase-database:19.3.0] C:\Users\Prachi Singhal\.gradle\caches\transforms-2\files-2.1\f41aa971764c4aef5caf485efddbcecd\jetified-firebase-database-19.3.0\AndroidManifest.xml:32:13-34:85
 73                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"

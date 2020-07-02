@@ -30,20 +30,29 @@
         <activity
             android:name=".SplashScreen"
             android:configChanges="orientation|keyboardHidden"
+
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+
+
+
+
         <activity android:name=".BlogActivity" />
         <activity android:name=".Introduction_Activity"></activity>
         <activity
             android:name=".LoginActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".HelpPage"></activity>
+        <activity android:name=".HelpPage" ></activity>
+
+
         <activity android:name=".OtpActivity" />
 
         <meta-data

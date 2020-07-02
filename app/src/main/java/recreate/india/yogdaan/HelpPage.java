@@ -51,6 +51,7 @@ import com.google.firebase.firestore.GeoPoint;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.google.rpc.Help;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -72,7 +73,7 @@ public class HelpPage extends AppCompatActivity {
     FirebaseUser firebaseUser;
     Dialog epicdialog;
     Button box;
-    String imageDownlaodLink;
+    private  String imageDownlaodLink;
     ImageView closenew;
     public static final int PERMISSION_REQUEST_CODE = 9001;
     private static final int PLAY_SERVICES_ERROR_CODE = 9002;
@@ -133,7 +134,30 @@ public class HelpPage extends AppCompatActivity {
         submit_request.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("images");
+                final StorageReference imageFilePath = storageReference.child(uri.getLastPathSegment());
+                imageFilePath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                    @Override
+                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
 
+                        imageFilePath.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                            @Override
+                            public void onSuccess(Uri uri) {
+                                imageDownlaodLink = uri.toString();
+                            }
+                        });
+
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        // something goes wrong uploading picture
+                        Toast.makeText(HelpPage.this,"error",Toast.LENGTH_LONG).show();
+                    }
+                });
+                if(imageDownlaodLink==null){
+                    Toast.makeText(HelpPage.this,"nhi hua",Toast.LENGTH_LONG).show();
+                }
                 Geocoder geocoder;
                 geocoder = new Geocoder(HelpPage.this, Locale.getDefault());
                 try {
@@ -149,31 +173,9 @@ public class HelpPage extends AppCompatActivity {
                 String postalCode = addresses.get(0).getPostalCode();
                 String knownName = addresses.get(0).getFeatureName();
 
-                StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("images");
-                final StorageReference imageFilePath = storageReference.child(uri.getLastPathSegment());
-                imageFilePath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                    @Override
-                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
-                        imageFilePath.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                            @Override
-                            public void onSuccess(Uri uri) {
-                                imageDownlaodLink = uri.toString();
-                            }
-                                });
-
-                            }
-                        }).addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                // something goes wrong uploading picture
-                                Toast.makeText(HelpPage.this,"error",Toast.LENGTH_LONG).show();
-                            }
-                        });
 
 
                 Map<String, Object> map = new HashMap<>();
-
                 map.put("name", name.getText().toString());
                 map.put("lat", lat);
                 map.put("lng", lng);

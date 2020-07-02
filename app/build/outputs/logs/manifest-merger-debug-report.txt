@@ -218,12 +218,17 @@ ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main
 	android:name
 		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:29:19-40
 activity#recreate.india.yogdaan.SplashScreen
+<<<<<<< HEAD
 ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:30:9-33:84
+=======
+ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:29:9-37:20
+>>>>>>> 0dbab1524354a896d452e98959545fab063e2a45
 	android:configChanges
 		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:32:13-63
 	android:theme
 		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:33:13-72
 	android:name
+<<<<<<< HEAD
 		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:31:13-41
 activity#recreate.india.yogdaan.BlogActivity
 ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:34:9-50
@@ -257,6 +262,41 @@ activity#recreate.india.yogdaan.HelpPage
 ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:46:9-55
 	android:name
 		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:46:19-43
+=======
+		ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:30:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:33:13-36:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:34:17-68
+	android:name
+		ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:34:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:35:27-74
+activity#recreate.india.yogdaan.BlogActivity
+ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:39:9-50
+	android:name
+		ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:39:19-47
+activity#recreate.india.yogdaan.Introduction_Activity
+ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:40:9-42:20
+	android:name
+		ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:40:19-56
+activity#recreate.india.yogdaan.LoginActivity
+ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:43:9-47:20
+	android:theme
+		ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:45:13-72
+	android:name
+		ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:44:13-42
+activity#recreate.india.yogdaan.MainActivity
+ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:48:9-49:20
+	android:name
+		ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:48:19-47
+activity#recreate.india.yogdaan.HelpPage
+ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:50:9-52:20
+	android:name
+		ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:50:19-43
+>>>>>>> 0dbab1524354a896d452e98959545fab063e2a45
 activity#recreate.india.yogdaan.OtpActivity
 ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:47:9-49
 	android:name
