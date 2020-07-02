@@ -19,30 +19,21 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <!-- <<<<<<< HEAD -->
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".BlogActivity" />
         <activity android:name=".AddPostActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"/>
         <activity android:name=".FundRaiseActivity" />
         <activity android:name=".HelpPage" />
 
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
-        </activity> <!-- <<<<<<< HEAD -->
-        <!-- <activity android:name=".AddPostActivity" /> -->
-        <!-- <activity android:name=".LoginActivity" /> -->
-        <!-- <activity android:name=".MainActivity" /> -->
-        <!-- <activity android:name=".OtpActivity" /> -->
-        <!-- ======= -->
+
     <activity android:name=".OtpActivity" />
 
     </application>

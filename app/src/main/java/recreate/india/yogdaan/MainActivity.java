@@ -3,14 +3,17 @@ package recreate.india.yogdaan;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +27,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
@@ -31,8 +35,10 @@ public class MainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle toggle;
     private FirebaseAuth mAuth;
     AlertDialog alertDialog;
+    private boolean isFirstTime;
     private ImageButton our_work;
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,18 +66,44 @@ public class MainActivity extends AppCompatActivity {
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        NavigationView navigationView = (NavigationView) findViewById(R.id.n1);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        navigationView =  findViewById(R.id.n1);
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
-//        boolean isFirstTime = prefs.getBoolean("isFirstTime", true);
-//        if (isFirstTime) {
-//            onFirst();
-//        } else {
-//            FirebaseUser currentUser = mAuth.getCurrentUser();
-//            if (currentUser == null) {
-//                gotoLoginActivity();
-//            }
-//        }
+      isFirstTime = prefs.getBoolean("isFirstTime", true);
+        if (isFirstTime) {
+            onFirst();
+        } else {
+           FirebaseUser currentUser = mAuth.getCurrentUser();
+            if (currentUser == null) {
+                gotoLoginActivity();
+            }
+        }
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.logout: mAuth.signOut(); gotoLoginActivity();
+                        break;
+                    case R.id.Your:
+                        Toast.makeText(MainActivity.this,"Your Donation",Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.Certificates:
+                        Toast.makeText(MainActivity.this,"Your Certificates/Receipt",Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.Status:
+                        Toast.makeText(MainActivity.this,"Status of your request",Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.setting:
+                        Toast.makeText(MainActivity.this,"Setting",Toast.LENGTH_SHORT).show();
+                        break;
+
+
+                }
+
+                return false;
+            }
+        });
+
 
     }
 
@@ -81,13 +113,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, TandC.class);
         startActivity(intent);
 
-<<<<<<< HEAD
-        assert isFirstRun != null;
-        if (isFirstRun.equals("false")) {
-            Intent intent = new Intent(MainActivity.this, TandC.class);
-            startActivity(intent);
-=======
->>>>>>> 50d734812a372129add7cd3c098e8ccac02d8d9b
+
+       
+        if (!isFirstTime) {
+            Intent intent1 = new Intent(MainActivity.this, TandC.class);
+            startActivity(intent1);
+
 
             new AlertDialog.Builder(MainActivity.this)
                     .setTitle("Terms and Conditions")
@@ -115,12 +146,11 @@ public class MainActivity extends AppCompatActivity {
 
 
         }
-<<<<<<< HEAD
-//        Intent intent = new Intent(MainActivity.this,LoginActivity.class);
-//        startActivity(intent);
+
+      Intent intent2 = new Intent(MainActivity.this,LoginActivity.class);
+      startActivity(intent2);
     }
-=======
->>>>>>> 50d734812a372129add7cd3c098e8ccac02d8d9b
+
 
 
 
@@ -131,22 +161,5 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if (toggle.onOptionsItemSelected(item)) {
 
-            return true;
-        }
-        switch (item.getItemId()){
-
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.example_menu, menu);
-        return true;
-    }
 }

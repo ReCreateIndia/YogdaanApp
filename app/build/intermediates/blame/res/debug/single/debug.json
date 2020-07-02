@@ -1,364 +1,334 @@
 [
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_keyboard_return_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_keyboard_return_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_help_page.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_help_page.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable\\btn.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_donate3.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable\\donate3.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_keyboard_return_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_keyboard_return_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_d2.jpg.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable\\d2.jpg"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\drawable\\button.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_settings_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_settings_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_volunteer2.png.flat",
-        "source": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable-v24\\volunteer2.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_keyboard_return_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_keyboard_return_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-=======
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_settings_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_settings_black_24dp.png"
->>>>>>> 50d734812a372129add7cd3c098e8ccac02d8d9b
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_example_menu.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\menu\\example_menu.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_macbookpro.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\drawable-v24\\macbookpro.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ourhelpers.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable\\ourhelpers.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_keyboard_return_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_keyboard_return_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_d3.jpg.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\drawable\\d3.jpg"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_keyboard_return_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_keyboard_return_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_volunteer.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_volunteer.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_single_fund_item.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\layout\\single_fund_item.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_keyboard_return_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_keyboard_return_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_person_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_person_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_text_input_bg.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\drawable\\text_input_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_person_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_person_black_24dp.png"
     },
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_input.xml.flat",
-        "source": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable\\input.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_settings_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_settings_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ow.png.flat",
-        "source": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable\\ow.png"
-=======
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_primary_btn_bg.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable\\primary_btn_bg.xml"
->>>>>>> 50d734812a372129add7cd3c098e8ccac02d8d9b
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_donate3.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\drawable\\donate3.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_person_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_person_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_person_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_person_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash_screen.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_person_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_person_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_primary_btn_bg.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\drawable\\primary_btn_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\font_open_sans_bold.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\font\\open_sans_bold.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_volunteer2.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\drawable-v24\\volunteer2.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_settings_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_settings_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_keyboard_return_black_24dp.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_keyboard_return_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_single_fund_item.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\layout\\single_fund_item.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_d5.jpg.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable\\d5.jpg"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_d1.jpg.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable\\d1.jpg"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_person_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_person_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_person_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_person_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_blog.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_blog.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_tand_c.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_tand_c.xml"
     },
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_volunteer3.png.flat",
-        "source": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable-v24\\volunteer3.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_keyboard_return_black_24dp.png.flat",
-        "source": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_keyboard_return_black_24dp.png"
-=======
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
->>>>>>> 50d734812a372129add7cd3c098e8ccac02d8d9b
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash_screen.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_d2.jpg.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\drawable\\d2.jpg"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\font_open_sans_semibold.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\font\\open_sans_semibold.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ow.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\drawable\\ow.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_android_black_24dp.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_android_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\font_open_sans_bold.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\font\\open_sans_bold.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\font_open_sans_semibold.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\font\\open_sans_semibold.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_person_black_24dp.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_person_black_24dp.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_fund_raise.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_fund_raise.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_settings_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_settings_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_android_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_android_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_menu_header.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\layout\\menu_header.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_android_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_android_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_input.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\drawable\\input.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_menu_header.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\layout\\menu_header.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_person_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_person_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_person_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_person_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_example_menu.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\menu\\example_menu.xml"
     },
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_volunteer.xml.flat",
-        "source": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_volunteer.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_d1.jpg.flat",
-        "source": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable\\d1.jpg"
-=======
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_blog.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_blog.xml"
->>>>>>> 50d734812a372129add7cd3c098e8ccac02d8d9b
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_person_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_person_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ow.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable\\ow.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_android_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_android_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_d1.jpg.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\drawable\\d1.jpg"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_keyboard_return_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_keyboard_return_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_item_single.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\layout\\list_item_single.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_help_page.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_help_page.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_volunteer1.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\drawable-v24\\volunteer1.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_item_single.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\layout\\list_item_single.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_person_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_person_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_fund_raise.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_fund_raise.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\drawable\\btn.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_settings_black_24dp.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_settings_black_24dp.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_keyboard_return_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_keyboard_return_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_nav_menu.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\menu\\nav_menu.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_nav_menu.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\menu\\nav_menu.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_person_black_24dp.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_person_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_d4.jpg.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable\\d4.jpg"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_settings_black_24dp.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_settings_black_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_android_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_android_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_android_black_24dp.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_android_black_24dp.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_otp.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_otp.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_settings_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_settings_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_settings_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_settings_black_24dp.png"
     },
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_button.xml.flat",
-        "source": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable\\button.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_android_black_24dp.xml.flat",
-        "source": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_android_black_24dp.xml"
-=======
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
->>>>>>> 50d734812a372129add7cd3c098e8ccac02d8d9b
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_android_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_android_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_d5.jpg.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\drawable\\d5.jpg"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_android_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_android_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_keyboard_return_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_keyboard_return_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_android_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_android_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_settings_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_settings_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_settings_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_settings_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_volunteer1.png.flat",
-        "source": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable-v24\\volunteer1.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_android_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_android_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\91941\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-=======
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_android_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_android_black_24dp.png"
->>>>>>> 50d734812a372129add7cd3c098e8ccac02d8d9b
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_border.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\drawable\\border.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_otp.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_otp.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_settings_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_settings_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_tand_c.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_tand_c.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_settings_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_settings_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_settings_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_settings_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_keyboard_return_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_keyboard_return_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_android_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_android_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_macbookpro.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable-v24\\macbookpro.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_d4.jpg.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\drawable\\d4.jpg"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_android_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_android_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_keyboard_return_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_keyboard_return_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_keyboard_return_black_24dp.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_keyboard_return_black_24dp.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_volunteer3.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\drawable-v24\\volunteer3.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_keyboard_return_black_24dp.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_keyboard_return_black_24dp.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ourhelpers.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\drawable\\ourhelpers.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_post.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_add_post.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_post.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_add_post.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_text_input_bg.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable\\text_input_bg.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_border.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable\\border.xml"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_android_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_android_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_d3.jpg.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable\\d3.jpg"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_person_black_24dp.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_person_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
     }
 ]

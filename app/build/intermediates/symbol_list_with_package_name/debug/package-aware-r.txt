@@ -847,6 +847,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color lightGray
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1635,7 +1636,6 @@ id im7
 id image
 id imageView
 id image_slider
-id image_slider_volunteer
 id image_view
 id info
 id invisible
@@ -1730,6 +1730,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id radio1
+id resend_btn
 id right
 id right_icon
 id right_side
@@ -1830,6 +1831,7 @@ id view_pager
 id visible
 id volunteer_address
 id volunteer_dob
+id volunteer_image
 id volunteer_name
 id volunteer_occupation
 id volunteer_submit
