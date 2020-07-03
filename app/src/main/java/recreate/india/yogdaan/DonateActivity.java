@@ -2,6 +2,7 @@ package recreate.india.yogdaan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
@@ -27,13 +28,14 @@ public class DonateActivity extends AppCompatActivity {
     public int counter=0;
     private ActionBar actionBar;
 
+    @SuppressLint("WrongConstant")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donate);
         actionBar = this.getActionBar();
         getSupportActionBar().setElevation(0);
-        //getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.abs_layout);
 
         donateMoney=(Button)findViewById(R.id.donate_money_btn);

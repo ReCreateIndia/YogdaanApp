@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
+import android.app.ActionBar;
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
@@ -34,14 +36,20 @@ public class BlogActivity extends AppCompatActivity {
     private RecyclerView mfirestorelist;
     FirestoreRecyclerAdapter adapter;
     private BottomNavigationView bottomNavigationView;
+    ActionBar actionBar;
 
 
 
 
+    @SuppressLint("WrongConstant")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blog);
+        actionBar = this.getActionBar();
+        getSupportActionBar().setElevation(0);
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.abs_layout);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new RaiseFundFragment()).commit();
         bottomNavigationView=findViewById(R.id.bottomnavview);
         bottomNavigationView.setOnNavigationItemSelectedListener(navListner);

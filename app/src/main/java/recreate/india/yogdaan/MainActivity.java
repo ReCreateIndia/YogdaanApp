@@ -130,8 +130,10 @@ public class MainActivity extends AppCompatActivity {
         toggle.syncState();
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-         navigationView = (NavigationView) findViewById(R.id.n1);
+
+        navigationView = (NavigationView) findViewById(R.id.n1);
         navigationView.setNavigationItemSelectedListener(this);
+
         View header = navigationView.getHeaderView(0);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         navigationView = findViewById(R.id.n1);
@@ -140,9 +142,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        navigationView = findViewById(R.id.n1);
-
-
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
 
         isFirstTime = prefs.getBoolean("isFirstTime", true);
