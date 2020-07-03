@@ -1,6 +1,8 @@
 package recreate.india.yogdaan;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.ContentValues;
@@ -93,11 +95,18 @@ public class HelpPage extends AppCompatActivity {
     Uri uri;
     private ImageView idproof;
     List<Address> addresses;
+    private ActionBar actionBar;
 
+
+    @SuppressLint("WrongConstant")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_page);
+        actionBar = this.getActionBar();
+        getSupportActionBar().setElevation(0);
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.abs_layout);
         idproof = findViewById(R.id.idProof);
         name = findViewById(R.id.name);
         takeimage = findViewById(R.id.cameraIntent);

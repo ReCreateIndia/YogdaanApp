@@ -20,8 +20,6 @@
             android:gravity="center_vertical"
             >
 
-
-
         </LinearLayout>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_height="wrap_content"

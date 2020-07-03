@@ -61,150 +61,182 @@
             android:orientation="vertical"
             android:layout_below="@id/ll2"
             android:layout_marginTop="55dp">
+
             <LinearLayout
+                android:id="@+id/stationary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="50dp"
+
                     android:src="@drawable/pencil"/>
+
+
+
                 <TextView
+                    android:id="@+id/stationarymoney"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
-                    android:id="@+id/stationarymoney"
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="8dp"
                     android:text="@string/stationary_money"
-                    />
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#000000"
-                    android:textSize="18sp"
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="20dp"
-                    android:text="10-12"/>
+                    android:text="10-12"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/rs"
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="4dp"
-                    />
+                    android:src="@drawable/rs" />
 
             </LinearLayout>
+
             <LinearLayout
+                android:id="@+id/books"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
+
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="26dp"
+
+
                 android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="50dp"
+
                     android:src="@drawable/agenda"/>
+
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="8dp"
                     android:text="@string/books_money"
-                    />
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
                 <TextView
+                    android:id="@+id/bookmoney"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#000000"
-                    android:textSize="18sp"
-                    android:id="@+id/bookmoney"
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="20dp"
-                    android:text="50-100"/>
+                    android:text="50-100"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/rs"
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="4dp"
-                    />
+                    android:src="@drawable/rs" />
 
             </LinearLayout>
+
             <LinearLayout
+                android:id="@+id/food_money"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
+
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="26dp"
+
+
                 android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="50dp"
+
                     android:src="@drawable/burger"/>
+
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="10dp"
                     android:text="@string/food_money"
-                    />
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
                 <TextView
+                    android:id="@+id/foodmoney"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#000000"
-                    android:id="@+id/foodmoney"
-                    android:textSize="18sp"
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="20dp"
-                    android:text="10-12"/>
+                    android:text="100-150"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/rs"
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="4dp"
-                    />
+                    android:src="@drawable/rs" />
 
             </LinearLayout>
+
             <LinearLayout
+                android:id="@+id/moenydirect"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="26dp"
                 android:layout_marginRight="30dp"
                 android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="50dp"
+
                     android:src="@drawable/money"
                    />
+
+
                 <TextView
+                    android:id="@+id/money"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#000000"
-                    android:textSize="20sp"
-
-                    android:id="@+id/money"
                     android:layout_gravity="bottom"
+
                     android:layout_marginLeft="10dp"
+
+
+
                     android:text="@string/money_directly"
-                    />
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/rs"
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="4dp"
-                    />
+                    android:src="@drawable/rs" />
 
             </LinearLayout>
 

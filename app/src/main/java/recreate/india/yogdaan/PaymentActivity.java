@@ -34,9 +34,15 @@ public class PaymentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
+        Bundle bundle = getIntent().getExtras();
+        String ammount  = bundle.getString("amount");
 
         send = (Button) findViewById(R.id.send);
         amount = (EditText) findViewById(R.id.amount_et);
+        if(ammount!=null){
+            amount.setText(ammount);
+        }
+
         name = (EditText) findViewById(R.id.name);
 //        upiVirtualID = (EditText) findViewById(R.id.upi_id);
 
