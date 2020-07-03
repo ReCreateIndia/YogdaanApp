@@ -43,33 +43,18 @@
         <activity
             android:name="recreate.india.yogdaan.SplashScreen"
             android:configChanges="orientation|keyboardHidden"
-<<<<<<< HEAD
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-=======
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
->>>>>>> 0dbab1524354a896d452e98959545fab063e2a45
         <activity android:name="recreate.india.yogdaan.BlogActivity" />
         <activity android:name="recreate.india.yogdaan.Introduction_Activity" />
         <activity
             android:name="recreate.india.yogdaan.LoginActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity android:name="recreate.india.yogdaan.MainActivity" >
-<<<<<<< HEAD
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-=======
-        </activity>
-        <activity android:name="recreate.india.yogdaan.HelpPage" >
->>>>>>> 0dbab1524354a896d452e98959545fab063e2a45
         </activity>
         <activity android:name="recreate.india.yogdaan.HelpPage" />
         <activity android:name="recreate.india.yogdaan.OtpActivity" />

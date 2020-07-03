@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-#Thu Jul 02 19:28:18 IST 2020
-=======
-#Wed Jul 01 22:28:30 IST 2020
->>>>>>> 0dbab1524354a896d452e98959545fab063e2a45
+#Thu Jul 02 20:08:41 IST 2020
 path.3=classes3.dex
 path.2=classes2.dex
 path.1=classes.dex

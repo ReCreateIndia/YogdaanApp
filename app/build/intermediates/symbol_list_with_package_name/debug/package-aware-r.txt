@@ -1502,6 +1502,9 @@ drawable ourhelperss
 drawable ourwork
 drawable ourworkk
 drawable ow
+drawable p1
+drawable p2
+drawable p3
 drawable paymentbord
 drawable pen2
 drawable placeholder
@@ -1551,6 +1554,7 @@ id Status
 id TOP_END
 id TOP_START
 id TypeOfHelp
+id TypeOfWork
 id Volunteers
 id YourDonation
 id accessibility_action_clickable_span
@@ -1881,6 +1885,7 @@ id snap
 id snapMargins
 id spacer
 id spinner2
+id spinner3
 id split_action_bar
 id spread
 id spread_inside
