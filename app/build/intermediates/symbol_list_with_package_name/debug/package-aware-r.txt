@@ -1543,6 +1543,7 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id Certificates
 id Donate
 id FUNCTION
 id Help

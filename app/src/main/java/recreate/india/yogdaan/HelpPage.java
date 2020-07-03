@@ -97,6 +97,7 @@ public class HelpPage extends AppCompatActivity {
     List<Address> addresses;
     private ActionBar actionBar;
 
+
     @SuppressLint("WrongConstant")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
