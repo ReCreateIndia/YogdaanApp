@@ -1,10 +1,22 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rBR\\values-pt-rBR.xml",
+||||||| c52b0e2
+            "outputFile": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rBR\\values-pt-rBR.xml",
+=======
+            "outputFile": "C:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rBR\\values-pt-rBR.xml",
+>>>>>>> 8f6076a4ef5231dee70f13e5c1ce356a6a6e39a4
             "map": [
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\VISH31\\.gradle\\caches\\transforms-2\\files-2.1\\e72bc7f8f189acc57d7f9b836758081d\\jetified-play-services-ads-19.1.0\\res\\values-pt-rBR\\values.xml",
+||||||| c52b0e2
+                    "source": "C:\\Users\\Anubhav goyal\\.gradle\\caches\\transforms-2\\files-2.1\\ad072bd06501b4ced252e97ed9ee745e\\jetified-play-services-basement-17.0.0\\res\\values-pt-rBR\\values.xml",
+=======
+                    "source": "C:\\Users\\Prachi Singhal\\.gradle\\caches\\transforms-2\\files-2.1\\e72bc7f8f189acc57d7f9b836758081d\\jetified-play-services-ads-19.1.0\\res\\values-pt-rBR\\values.xml",
+>>>>>>> 8f6076a4ef5231dee70f13e5c1ce356a6a6e39a4
                     "from": {
                         "startLines": "4,5,6,7,8,9,10",
                         "startColumns": "0,0,0,0,0,0,0",
@@ -21,7 +33,13 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\VISH31\\.gradle\\caches\\transforms-2\\files-2.1\\95c27f1e561f59170f577bf124144243\\appcompat-1.1.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
+||||||| c52b0e2
+                    "source": "C:\\Users\\Anubhav goyal\\.gradle\\caches\\transforms-2\\files-2.1\\95c27f1e561f59170f577bf124144243\\appcompat-1.1.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
+=======
+                    "source": "C:\\Users\\Prachi Singhal\\.gradle\\caches\\transforms-2\\files-2.1\\95c27f1e561f59170f577bf124144243\\appcompat-1.1.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
+>>>>>>> 8f6076a4ef5231dee70f13e5c1ce356a6a6e39a4
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +56,13 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\VISH31\\.gradle\\caches\\transforms-2\\files-2.1\\b2b51ad2129f7ae88186ad90508b79ab\\core-1.1.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
+||||||| c52b0e2
+                    "source": "C:\\Users\\Anubhav goyal\\.gradle\\caches\\transforms-2\\files-2.1\\b2b51ad2129f7ae88186ad90508b79ab\\core-1.1.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
+=======
+                    "source": "C:\\Users\\Prachi Singhal\\.gradle\\caches\\transforms-2\\files-2.1\\b2b51ad2129f7ae88186ad90508b79ab\\core-1.1.0\\res\\values-pt-rBR\\values-pt-rBR.xml",
+>>>>>>> 8f6076a4ef5231dee70f13e5c1ce356a6a6e39a4
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -55,7 +79,47 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\VISH31\\.gradle\\caches\\transforms-2\\files-2.1\\78b13228d1b7806e4595749364e08dfc\\jetified-play-services-base-17.1.0\\res\\values-pt-rBR\\values.xml",
+||||||| c52b0e2
+                    "source": "C:\\Users\\Anubhav goyal\\.gradle\\caches\\transforms-2\\files-2.1\\e72bc7f8f189acc57d7f9b836758081d\\jetified-play-services-ads-19.1.0\\res\\values-pt-rBR\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10",
+                        "startColumns": "0,0,0,0,0,0,0",
+                        "startOffsets": "203,273,396,461,526,606,715",
+                        "endColumns": "69,122,64,64,79,108,73",
+                        "endOffsets": "272,395,460,525,605,714,788"
+                    },
+                    "to": {
+                        "startLines": "47,48,49,50,51,52,53",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "5594,5668,5795,5864,5933,6017,6130",
+                        "endColumns": "73,126,68,68,83,112,77",
+                        "endOffsets": "5663,5790,5859,5928,6012,6125,6203"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Anubhav goyal\\.gradle\\caches\\transforms-2\\files-2.1\\78b13228d1b7806e4595749364e08dfc\\jetified-play-services-base-17.1.0\\res\\values-pt-rBR\\values.xml",
+=======
+                    "source": "C:\\Users\\Prachi Singhal\\.gradle\\caches\\transforms-2\\files-2.1\\ad072bd06501b4ced252e97ed9ee745e\\jetified-play-services-basement-17.0.0\\res\\values-pt-rBR\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "251",
+                        "endColumns": "203",
+                        "endOffsets": "454"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "4013",
+                        "endColumns": "203",
+                        "endOffsets": "4212"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Prachi Singhal\\.gradle\\caches\\transforms-2\\files-2.1\\78b13228d1b7806e4595749364e08dfc\\jetified-play-services-base-17.1.0\\res\\values-pt-rBR\\values.xml",
+>>>>>>> 8f6076a4ef5231dee70f13e5c1ce356a6a6e39a4
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

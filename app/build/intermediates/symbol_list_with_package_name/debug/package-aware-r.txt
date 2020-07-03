@@ -1383,6 +1383,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable add
 drawable addborder
+drawable agenda
 drawable avd_hide_password
 drawable avd_show_password
 drawable back
@@ -1399,6 +1400,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable burger
 drawable button
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
@@ -1442,8 +1444,6 @@ drawable download
 drawable edit_back
 drawable error
 drawable filters
-drawable food
-drawable foof1
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable gradient
@@ -1475,9 +1475,12 @@ drawable imageswitchernavidot1
 drawable img1
 drawable img2
 drawable input
+drawable lang_background
+drawable langbord
 drawable loginbutton
 drawable logout
 drawable logoyogdaan
+drawable money
 drawable more
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
@@ -1510,7 +1513,7 @@ drawable p1
 drawable p2
 drawable p3
 drawable paymentbord
-drawable pen2
+drawable pencil
 drawable placeholder
 drawable primary_btn_bg
 drawable profile
@@ -1559,6 +1562,7 @@ id Status
 id TOP_END
 id TOP_START
 id TypeOfHelp
+id TypeOfWork
 id Volunteers
 id YourDonation
 id accessibility_action_clickable_span
@@ -1627,6 +1631,7 @@ id async
 id auto
 id barrier
 id beginning
+id bengali
 id blocking
 id bookmoney
 id books
@@ -1691,6 +1696,7 @@ id dropdown_menu
 id edit_query
 id end
 id end_padder
+id english
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
@@ -1718,6 +1724,7 @@ id group_divider
 id groups
 id help
 id hideable
+id hindi
 id home
 id homeAsUp
 id icon
@@ -1847,6 +1854,7 @@ id postImage
 id processed
 id progress_circular
 id progress_horizontal
+id punjabi
 id radio
 id radio1
 id raiseFundRecyclerView
@@ -1892,6 +1900,7 @@ id snap
 id snapMargins
 id spacer
 id spinner2
+id spinner3
 id split_action_bar
 id spread
 id spread_inside
@@ -1965,6 +1974,7 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id urdu
 id useLogo
 id userImage
 id verify_btn

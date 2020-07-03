@@ -2,11 +2,9 @@ package recreate.india.yogdaan;
 
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -33,7 +31,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-import Helper.LocaleHelper;
 import io.paperdb.Paper;
 
 public class MainActivity extends AppCompatActivity {
@@ -123,6 +120,14 @@ public class MainActivity extends AppCompatActivity {
         imageslider.setImageList(slideModels, true);
 
 
+<<<<<<< HEAD
+||||||| c52b0e2
+        navigationView = (NavigationView) findViewById(R.id.n1);
+        navigationView.setNavigationItemSelectedListener(this);
+=======
+        navigationView = (NavigationView) findViewById(R.id.n1);
+        navigationView.setNavigationItemSelectedListener((NavigationView.OnNavigationItemSelectedListener) this);
+>>>>>>> 8f6076a4ef5231dee70f13e5c1ce356a6a6e39a4
 
 
 

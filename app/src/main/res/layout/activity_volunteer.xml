@@ -104,25 +104,52 @@
                             android:background="@drawable/edit_back"
                             android:layout_marginTop="8dp"
 
-                            android:hint="@string/Type_Of_Work"
-                            android:textColorHint="#000000" />
-
-
-
-
-
-                        <EditText
-                            android:id="@+id/volunteer_type_of_work"
-                            android:layout_marginLeft="40dp"
-                            android:layout_marginRight="40dp"
-                            android:gravity="left|bottom"
-                            android:layout_below="@+id/volunteer_dob"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:background="@drawable/edit_back"
-                            android:layout_marginTop="8dp"
                             android:hint="@string/Date_Of_Birth"
                             android:textColorHint="#000000" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation ="horizontal"
+            android:id="@+id/volunteer_type_of_work"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_below="@id/volunteer_dob"
+            android:layout_marginBottom="5dp"
+
+            android:layout_marginTop="20dp"
+
+            >
+            <TextView
+                android:id="@+id/TypeOfWork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Type_Of_Work"
+                android:textSize="22sp"
+
+                android:textColor="#000000"/>
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="bottom"
+
+                android:fontFamily="sans-serif-medium"
+                android:spinnerMode="dialog"
+                android:textSize="20sp"
+                android:background="@drawable/spinnerbord"
+                android:splitMotionEvents="true"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                tools:ignore="RtlCompat" />
+
+
+        </LinearLayout>
+
+
+
 
 
 
@@ -186,13 +213,14 @@
 
 
 
-                    android:background="@drawable/addborder"
+                    android:background="@drawable/border45"
                     android:text="@string/Submit"
                     android:textAllCaps="false"
                     android:textColor="#FFFFFF"
                     android:textColorLink="#40CDC9"
                     android:textSize="25sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    />
 
 
 </LinearLayout>
