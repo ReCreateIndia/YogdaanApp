@@ -20,6 +20,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.denzcoskun.imageslider.ImageSlider;
@@ -37,40 +38,37 @@ import io.paperdb.Paper;
 
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
-    private NavigationView navigationView;
+
     private ActionBarDrawerToggle toggle;
     private FirebaseAuth mAuth;
     AlertDialog alertDialog;
-
+    private Toolbar t;
     private boolean isFirstTime;
     private ImageButton our_work;
 
 
     private ImageButton donate, help, volunteer, ourWork;
     TextView Help, Our_Work, Volunteers, More, Our_Helpers, Donate;
-    ActionBar actionBar;
+    //ActionBar actionBar; COMMENTED TO FIX NAVBAR ISSUE
 
 
-    @SuppressLint("WrongConstant")
-    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
+   // @SuppressLint("WrongConstant") COMMENTED TO FIX NAVBAR ISSUE
+    //@RequiresApi(api = Build.VERSION_CODES.KITKAT) COMMENTED TO FIX NAVBAR ISSUE
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        actionBar = this.getActionBar();
-        getSupportActionBar().setElevation(0);
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(R.layout.abs_layout);
-
+        /**  actionBar = this.getActionBar(); COMMENTED TO FIX NAVBAR ISSUE
+        Objects.requireNonNull(getSupportActionBar()).setElevation(0); COMMENTED TO FIX NAVBAR ISSUE
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM); COMMENTED TO FIX NAVBAR ISSUE
+        getSupportActionBar().setCustomView(R.layout.abs_layout);COMMENTED TO FIX NAVBAR ISSUE**/
+        setuptoolbarnow();
         donate = findViewById(R.id.donate);
         help = findViewById(R.id.help);
         volunteer = findViewById(R.id.volunteer);
         ourWork = findViewById(R.id.ourWork);
-
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(R.layout.abs_layout);
         Help = findViewById(R.id.Help);
         Our_Work = findViewById(R.id.Our_Work);
         Volunteers = findViewById(R.id.Volunteers);
@@ -123,25 +121,19 @@ public class MainActivity extends AppCompatActivity {
 
         slideModels.add(new SlideModel(R.drawable.d2));
         imageslider.setImageList(slideModels, true);
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
-        toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
-        toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
-        drawerLayout.addDrawerListener(toggle);
-        toggle.syncState();
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        navigationView = (NavigationView) findViewById(R.id.n1);
-        navigationView.setNavigationItemSelectedListener(this);
-
-        View header = navigationView.getHeaderView(0);
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
-        navigationView = findViewById(R.id.n1);
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+
+
+
+
+        //View header = navigationView.getHeaderView(0); COMMENTED TO FIX NAVBAR ISSUE
+        //Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true); COMMENTED TO FIX NAVBAR ISSUE
+
+
+
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
 
         isFirstTime = prefs.getBoolean("isFirstTime", true);
@@ -153,25 +145,24 @@ public class MainActivity extends AppCompatActivity {
                 gotoLoginActivity();
             }
         }
+        NavigationView navigationView= findViewById(R.id.n1);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
-                    case R.id.logout:
-                        mAuth.signOut();
-                        gotoLoginActivity();
+                    case R.id.logout: mAuth.signOut(); gotoLoginActivity();
                         break;
                     case R.id.YourDonation:
-                        Toast.makeText(MainActivity.this, "Your Donation", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this,"MENU 2",Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.Certificates:
-                        Toast.makeText(MainActivity.this, "Your Certificates/Receipt", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.Status:
-                        Toast.makeText(MainActivity.this, "Status of your request", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this,"MENU 3",Toast.LENGTH_SHORT).show();
                         break;
                     case R.id.selectlanguage:
-                        Toast.makeText(MainActivity.this, "Choose language", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this,"MENU 4",Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.Status:
+                        Toast.makeText(MainActivity.this,"MENU 5",Toast.LENGTH_SHORT).show();
                         break;
 
 
@@ -190,8 +181,18 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void setuptoolbarnow() {
+        drawerLayout = findViewById(R.id.drawer);
+        t= findViewById(R.id.t1);
+        toggle = new ActionBarDrawerToggle(this, drawerLayout,t, R.string.open, R.string.close);
+        //toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black)); COMMENTED TO FIX NAVBAR ISSUE
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
 
-    public void onFirst() {
+    }
+
+
+     public void onFirst() {
 
 
         Intent intent = new Intent(MainActivity.this, TandC.class);
@@ -202,7 +203,7 @@ public class MainActivity extends AppCompatActivity {
                 .setTitle("Terms and Conditions")
                 .setMessage("T&C")
                 .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
-                    @Override
+                   @Override
                     public void onClick(DialogInterface dialog, int which) {
                         finish();
                         System.exit(0);
@@ -241,7 +242,7 @@ public class MainActivity extends AppCompatActivity {
         Intent logIntent = new Intent(MainActivity.this, LoginActivity.class);
         logIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(logIntent);
-    }
+   }
 
 
 }

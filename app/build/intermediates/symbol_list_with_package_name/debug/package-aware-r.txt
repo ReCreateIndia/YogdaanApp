@@ -1908,6 +1908,7 @@ id submenuarrow
 id submit
 id submitRequest
 id submit_area
+id t1
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
