@@ -44,7 +44,7 @@ public class OurHelpers extends AppCompatActivity {
 
             @Override
             protected void onBindViewHolder(@NonNull PostViewHolder postViewHolder, int i, @NonNull NgoModel postModal) {
-                postViewHolder.name.setText("name");
+
             }
         };
         ourhelpersview.setLayoutManager(new LinearLayoutManager(this));

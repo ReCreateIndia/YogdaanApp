@@ -2,6 +2,7 @@ package recreate.india.yogdaan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -24,11 +25,16 @@ public class DonateActivity extends AppCompatActivity {
     private Button donateMoney,donateAdds;
     private InterstitialAd mInterstitialAd;
     public int counter=0;
-   
+    private ActionBar actionBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donate);
+        actionBar = this.getActionBar();
+        getSupportActionBar().setElevation(0);
+        //getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.abs_layout);
 
         donateMoney=(Button)findViewById(R.id.donate_money_btn);
 
@@ -72,7 +78,7 @@ public class DonateActivity extends AppCompatActivity {
 //                if (ContextCompat.checkSelfPermission(MainActivitimy.this, Manifest.permission.READ_SMS) != PackageManager.PERMISSION_GRANTED) {
 //                    ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.READ_SMS, Manifest.permission.RECEIVE_SMS}, 101);
 //                }
-                Intent intent = new Intent(DonateActivity.this,PaymentActivity.class);
+                Intent intent = new Intent(DonateActivity.this,PaymentSuggestion.class);
                 startActivity(intent);
             }
         });

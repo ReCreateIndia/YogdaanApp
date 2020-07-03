@@ -37,6 +37,7 @@
 
 
         <activity android:name=".BlogActivity" />
+        <activity android:name=".OurHelpers" />
         <activity android:name=".Introduction_Activity"></activity>
         <activity
             android:name=".LoginActivity"

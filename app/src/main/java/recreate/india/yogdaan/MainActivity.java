@@ -54,18 +54,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
         actionBar = this.getActionBar();
         getSupportActionBar().setElevation(0);
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.abs_layout);
 
         donate = findViewById(R.id.donate);
         help = findViewById(R.id.help);
         volunteer = findViewById(R.id.volunteer);
         ourWork = findViewById(R.id.ourWork);
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(R.layout.abs_layout);
-
-
-
-
-
         Help = findViewById(R.id.Help);
         Our_Work = findViewById(R.id.Our_Work);
         Volunteers = findViewById(R.id.Volunteers);
@@ -77,30 +72,35 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, DonateActivity.class));
+                overridePendingTransition(R.anim.push_up_in, R.anim.push_up_out);
             }
         });
         help.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, HelpPage.class));
+                overridePendingTransition(R.anim.push_up_in, R.anim.push_up_out);
             }
         });
         ourWork.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, BlogActivity.class));
+                overridePendingTransition(R.anim.push_up_in, R.anim.push_up_out);
             }
         });
         volunteer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, Volunteer.class));
+                overridePendingTransition(R.anim.push_up_in, R.anim.push_up_out);
             }
         });
         Our_Helpers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, OurHelpers.class));
+                overridePendingTransition(R.anim.push_up_in, R.anim.push_up_out);
             }
         });
         mAuth = FirebaseAuth.getInstance();
@@ -121,6 +121,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
          navigationView = (NavigationView) findViewById(R.id.n1);
         navigationView.setNavigationItemSelectedListener(this);
+        View header = navigationView.getHeaderView(0);
+
 
 
 

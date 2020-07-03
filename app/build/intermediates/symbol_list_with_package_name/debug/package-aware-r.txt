@@ -27,9 +27,13 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim fade_in
+anim fade_out
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
+anim push_up_in
+anim push_up_out
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -1502,6 +1506,9 @@ drawable ourhelperss
 drawable ourwork
 drawable ourworkk
 drawable ow
+drawable p1
+drawable p2
+drawable p3
 drawable paymentbord
 drawable pen2
 drawable placeholder
@@ -1621,6 +1628,7 @@ id barrier
 id beginning
 id blocking
 id bookmoney
+id books
 id bottom
 id bottomnavview
 id browser_actions_header_text
@@ -1695,6 +1703,7 @@ id filled
 id filter_chip
 id fitToContents
 id fixed
+id food_money
 id foodmoney
 id forever
 id fragment_container
@@ -1755,6 +1764,7 @@ id messag324e
 id message
 id middle
 id mini
+id moenydirect
 id money
 id month_grid
 id month_navigation_bar
@@ -1889,6 +1899,7 @@ id src_in
 id src_over
 id standard
 id start
+id stationary
 id stationarymoney
 id status_bar_latest_event_content
 id stretch
