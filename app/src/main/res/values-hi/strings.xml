@@ -51,22 +51,29 @@
     //listItemSingle.xml
     <string name="Description">विवरण</string>
 
-    <string name="there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out">There is a free platform for everyone and always will be just select the problem and we will do or best to sort it out</string>
-    <string name="need_help_for_others">Need help for others</string>
-    <string name="need_help_for_yourself">Need Help for yourself</string>
-    <string name="enter_information">Enter Information</string>
-    <string name="get_current_location">Get Current Location</string>
-    <string name="or_give_address_below">Or give address below</string>
-    <string name="please_add_any_government_id_proof_like_aadhar_card_pan_card_voter_id_driving_liscence_rashan_card">Please add any government id proof like aadhar card,pan card,voter id,driving liscence,rashan card.</string>
-    <string name="use_camera">Use camera</string>
-    <string name="select_type_of_help">Select Type Of Help :</string>
-    <string name="the_best_way_to_persue_happiness_is_to_help_others">The best way to persue happiness is to help others!</string>
+    <string name="there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out">हर किसी के लिए एक मुफ्त मंच है और हमेशा समस्या का चयन करना होगा और हम इसे हल करने के लिए पूरी कोशिश करेंगे</string>
+    <string name="need_help_for_others">दूसरों के लिए मदद चाहिए</string>
+    <string name="need_help_for_yourself">अपने लिए मदद चाहिए</string>
+    <string name="enter_information">जानकारी दर्ज करें</string>
+    <string name="get_current_location">वर्तमान स्थान प्राप्त करें</string>
+    <string name="or_give_address_below">या नीचे पता दें</string>
+    <string name="please_add_any_government_id_proof_like_aadhar_card_pan_card_voter_id_driving_liscence_rashan_card">कृपया आधार कार्ड, पैन कार्ड, वोटर आईडी, ड्राइविंग लचक, राशन कार्ड जैसे कोई भी सरकारी आईडी प्रूफ जोड़ें</string>
+    <string name="use_camera">कैमरे का उपयोग करें</string>
+    <string name="select_type_of_help">मदद के प्रकार का चयन करें:</string>
+    <string name="the_best_way_to_persue_happiness_is_to_help_others">खुशी मनाने का सबसे अच्छा तरीका है दूसरों की मदद करना!</string>
     <string name="need_help">मदद की ज़रूरत है</string>
-    <string name="donate_money">Donate Money</string>
-    <string name="donate_by_watching_ads">Donate by watching ads</string>
-    <string name="select_the_money_range">Select the Money Range</string>
-    <string name="stationary_money">Stationary Money</string>
-    <string name="books_money">Books Money</string>
-    <string name="food_money">Food Money</string>
-    <string name="money_directly">Money Directly</string>
+    <string name="donate_money">पैसे दान करो</string>
+    <string name="donate_by_watching_ads">विज्ञापन देखकर दान करें</string>
+    <string name="select_the_money_range">मनी रेंज का चयन करें</string>
+    <string name="stationary_money">स्टेशनरी मनी</string>
+    <string name="books_money">किताबें पैसा</string>
+    <string name="food_money">भोजन का पैसा</string>
+    <string name="money_directly">पैसा सीधा</string>
+    <string name="enter_amount">राशी डालें</string>
+    <string name="phone_number">फ़ोन नंबर</string>
+    <string name="next">आगे</string>
+    <string name="username">उपयोगकर्ता नाम</string>
+    <string name="a_step_towards_humanity">मानवता की ओर एक कदम ...</string>
+    <string name="submitted_sucessfully">प्रस्तुत किया गया</string>
+    <string name="thankyou_for_putting_your_request_on_our_app">हमारे app पर आपके अनुरोध को डालने के लिए धन्यवाद</string>
 </resources>

@@ -1699,6 +1699,7 @@ id end_padder
 id english
 id enterAlways
 id enterAlwaysCollapsed
+id enterinfo
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -1710,6 +1711,7 @@ id filled
 id filter_chip
 id fitToContents
 id fixed
+id food
 id food_money
 id foodmoney
 id forever
@@ -1723,6 +1725,7 @@ id gone
 id group_divider
 id groups
 id help
+id helpquote
 id hideable
 id hindi
 id home
@@ -1731,6 +1734,7 @@ id icon
 id icon_group
 id icon_only
 id idProof
+id iddd
 id ifRoom
 id image
 id imageView
@@ -1826,6 +1830,7 @@ id orderplaced
 id ordersupporter
 id ordersupporterconfirmed
 id ordersupporterprocesses
+id orr
 id otp_desc
 id otp_progress
 id otp_text_view
@@ -2192,6 +2197,7 @@ string Verify_Your_Number
 string Volunteers
 string We_Have_Sent_You_An_OTP_For_Phone_Number_Verification
 string Your_Phone_Number
+string a_step_towards_humanity
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -2251,6 +2257,7 @@ string common_signin_button_text_long
 string default_web_client_id
 string donate_by_watching_ads
 string donate_money
+string enter_amount
 string enter_information
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -2306,6 +2313,7 @@ string mtrl_picker_toggle_to_year_selection
 string need_help
 string need_help_for_others
 string need_help_for_yourself
+string next
 string open
 string or_give_address_below
 string password_toggle_content_description
@@ -2313,6 +2321,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string phone_number
 string please_add_any_government_id_proof_like_aadhar_card_pan_card_voter_id_driving_liscence_rashan_card
 string project_id
 string s1
@@ -2327,9 +2336,12 @@ string select_the_money_range
 string select_type_of_help
 string stationary_money
 string status_bar_notification_info_overflow
+string submitted_sucessfully
+string thankyou_for_putting_your_request_on_our_app
 string the_best_way_to_persue_happiness_is_to_help_others
 string there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out
 string use_camera
+string username
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

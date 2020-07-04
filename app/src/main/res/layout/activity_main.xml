@@ -192,7 +192,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Our Work"
+                            android:text="@string/Our_Work"
                             android:textSize="20sp"
                             android:gravity="center"
                             android:id="@+id/Our_Work"
@@ -249,7 +249,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Our helpers"
+                            android:text="@string/Our_Helpers"
                             android:id="@+id/Our_Helpers"
                             android:textSize="20sp"
                             android:gravity="center"
@@ -286,7 +286,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Volunteer"
+                            android:text="@string/Volunteers"
                             android:id="@+id/Volunteers"
 
                             android:textSize="18sp"
@@ -325,7 +325,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="More"
+                            android:text="@string/More"
                             android:id="@+id/More"
                             android:textSize="20sp"
                             android:textStyle="bold"

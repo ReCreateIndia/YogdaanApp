@@ -32,7 +32,7 @@
 
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/helpquote"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -180,7 +180,7 @@
                 android:orientation="vertical"
                 >
                 <TextView
-
+                        android:id="@+id/enterinfo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
@@ -239,7 +239,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
+                    android:id="@+id/orr"
                         android:text="@string/or_give_address_below"
                         android:layout_gravity="center_horizontal"
                         android:textSize="19sp"
@@ -270,6 +270,7 @@
                             android:padding="10dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:id="@+id/iddd"
                             android:text="@string/please_add_any_government_id_proof_like_aadhar_card_pan_card_voter_id_driving_liscence_rashan_card"
                             android:textSize="20sp"
                             android:layout_marginLeft="20dp"

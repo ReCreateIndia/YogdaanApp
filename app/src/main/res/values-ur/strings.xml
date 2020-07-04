@@ -71,4 +71,11 @@
     <string name="books_money">Books Money</string>
     <string name="food_money">Food Money</string>
     <string name="money_directly">Money Directly</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="next">Next</string>
+    <string name="username">username</string>
+    <string name="a_step_towards_humanity">A step towards Humanity...</string>
+    <string name="submitted_sucessfully">Submitted Sucessfully</string>
+    <string name="thankyou_for_putting_your_request_on_our_app">Thankyou for putting your request on our app.</string>
 </resources>

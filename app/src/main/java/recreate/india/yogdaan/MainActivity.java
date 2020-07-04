@@ -2,9 +2,11 @@ package recreate.india.yogdaan;
 
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -30,6 +32,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import Helper.LocaleHelper;
 import io.paperdb.Paper;
 
 public class MainActivity extends AppCompatActivity  {
@@ -133,7 +136,7 @@ public class MainActivity extends AppCompatActivity  {
 
         View header = navigationView.getHeaderView(0);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
- 
+
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -183,7 +186,20 @@ public class MainActivity extends AppCompatActivity  {
         String language = Paper.book().read("language");
         if (language == null)
             Paper.book().write("language", "en");
-        //updateView((String) Paper.book().read("language"));
+        updateView((String) Paper.book().read("language"));
+
+    }
+
+    private void updateView(String language) {
+        Context context = LocaleHelper.setLocale(this, language);
+        Resources resources = context.getResources();
+
+        Help.setText(resources.getString(R.string.need_help));
+        Donate.setText(resources.getString(R.string.Donate));
+        Volunteers.setText(resources.getString(R.string.Volunteers));
+        Our_Helpers.setText(resources.getString(R.string.Our_Helpers));
+        Our_Work.setText(resources.getString(R.string.Our_Work));
+        More.setText(resources.getString(R.string.More));
 
     }
 
@@ -220,15 +236,6 @@ public class MainActivity extends AppCompatActivity  {
         editor.apply();
 
 
-//        Context context = LocaleHelper.setLocale(this, lang);
-//        Resources resources = context.getResources();
-//
-//        Help.setText(resources.getString(R.string.need_help));
-//        Donate.setText(resources.getString(R.string.Donate));
-//        Volunteers.setText(resources.getString(R.string.Volunteers));
-//        Our_Helpers.setText(resources.getString(R.string.Our_Helpers));
-//        Our_Work.setText(resources.getString(R.string.Our_Work));
-//        More.setText(resources.getString(R.string.More));
 
 
     }
