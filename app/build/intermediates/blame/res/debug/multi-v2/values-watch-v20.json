@@ -1,22 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "C:\\Users\\VISH31\\Desktop\\YogdaanApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
-||||||| c52b0e2
-            "outputFile": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
-=======
             "outputFile": "C:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
->>>>>>> 8f6076a4ef5231dee70f13e5c1ce356a6a6e39a4
             "map": [
                 {
-<<<<<<< HEAD
-                    "source": "C:\\Users\\VISH31\\.gradle\\caches\\transforms-2\\files-2.1\\95c27f1e561f59170f577bf124144243\\appcompat-1.1.0\\res\\values-watch-v20\\values-watch-v20.xml",
-||||||| c52b0e2
-                    "source": "C:\\Users\\Anubhav goyal\\.gradle\\caches\\transforms-2\\files-2.1\\95c27f1e561f59170f577bf124144243\\appcompat-1.1.0\\res\\values-watch-v20\\values-watch-v20.xml",
-=======
                     "source": "C:\\Users\\Prachi Singhal\\.gradle\\caches\\transforms-2\\files-2.1\\95c27f1e561f59170f577bf124144243\\appcompat-1.1.0\\res\\values-watch-v20\\values-watch-v20.xml",
->>>>>>> 8f6076a4ef5231dee70f13e5c1ce356a6a6e39a4
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

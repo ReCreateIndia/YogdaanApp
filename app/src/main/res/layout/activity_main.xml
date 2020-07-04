@@ -8,30 +8,24 @@
     android:id="@+id/drawer"
     tools:context=".MainActivity"
     >
+    <com.google.android.material.navigation.NavigationView
 
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/n1"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/nav_menu"
+        >
+
+    </com.google.android.material.navigation.NavigationView>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#ffffff"
 
         >
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/t1"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:popupTheme="@color/colorAccent" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:paddingTop="5dp"
-            android:text="YOGDAAN"
-            android:textColor="#000000"
-
-
-            android:textSize="30sp" />
-
 
         <LinearLayout
             android:id="@+id/lhmp1"
@@ -43,7 +37,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="58dp"
+            android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/sliderback">
 
@@ -356,18 +350,6 @@
 
         </ScrollView>
     </RelativeLayout>
-    <com.google.android.material.navigation.NavigationView
-
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/n1"
-        android:layout_gravity="start"
-
-        app:headerLayout="@layout/menu_header"
-        app:menu="@menu/nav_menu"
-        >
-
-    </com.google.android.material.navigation.NavigationView>
 
 
 
