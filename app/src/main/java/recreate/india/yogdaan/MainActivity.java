@@ -32,7 +32,7 @@ import java.util.Objects;
 
 import io.paperdb.Paper;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity  {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private ActionBarDrawerToggle toggle;
@@ -129,11 +129,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         navigationView = (NavigationView) findViewById(R.id.n1);
-        navigationView.setNavigationItemSelectedListener(this);
+
 
         View header = navigationView.getHeaderView(0);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
-        navigationView = findViewById(R.id.n1);
+ 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -150,7 +150,33 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 gotoLoginActivity();
             }
         }
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.logout:
+                        mAuth.signOut();
+                        gotoLoginActivity();
+                        break;
+                    case R.id.YourDonation:
+                        Toast.makeText(MainActivity.this, "Your Donation", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.Certificates:
+                        Toast.makeText(MainActivity.this, "Your Certificates/Receipt", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.Status:
+                        Toast.makeText(MainActivity.this, "Status of your request", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.selectlanguage:
+                        Toast.makeText(MainActivity.this, "Choose language", Toast.LENGTH_SHORT).show();
+                        break;
 
+
+                }
+
+                return false;
+            }
+        });
 
 
         Paper.init(this);
@@ -215,29 +241,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.logout:
-                mAuth.signOut();
-                gotoLoginActivity();
-                break;
-            case R.id.YourDonation:
-                Toast.makeText(MainActivity.this, "Your Donation", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.Certificates:
-                Toast.makeText(MainActivity.this, "Your Certificates/Receipt", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.Status:
-                Toast.makeText(MainActivity.this, "Status of your request", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.selectlanguage:
-                Toast.makeText(MainActivity.this, "Choose language", Toast.LENGTH_SHORT).show();
-                break;
 
-
-        }
-
-        return false;
-    }
 }
