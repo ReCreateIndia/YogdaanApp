@@ -2,24 +2,39 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string name="Add_Some_Description">Add Some Description</string>
     <string name="Address">Address</string>
+    <string name="Agriculture">Agriculture</string>
     <string name="Amount">Amount</string>
+    <string name="Dalitup">Dalit Upliftment</string>
     <string name="Date_Of_Birth">Date Of Birth</string>
     <string name="Description">Description</string>
+    <string name="Diffrentabledperson">Differently abled Person</string>
     <string name="Donate">Donate</string>
     <string name="Donate_Now">Donate Now</string>
+    <string name="Education">Education</string>
+    <string name="Egovernance">E-governance</string>
     <string name="Enter_OTP">Enter OTP</string>
+    <string name="Food">Food</string>
     <string name="Generate_OTP">Generate OTP</string>
     <string name="Help">Help</string>
+    <string name="Housing">Housing</string>
+    <string name="Humanrights">Human Rights</string>
+    <string name="Informationtech">Information Technology</string>
+    <string name="Marriageofdeprivedgirls">Marriage of deprived girls</string>
+    <string name="Medical_faciilities">Medical faciltites</string>
     <string name="More">More</string>
     <string name="Name">Name</string>
+    <string name="NeedMoney">Need Money</string>
+    <string name="Need_blood">Need Blood</string>
     <string name="Net_Credit">Net Credit</string>
     <string name="Net_Value">Net Value</string>
     <string name="Occupation">Occupation</string>
+    <string name="Oldpeople">Old people</string>
     <string name="Our_Helpers">Our Helpers</string>
     <string name="Our_Work">Our Work</string>
     <string name="Please_Enter_Your_Phone_Number_For_Verification">Please Enter Your Phone Number For Verification</string>
     <string name="Resend_OTP">Resend OTP</string>
     <string name="Select_Problem">Select Problem</string>
+    <string name="Select_problem">Select problem</string>
     <string name="Submit">Submit</string>
     <string name="Type_Of_Work">Type Of Work</string>
     <string name="Verify_OTP">Verify OTP</string>
@@ -27,6 +42,7 @@
     <string name="Volunteers">Volunteers</string>
     <string name="We_Have_Sent_You_An_OTP_For_Phone_Number_Verification">We Have Sent You An OTP \n For Phone Number Verification</string>
     <string name="Your_Phone_Number">Your Phone Number</string>
+    <string name="a_step_towards_humanity">A step towards Humanity...</string>
     <string msgid="7903180715631665059" name="abc_action_bar_home_description">"গৃহ পৃষ্ঠালৈ যাওক"</string>
     <string msgid="6794660482873516081" name="abc_action_bar_up_description">"ওপৰলৈ যাওক"</string>
     <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"অধিক বিকল্প"</string>
@@ -54,10 +70,17 @@
     <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"ইয়াৰ জৰিয়তে শ্বেয়াৰ কৰক"</string>
     <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g>ৰ জৰিয়তে শ্বেয়াৰ কৰক"</string>
     <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"সংকোচন কৰক"</string>
+    <string name="animalhusbandry">Animals Husbandry,Dairying,Fisheries</string>
     <string name="app_name">Yogdaan</string>
+    <string name="artandculture"><![CDATA[Art & culture]]></string>
+    <string name="awarenessofinsurance">Awareness of Insurance</string>
     <string name="banner_ad_unit_id" translatable="false">ca-app-pub-8169027776894810/2094347234</string>
+    <string name="biotechnology">Biotechnology</string>
     <string name="books_money">Books Money</string>
+    <string name="childdevelopment">Child Development</string>
+    <string name="civicissues">Civic issues</string>
     <string name="close">Close</string>
+    <string name="clothing">clothing</string>
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"সক্ষম কৰক"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"আপুনি Google Play সেৱাবোৰ সক্ষম নকৰালৈকে <ns1:g id="APP_NAME">%1$s</ns1:g>এ কাম নকৰিব।"</string>
     <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google প্লে সেৱাসক্ষম কৰক"</string>
@@ -76,20 +99,48 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"ফ\'নত খোলক"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"ছাইন ইন কৰক"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Googleৰ জৰিয়তে ছাইন ইন কৰক"</string>
+    <string name="communitydevelopment">Community Development</string>
+    <string name="consumerrights">Consumer Rights</string>
+    <string name="cooperativeandresourcebuilding">cooperative and Resource Building</string>
+    <string name="disastermanagement">Disaster Management</string>
     <string name="donate_by_watching_ads">Donate by watching ads</string>
     <string name="donate_money">Donate Money</string>
+    <string name="drinkingwater">Drinking Water</string>
+    <string name="eleraning">E-learning</string>
+    <string name="enter_amount">Enter Amount</string>
     <string name="enter_information">Enter Information</string>
+    <string name="enterpreneurship">Enterpreneurship Community</string>
+    <string name="environmentandforests">Environment and Forests</string>
     <string name="food_money">Food Money</string>
+    <string name="foodprocessing">Food Processing</string>
     <string name="get_current_location">Get Current Location</string>
+    <string name="healthandfamilywelfare">Health And Family Welfare</string>
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="hiv">HIV/Aids</string>
+    <string name="humanwelfare">human Welfare</string>
     <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-8169027776894810/9781265569</string>
+    <string name="labourandemployment">Labour and Employment</string>
+    <string name="landresource">Land Resource</string>
+    <string name="landresuorce">Land Resource</string>
+    <string name="legalawareness">Legal Awareness and AID</string>
+    <string name="micro">Micro Small and Minor Enterprises</string>
+    <string name="microfinnce">Micro Finance (SHGs)</string>
+    <string name="minorityissues">Minority issues</string>
     <string name="money_directly">Money Directly</string>
     <string name="need_help">Need Help</string>
     <string name="need_help_for_others">Need help for others</string>
     <string name="need_help_for_yourself">Need Help for yourself</string>
+    <string name="newrenwavle">New and Renewable Energy</string>
+    <string name="next">Next</string>
+    <string name="nutition">Nutrition</string>
     <string name="open">Open</string>
     <string name="or_give_address_below">Or give address below</string>
+    <string name="panchaytiraj">Panchayati Raj</string>
+    <string name="phone_number">Phone Number</string>
     <string name="please_add_any_government_id_proof_like_aadhar_card_pan_card_voter_id_driving_liscence_rashan_card">Please add any government id proof like aadhar card,pan card,voter id,driving liscence,rashan card.</string>
+    <string name="prisionerissues">Prisioner\'s issues</string>
+    <string name="righttoinformationandadvoccay">Right to Information and Advocacy</string>
+    <string name="ruraldevelopment"><![CDATA[Rural Development & Poverty Alleviation]]></string>
     <string msgid="368094699078615544" name="s1">"ছবি ছেভ কৰক"</string>
     <string msgid="4550830452390689489" name="s2">"বিজ্ঞাপনক চিত্ৰৰ গেলাৰীত ছবি সঞ্চয় কৰিবলৈ অনুমতি দিবনে?"</string>
     <string msgid="2435407834265420668" name="s3">"স্বীকাৰ কৰক"</string>
@@ -97,12 +148,28 @@
     <string msgid="1566682516266724847" name="s5">"কেলেণ্ডাৰৰ কাৰ্যক্ৰম সৃষ্টি কৰক"</string>
     <string msgid="5996672174517137271" name="s6">"বিজ্ঞাপনক কোনো কেলেণ্ডাৰৰ কাৰ্যক্ৰম সৃষ্টি কৰিবলৈ অনুমতি দিবনে?"</string>
     <string msgid="7163549807207034258" name="s7">"পৰীক্ষণ বিজ্ঞাপন"</string>
+    <string name="satate">State budget analysis in perspective of poor</string>
+    <string name="scienceandtechnology">Science and Technology</string>
+    <string name="scientistsandindustrialresaerch">Scientific and Industrial Research</string>
     <string msgid="730395136688082741" name="search_menu_title">"সন্ধান"</string>
     <string name="select_the_money_range">Select the Money Range</string>
     <string name="select_type_of_help">Select Type Of Help :</string>
+    <string name="socialdeveopment">Social Development</string>
+    <string name="sports">Sports</string>
     <string name="stationary_money">Stationary Money</string>
     <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"৯৯৯+"</string>
+    <string name="submitted_sucessfully">Submitted Sucessfully</string>
+    <string name="sustainabledevelopment">Sustainable Development</string>
+    <string name="thankyou_for_putting_your_request_on_our_app">Thankyou for putting your request on our app.</string>
     <string name="the_best_way_to_persue_happiness_is_to_help_others">The best way to persue happiness is to help others!</string>
     <string name="there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out">There is a free platform for everyone and always will be just select the problem and we will do or best to sort it out</string>
+    <string name="tourism">Tourism</string>
+    <string name="tribalaffairs">Tribal affairs</string>
+    <string name="urbandevelopment"><![CDATA[Urban Development & Poverty Alleviation]]></string>
     <string name="use_camera">Use camera</string>
+    <string name="username">username</string>
+    <string name="vocationaltraining">Vocational Training</string>
+    <string name="waterandsaniatation">\"Water and Sanitation \"</string>
+    <string name="waterresuorce">Water resource</string>
+    <string name="youthaffairs">Youth Affairs</string>
 </resources>

@@ -1,10 +1,5 @@
 package recreate.india.yogdaan;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,7 +7,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -30,7 +29,7 @@ public class OurHelpers extends AppCompatActivity {
         ff = FirebaseFirestore.getInstance();
         ourhelpersview = findViewById(R.id.ourhelpersview);
         //Query
-        Query query = ff.collection("OurWorkPost");
+        Query query = ff.collection("CollectionNgo");
         //RecyclerOptions
         FirestoreRecyclerOptions<NgoModel> options = new FirestoreRecyclerOptions.Builder<NgoModel>().setQuery(query, NgoModel.class).build();
         adapter = new FirestoreRecyclerAdapter<NgoModel, PostViewHolder>(options) {

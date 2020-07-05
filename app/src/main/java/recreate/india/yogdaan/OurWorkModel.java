@@ -1,60 +1,50 @@
 package recreate.india.yogdaan;
 
 public class OurWorkModel {
-    String username;
-    String date;
-    String userImageUrl;
-    String postImageUrl;
-    String desc;
+   String body;
+   String created;
+   String image;
+   String title;
 
-
-    public String getUsername() {
-        return username;
+    public OurWorkModel(String body, String created, String image, String title) {
+        this.body = body;
+        this.created = created;
+        this.image = image;
+        this.title = title;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public String getBody() {
+        return body;
     }
 
-    public String getDate() {
-        return date;
+    public void setBody(String body) {
+        this.body = body;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public String getCreated() {
+        return created;
     }
 
-    public String getUserImageUrl() {
-        return userImageUrl;
+    public void setCreated(String created) {
+        this.created = created;
     }
 
-    public void setUserImageUrl(String userImageUrl) {
-        this.userImageUrl = userImageUrl;
+    public String getImage() {
+        return image;
     }
 
-    public String getPostImageUrl() {
-        return postImageUrl;
+    public void setImage(String image) {
+        this.image = image;
     }
 
-    public void setPostImageUrl(String postImageUrl) {
-        this.postImageUrl = postImageUrl;
+    public String getTitle() {
+        return title;
     }
 
-    public String getDesc() {
-        return desc;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
-    }
-
-    public OurWorkModel(String username, String date, String userImageUrl, String postImageUrl, String desc) {
-        this.username = username;
-        this.date = date;
-        this.userImageUrl = userImageUrl;
-        this.postImageUrl = postImageUrl;
-        this.desc = desc;
-    }
     public  OurWorkModel(){
 
     }

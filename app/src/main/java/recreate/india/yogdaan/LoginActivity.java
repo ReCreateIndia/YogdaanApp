@@ -81,11 +81,11 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void First() {
-        gotoIntroActivity();
-        SharedPreferences intro = getSharedPreferences("intro", MODE_PRIVATE);
-        SharedPreferences.Editor editor = intro.edit();
-        editor.putBoolean("FirstTime", false);
-        editor.apply();
+//        gotoIntroActivity();
+//        SharedPreferences intro = getSharedPreferences("intro", MODE_PRIVATE);
+//        SharedPreferences.Editor editor = intro.edit();
+//        editor.putBoolean("FirstTime", false);
+//        editor.apply();
     }
 
     private void gotoIntroActivity() {

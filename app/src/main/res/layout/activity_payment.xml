@@ -21,7 +21,7 @@
             >
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/textView7P"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Donate"
@@ -57,7 +57,7 @@
             <EditText
                 android:layout_marginTop="20dp"
 
-                android:id="@+id/name"
+                android:id="@+id/namepay"
 
                 android:textColorHint="#000000"
                 android:layout_width="match_parent"
@@ -76,7 +76,7 @@
             <EditText
                 android:layout_marginTop="20dp"
 
-                android:id="@+id/phonenumber"
+                android:id="@+id/phonenumberpay"
 
                 android:textColorHint="#000000"
                 android:layout_width="match_parent"
@@ -88,7 +88,7 @@
                 android:background="@drawable/paymentbord"
                 android:gravity="left|bottom"
 
-                android:hint="Phone Number"
+                android:hint="@string/phone_number"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -108,7 +108,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
 
-                android:hint="Enter Amount"
+                android:hint="@string/enter_amount"
                 android:textColorHint="#000000"
                  />
 

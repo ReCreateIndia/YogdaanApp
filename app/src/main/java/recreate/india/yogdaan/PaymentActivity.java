@@ -1,8 +1,5 @@
 package recreate.india.yogdaan;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -15,7 +12,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
@@ -25,10 +26,11 @@ import io.paperdb.Paper;
 public class PaymentActivity extends AppCompatActivity {
 
     private EditText amount, note;
+    TextView tt;
     private Button send;
     String TAG = "main",upiVirtualID = "virensaroha123@okhdfcbank";
     final int UPI_PAYMENT = 0;
-    private EditText name;
+    private EditText namepay,phonenopay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,17 +41,19 @@ public class PaymentActivity extends AppCompatActivity {
 
         send = (Button) findViewById(R.id.send);
         amount = (EditText) findViewById(R.id.amount_et);
+        tt=findViewById(R.id.textView7P);
         if(ammount!=null){
             amount.setText(ammount);
         }
 
-        name = (EditText) findViewById(R.id.name);
+        namepay = (EditText) findViewById(R.id.namepay);
+        phonenopay = (EditText) findViewById(R.id.phonenumberpay);
 //        upiVirtualID = (EditText) findViewById(R.id.upi_id);
 
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (TextUtils.isEmpty(name.getText().toString().trim())) {
+                if (TextUtils.isEmpty(namepay.getText().toString().trim())) {
                     Toast.makeText(PaymentActivity.this, "Name is invalid", Toast.LENGTH_SHORT).show();
                 }
 //                else if (TextUtils.isEmpty(upiVirtualID.getText().toString().trim())) {
@@ -79,7 +83,11 @@ public class PaymentActivity extends AppCompatActivity {
         Resources resources = context.getResources();
 
         send.setText(resources.getString(R.string.Donate_Now));
-        amount.setHint(resources.getString(R.string.Amount));
+        amount.setHint(resources.getString(R.string.enter_amount));
+        namepay.setHint(resources.getString(R.string.Name));
+        phonenopay.setHint(resources.getString(R.string.phone_number));
+        tt.setText(resources.getString(R.string.Donate));
+
     }
 
     void payUsingUpi(String name, /*String note,*/ String amount) {

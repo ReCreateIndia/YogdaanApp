@@ -52,6 +52,7 @@
        app:cardCornerRadius="10dp"
        android:elevation="5dp"
        >  <LinearLayout
+       android:id="@+id/langchangetoenglish"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:gravity="center">
@@ -80,13 +81,14 @@
 
                 >
                 <LinearLayout
+                    android:id="@+id/langchangetohindi"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="hindi"
+                        android:text="हिन्दी"
                         android:textColor="#000000"
                         android:textStyle="bold"
                         android:textSize="25sp"

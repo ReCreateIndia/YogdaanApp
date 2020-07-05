@@ -2,9 +2,11 @@ package recreate.india.yogdaan;
 
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -30,22 +32,23 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import Helper.LocaleHelper;
 import io.paperdb.Paper;
 
-public class MainActivity extends AppCompatActivity  {
+public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private ActionBarDrawerToggle toggle;
     private FirebaseAuth mAuth;
+
     AlertDialog alertDialog;
-     private boolean isFirstTime;
-   private ImageButton our_work;
+    private boolean isFirstTime;
+    private ImageButton our_work;
 
 
     private ImageButton donate, help, volunteer, ourWork;
-    TextView Help, Our_Work, Volunteers, More, Our_Helpers, Donate;
-    ActionBar actionBar;
-
+    private TextView Help, Our_Work, Volunteers, More, Our_Helpers, Donate;
+    private ActionBar actionBar;
 
 
     @SuppressLint("WrongConstant")
@@ -65,6 +68,10 @@ public class MainActivity extends AppCompatActivity  {
         help = findViewById(R.id.help);
         volunteer = findViewById(R.id.volunteer);
         ourWork = findViewById(R.id.ourWork);
+
+
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.abs_layout);
 
         Help = findViewById(R.id.Help);
         Our_Work = findViewById(R.id.Our_Work);
@@ -109,36 +116,26 @@ public class MainActivity extends AppCompatActivity  {
             }
         });
         mAuth = FirebaseAuth.getInstance();
+
         ImageSlider imageslider = findViewById(R.id.image_slider);
         List<SlideModel> slideModels = new ArrayList<>();
         slideModels.add(new SlideModel(R.drawable.d5));
         slideModels.add(new SlideModel(R.drawable.d4));
         slideModels.add(new SlideModel(R.drawable.d3));
         slideModels.add(new SlideModel(R.drawable.d1));
-
         slideModels.add(new SlideModel(R.drawable.d2));
         imageslider.setImageList(slideModels, true);
-       getactionbarnow();
+
+        getactionbarnow();
 
         navigationView = findViewById(R.id.n1);
 
 
         //View header = navigationView.getHeaderView(0);
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
- 
+
+        drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
 
 
-        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
-
-        isFirstTime = prefs.getBoolean("isFirstTime", true);
-        if (isFirstTime) {
-            onFirst();
-        } else {
-            FirebaseUser currentUser = mAuth.getCurrentUser();
-            if (currentUser == null) {
-                gotoLoginActivity();
-            }
-        }
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -168,11 +165,25 @@ public class MainActivity extends AppCompatActivity  {
         });
 
 
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+
+
+        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+
+        isFirstTime = prefs.getBoolean("isFirstTime", true);
+        if (isFirstTime) {
+            onFirst();
+        } else {
+            FirebaseUser currentUser = mAuth.getCurrentUser();
+            if (currentUser == null) {
+                gotoLoginActivity();
+            }
+        }
         Paper.init(this);
         String language = Paper.book().read("language");
         if (language == null)
             Paper.book().write("language", "en");
-        //updateView((String) Paper.book().read("language"));
+        updateView((String) Paper.book().read("language"));
 
     }
 
@@ -186,12 +197,6 @@ public class MainActivity extends AppCompatActivity  {
 
 
     public void onFirst() {
-
-
-        Intent intent = new Intent(MainActivity.this, TandC.class);
-        startActivity(intent);
-
-
         new AlertDialog.Builder(MainActivity.this)
                 .setTitle("Terms and Conditions")
                 .setMessage("T&C")
@@ -217,17 +222,18 @@ public class MainActivity extends AppCompatActivity  {
         editor.apply();
 
 
-//        Context context = LocaleHelper.setLocale(this, lang);
-//        Resources resources = context.getResources();
-//
-//        Help.setText(resources.getString(R.string.need_help));
-//        Donate.setText(resources.getString(R.string.Donate));
-//        Volunteers.setText(resources.getString(R.string.Volunteers));
-//        Our_Helpers.setText(resources.getString(R.string.Our_Helpers));
-//        Our_Work.setText(resources.getString(R.string.Our_Work));
-//        More.setText(resources.getString(R.string.More));
+    }
 
+    public void updateView(String lang) {
+        Context context = LocaleHelper.setLocale(this, lang);
+        Resources resources = context.getResources();
 
+        Help.setText(resources.getString(R.string.need_help));
+        Donate.setText(resources.getString(R.string.Donate));
+        Volunteers.setText(resources.getString(R.string.Volunteers));
+        Our_Helpers.setText(resources.getString(R.string.Our_Helpers));
+        Our_Work.setText(resources.getString(R.string.Our_Work));
+        More.setText(resources.getString(R.string.More));
     }
 
 
@@ -236,7 +242,6 @@ public class MainActivity extends AppCompatActivity  {
         logIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(logIntent);
     }
-
 
 
 }

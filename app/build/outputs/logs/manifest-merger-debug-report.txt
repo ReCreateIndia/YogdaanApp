@@ -194,7 +194,13 @@ MERGED from [com.google.android.gms:play-services-ads-base:19.1.0] C:\Users\VISH
 	android:theme
 		ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:23:9-40
 activity#recreate.india.yogdaan.PaymentSuggestion
+<<<<<<< HEAD
 ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:24:9-26:20
+||||||| f6f5b43f
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:24:9-64
+=======
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:24:9-55
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 	android:name
 		ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:24:19-52
 activity#recreate.india.yogdaan.Statuspage
@@ -210,38 +216,145 @@ ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:2
 	android:name
 		ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:29:19-49
 activity#recreate.india.yogdaan.Volunteer
+<<<<<<< HEAD
 ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:30:9-47
+||||||| f6f5b43f
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:28:9-47
+=======
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:28:9-33:20
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 	android:name
+<<<<<<< HEAD
 		ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:30:19-44
+||||||| f6f5b43f
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:28:19-44
+=======
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:28:19-44
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:29:13-32:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:30:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:31:17-77
+	android:name
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:31:27-74
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 activity#recreate.india.yogdaan.TandC
+<<<<<<< HEAD
 ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:31:9-43
+||||||| f6f5b43f
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:29:9-43
+=======
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:34:9-43
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 	android:name
+<<<<<<< HEAD
 		ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:31:19-40
+||||||| f6f5b43f
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:29:19-40
+=======
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:34:19-40
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 activity#recreate.india.yogdaan.SplashScreen
+<<<<<<< HEAD
 ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:32:9-38:20
+||||||| f6f5b43f
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:30:9-34:84
+=======
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:35:9-40:20
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 	android:configChanges
+<<<<<<< HEAD
 		ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:34:13-63
+||||||| f6f5b43f
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:32:13-63
+=======
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:37:13-63
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 	android:theme
+<<<<<<< HEAD
 		ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:36:13-72
+||||||| f6f5b43f
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:34:13-72
+=======
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:38:13-72
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 	android:name
+<<<<<<< HEAD
 		ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:33:13-41
+||||||| f6f5b43f
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:31:13-41
+=======
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:36:13-41
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 activity#recreate.india.yogdaan.BlogActivity
+<<<<<<< HEAD
 ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:43:9-50
+||||||| f6f5b43f
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:39:9-50
+=======
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:45:9-50
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 	android:name
+<<<<<<< HEAD
 		ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:43:19-47
+||||||| f6f5b43f
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:39:19-47
+=======
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:45:19-47
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 activity#recreate.india.yogdaan.Introduction_Activity
+<<<<<<< HEAD
 ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:44:9-46:20
+||||||| f6f5b43f
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:40:9-68
+=======
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:46:9-68
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 	android:name
+<<<<<<< HEAD
 		ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:44:19-56
+||||||| f6f5b43f
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:40:19-56
+=======
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:46:19-56
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 activity#recreate.india.yogdaan.LoginActivity
+<<<<<<< HEAD
 ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:47:9-51:20
+||||||| f6f5b43f
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:41:9-43:84
+=======
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:47:9-49:84
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 	android:theme
+<<<<<<< HEAD
 		ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:49:13-72
+||||||| f6f5b43f
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:43:13-72
+=======
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:49:13-72
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 	android:name
+<<<<<<< HEAD
 		ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:48:13-42
+||||||| f6f5b43f
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:42:13-42
+=======
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:48:13-42
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 activity#recreate.india.yogdaan.MainActivity
+<<<<<<< HEAD
 ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:52:9-60:20
+||||||| f6f5b43f
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:44:9-52:20
+=======
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:50:9-51:20
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 	android:name
+<<<<<<< HEAD
 		ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:52:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:54:13-58:29
@@ -253,14 +366,57 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:57:17-77
 	android:name
 		ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:57:27-74
+||||||| f6f5b43f
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:44:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:46:13-50:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:47:17-69
+	android:name
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:47:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:49:17-77
+	android:name
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:49:27-74
+=======
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:50:19-47
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 activity#recreate.india.yogdaan.HelpPage
+<<<<<<< HEAD
 ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:61:9-63:20
+||||||| f6f5b43f
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:53:9-56
+=======
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:52:9-56
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 	android:name
+<<<<<<< HEAD
 		ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:61:19-43
+||||||| f6f5b43f
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:53:19-43
+=======
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:52:19-43
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 activity#recreate.india.yogdaan.OtpActivity
+<<<<<<< HEAD
 ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:66:9-49
+||||||| f6f5b43f
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:56:9-49
+=======
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:55:9-49
 	android:name
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:55:19-46
+activity#recreate.india.yogdaan.OurHelpers
+ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:56:9-48
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
+	android:name
+<<<<<<< HEAD
 		ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:66:19-46
+||||||| f6f5b43f
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:56:19-46
+=======
+		ADDED from C:\Users\Prachi Singhal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:56:19-45
+>>>>>>> 2ffb45c702e8ddf9531eb650c13429a57b0c4005
 meta-data#com.google.android.gms.ads.APPLICATION_ID
 ADDED from C:\Users\VISH31\Desktop\YogdaanApp\app\src\main\AndroidManifest.xml:68:9-70:70
 	android:value

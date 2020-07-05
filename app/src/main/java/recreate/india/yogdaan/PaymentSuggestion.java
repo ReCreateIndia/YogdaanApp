@@ -1,14 +1,21 @@
 package recreate.india.yogdaan;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import Helper.LocaleHelper;
+import io.paperdb.Paper;
+
 public class PaymentSuggestion extends AppCompatActivity {
     LinearLayout stationary,books,direct,food;
+    TextView tt1S,tt2S,tt3S,tt4S,tt5S;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +24,11 @@ public class PaymentSuggestion extends AppCompatActivity {
         books=findViewById(R.id.books);
         direct=findViewById(R.id.moenydirect);
         food=findViewById(R.id.food_money);
+        tt1S=findViewById(R.id.textView13S);
+        tt2S=findViewById(R.id.stationarymoney);
+        tt3S=findViewById(R.id.food);
+        tt4S=findViewById(R.id.money);
+        tt5S=findViewById(R.id.bookmoney);
         stationary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,6 +65,25 @@ public class PaymentSuggestion extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        Paper.init(this);
+        String language = Paper.book().read("language");
+        if(language==null)
+            Paper.book().write("language","en");
+        updateView((String)Paper.book().read("language"));
+
+
+
+    }
+
+    private void updateView(String language) {
+        Context context = LocaleHelper.setLocale(this, language);
+        Resources resources = context.getResources();
+
+        tt1S.setText(resources.getString(R.string.select_the_money_range));
+        tt2S.setText(resources.getString(R.string.stationary_money));
+        tt3S.setText(resources.getString(R.string.books_money));
+        tt4S.setText(resources.getString(R.string.food_money));
+        tt5S.setText(resources.getString(R.string.money_directly));
 
     }
 }

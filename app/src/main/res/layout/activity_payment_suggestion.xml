@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.
     com/tools"
     android:layout_width="match_parent"
@@ -21,7 +20,7 @@
             >
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/textView13S"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/select_the_money_range"
@@ -131,11 +130,12 @@
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="8dp"
                     android:text="@string/books_money"
+                    android:id="@+id/bookmoney"
                     android:textColor="#000000"
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/bookmoney"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
@@ -176,6 +176,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
+                    android:id="@+id/food"
                     android:layout_marginLeft="10dp"
                     android:text="@string/food_money"
                     android:textColor="#000000"

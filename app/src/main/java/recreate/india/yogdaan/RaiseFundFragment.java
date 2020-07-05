@@ -1,14 +1,13 @@
 package recreate.india.yogdaan;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.google.firebase.firestore.DocumentChange;
 import com.google.firebase.firestore.EventListener;
@@ -36,10 +35,7 @@ public class RaiseFundFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_raise_fund, container, false);
         ff=FirebaseFirestore.getInstance();
         list=new ArrayList<>();
-        FundRaiseModel ourWorkModel=new FundRaiseModel();
-        list.add(ourWorkModel);
-        list.add(ourWorkModel);
-        list.add(ourWorkModel);
+        FundRaiseModel fundRaiseModel=new FundRaiseModel();
         blogRecyclerAdapter=new RaiseFundBlogRecyclerAdapter(list,getActivity());
         blog_list_view=view.findViewById(R.id.raiseFundRecyclerView);
         blog_list_view.setLayoutManager(new LinearLayoutManager(getActivity()));
