@@ -64,7 +64,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="20dp"
-                    android:text="Submitted Sucessfully"
+                    android:text="@string/submitted_sucessfully"
                     android:gravity="center"
                     android:textColor="#000"
                     android:textSize="26sp"
@@ -80,7 +80,7 @@
                     android:layout_marginLeft="40dp"
                     android:layout_marginRight="40dp"
                     android:layout_marginBottom="20dp"
-                    android:text="Thankyou for putting your request on our app. "
+                    android:text="@string/thankyou_for_putting_your_request_on_our_app"
 
                     android:gravity="center"
                     android:textColor="#000"

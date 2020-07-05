@@ -1,8 +1,5 @@
 package recreate.india.yogdaan;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -15,7 +12,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
@@ -25,10 +26,11 @@ import io.paperdb.Paper;
 public class PaymentActivity extends AppCompatActivity {
 
     private EditText amount, note;
+    TextView tt;
     private Button send;
     String TAG = "main",upiVirtualID = "virensaroha123@okhdfcbank";
     final int UPI_PAYMENT = 0;
-    private EditText name;
+    private EditText name,phoneno;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,11 +41,13 @@ public class PaymentActivity extends AppCompatActivity {
 
         send = (Button) findViewById(R.id.send);
         amount = (EditText) findViewById(R.id.amount_et);
+        tt=findViewById(R.id.textView7);
         if(ammount!=null){
             amount.setText(ammount);
         }
 
         name = (EditText) findViewById(R.id.name);
+        phoneno = (EditText) findViewById(R.id.phonenumber);
 //        upiVirtualID = (EditText) findViewById(R.id.upi_id);
 
         send.setOnClickListener(new View.OnClickListener() {
@@ -79,7 +83,11 @@ public class PaymentActivity extends AppCompatActivity {
         Resources resources = context.getResources();
 
         send.setText(resources.getString(R.string.Donate_Now));
-        amount.setHint(resources.getString(R.string.Amount));
+        amount.setHint(resources.getString(R.string.enter_amount));
+        name.setHint(resources.getString(R.string.Name));
+        phoneno.setHint(resources.getString(R.string.phone_number));
+        tt.setText(resources.getString(R.string.Donate));
+
     }
 
     void payUsingUpi(String name, /*String note,*/ String amount) {

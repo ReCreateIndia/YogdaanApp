@@ -10,6 +10,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.location.Address;
@@ -53,7 +54,6 @@ import com.google.firebase.firestore.GeoPoint;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.google.rpc.Help;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -62,10 +62,11 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+import Helper.LocaleHelper;
 import io.paperdb.Paper;
 
 public class HelpPage extends AppCompatActivity {
-    TextView SelectProblem, NameHelpPage, Date_Of_Birth_Help_Page, Area_Of_Help, Flat_House_No1, Flat_House_No2, City_Help_Page, Pin_Code_Help_Page, State_Help_Page, TypeOfHelp;
+    TextView SelectProblem,enterinfo, NameHelpPage, Occupation,address,idd,orr, quote, TypeOfHelp,yr,tr;
     Spinner spin;
     RadioGroup radioGroup;
     RadioButton radioButton;
@@ -90,7 +91,7 @@ public class HelpPage extends AppCompatActivity {
     private Button manualAddress;
     LinearLayout ll;
     String help_domain;
-    EditText name, city, locality;
+    EditText name, city, locality,adress,ocupation;
     private Button takeimage;
     Uri uri;
     private ImageView idproof;
@@ -104,11 +105,22 @@ public class HelpPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_page);
         actionBar = this.getActionBar();
+        quote=findViewById(R.id.helpquote);
         getSupportActionBar().setElevation(0);
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.abs_layout);
         idproof = findViewById(R.id.idProof);
         name = findViewById(R.id.name);
+        enterinfo=findViewById(R.id.enterinfo);
+        idd=findViewById(R.id.iddd);
+        orr=findViewById(R.id.orr);
+        name=findViewById(R.id.name);
+        ocupation=findViewById(R.id.occupation);
+        adress=findViewById(R.id.address);
+        TypeOfHelp=findViewById(R.id.TypeOfHelp);
+        yr=findViewById(R.id.points435);
+        tr=findViewById(R.id.messag324e);
+
         takeimage = findViewById(R.id.cameraIntent);
         takeimage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -138,7 +150,7 @@ public class HelpPage extends AppCompatActivity {
         ff = FirebaseFirestore.getInstance();
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseUser = firebaseAuth.getCurrentUser();
-        //
+
         submit_request = findViewById(R.id.submitRequest);
         submit_request.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -220,11 +232,6 @@ public class HelpPage extends AppCompatActivity {
         }
         ff = FirebaseFirestore.getInstance();
         SelectProblem = (TextView) findViewById(R.id.Select_Problem);
-
-//        Area_Of_Help = (TextView)findViewById(R.id.Area_Of_Help);
-//        City_Help_Page = (TextView)findViewById(R.id.City_Help_Page);
-//        Pin_Code_Help_Page = (TextView)findViewById(R.id.Pin_Code_Help_Page);
-//        State_Help_Page = (TextView)findViewById(R.id.State_Help_Page);
         TypeOfHelp = (TextView) findViewById(R.id.TypeOfHelp);
         epicdialog = new Dialog(this);
         spin = (Spinner) findViewById(R.id.spinner2);
@@ -317,6 +324,33 @@ public class HelpPage extends AppCompatActivity {
         String language = Paper.book().read("language");
         if (language == null)
             Paper.book().write("language", "en");
+        updateView((String)Paper.book().read("language"));
+
+    }
+
+    private void updateView(String language) {
+        Context context = LocaleHelper.setLocale(this,language);
+        Resources resources = context.getResources();
+        quote.setText(resources.getString(R.string.there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out
+        ));
+        SelectProblem.setText(resources.getString(R.string.Select_Problem));
+
+        c1.setText(resources.getString(R.string.need_help_for_others));
+        c2.setText(resources.getString(R.string.need_help_for_yourself));
+        enterinfo.setText(resources.getString(R.string.enter_information));
+        takeimage.setText(resources.getString(R.string.use_camera));
+        idd.setText(resources.getString(R.string.please_add_any_government_id_proof_like_aadhar_card_pan_card_voter_id_driving_liscence_rashan_card));
+
+        orr.setText(resources.getString(R.string.or_give_address_below));
+
+        TypeOfHelp.setText(resources.getString(R.string.select_type_of_help));
+        get_current_location.setText(resources.getString(R.string.get_current_location));
+        name.setHint(resources.getString(R.string.Name));
+        ocupation.setHint(resources.getString(R.string.Occupation));
+        adress.setHint(resources.getString(R.string.Address));
+        tr.setText(resources.getString(R.string.thankyou_for_putting_your_request_on_our_app));
+        yr.setText(resources.getString(R.string.submitted_sucessfully));
+
 
     }
 

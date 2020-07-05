@@ -1,7 +1,5 @@
 package recreate.india.yogdaan;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.content.Context;
@@ -10,16 +8,18 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 
-
+import Helper.LocaleHelper;
 import io.paperdb.Paper;
+
 
 public class DonateActivity extends AppCompatActivity {
 
@@ -95,9 +95,11 @@ public class DonateActivity extends AppCompatActivity {
 
     private void updateView(String lang) {
 
-//        Context context = LocaleHelper.setLocale(this,lang);
-//        Resources resources = context.getResources();
-//        donateMoney.setText(resources.getString(R.string.donate_money));
+       Context context = LocaleHelper.setLocale(this,lang);
+       Resources resources = context.getResources();
+       donateMoney.setText(resources.getString(R.string.donate_money));
+       donateAdds.setText(resources.getString(R.string.donate_by_watching_ads));
+
     }
     private InterstitialAd newInterstitialAd() {
         InterstitialAd interstitialAd = new InterstitialAd(this);

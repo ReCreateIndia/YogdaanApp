@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="92dp"
-        android:text="Submit"
+        android:text="@string/Submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -41,7 +41,8 @@
 
         android:ems="10"
         android:gravity="start|top"
-            android:hint="Add Some Description"
+            android:hint="@string/Add_Some_Description"
+
             android:inputType="textMultiLine"
         app:layout_constraintBottom_toTopOf="@+id/submit"
         app:layout_constraintEnd_toEndOf="parent"
