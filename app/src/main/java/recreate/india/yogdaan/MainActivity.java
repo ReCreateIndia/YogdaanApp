@@ -147,33 +147,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.logout:
-                        mAuth.signOut();
-                        gotoLoginActivity();
-                        break;
-                    case R.id.YourDonation:
-                        Toast.makeText(MainActivity.this, "Your Donation", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.Certificates:
-                        Toast.makeText(MainActivity.this, "Your Certificates/Receipt", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.Status:
-                        Toast.makeText(MainActivity.this, "Status of your request", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.selectlanguage:
-                        Toast.makeText(MainActivity.this, "Choose language", Toast.LENGTH_SHORT).show();
-                        break;
 
-
-                }
-
-                return false;
-            }
-        });
 
 
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
@@ -294,6 +268,27 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
      */
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.logout:
+                mAuth.signOut();
+                gotoLoginActivity();
+                break;
+            case R.id.YourDonation:
+                Toast.makeText(MainActivity.this, "Your Donation", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.Certificates:
+                Toast.makeText(MainActivity.this, "Your Certificates/Receipt", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.Status:
+                Toast.makeText(MainActivity.this, "Status of your request", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.selectlanguage:
+                Toast.makeText(MainActivity.this, "Choose language", Toast.LENGTH_SHORT).show();
+                break;
+
+
+        }
+
         return false;
     }
 
