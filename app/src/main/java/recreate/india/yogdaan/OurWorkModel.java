@@ -1,60 +1,50 @@
 package recreate.india.yogdaan;
 
 public class OurWorkModel {
-    String username;
-    String date;
-    String userImageUrl;
-    String postImageUrl;
-    String desc;
+   String body;
+   String created;
+   String imageUri;
+   String title;
 
-
-    public String getUsername() {
-        return username;
+    public String getBody() {
+        return body;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setBody(String body) {
+        this.body = body;
     }
 
-    public String getDate() {
-        return date;
+    public String getCreated() {
+        return created;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setCreated(String created) {
+        this.created = created;
     }
 
-    public String getUserImageUrl() {
-        return userImageUrl;
+    public String getImageUri() {
+        return imageUri;
     }
 
-    public void setUserImageUrl(String userImageUrl) {
-        this.userImageUrl = userImageUrl;
+    public void setImageUri(String imageUri) {
+        this.imageUri = imageUri;
     }
 
-    public String getPostImageUrl() {
-        return postImageUrl;
+    public String getTitle() {
+        return title;
     }
 
-    public void setPostImageUrl(String postImageUrl) {
-        this.postImageUrl = postImageUrl;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getDesc() {
-        return desc;
+    public OurWorkModel(String body, String created, String imageUri, String title) {
+        this.body = body;
+        this.created = created;
+        this.imageUri = imageUri;
+        this.title = title;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
-    }
-
-    public OurWorkModel(String username, String date, String userImageUrl, String postImageUrl, String desc) {
-        this.username = username;
-        this.date = date;
-        this.userImageUrl = userImageUrl;
-        this.postImageUrl = postImageUrl;
-        this.desc = desc;
-    }
     public  OurWorkModel(){
 
     }

@@ -36,16 +36,12 @@ public class OurWorkFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_our_work, container, false);
         ff=FirebaseFirestore.getInstance();
         list=new ArrayList<>();
-        OurWorkModel ourWorkModel=new OurWorkModel();
-        list.add(ourWorkModel);
-        list.add(ourWorkModel);
-        list.add(ourWorkModel);
-        blogRecyclerAdapter=new OurWorkBlogRecyclerAdapter(list);
+        blogRecyclerAdapter=new OurWorkBlogRecyclerAdapter(list,getContext());
         blog_list_view=view.findViewById(R.id.ourWorkRecyclerView);
         blog_list_view.setLayoutManager(new LinearLayoutManager(getActivity()));
         blog_list_view.setAdapter(blogRecyclerAdapter);
 
-        ff.collection("users").addSnapshotListener(new EventListener<QuerySnapshot>() {
+        ff.collection("OurWorkPost").addSnapshotListener(new EventListener<QuerySnapshot>() {
             @Override
             public void onEvent(@Nullable QuerySnapshot queryDocumentSnapshots, @Nullable FirebaseFirestoreException e) {
                 for(DocumentChange documentChange:queryDocumentSnapshots.getDocumentChanges()){

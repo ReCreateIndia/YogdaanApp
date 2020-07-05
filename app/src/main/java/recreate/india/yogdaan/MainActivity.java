@@ -35,20 +35,17 @@ import java.util.Objects;
 import Helper.LocaleHelper;
 import io.paperdb.Paper;
 
-public class MainActivity extends AppCompatActivity  {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private ActionBarDrawerToggle toggle;
     private FirebaseAuth mAuth;
-    AlertDialog alertDialog;
-
+    private AlertDialog alertDialog;
     private boolean isFirstTime;
     private ImageButton our_work;
-
-
     private ImageButton donate, help, volunteer, ourWork;
-    TextView Help, Our_Work, Volunteers, More, Our_Helpers, Donate;
-    ActionBar actionBar;
+    private TextView Help, Our_Work, Volunteers, More, Our_Helpers, Donate;
+    private ActionBar actionBar;
 
 
     @SuppressLint("WrongConstant")
@@ -68,7 +65,6 @@ public class MainActivity extends AppCompatActivity  {
         help = findViewById(R.id.help);
         volunteer = findViewById(R.id.volunteer);
         ourWork = findViewById(R.id.ourWork);
-
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.abs_layout);
         Help = findViewById(R.id.Help);
@@ -114,34 +110,31 @@ public class MainActivity extends AppCompatActivity  {
             }
         });
         mAuth = FirebaseAuth.getInstance();
+
         ImageSlider imageslider = findViewById(R.id.image_slider);
         List<SlideModel> slideModels = new ArrayList<>();
         slideModels.add(new SlideModel(R.drawable.d5));
         slideModels.add(new SlideModel(R.drawable.d4));
         slideModels.add(new SlideModel(R.drawable.d3));
         slideModels.add(new SlideModel(R.drawable.d1));
-
         slideModels.add(new SlideModel(R.drawable.d2));
         imageslider.setImageList(slideModels, true);
+
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
         toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         navigationView = (NavigationView) findViewById(R.id.n1);
-
+        navigationView.setNavigationItemSelectedListener(this);
 
         View header = navigationView.getHeaderView(0);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
 
         isFirstTime = prefs.getBoolean("isFirstTime", true);
@@ -153,35 +146,6 @@ public class MainActivity extends AppCompatActivity  {
                 gotoLoginActivity();
             }
         }
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.logout:
-                        mAuth.signOut();
-                        gotoLoginActivity();
-                        break;
-                    case R.id.YourDonation:
-                        Toast.makeText(MainActivity.this, "Your Donation", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.Certificates:
-                        Toast.makeText(MainActivity.this, "Your Certificates/Receipt", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.Status:
-                        Toast.makeText(MainActivity.this, "Status of your request", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.selectlanguage:
-                        Toast.makeText(MainActivity.this, "Choose language", Toast.LENGTH_SHORT).show();
-                        break;
-
-
-                }
-
-                return false;
-            }
-        });
-
-
         Paper.init(this);
         String language = Paper.book().read("language");
         if (language == null)
@@ -190,27 +154,8 @@ public class MainActivity extends AppCompatActivity  {
 
     }
 
-    private void updateView(String language) {
-        Context context = LocaleHelper.setLocale(this, language);
-        Resources resources = context.getResources();
-
-        Help.setText(resources.getString(R.string.need_help));
-        Donate.setText(resources.getString(R.string.Donate));
-        Volunteers.setText(resources.getString(R.string.Volunteers));
-        Our_Helpers.setText(resources.getString(R.string.Our_Helpers));
-        Our_Work.setText(resources.getString(R.string.Our_Work));
-        More.setText(resources.getString(R.string.More));
-
-    }
-
 
     public void onFirst() {
-
-
-        Intent intent = new Intent(MainActivity.this, TandC.class);
-        startActivity(intent);
-
-
         new AlertDialog.Builder(MainActivity.this)
                 .setTitle("Terms and Conditions")
                 .setMessage("T&C")
@@ -236,8 +181,28 @@ public class MainActivity extends AppCompatActivity  {
         editor.apply();
 
 
+//        Context context = LocaleHelper.setLocale(this, lang);
+//        Resources resources = context.getResources();
+//
+//        Help.setText(resources.getString(R.string.need_help));
+//        Donate.setText(resources.getString(R.string.Donate));
+//        Volunteers.setText(resources.getString(R.string.Volunteers));
+//        Our_Helpers.setText(resources.getString(R.string.Our_Helpers));
+//        Our_Work.setText(resources.getString(R.string.Our_Work));
+//        More.setText(resources.getString(R.string.More));
 
 
+    }
+    public void updateView(String lang){
+        Context context = LocaleHelper.setLocale(this, lang);
+        Resources resources = context.getResources();
+
+        Help.setText(resources.getString(R.string.need_help));
+        Donate.setText(resources.getString(R.string.Donate));
+        Volunteers.setText(resources.getString(R.string.Volunteers));
+        Our_Helpers.setText(resources.getString(R.string.Our_Helpers));
+        Our_Work.setText(resources.getString(R.string.Our_Work));
+        More.setText(resources.getString(R.string.More));
     }
 
 
@@ -248,5 +213,39 @@ public class MainActivity extends AppCompatActivity  {
     }
 
 
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
+        switch (item.getItemId()) {
+            case R.id.logout:
+                mAuth.signOut();
+                gotoLoginActivity();
+                break;
+            case R.id.YourDonation:
+                Toast.makeText(MainActivity.this, "Your Donation", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.Certificates:
+                Toast.makeText(MainActivity.this, "Your Certificates/Receipt", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.Status:
+                Toast.makeText(MainActivity.this, "Status of your request", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.selectlanguage:
+                Toast.makeText(MainActivity.this, "Choose language", Toast.LENGTH_SHORT).show();
+                break;
+
+
+        }
+
+        return false;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        if(toggle.onOptionsItemSelected(item)){
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

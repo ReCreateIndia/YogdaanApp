@@ -1555,6 +1555,7 @@ id More
 id NgoName
 id Our_Helpers
 id Our_Work
+id Postdate
 id SHIFT
 id SYM
 id Select_Problem
@@ -1674,7 +1675,6 @@ id custom
 id customPanel
 id cut
 id dark
-id date
 id date_picker_actions
 id decor_content_parent
 id default_activity_button
@@ -1750,6 +1750,8 @@ id invisible
 id italic
 id item_touch_helper_previous_elevation
 id labeled
+id langchangetoenglish
+id langchangetohindi
 id largeLabel
 id layout1
 id left

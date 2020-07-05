@@ -52,6 +52,7 @@
        app:cardCornerRadius="10dp"
        android:elevation="5dp"
        >  <LinearLayout
+       android:id="@+id/langchangetoenglish"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:gravity="center">
@@ -80,6 +81,7 @@
 
                 >
                 <LinearLayout
+                    android:id="@+id/langchangetohindi"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center">

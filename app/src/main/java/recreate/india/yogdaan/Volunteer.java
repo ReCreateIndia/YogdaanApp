@@ -16,10 +16,19 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.FirebaseFirestore;
+
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import Helper.LocaleHelper;
 import io.paperdb.Paper;
@@ -29,9 +38,19 @@ public class Volunteer extends AppCompatActivity {
     Button box;
     Spinner spinnn;
     private String item = "yo";
+
     TextView volunteerquote,volunteer,work;
     EditText NameV,OccupationV,AddressV,DOBV;
+
+   
+    EditText Name,TypeofWork,Occupation,Address,DOB;
+    Button button;
+    FirebaseAuth firebaseAuth;
+    FirebaseUser firebaseUser;
+    FirebaseFirestore firebaseFirestore;
+
     TextView tttr,ttry;
+
 
 
     ImageView closenew;
@@ -39,6 +58,14 @@ public class Volunteer extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_volunteer);
+        firebaseFirestore=FirebaseFirestore.getInstance();
+        firebaseAuth=FirebaseAuth.getInstance();
+        firebaseUser=firebaseAuth.getCurrentUser();
+        button=findViewById(R.id.volunteer_submit);
+        Name=findViewById(R.id.volunteer_name);
+        Occupation=findViewById(R.id.volunteer_occupation);
+        Address=findViewById(R.id.volunteer_address);
+        DOB=findViewById(R.id.volunteer_dob);
         epicdialog=new Dialog(this);
         box=(Button) findViewById(R.id.volunteer_submit);
         box.setOnClickListener(new View.OnClickListener() {
@@ -56,9 +83,6 @@ public class Volunteer extends AppCompatActivity {
         DOBV=findViewById(R.id.volunteer_dob);
         ttry=findViewById(R.id.points435);
         tttr=findViewById(R.id.messag324e);
-
-
-
         spinnn = (Spinner) findViewById(R.id.spinner3);
         List<String> list = new ArrayList<String>();
         list.add(0, "Select problem");
@@ -144,6 +168,25 @@ public class Volunteer extends AppCompatActivity {
 
             }
         });
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Map<String,Object>map=new HashMap<>();
+                map.put("name",Name.getText().toString());
+                map.put("dob",DOB.getText().toString());
+                map.put("occupation",Occupation.getText().toString());
+                map.put("address",Address.getText().toString());
+
+                firebaseFirestore.collection("Volunteer_Requests").document(item).collection("present_request").document(firebaseUser.getUid()).set(map).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        Shownewpopup();
+                    }
+                });
+
+            }
+        });
+
 
         Paper.init(this);
         String language = Paper.book().read("language");

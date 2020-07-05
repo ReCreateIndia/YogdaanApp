@@ -159,7 +159,6 @@ public class HelpPage extends AppCompatActivity {
                 imageFilePath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-
                         imageFilePath.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                             @Override
                             public void onSuccess(Uri uri) {
@@ -232,11 +231,6 @@ public class HelpPage extends AppCompatActivity {
         }
         ff = FirebaseFirestore.getInstance();
         SelectProblem = (TextView) findViewById(R.id.Select_Problem);
-
-//        Area_Of_Help = (TextView)findViewById(R.id.Area_Of_Help);
-//        City_Help_Page = (TextView)findViewById(R.id.City_Help_Page);
-//        Pin_Code_Help_Page = (TextView)findViewById(R.id.Pin_Code_Help_Page);
-//        State_Help_Page = (TextView)findViewById(R.id.State_Help_Page);
         TypeOfHelp = (TextView) findViewById(R.id.TypeOfHelp);
         epicdialog = new Dialog(this);
         spin = (Spinner) findViewById(R.id.spinner2);

@@ -30,7 +30,7 @@ public class OurHelpers extends AppCompatActivity {
         ff = FirebaseFirestore.getInstance();
         ourhelpersview = findViewById(R.id.ourhelpersview);
         //Query
-        Query query = ff.collection("OurWorkPost");
+        Query query = ff.collection("CollectionNgo");
         //RecyclerOptions
         FirestoreRecyclerOptions<NgoModel> options = new FirestoreRecyclerOptions.Builder<NgoModel>().setQuery(query, NgoModel.class).build();
         adapter = new FirestoreRecyclerAdapter<NgoModel, PostViewHolder>(options) {
