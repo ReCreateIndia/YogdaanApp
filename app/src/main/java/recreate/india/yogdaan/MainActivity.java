@@ -2,9 +2,11 @@ package recreate.india.yogdaan;
 
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -30,6 +32,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import Helper.LocaleHelper;
 import io.paperdb.Paper;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -37,15 +40,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private NavigationView navigationView;
     private ActionBarDrawerToggle toggle;
     private FirebaseAuth mAuth;
-    AlertDialog alertDialog;
-
+    private AlertDialog alertDialog;
     private boolean isFirstTime;
     private ImageButton our_work;
-
-
     private ImageButton donate, help, volunteer, ourWork;
-    TextView Help, Our_Work, Volunteers, More, Our_Helpers, Donate;
-    ActionBar actionBar;
+    private TextView Help, Our_Work, Volunteers, More, Our_Helpers, Donate;
+    private ActionBar actionBar;
 
 
     @SuppressLint("WrongConstant")
@@ -65,7 +65,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         help = findViewById(R.id.help);
         volunteer = findViewById(R.id.volunteer);
         ourWork = findViewById(R.id.ourWork);
-
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.abs_layout);
         Help = findViewById(R.id.Help);
@@ -111,34 +110,31 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }
         });
         mAuth = FirebaseAuth.getInstance();
+
         ImageSlider imageslider = findViewById(R.id.image_slider);
         List<SlideModel> slideModels = new ArrayList<>();
         slideModels.add(new SlideModel(R.drawable.d5));
         slideModels.add(new SlideModel(R.drawable.d4));
         slideModels.add(new SlideModel(R.drawable.d3));
         slideModels.add(new SlideModel(R.drawable.d1));
-
         slideModels.add(new SlideModel(R.drawable.d2));
         imageslider.setImageList(slideModels, true);
+
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
         toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         navigationView = (NavigationView) findViewById(R.id.n1);
         navigationView.setNavigationItemSelectedListener(this);
 
         View header = navigationView.getHeaderView(0);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
-        navigationView = findViewById(R.id.n1);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
 
         isFirstTime = prefs.getBoolean("isFirstTime", true);
@@ -150,25 +146,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 gotoLoginActivity();
             }
         }
-
-
-
         Paper.init(this);
         String language = Paper.book().read("language");
         if (language == null)
             Paper.book().write("language", "en");
-        //updateView((String) Paper.book().read("language"));
+        updateView((String) Paper.book().read("language"));
 
     }
 
 
     public void onFirst() {
-
-
-        Intent intent = new Intent(MainActivity.this, TandC.class);
-        startActivity(intent);
-
-
         new AlertDialog.Builder(MainActivity.this)
                 .setTitle("Terms and Conditions")
                 .setMessage("T&C")
@@ -206,6 +193,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
     }
+    public void updateView(String lang){
+        Context context = LocaleHelper.setLocale(this, lang);
+        Resources resources = context.getResources();
+
+        Help.setText(resources.getString(R.string.need_help));
+        Donate.setText(resources.getString(R.string.Donate));
+        Volunteers.setText(resources.getString(R.string.Volunteers));
+        Our_Helpers.setText(resources.getString(R.string.Our_Helpers));
+        Our_Work.setText(resources.getString(R.string.Our_Work));
+        More.setText(resources.getString(R.string.More));
+    }
 
 
     private void gotoLoginActivity() {
@@ -217,6 +215,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
         switch (item.getItemId()) {
             case R.id.logout:
                 mAuth.signOut();
@@ -239,5 +238,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
 
         return false;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        if(toggle.onOptionsItemSelected(item)){
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

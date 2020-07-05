@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-brx\\values-brx.xml",
+            "outputFile": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-brx\\values-brx.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\values-b+brx\\strings.xml",
+                    "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\values-b+brx\\strings.xml",
                     "from": {
                         "startLines": "20,16,50,13,57,36,51,44,33,41,12,53,54,15,39,38,31,45,26,17,14,46,30,40,47,32,2,6,74,4,71,70,62,75,63,9,7,76,69,60,61,3,64,65,72,67,73,68,59,66",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
