@@ -120,8 +120,6 @@ public class MainActivity extends AppCompatActivity  {
         imageslider.setImageList(slideModels, true);
        getactionbarnow();
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         navigationView = findViewById(R.id.n1);
 
 
