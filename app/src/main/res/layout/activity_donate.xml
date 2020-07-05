@@ -67,7 +67,7 @@
 
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/helpquote"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="The best way to persue happiness is to help others"

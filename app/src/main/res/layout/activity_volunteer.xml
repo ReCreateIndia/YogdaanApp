@@ -18,7 +18,7 @@
             android:layout_marginTop="19dp"
             android:layout_marginRight="18dp"
             android:gravity="center"
-            android:id="@+id/tt1"
+            android:id="@+id/volunteerquote"
             android:text="@string/the_best_way_to_persue_happiness_is_to_help_others"
             android:textColor="#000000"
             android:textSize="28sp"
@@ -26,7 +26,7 @@
             />
 
         <LinearLayout
-            android:layout_below="@id/tt1"
+            android:layout_below="@id/volunteerquote"
             android:id="@+id/layout1"
             android:layout_width="match_parent"
             android:layout_height="200dp"

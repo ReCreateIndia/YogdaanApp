@@ -30,7 +30,7 @@ public class PaymentActivity extends AppCompatActivity {
     private Button send;
     String TAG = "main",upiVirtualID = "virensaroha123@okhdfcbank";
     final int UPI_PAYMENT = 0;
-    private EditText name,phoneno;
+    private EditText namepay,phonenopay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,19 +41,19 @@ public class PaymentActivity extends AppCompatActivity {
 
         send = (Button) findViewById(R.id.send);
         amount = (EditText) findViewById(R.id.amount_et);
-        tt=findViewById(R.id.textView7);
+        tt=findViewById(R.id.textView7P);
         if(ammount!=null){
             amount.setText(ammount);
         }
 
-        name = (EditText) findViewById(R.id.name);
-        phoneno = (EditText) findViewById(R.id.phonenumber);
+        namepay = (EditText) findViewById(R.id.namepay);
+        phonenopay = (EditText) findViewById(R.id.phonenumberpay);
 //        upiVirtualID = (EditText) findViewById(R.id.upi_id);
 
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (TextUtils.isEmpty(name.getText().toString().trim())) {
+                if (TextUtils.isEmpty(namepay.getText().toString().trim())) {
                     Toast.makeText(PaymentActivity.this, "Name is invalid", Toast.LENGTH_SHORT).show();
                 }
 //                else if (TextUtils.isEmpty(upiVirtualID.getText().toString().trim())) {
@@ -84,8 +84,8 @@ public class PaymentActivity extends AppCompatActivity {
 
         send.setText(resources.getString(R.string.Donate_Now));
         amount.setHint(resources.getString(R.string.enter_amount));
-        name.setHint(resources.getString(R.string.Name));
-        phoneno.setHint(resources.getString(R.string.phone_number));
+        namepay.setHint(resources.getString(R.string.Name));
+        phonenopay.setHint(resources.getString(R.string.phone_number));
         tt.setText(resources.getString(R.string.Donate));
 
     }
