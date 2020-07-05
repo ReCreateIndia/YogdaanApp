@@ -35,14 +35,17 @@ import java.util.Objects;
 import Helper.LocaleHelper;
 import io.paperdb.Paper;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private ActionBarDrawerToggle toggle;
     private FirebaseAuth mAuth;
-    private AlertDialog alertDialog;
+
+    AlertDialog alertDialog;
     private boolean isFirstTime;
     private ImageButton our_work;
+
+
     private ImageButton donate, help, volunteer, ourWork;
     private TextView Help, Our_Work, Volunteers, More, Our_Helpers, Donate;
     private ActionBar actionBar;
@@ -57,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         actionBar = this.getActionBar();
-        getSupportActionBar().setElevation(0);
+        Objects.requireNonNull(getSupportActionBar()).setElevation(0);
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.abs_layout);
 
@@ -65,8 +68,11 @@ public class MainActivity extends AppCompatActivity {
         help = findViewById(R.id.help);
         volunteer = findViewById(R.id.volunteer);
         ourWork = findViewById(R.id.ourWork);
+
+
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.abs_layout);
+
         Help = findViewById(R.id.Help);
         Our_Work = findViewById(R.id.Our_Work);
         Volunteers = findViewById(R.id.Volunteers);
@@ -120,6 +126,13 @@ public class MainActivity extends AppCompatActivity {
         slideModels.add(new SlideModel(R.drawable.d2));
         imageslider.setImageList(slideModels, true);
 
+        getactionbarnow();
+
+        navigationView = findViewById(R.id.n1);
+
+
+        //View header = navigationView.getHeaderView(0);
+
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
         toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
@@ -127,13 +140,43 @@ public class MainActivity extends AppCompatActivity {
         toggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         navigationView = (NavigationView) findViewById(R.id.n1);
-        navigationView.setNavigationItemSelectedListener(listner);
+        navigationView.setNavigationItemSelectedListener(this);
 
         View header = navigationView.getHeaderView(0);
 
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.logout:
+                        mAuth.signOut();
+                        gotoLoginActivity();
+                        break;
+                    case R.id.YourDonation:
+                        Toast.makeText(MainActivity.this, "Your Donation", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.Certificates:
+                        Toast.makeText(MainActivity.this, "Your Certificates/Receipt", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.Status:
+                        Toast.makeText(MainActivity.this, "Status of your request", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.selectlanguage:
+                        Toast.makeText(MainActivity.this, "Choose language", Toast.LENGTH_SHORT).show();
+                        break;
+
+
+                }
+
+                return false;
+            }
+        });
+
+
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
 
         isFirstTime = prefs.getBoolean("isFirstTime", true);
@@ -153,50 +196,26 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private NavigationView.OnNavigationItemSelectedListener listner=new NavigationView.OnNavigationItemSelectedListener() {
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
-            if(toggle.onOptionsItemSelected(item)){
-                return true;
-            }
-            switch (item.getItemId()) {
-                case R.id.logout:
-                    mAuth.signOut();
-                    gotoLoginActivity();
-                    break;
-                case R.id.YourDonation:
-                    Toast.makeText(MainActivity.this, "Your Donation", Toast.LENGTH_SHORT).show();
-                    break;
-                case R.id.Certificates:
-                    Toast.makeText(MainActivity.this, "Your Certificates/Receipt", Toast.LENGTH_SHORT).show();
-                    break;
-                case R.id.Status:
-                    Toast.makeText(MainActivity.this, "Status of your request", Toast.LENGTH_SHORT).show();
-                    break;
-                case R.id.selectlanguage:
-                    Toast.makeText(MainActivity.this, "Choose language", Toast.LENGTH_SHORT).show();
-                    break;
-
-
-            }
-
-            return false;
-        }
-    };
+    private void getactionbarnow() {
+        drawerLayout = findViewById(R.id.drawer);
+        toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
+        toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+    }
     public void onFirst() {
         new AlertDialog.Builder(MainActivity.this)
                 .setTitle("Terms and Conditions")
                 .setMessage("T&C")
                 .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
-                    @Override
+                    //@Override
                     public void onClick(DialogInterface dialog, int which) {
                         finish();
                         System.exit(0);
                     }
                 })
                 .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
-                    @Override
+                    //@Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
                         gotoLoginActivity();
@@ -210,19 +229,9 @@ public class MainActivity extends AppCompatActivity {
         editor.apply();
 
 
-//        Context context = LocaleHelper.setLocale(this, lang);
-//        Resources resources = context.getResources();
-//
-//        Help.setText(resources.getString(R.string.need_help));
-//        Donate.setText(resources.getString(R.string.Donate));
-//        Volunteers.setText(resources.getString(R.string.Volunteers));
-//        Our_Helpers.setText(resources.getString(R.string.Our_Helpers));
-//        Our_Work.setText(resources.getString(R.string.Our_Work));
-//        More.setText(resources.getString(R.string.More));
-
-
     }
-    public void updateView(String lang){
+
+    public void updateView(String lang) {
         Context context = LocaleHelper.setLocale(this, lang);
         Resources resources = context.getResources();
 
@@ -240,7 +249,6 @@ public class MainActivity extends AppCompatActivity {
         logIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(logIntent);
     }
-
 
 //    @Override
 //    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -272,9 +280,30 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        if(toggle.onOptionsItemSelected(item)){
+        if (toggle.onOptionsItemSelected(item)) {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    /**
+     * Called when an item in the navigation menu is selected.
+     *
+     * @param item The selected item
+     * @return true to display the item as the selected item
+     */
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        return false;
+    }
+
+    /**
+     * Called when pointer capture is enabled or disabled for the current window.
+     *
+     * @param hasCapture True if the window has pointer capture.
+     */
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
     }
 }

@@ -21,33 +21,45 @@
         android:roundIcon="@drawable/logoyogdaan"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PaymentSuggestion" />
+
+        <activity android:name=".PaymentSuggestion">
+
+        </activity>
+
         <activity android:name=".Statuspage" />
         <activity android:name=".PaymentActivity" />
         <activity android:name=".DonateActivity" />
-        <activity android:name=".Volunteer" />
+        <activity android:name=".Volunteer" >
+
+        </activity>
         <activity android:name=".TandC" />
         <activity
             android:name=".SplashScreen"
             android:configChanges="orientation|keyboardHidden"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+        </activity>
+
+
+
+        <activity android:name=".BlogActivity" />
+        <activity android:name=".Introduction_Activity">
+
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+        </activity>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".HelpPage" >
 
-
-
-
-        <activity android:name=".BlogActivity" />
-        <activity android:name=".Introduction_Activity"></activity>
-        <activity
-            android:name=".LoginActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
-        <activity android:name=".MainActivity">
         </activity>
-        <activity android:name=".HelpPage" ></activity>
 
 
         <activity android:name=".OtpActivity" />

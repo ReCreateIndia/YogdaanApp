@@ -3,27 +3,17 @@ package recreate.india.yogdaan;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 
-import java.security.AccessController;
-import java.util.ArrayList;
-import java.util.List;
-
-import Helper.LocaleHelper;
 import io.paperdb.Paper;
-import android.content.SharedPreferences;
 
 public class Intro_Adapter extends PagerAdapter {
     private Context context;
