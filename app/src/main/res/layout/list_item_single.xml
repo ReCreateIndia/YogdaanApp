@@ -62,12 +62,12 @@
 
         <ImageView
             android:id="@+id/postImage"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_width="407dp"
+            android:layout_height="303dp"
             android:layout_marginTop="56dp"
-            android:src="@drawable/slide2image"
             android:background="@drawable/text_background"
             android:contentDescription="TODO"
+            android:src="@drawable/slide2image"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -76,7 +76,7 @@
             app:layout_constraintVertical_bias="0.012" />
 
         <TextView
-            android:id="@+id/desc"
+            android:id="@+id/postdesc"
             android:padding="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

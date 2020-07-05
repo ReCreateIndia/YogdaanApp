@@ -38,7 +38,7 @@ public class OurWorkBlogRecyclerAdapter  extends RecyclerView.Adapter<OurWorkBlo
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.date.setText(list.get(position).getCreated());
-        Glide.with(context).load(list.get(position).getImageUri()).into(holder.imageView);
+        Glide.with(context).load(list.get(position).getImage()).into(holder.imageView);
         holder.body.setText(list.get(position).getBody());
     }
 

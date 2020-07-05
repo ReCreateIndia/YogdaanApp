@@ -193,7 +193,8 @@ public class HelpPage extends AppCompatActivity {
                 String knownName = addresses.get(0).getFeatureName();
 
 
-
+                ArrayList<String>NgoInterested=new ArrayList<>();
+                ArrayList<String>NgoNotInterested=new ArrayList<>();
                 Map<String, Object> map = new HashMap<>();
                 map.put("name", name.getText().toString());
                 map.put("lat", lat);
@@ -205,6 +206,8 @@ public class HelpPage extends AppCompatActivity {
                 map.put("phone number", firebaseUser.getPhoneNumber());
                 map.put("image",imageDownlaodLink);
                 map.put("day",1);
+                map.put("NgoInterested",NgoInterested);
+                map.put("NgoNotInterested",NgoNotInterested);
 
 
                 ff.collection("AllRequest").document(item).collection("presentRequest").document(firebaseUser.getUid()).set(map).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -235,6 +238,68 @@ public class HelpPage extends AppCompatActivity {
         epicdialog = new Dialog(this);
         spin = (Spinner) findViewById(R.id.spinner2);
         List<String> list = new ArrayList<String>();
+        list.add(0, "Select problem");
+        list.add("Education");
+        list.add("Food");
+        list.add("Medical faciltites");
+        list.add("Need Blood");
+        list.add("clothing");
+        list.add("Need Money");
+        list.add("Housing");
+        list.add("Old people");
+        list.add("Human Rights");
+        list.add("Information Technology");
+        list.add("Agriculture");
+        list.add("Water Resource Management");
+        list.add("Child Development");
+        list.add("Consumer Rights");
+        list.add("Awareness of Insurance");
+        list.add("Enterpreneurship Community");
+        list.add("cooperative and Resource Building");
+        list.add("human Welfare");
+        list.add("Water and Sanitation ");
+        list.add("E-governance");
+        list.add("E-learning");
+        list.add("Community Development");
+        list.add("State budget analysis in perspective of poor");
+        list.add("Sustainable Development");
+        list.add("Marriage of deprived girls");
+        list.add("Civic issues");
+        list.add("Social Development");
+        list.add("Animals Husbandry,Dairying,Fisheries");
+        list.add("Tribal affairs");
+        list.add("Legal Awareness and AID");
+        list.add("Land Resource");
+        list.add("Micro Finance (SHGs)");
+        list.add("Micro Small and Minor Enterprises");
+        list.add("Minority issues");
+        list.add("New and Renewable Energy");
+        list.add("Nutrition");
+        list.add("Panchayati Raj");
+        list.add("Prisioner's issues");
+        list.add("Right to Information and Advocacy");
+        list.add("Rural Development & Poverty Alleviation");
+        list.add("Science and Technology");
+        list.add("Scientific and Industrial Research");
+        list.add("Sports");
+        list.add("Tourism");
+        list.add("Urban Development & Poverty Alleviation");
+        list.add("Women's Development and Empowerment");
+        list.add("Water resource");
+        list.add("Art & culture");
+        list.add("Youth Affairs");
+        list.add("Drinking Water");
+        list.add("Food Processing");
+        list.add("HIV Aids");
+        list.add("Labour and Employment");
+        list.add("Land Resource");
+        list.add("Health And Family Welfare");
+        list.add("Disaster Management");
+        list.add("Vocational Training");
+        list.add("Environment and Forests");
+        list.add("Differently abled Person");
+        list.add("Biotechnology");
+        list.add("Dalit Upliftment");
         list.add(0, getString(R.string.Select_problem));
         list.add(getString(R.string.Education));
         list.add(getString(R.string.Food));
