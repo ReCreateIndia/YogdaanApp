@@ -18,6 +18,7 @@
     <string name="Housing">Housing</string>
     <string name="Humanrights">Human Rights</string>
     <string name="Informationtech">Information Technology</string>
+    <string name="Marriageofdeprivedgirls">Marriage of deprived girls</string>
     <string name="Medical_faciilities">Medical faciltites</string>
     <string name="More">مزید</string>
     <string name="Name">نام</string>
@@ -68,11 +69,14 @@
     <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"اس کے ساتھ اشتراک کریں"</string>
     <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> کے ساتھ اشتراک کریں"</string>
     <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"سکیڑیں"</string>
+    <string name="animalhusbandry">Animals Husbandry,Dairying,Fisheries</string>
     <string name="app_name">Yogdaan</string>
+    <string name="artandculture"><![CDATA[Art & culture]]></string>
     <string name="awarenessofinsurance">Awareness of Insurance</string>
     <string name="biotechnology">Biotechnology</string>
     <string name="books_money">Books Money</string>
     <string name="childdevelopment">Child Development</string>
+    <string name="civicissues">Civic issues</string>
     <string name="close">بند کریں</string>
     <string name="clothing">clothing</string>
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"فعال کریں"</string>
@@ -96,24 +100,43 @@
     <string name="communitydevelopment">Community Development</string>
     <string name="consumerrights">Consumer Rights</string>
     <string name="cooperativeandresourcebuilding">cooperative and Resource Building</string>
+    <string name="disastermanagement">Disaster Management</string>
     <string name="donate_by_watching_ads">Donate by watching ads</string>
     <string name="donate_money">Donate Money</string>
+    <string name="drinkingwater">Drinking Water</string>
     <string name="eleraning">E-learning</string>
     <string name="enter_amount">Enter Amount</string>
     <string name="enter_information">Enter Information</string>
     <string name="enterpreneurship">Enterpreneurship Community</string>
+    <string name="environmentandforests">Environment and Forests</string>
     <string name="food_money">Food Money</string>
+    <string name="foodprocessing">Food Processing</string>
     <string name="get_current_location">Get Current Location</string>
+    <string name="healthandfamilywelfare">Health And Family Welfare</string>
+    <string name="hiv">HIV/Aids</string>
     <string name="humanwelfare">human Welfare</string>
+    <string name="labourandemployment">Labour and Employment</string>
+    <string name="landresource">Land Resource</string>
+    <string name="landresuorce">Land Resource</string>
+    <string name="legalawareness">Legal Awareness and AID</string>
+    <string name="micro">Micro Small and Minor Enterprises</string>
+    <string name="microfinnce">Micro Finance (SHGs)</string>
+    <string name="minorityissues">Minority issues</string>
     <string name="money_directly">Money Directly</string>
     <string name="need_help">مدد چاہیے</string>
     <string name="need_help_for_others">Need help for others</string>
     <string name="need_help_for_yourself">Need Help for yourself</string>
+    <string name="newrenwavle">New and Renewable Energy</string>
     <string name="next">Next</string>
+    <string name="nutition">Nutrition</string>
     <string name="open">کھلا</string>
     <string name="or_give_address_below">Or give address below</string>
+    <string name="panchaytiraj">Panchayati Raj</string>
     <string name="phone_number">Phone Number</string>
     <string name="please_add_any_government_id_proof_like_aadhar_card_pan_card_voter_id_driving_liscence_rashan_card">Please add any government id proof like aadhar card,pan card,voter id,driving liscence,rashan card.</string>
+    <string name="prisionerissues">Prisioner\'s issues</string>
+    <string name="righttoinformationandadvoccay">Right to Information and Advocacy</string>
+    <string name="ruraldevelopment"><![CDATA[Rural Development & Poverty Alleviation]]></string>
     <string msgid="368094699078615544" name="s1">"تصویر محفوظ کریں"</string>
     <string msgid="4550830452390689489" name="s2">"اشتہار کو تصویری گیلری میں تصویر محفوظ کرنے کی اجازت دیں؟"</string>
     <string msgid="2435407834265420668" name="s3">"قبول کریں"</string>
@@ -121,16 +144,28 @@
     <string msgid="1566682516266724847" name="s5">"کیلنڈر ایونٹ بنائیں"</string>
     <string msgid="5996672174517137271" name="s6">"اشتہار کو ایک کیلنڈر ایونٹ بنانے کی اجازت دیں؟"</string>
     <string msgid="7163549807207034258" name="s7">"اشتہار ٹیسٹ کریں"</string>
+    <string name="satate">State budget analysis in perspective of poor</string>
+    <string name="scienceandtechnology">Science and Technology</string>
+    <string name="scientistsandindustrialresaerch">Scientific and Industrial Research</string>
     <string msgid="730395136688082741" name="search_menu_title">"تلاش کریں"</string>
     <string name="select_the_money_range">Select the Money Range</string>
     <string name="select_type_of_help">Select Type Of Help :</string>
+    <string name="socialdeveopment">Social Development</string>
+    <string name="sports">Sports</string>
     <string name="stationary_money">Stationary Money</string>
     <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"+999"</string>
     <string name="submitted_sucessfully">Submitted Sucessfully</string>
+    <string name="sustainabledevelopment">Sustainable Development</string>
     <string name="thankyou_for_putting_your_request_on_our_app">Thankyou for putting your request on our app.</string>
     <string name="the_best_way_to_persue_happiness_is_to_help_others">The best way to persue happiness is to help others!</string>
     <string name="there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out">There is a free platform for everyone and always will be just select the problem and we will do or best to sort it out</string>
+    <string name="tourism">Tourism</string>
+    <string name="tribalaffairs">Tribal affairs</string>
+    <string name="urbandevelopment"><![CDATA[Urban Development & Poverty Alleviation]]></string>
     <string name="use_camera">Use camera</string>
     <string name="username">username</string>
+    <string name="vocationaltraining">Vocational Training</string>
     <string name="waterandsaniatation">\"Water and Sanitation \"</string>
+    <string name="waterresuorce">Water resource</string>
+    <string name="youthaffairs">Youth Affairs</string>
 </resources>
