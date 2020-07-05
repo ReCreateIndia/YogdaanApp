@@ -3,7 +3,7 @@ package recreate.india.yogdaan;
 public class OurWorkModel {
    String body;
    String created;
-   String imageUri;
+   String image;
    String title;
 
     public String getBody() {
@@ -22,12 +22,12 @@ public class OurWorkModel {
         this.created = created;
     }
 
-    public String getImageUri() {
-        return imageUri;
+    public String getImage() {
+        return image;
     }
 
-    public void setImageUri(String imageUri) {
-        this.imageUri = imageUri;
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getTitle() {
@@ -38,10 +38,10 @@ public class OurWorkModel {
         this.title = title;
     }
 
-    public OurWorkModel(String body, String created, String imageUri, String title) {
+    public OurWorkModel(String body, String created, String image, String title) {
         this.body = body;
         this.created = created;
-        this.imageUri = imageUri;
+        this.image = image;
         this.title = title;
     }
 
