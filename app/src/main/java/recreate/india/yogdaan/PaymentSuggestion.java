@@ -1,5 +1,6 @@
 package recreate.india.yogdaan;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -16,10 +17,16 @@ import io.paperdb.Paper;
 public class PaymentSuggestion extends AppCompatActivity {
     LinearLayout stationary,books,direct,food;
     TextView tt1S,tt2S,tt3S,tt4S,tt5S;
+    private ActionBar actionBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment_suggestion);
+        actionBar = this.getActionBar();
+        getSupportActionBar().setElevation(0);
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.abs_layout);
         stationary=findViewById(R.id.stationary);
         books=findViewById(R.id.books);
         direct=findViewById(R.id.moenydirect);

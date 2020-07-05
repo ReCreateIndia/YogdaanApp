@@ -62,7 +62,7 @@
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-8169027776894810~7067472313" />
+            android:value="ca-app-pub-8657920857471834~5603416632" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

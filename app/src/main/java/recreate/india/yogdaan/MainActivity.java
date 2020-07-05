@@ -35,7 +35,7 @@ import java.util.Objects;
 import Helper.LocaleHelper;
 import io.paperdb.Paper;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private ActionBarDrawerToggle toggle;
@@ -127,14 +127,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         navigationView = (NavigationView) findViewById(R.id.n1);
-        navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setNavigationItemSelectedListener(listner);
 
         View header = navigationView.getHeaderView(0);
+
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
 
         isFirstTime = prefs.getBoolean("isFirstTime", true);
@@ -154,7 +153,37 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     }
 
+    private NavigationView.OnNavigationItemSelectedListener listner=new NavigationView.OnNavigationItemSelectedListener() {
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
+            if(toggle.onOptionsItemSelected(item)){
+                return true;
+            }
+            switch (item.getItemId()) {
+                case R.id.logout:
+                    mAuth.signOut();
+                    gotoLoginActivity();
+                    break;
+                case R.id.YourDonation:
+                    Toast.makeText(MainActivity.this, "Your Donation", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.Certificates:
+                    Toast.makeText(MainActivity.this, "Your Certificates/Receipt", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.Status:
+                    Toast.makeText(MainActivity.this, "Status of your request", Toast.LENGTH_SHORT).show();
+                    break;
+                case R.id.selectlanguage:
+                    Toast.makeText(MainActivity.this, "Choose language", Toast.LENGTH_SHORT).show();
+                    break;
+
+
+            }
+
+            return false;
+        }
+    };
     public void onFirst() {
         new AlertDialog.Builder(MainActivity.this)
                 .setTitle("Terms and Conditions")
@@ -213,32 +242,32 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
-        switch (item.getItemId()) {
-            case R.id.logout:
-                mAuth.signOut();
-                gotoLoginActivity();
-                break;
-            case R.id.YourDonation:
-                Toast.makeText(MainActivity.this, "Your Donation", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.Certificates:
-                Toast.makeText(MainActivity.this, "Your Certificates/Receipt", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.Status:
-                Toast.makeText(MainActivity.this, "Status of your request", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.selectlanguage:
-                Toast.makeText(MainActivity.this, "Choose language", Toast.LENGTH_SHORT).show();
-                break;
-
-
-        }
-
-        return false;
-    }
+//    @Override
+//    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+//
+//        switch (item.getItemId()) {
+//            case R.id.logout:
+//                mAuth.signOut();
+//                gotoLoginActivity();
+//                break;
+//            case R.id.YourDonation:
+//                Toast.makeText(MainActivity.this, "Your Donation", Toast.LENGTH_SHORT).show();
+//                break;
+//            case R.id.Certificates:
+//                Toast.makeText(MainActivity.this, "Your Certificates/Receipt", Toast.LENGTH_SHORT).show();
+//                break;
+//            case R.id.Status:
+//                Toast.makeText(MainActivity.this, "Status of your request", Toast.LENGTH_SHORT).show();
+//                break;
+//            case R.id.selectlanguage:
+//                Toast.makeText(MainActivity.this, "Choose language", Toast.LENGTH_SHORT).show();
+//                break;
+//
+//
+//        }
+//
+//        return false;
+//    }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {

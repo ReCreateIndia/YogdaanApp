@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-8657920857471834/6724926610</string>
+    <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-8657920857471834/7271721521</string>
     <string name="app_name">Yogdaan</string>
+
     <string name="open">Open</string>
     <string name="close">बंद करे</string>
+
     //VolunteerPage
     <string name="Name">नाम</string>
     <string name="Date_Of_Birth">जन्म की तारीख</string>
