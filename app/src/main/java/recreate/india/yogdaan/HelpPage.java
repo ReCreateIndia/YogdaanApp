@@ -194,7 +194,8 @@ public class HelpPage extends AppCompatActivity {
                 String knownName = addresses.get(0).getFeatureName();
 
 
-
+                ArrayList<String>NgoInterested=new ArrayList<>();
+                ArrayList<String>NgoNotInterested=new ArrayList<>();
                 Map<String, Object> map = new HashMap<>();
                 map.put("name", name.getText().toString());
                 map.put("lat", lat);
@@ -206,6 +207,8 @@ public class HelpPage extends AppCompatActivity {
                 map.put("phone number", firebaseUser.getPhoneNumber());
                 map.put("image",imageDownlaodLink);
                 map.put("day",1);
+                map.put("NgoInterested",NgoInterested);
+                map.put("NgoNotInterested",NgoNotInterested);
 
 
                 ff.collection("AllRequest").document(item).collection("presentRequest").document(firebaseUser.getUid()).set(map).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -288,7 +291,7 @@ public class HelpPage extends AppCompatActivity {
         list.add("Youth Affairs");
         list.add("Drinking Water");
         list.add("Food Processing");
-        list.add("HIV/Aids");
+        list.add("HIV Aids");
         list.add("Labour and Employment");
         list.add("Land Resource");
         list.add("Health And Family Welfare");
