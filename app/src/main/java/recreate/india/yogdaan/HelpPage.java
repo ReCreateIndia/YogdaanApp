@@ -66,7 +66,7 @@ import Helper.LocaleHelper;
 import io.paperdb.Paper;
 
 public class HelpPage extends AppCompatActivity {
-    TextView SelectProblem,enterinfo, NameHelpPage, Occupation,address,idd,orr, quote, TypeOfHelp,yr,tr;
+    TextView SelectProblem,enterinfo, NameHelpPage, Occupation,address,idd,orr, helpquote, TypeOfHelp,yr,tr;
     Spinner spin;
     RadioGroup radioGroup;
     RadioButton radioButton;
@@ -105,7 +105,7 @@ public class HelpPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_page);
         actionBar = this.getActionBar();
-        quote=findViewById(R.id.helpquote);
+        helpquote=findViewById(R.id.helpquote);
         getSupportActionBar().setElevation(0);
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.abs_layout);
@@ -118,8 +118,7 @@ public class HelpPage extends AppCompatActivity {
         ocupation=findViewById(R.id.occupation);
         adress=findViewById(R.id.address);
         TypeOfHelp=findViewById(R.id.TypeOfHelp);
-        yr=findViewById(R.id.points435);
-        tr=findViewById(R.id.messag324e);
+
 
         takeimage = findViewById(R.id.cameraIntent);
         takeimage.setOnClickListener(new View.OnClickListener() {
@@ -242,68 +241,68 @@ public class HelpPage extends AppCompatActivity {
         epicdialog = new Dialog(this);
         spin = (Spinner) findViewById(R.id.spinner2);
         List<String> list = new ArrayList<String>();
-        list.add(0, "Select problem");
-        list.add("Education");
-        list.add("Food");
-        list.add("Medical faciltites");
-        list.add("Need Blood");
-        list.add("clothing");
-        list.add("Need Money");
-        list.add("Housing");
-        list.add("Old people");
-        list.add("Human Rights");
-        list.add("Information Technology");
-        list.add("Agriculture");
-        list.add("Water Resource Management");
-        list.add("Child Development");
-        list.add("Consumer Rights");
-        list.add("Awareness of Insurance");
-        list.add("Enterpreneurship Community");
-        list.add("cooperative and Resource Building");
-        list.add("human Welfare");
-        list.add("Water and Sanitation ");
-        list.add("E-governance");
-        list.add("E-learning");
-        list.add("Community Development");
-        list.add("State budget analysis in perspective of poor");
-        list.add("Sustainable Development");
-        list.add("Marriage of deprived girls");
-        list.add("Civic issues");
-        list.add("Social Development");
-        list.add("Animals Husbandry,Dairying,Fisheries");
-        list.add("Tribal affairs");
-        list.add("Legal Awareness and AID");
-        list.add("Land Resource");
-        list.add("Micro Finance (SHGs)");
-        list.add("Micro Small and Minor Enterprises");
-        list.add("Minority issues");
-        list.add("New and Renewable Energy");
-        list.add("Nutrition");
-        list.add("Panchayati Raj");
-        list.add("Prisioner's issues");
-        list.add("Right to Information and Advocacy");
-        list.add("Rural Development & Poverty Alleviation");
-        list.add("Science and Technology");
-        list.add("Scientific and Industrial Research");
-        list.add("Sports");
-        list.add("Tourism");
-        list.add("Urban Development & Poverty Alleviation");
-        list.add("Women's Development and Empowerment");
-        list.add("Water resource");
-        list.add("Art & culture");
-        list.add("Youth Affairs");
-        list.add("Drinking Water");
-        list.add("Food Processing");
-        list.add("HIV/Aids");
-        list.add("Labour and Employment");
-        list.add("Land Resource");
-        list.add("Health And Family Welfare");
-        list.add("Disaster Management");
-        list.add("Vocational Training");
-        list.add("Environment and Forests");
-        list.add("Differently abled Person");
-        list.add("Biotechnology");
-        list.add("Dalit Upliftment");
+        list.add(0, getString(R.string.Select_problem));
+        list.add(getString(R.string.Education));
+        list.add(getString(R.string.Food));
+        list.add(getString(R.string.Medical_faciilities));
+        list.add(getString(R.string.Need_blood));
+        list.add(getString(R.string.clothing));
+        list.add(getString(R.string.NeedMoney));
+        list.add(getString(R.string.Housing));
+        list.add(getString(R.string.Oldpeople));
+        list.add(getString(R.string.Humanrights));
+        list.add(getString(R.string.Informationtech));
+        list.add(getString(R.string.Agriculture));
+        list.add(getString(R.string.Waterresourcemanagement));
+        list.add(getString(R.string.childdevelopment));
+        list.add(getString(R.string.consumerrights));
+        list.add(getString(R.string.awarenessofinsurance));
+        list.add(getString(R.string.enterpreneurship));
+        list.add(getString(R.string.cooperativeandresourcebuilding));
+        list.add(getString(R.string.humanwelfare));
+        list.add(getString(R.string.waterandsaniatation));
+        list.add(getString(R.string.Egovernance));
+        list.add(getString(R.string.eleraning));
+        list.add(getString(R.string.communitydevelopment));
+        list.add(getString(R.string.satate));
+        list.add(getString(R.string.sustainabledevelopment));
+        list.add(getString(R.string.Marriageofdeprivedgirls));
+        list.add(getString(R.string.civicissues));
+        list.add(getString(R.string.socialdeveopment));
+        list.add(getString(R.string.animalhusbandry));
+        list.add(getString(R.string.tribalaffairs));
+        list.add(getString(R.string.legalawareness));
+        list.add(getString(R.string.landresuorce));
+        list.add(getString(R.string.microfinnce));
+        list.add(getString(R.string.micro));
+        list.add(getString(R.string.minorityissues));
+        list.add(getString(R.string.newrenwavle));
+        list.add(getString(R.string.nutition));
+        list.add(getString(R.string.panchaytiraj));
+        list.add(getString(R.string.prisionerissues));
+        list.add(getString(R.string.righttoinformationandadvoccay));
+        list.add(getString(R.string.ruraldevelopment));
+        list.add(getString(R.string.scienceandtechnology));
+        list.add(getString(R.string.scientistsandindustrialresaerch));
+        list.add(getString(R.string.sports));
+        list.add(getString(R.string.tourism));
+        list.add(getString(R.string.urbandevelopment));
+        list.add(getString(R.string.womenandem));
+        list.add(getString(R.string.waterresuorce));
+        list.add(getString(R.string.artandculture));
+        list.add(getString(R.string.youthaffairs));
+        list.add(getString(R.string.drinkingwater));
+        list.add(getString(R.string.foodprocessing));
+        list.add(getString(R.string.hiv));
+        list.add(getString(R.string.labourandemployment));
+        list.add(getString(R.string.landresource));
+        list.add(getString(R.string.healthandfamilywelfare));
+        list.add(getString(R.string.disastermanagement));
+        list.add(getString(R.string.vocationaltraining));
+        list.add(getString(R.string.environmentandforests));
+        list.add(getString(R.string.Diffrentabledperson));
+        list.add(getString(R.string.biotechnology));
+        list.add(getString(R.string.Dalitup));
         list.add("Any other");
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, list);
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -337,7 +336,7 @@ public class HelpPage extends AppCompatActivity {
     private void updateView(String language) {
         Context context = LocaleHelper.setLocale(this,language);
         Resources resources = context.getResources();
-        quote.setText(resources.getString(R.string.there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out
+        helpquote.setText(resources.getString(R.string.there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out
         ));
         SelectProblem.setText(resources.getString(R.string.Select_Problem));
 
@@ -354,8 +353,6 @@ public class HelpPage extends AppCompatActivity {
         name.setHint(resources.getString(R.string.Name));
         ocupation.setHint(resources.getString(R.string.Occupation));
         adress.setHint(resources.getString(R.string.Address));
-        tr.setText(resources.getString(R.string.thankyou_for_putting_your_request_on_our_app));
-        yr.setText(resources.getString(R.string.submitted_sucessfully));
 
 
     }

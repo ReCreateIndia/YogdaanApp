@@ -29,8 +29,8 @@ public class Volunteer extends AppCompatActivity {
     Button box;
     Spinner spinnn;
     private String item = "yo";
-    TextView quote,volunteer,work;
-    EditText Name,Occupation,Address,DOB;
+    TextView volunteerquote,volunteer,work;
+    EditText NameV,OccupationV,AddressV,DOBV;
     TextView tttr,ttry;
 
 
@@ -47,13 +47,13 @@ public class Volunteer extends AppCompatActivity {
                 Shownewpopup();
             }
         });
-        quote=findViewById(R.id.tt1);
+        volunteerquote=findViewById(R.id.volunteerquote);
         volunteer=findViewById(R.id.volu);
         work=findViewById(R.id.TypeOfWork);
-        Name=findViewById(R.id.volunteer_name);
-        Occupation=findViewById(R.id.volunteer_occupation);
-        Address=findViewById(R.id.volunteer_address);
-        DOB=findViewById(R.id.volunteer_dob);
+        NameV=findViewById(R.id.volunteer_name);
+        OccupationV=findViewById(R.id.volunteer_occupation);
+        AddressV=findViewById(R.id.volunteer_address);
+        DOBV=findViewById(R.id.volunteer_dob);
         ttry=findViewById(R.id.points435);
         tttr=findViewById(R.id.messag324e);
 
@@ -160,12 +160,12 @@ public class Volunteer extends AppCompatActivity {
         Context context = LocaleHelper.setLocale(this, language);
         Resources resources = context.getResources();
 
-        quote.setText(resources.getString(R.string.the_best_way_to_persue_happiness_is_to_help_others));
+        volunteerquote.setText(resources.getString(R.string.the_best_way_to_persue_happiness_is_to_help_others));
         box.setText(resources.getString(R.string.Submit));
-        Name.setHint(resources.getString(R.string.Name));
-        Occupation.setHint(resources.getString(R.string.Occupation));
-        Address.setHint(resources.getString(R.string.Address));
-        DOB.setHint(resources.getString(R.string.Date_Of_Birth));
+        NameV.setHint(resources.getString(R.string.Name));
+        OccupationV.setHint(resources.getString(R.string.Occupation));
+        AddressV.setHint(resources.getString(R.string.Address));
+        DOBV.setHint(resources.getString(R.string.Date_Of_Birth));
         work.setText(resources.getString(R.string.Type_Of_Work));
         volunteer.setText(resources.getString(R.string.Volunteers));
         tttr.setText(resources.getString(R.string.thankyou_for_putting_your_request_on_our_app));

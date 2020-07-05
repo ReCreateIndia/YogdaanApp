@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="Add_Some_Description">Add Some Description</string>
+    <string name="Address">Address</string>
+    <string name="Agriculture">Agriculture</string>
+    <string name="Amount">Amount</string>
+    <string name="Dalitup">Dalit Upliftment</string>
+    <string name="Date_Of_Birth">Date Of Birth</string>
+    <string name="Description">Description</string>
+    <string name="Diffrentabledperson">Differently abled Person</string>
+    <string name="Donate">Donate</string>
+    <string name="Donate_Now">Donate Now</string>
+    <string name="Education">Education</string>
+    <string name="Egovernance">E-governance</string>
+    <string name="Enter_OTP">Enter OTP</string>
+    <string name="Food">Food</string>
+    <string name="Generate_OTP">Generate OTP</string>
+    <string name="Housing">Housing</string>
+    <string name="Humanrights">Human Rights</string>
+    <string name="Informationtech">Information Technology</string>
+    <string name="Medical_faciilities">Medical faciltites</string>
+    <string name="More">More</string>
+    <string name="Name">Name</string>
+    <string name="NeedMoney">Need Money</string>
+    <string name="Need_blood">Need Blood</string>
+    <string name="Net_Credit">Net Credit</string>
+    <string name="Net_Value">Net Value</string>
+    <string name="Occupation">Occupation</string>
+    <string name="Oldpeople">Old people</string>
+    <string name="Our_Helpers">Our Helpers</string>
+    <string name="Our_Work">Our Work</string>
+    <string name="Please_Enter_Your_Phone_Number_For_Verification">Please Enter Your Phone Number For Verification</string>
+    <string name="Resend_OTP">Resend OTP</string>
+    <string name="Select_Problem">Select Problem</string>
+    <string name="Select_problem">Select problem</string>
+    <string name="Submit">Submit</string>
+    <string name="Type_Of_Work">Type Of Work</string>
+    <string name="Verify_OTP">Verify OTP</string>
+    <string name="Verify_Your_Number">Verify Your Number</string>
+    <string name="Volunteers">Volunteers</string>
+    <string name="We_Have_Sent_You_An_OTP_For_Phone_Number_Verification">We Have Sent You An OTP \n For Phone Number Verification</string>
+    <string name="Your_Phone_Number">Your Phone Number</string>
+    <string name="a_step_towards_humanity">A step towards Humanity...</string>
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"ಹೋಮ್‌ಗೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"ಮೇಲಕ್ಕೆ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಿ"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"ಇನ್ನಷ್ಟು ಆಯ್ಕೆಗಳು"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"ಮುಗಿದಿದೆ"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"ಎಲ್ಲವನ್ನೂ ನೋಡಿ"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"ಆ್ಯಪ್‌ವೊಂದನ್ನು ಆಯ್ಕೆಮಾಡಿ"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"ಆಫ್"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"ಆನ್"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"space"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"ಹುಡುಕಿ…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"ಪ್ರಶ್ನೆಯನ್ನು ತೆರವುಗೊಳಿಸಿ"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"ಪ್ರಶ್ನೆಯನ್ನು ಹುಡುಕಿ"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"ಹುಡುಕಿ"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"ಪ್ರಶ್ನೆಯನ್ನು ಸಲ್ಲಿಸಿ"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"ಧ್ವನಿ ಹುಡುಕಾಟ"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"ಇವರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> ನೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"ಕುಗ್ಗಿಸಿ"</string>
+    <string name="app_name">Yogdaan</string>
+    <string name="awarenessofinsurance">Awareness of Insurance</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-8169027776894810/2094347234</string>
+    <string name="biotechnology">Biotechnology</string>
+    <string name="books_money">Books Money</string>
+    <string name="childdevelopment">Child Development</string>
+    <string name="close">Close</string>
+    <string name="clothing">clothing</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"ಸಕ್ರಿಯಗೊಳಿಸು"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Google Play ಸೇವೆಗಳನ್ನು ನೀವು ಸಕ್ರಿಯಗೊಳಿಸದ ಹೊರತು <ns1:g id="APP_NAME">%1$s</ns1:g> ಕಾರ್ಯನಿರ್ವಹಿಸುವುದಿಲ್ಲ."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google Play ಸೇವೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಿ"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"ನಿಮ್ಮ ಸಾಧನದಿಂದ ಕಾಣೆಯಾಗಿರುವ <ns1:g id="APP_NAME">%1$s</ns1:g>, Google Play ಸೇವೆಗಳಿಲ್ಲದೆ ರನ್ ಆಗುವುದಿಲ್ಲ."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Google Play ಸೇವೆಗಳನ್ನು ಪಡೆಯಿರಿ"</string>
+    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Google Play ಸೇವೆಗಳ ಲಭ್ಯತೆ"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Google Play ಸೇವೆಗಳ ದೋಷ"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"Google Play ಸೇವೆಗಳಲ್ಲಿ <ns1:g id="APP_NAME">%1$s</ns1:g> ಸಮಸ್ಯೆಯನ್ನು ಹೊಂದಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"ನಿಮ್ಮ ಸಾಧನದ ಮೂಲಕ ಬೆಂಬಲಿಸದಿರುವ Google Play ಸೇವೆಗಳಿಲ್ಲದೆ <ns1:g id="APP_NAME">%1$s</ns1:g> ರನ್‌ ಆಗುವುದಿಲ್ಲ."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"ಅಪ್‌ಡೇಟ್‌ ಮಾಡು"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"ನೀವು Google Play ಸೇವೆಗಳನ್ನು ನವೀಕರಿಸದ ಹೊರತು <ns1:g id="APP_NAME">%1$s</ns1:g> ರನ್ ಆಗುವುದಿಲ್ಲ."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Google ಪ್ಲೇ ಸೇವೆಗಳನ್ನು ಅಪ್‌ಡೇಟ್‌ ಮಾಡಿ"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"Google Play ಸೇವೆಗಳಿಲ್ಲದೆ ಪ್ರಸ್ತುತ ಅಪ್‌ಡೇಟ್ ಆಗುತ್ತಿರುವ <ns1:g id="APP_NAME">%1$s</ns1:g> ರನ್ ಆಗುವುದಿಲ್ಲ."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Google Play ಸೇವೆಗಳ ಹೊಸ ಆವೃತ್ತಿ ಅಗತ್ಯವಿದೆ. ಸದ್ಯದಲ್ಲೇ ಅದು ತಾನಾಗಿಯೇ ಅಪ್‌ಡೇಟ್ ಆಗುತ್ತದೆ."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"ಫೋನ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"ಸೈನ್ ಇನ್"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Google ಮೂಲಕ ಸೈನ್ ಇನ್ ಮಾಡಿ"</string>
+    <string name="communitydevelopment">Community Development</string>
+    <string name="consumerrights">Consumer Rights</string>
+    <string name="cooperativeandresourcebuilding">cooperative and Resource Building</string>
+    <string name="donate_by_watching_ads">Donate by watching ads</string>
+    <string name="donate_money">Donate Money</string>
+    <string name="eleraning">E-learning</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_information">Enter Information</string>
+    <string name="enterpreneurship">Enterpreneurship Community</string>
+    <string name="food_money">Food Money</string>
+    <string name="get_current_location">Get Current Location</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="humanwelfare">human Welfare</string>
+    <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-8169027776894810/9781265569</string>
+    <string name="money_directly">Money Directly</string>
+    <string name="need_help">Need Help</string>
+    <string name="need_help_for_others">Need help for others</string>
+    <string name="need_help_for_yourself">Need Help for yourself</string>
+    <string name="next">Next</string>
+    <string name="open">Open</string>
+    <string name="or_give_address_below">Or give address below</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="please_add_any_government_id_proof_like_aadhar_card_pan_card_voter_id_driving_liscence_rashan_card">Please add any government id proof like aadhar card,pan card,voter id,driving liscence,rashan card.</string>
+    <string msgid="368094699078615544" name="s1">"ಚಿತ್ರ ಉಳಿಸಿ"</string>
+    <string msgid="4550830452390689489" name="s2">"ಚಿತ್ರದ ಗ್ಯಾಲರಿಯಲ್ಲಿ ಚಿತ್ರ ಸಂಗ್ರಹಿಸಿಡಲು ಜಾಹೀರಾತಿಗೆ ಅನುಮತಿಸುವುದೇ?"</string>
+    <string msgid="2435407834265420668" name="s3">"ಸಮ್ಮತಿಸಿ"</string>
+    <string msgid="9167523597401839819" name="s4">"ನಿರಾಕರಿಸಿ"</string>
+    <string msgid="1566682516266724847" name="s5">"ಕ್ಯಾಲೆಂಡರ್ ಈವೆಂಟ್ ರಚಿಸಿ"</string>
+    <string msgid="5996672174517137271" name="s6">"ಕ್ಯಾಲೆಂಡರ್ ಈವೆಂಟ್ ರಚಿಸಲು ಜಾಹೀರಾತಿಗೆ ಅನುಮತಿಸುವುದೇ?"</string>
+    <string msgid="7163549807207034258" name="s7">"ಪರೀಕ್ಷಾ ಜಾಹೀರಾತು"</string>
+    <string msgid="730395136688082741" name="search_menu_title">"ಹುಡುಕಿ"</string>
+    <string name="select_the_money_range">Select the Money Range</string>
+    <string name="select_type_of_help">Select Type Of Help :</string>
+    <string name="stationary_money">Stationary Money</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="submitted_sucessfully">Submitted Sucessfully</string>
+    <string name="thankyou_for_putting_your_request_on_our_app">Thankyou for putting your request on our app.</string>
+    <string name="the_best_way_to_persue_happiness_is_to_help_others">The best way to persue happiness is to help others!</string>
+    <string name="there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out">There is a free platform for everyone and always will be just select the problem and we will do or best to sort it out</string>
+    <string name="use_camera">Use camera</string>
+    <string name="username">username</string>
+    <string name="waterandsaniatation">\"Water and Sanitation \"</string>
+</resources>

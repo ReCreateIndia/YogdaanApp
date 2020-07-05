@@ -21,7 +21,7 @@
             >
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/textView13S"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/select_the_money_range"
@@ -131,11 +131,12 @@
                     android:layout_gravity="bottom"
                     android:layout_marginLeft="8dp"
                     android:text="@string/books_money"
+                    android:id="@+id/bookmoney"
                     android:textColor="#000000"
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/bookmoney"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
