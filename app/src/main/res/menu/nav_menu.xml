@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/YourDonation"
+            android:icon="@drawable/ic_keyboard_return_black_24dp"
 
-    <item
-        android:id="@+id/YourDonation"
-        android:icon="@drawable/ic_keyboard_return_black_24dp"
-
-        android:title="Your Donation" />
-    <item
-        android:id="@+id/Certificates"
-        android:icon="@drawable/ic_person_black_24dp"
-        android:title="Your Certificates/Receipt" />
-
-
-    <item
-        android:id="@+id/Status"
-        android:icon="@drawable/ic_person_black_24dp"
-        android:iconTint="#330033"
-        android:title="Status of your request">
+            android:title="Your Donation" />
+        <item
+            android:id="@+id/Certificates"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Your Certificates/Receipt" />
 
 
-    </item>
-    <item
-        android:id="@+id/selectlanguage"
-        android:icon="@drawable/ic_settings_black_24dp"
-        android:title="Select Language">
-
-    </item>
+        <item
+            android:id="@+id/Status"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:iconTint="#330033"
+            android:title="Status of your request">
 
 
-    <item
-        android:id="@+id/logout"
-        android:icon="@drawable/ic_person_black_24dp"
-        android:title="logout">
+        </item>
+        <item
+            android:id="@+id/selectlanguage"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Select Language">
 
-    </item>
+        </item>
 
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="logout">
+
+        </item>
+    </group>
 
 </menu>

@@ -38,14 +38,14 @@ public class MainActivity extends AppCompatActivity  {
     private ActionBarDrawerToggle toggle;
     private FirebaseAuth mAuth;
     AlertDialog alertDialog;
-
-    private boolean isFirstTime;
-    private ImageButton our_work;
+     private boolean isFirstTime;
+   private ImageButton our_work;
 
 
     private ImageButton donate, help, volunteer, ourWork;
     TextView Help, Our_Work, Volunteers, More, Our_Helpers, Donate;
     ActionBar actionBar;
+
 
 
     @SuppressLint("WrongConstant")
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         actionBar = this.getActionBar();
-        getSupportActionBar().setElevation(0);
+        Objects.requireNonNull(getSupportActionBar()).setElevation(0);
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.abs_layout);
 
@@ -66,8 +66,6 @@ public class MainActivity extends AppCompatActivity  {
         volunteer = findViewById(R.id.volunteer);
         ourWork = findViewById(R.id.ourWork);
 
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(R.layout.abs_layout);
         Help = findViewById(R.id.Help);
         Our_Work = findViewById(R.id.Our_Work);
         Volunteers = findViewById(R.id.Volunteers);
@@ -120,25 +118,18 @@ public class MainActivity extends AppCompatActivity  {
 
         slideModels.add(new SlideModel(R.drawable.d2));
         imageslider.setImageList(slideModels, true);
-        drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
-        toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
-        toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
-        drawerLayout.addDrawerListener(toggle);
-        toggle.syncState();
+       getactionbarnow();
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        navigationView = (NavigationView) findViewById(R.id.n1);
+        navigationView = findViewById(R.id.n1);
 
 
-        View header = navigationView.getHeaderView(0);
+        //View header = navigationView.getHeaderView(0);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
  
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
 
         isFirstTime = prefs.getBoolean("isFirstTime", true);
@@ -187,6 +178,14 @@ public class MainActivity extends AppCompatActivity  {
 
     }
 
+    private void getactionbarnow() {
+        drawerLayout = findViewById(R.id.drawer);
+        toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
+        toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+    }
+
 
     public void onFirst() {
 
@@ -199,14 +198,14 @@ public class MainActivity extends AppCompatActivity  {
                 .setTitle("Terms and Conditions")
                 .setMessage("T&C")
                 .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
-                    @Override
+                    //@Override
                     public void onClick(DialogInterface dialog, int which) {
                         finish();
                         System.exit(0);
                     }
                 })
                 .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
-                    @Override
+                    //@Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
                         gotoLoginActivity();

@@ -21,7 +21,9 @@
         android:roundIcon="@drawable/logoyogdaan"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PaymentSuggestion"></activity>
+        <activity android:name=".PaymentSuggestion">
+
+        </activity>
         <activity android:name=".Statuspage" />
         <activity android:name=".PaymentActivity" />
         <activity android:name=".DonateActivity" />
@@ -31,16 +33,22 @@
             android:name=".SplashScreen"
             android:configChanges="orientation|keyboardHidden"
 
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+        </activity>
 
 
 
 
         <activity android:name=".BlogActivity" />
-        <activity android:name=".Introduction_Activity"></activity>
+        <activity android:name=".Introduction_Activity">
+
+        </activity>
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+        </activity>
         <activity android:name=".MainActivity">
 
             <intent-filter>
@@ -50,7 +58,9 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".HelpPage" ></activity>
+        <activity android:name=".HelpPage" >
+
+        </activity>
 
 
         <activity android:name=".OtpActivity" />

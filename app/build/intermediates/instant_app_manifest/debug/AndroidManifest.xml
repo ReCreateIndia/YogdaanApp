@@ -34,7 +34,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="recreate.india.yogdaan.PaymentSuggestion" />
+        <activity android:name="recreate.india.yogdaan.PaymentSuggestion" >
+        </activity>
         <activity android:name="recreate.india.yogdaan.Statuspage" />
         <activity android:name="recreate.india.yogdaan.PaymentActivity" />
         <activity android:name="recreate.india.yogdaan.DonateActivity" />
@@ -43,12 +44,15 @@
         <activity
             android:name="recreate.india.yogdaan.SplashScreen"
             android:configChanges="orientation|keyboardHidden"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+        </activity>
         <activity android:name="recreate.india.yogdaan.BlogActivity" />
-        <activity android:name="recreate.india.yogdaan.Introduction_Activity" />
+        <activity android:name="recreate.india.yogdaan.Introduction_Activity" >
+        </activity>
         <activity
             android:name="recreate.india.yogdaan.LoginActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+        </activity>
         <activity android:name="recreate.india.yogdaan.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -56,7 +60,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="recreate.india.yogdaan.HelpPage" />
+        <activity android:name="recreate.india.yogdaan.HelpPage" >
+        </activity>
         <activity android:name="recreate.india.yogdaan.OtpActivity" />
 
         <meta-data
