@@ -6,6 +6,13 @@ public class OurWorkModel {
    String image;
    String title;
 
+    public OurWorkModel(String body, String created, String image, String title) {
+        this.body = body;
+        this.created = created;
+        this.image = image;
+        this.title = title;
+    }
+
     public String getBody() {
         return body;
     }
@@ -35,13 +42,6 @@ public class OurWorkModel {
     }
 
     public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public OurWorkModel(String body, String created, String image, String title) {
-        this.body = body;
-        this.created = created;
-        this.image = image;
         this.title = title;
     }
 

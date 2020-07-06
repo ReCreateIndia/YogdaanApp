@@ -8,6 +8,15 @@ public class NgoModel {
     String  Userid;
     String Work;
 
+    public NgoModel(String city, String name, String number, String state, String userid, String work) {
+        City = city;
+        Name = name;
+        Number = number;
+        State = state;
+        Userid = userid;
+        Work = work;
+    }
+
     public String getCity() {
         return City;
     }
@@ -53,15 +62,6 @@ public class NgoModel {
     }
 
     public void setWork(String work) {
-        Work = work;
-    }
-
-    public NgoModel(String city, String name, String number, String state, String userid, String work) {
-        City = city;
-        Name = name;
-        Number = number;
-        State = state;
-        Userid = userid;
         Work = work;
     }
 

@@ -2,38 +2,38 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string name="Add_Some_Description">कुछ विवरण जोड़ें</string>
     <string name="Address">पता</string>
-    <string name="Agriculture">Agriculture</string>
+    <string name="Agriculture">कृषि</string>
     <string name="Amount">रकम</string>
-    <string name="Dalitup">Dalit Upliftment</string>
+    <string name="Dalitup">दलित उत्थान</string>
     <string name="Date_Of_Birth">जन्म की तारीख</string>
     <string name="Description">विवरण</string>
-    <string name="Diffrentabledperson">Differently abled Person</string>
+    <string name="Diffrentabledperson">अपंग</string>
     <string name="Donate">दान</string>
     <string name="Donate_Now">अभी दान कीजिए</string>
-    <string name="Education">Education</string>
-    <string name="Egovernance">E-governance</string>
+    <string name="Education">शिक्षा</string>
+    <string name="Egovernance">ई-शासन</string>
     <string name="Enter_OTP">OTP दर्ज करें</string>
-    <string name="Food">Food</string>
+    <string name="Food">खाना</string>
     <string name="Generate_OTP">ओटीपी जनरेट करें</string>
-    <string name="Housing">Housing</string>
-    <string name="Humanrights">Human Rights</string>
-    <string name="Informationtech">Information Technology</string>
-    <string name="Marriageofdeprivedgirls">Marriage of deprived girls</string>
-    <string name="Medical_faciilities">Medical faciltites</string>
+    <string name="Housing">आवास</string>
+    <string name="Humanrights">मानवाधिकार</string>
+    <string name="Informationtech">सूचान प्रौद्योगिकी</string>
+    <string name="Marriageofdeprivedgirls">वंचित लड़कियों की शादी</string>
+    <string name="Medical_faciilities">चिकित्सा संकाय</string>
     <string name="More">अधिक</string>
     <string name="Name">नाम</string>
-    <string name="NeedMoney">Need Money</string>
-    <string name="Need_blood">Need Blood</string>
+    <string name="NeedMoney">रुपये कि आवश्यकता</string>
+    <string name="Need_blood">खून चाहिए</string>
     <string name="Net_Credit">नेट क्रेडिट</string>
     <string name="Net_Value">कुल कीमत</string>
     <string name="Occupation">व्यवसाय</string>
-    <string name="Oldpeople">Old people</string>
+    <string name="Oldpeople">बुज़ुर्ग लोग</string>
     <string name="Our_Helpers">हमारे सहायक</string>
     <string name="Our_Work">हमारा काम</string>
     <string name="Please_Enter_Your_Phone_Number_For_Verification">कृपया सत्यापन के लिए अपना फ़ोन नंबर दर्ज करें</string>
     <string name="Resend_OTP">OTP पुनः भेजें</string>
     <string name="Select_Problem">समस्या का चयन करें</string>
-    <string name="Select_problem">Select problem</string>
+    <string name="Select_problem">समस्या का चयन करें</string>
     <string name="Submit">जमा करना</string>
     <string name="Type_Of_Work">काम के प्रकार</string>
     <string name="Verify_OTP">OTP को सत्यापित करें</string>
@@ -69,16 +69,17 @@
     <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"इससे शेयर करें:"</string>
     <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> से शेयर करें"</string>
     <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"छोटा करें"</string>
-    <string name="animalhusbandry">Animals Husbandry,Dairying,Fisheries</string>
+    <string name="animalhusbandry">पशुपालन, डेयरी, मत्स्य पालन</string>
     <string name="app_name">Yogdaan</string>
-    <string name="artandculture"><![CDATA[Art & culture]]></string>
-    <string name="awarenessofinsurance">Awareness of Insurance</string>
-    <string name="biotechnology">Biotechnology</string>
+    <string name="artandculture">कला और संस्कृति</string>
+    <string name="awarenessofinsurance">बीमा के बारे में जागरूकता</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-8657920857471834/6724926610</string>
+    <string name="biotechnology">जैव प्रौद्योगिकी</string>
     <string name="books_money">किताबें पैसा</string>
-    <string name="childdevelopment">Child Development</string>
-    <string name="civicissues">Civic issues</string>
+    <string name="childdevelopment">बाल विकास</string>
+    <string name="civicissues">नागरिक मुद्दों</string>
     <string name="close">बंद करे</string>
-    <string name="clothing">clothing</string>
+    <string name="clothing">कपड़े</string>
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"चालू करें"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"जब तक आप Google Play सेवाएं चालू नहीं करते, <ns1:g id="APP_NAME">%1$s</ns1:g> काम नहीं करेगा."</string>
     <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google Play सेवाएं चालू करें"</string>
@@ -97,46 +98,47 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"फ़ोन पर खोलें"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"साइन इन करें"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Google के ज़रिए साइन इन करें"</string>
-    <string name="communitydevelopment">Community Development</string>
-    <string name="consumerrights">Consumer Rights</string>
-    <string name="cooperativeandresourcebuilding">cooperative and Resource Building</string>
-    <string name="disastermanagement">Disaster Management</string>
+    <string name="communitydevelopment">सामुदायिक विकास</string>
+    <string name="consumerrights">उपभोक्ता अधिकार</string>
+    <string name="cooperativeandresourcebuilding">सहकारी और संसाधन भवन</string>
+    <string name="disastermanagement">आपदा प्रबंधन</string>
     <string name="donate_by_watching_ads">विज्ञापन देखकर दान करें</string>
     <string name="donate_money">पैसे दान करो</string>
-    <string name="drinkingwater">Drinking Water</string>
-    <string name="eleraning">E-learning</string>
+    <string name="drinkingwater">पीने का पानी</string>
+    <string name="eleraning">ई-लर्निंग</string>
     <string name="enter_amount">राशी डालें</string>
     <string name="enter_information">जानकारी दर्ज करें</string>
-    <string name="enterpreneurship">Enterpreneurship Community</string>
-    <string name="environmentandforests">Environment and Forests</string>
+    <string name="enterpreneurship">एंटरप्रेन्योरशिप समुदाय</string>
+    <string name="environmentandforests">पर्यावरण और वन</string>
     <string name="food_money">भोजन का पैसा</string>
-    <string name="foodprocessing">Food Processing</string>
+    <string name="foodprocessing">खाद्य प्रसंस्करण</string>
     <string name="get_current_location">वर्तमान स्थान प्राप्त करें</string>
-    <string name="healthandfamilywelfare">Health And Family Welfare</string>
-    <string name="hiv">HIV/Aids</string>
-    <string name="humanwelfare">human Welfare</string>
-    <string name="labourandemployment">Labour and Employment</string>
-    <string name="landresource">Land Resource</string>
-    <string name="landresuorce">Land Resource</string>
-    <string name="legalawareness">Legal Awareness and AID</string>
-    <string name="micro">Micro Small and Minor Enterprises</string>
-    <string name="microfinnce">Micro Finance (SHGs)</string>
-    <string name="minorityissues">Minority issues</string>
+    <string name="healthandfamilywelfare">स्वास्थ्य और परिवार कल्याण</string>
+    <string name="hiv">एचआईवी / एड्स</string>
+    <string name="humanwelfare">मानव कल्याण</string>
+    <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-8657920857471834/7271721521</string>
+    <string name="labourandemployment">श्रम और रोजगार</string>
+    <string name="landresource">भूमि संसाधन</string>
+    <string name="landresuorce">भूमि संसाधन</string>
+    <string name="legalawareness">कानूनी जागरूकता और एआईडी</string>
+    <string name="micro">सूक्ष्म लघु और लघु उद्यम</string>
+    <string name="microfinnce">सूक्ष्म वित्त (SHG)</string>
+    <string name="minorityissues">अल्पसंख्यक मुद्दे</string>
     <string name="money_directly">पैसा सीधा</string>
     <string name="need_help">मदद की ज़रूरत है</string>
     <string name="need_help_for_others">दूसरों के लिए मदद चाहिए</string>
     <string name="need_help_for_yourself">अपने लिए मदद चाहिए</string>
-    <string name="newrenwavle">New and Renewable Energy</string>
+    <string name="newrenwavle">नई और नवीकरणीय ऊर्जा</string>
     <string name="next">आगे</string>
     <string name="nutition">Nutrition</string>
     <string name="open">Open</string>
     <string name="or_give_address_below">या नीचे पता दें</string>
-    <string name="panchaytiraj">Panchayati Raj</string>
+    <string name="panchaytiraj">पंचायती राज</string>
     <string name="phone_number">फ़ोन नंबर</string>
     <string name="please_add_any_government_id_proof_like_aadhar_card_pan_card_voter_id_driving_liscence_rashan_card">कृपया आधार कार्ड, पैन कार्ड, वोटर आईडी, ड्राइविंग लचक, राशन कार्ड जैसे कोई भी सरकारी आईडी प्रूफ जोड़ें</string>
-    <string name="prisionerissues">Prisioner\'s issues</string>
-    <string name="righttoinformationandadvoccay">Right to Information and Advocacy</string>
-    <string name="ruraldevelopment"><![CDATA[Rural Development & Poverty Alleviation]]></string>
+    <string name="prisionerissues">प्रिजनर के मुद्दे</string>
+    <string name="righttoinformationandadvoccay">सूचना का अधिकार और वकालत</string>
+    <string name="ruraldevelopment">ग्रामीण विकास और गरीबी उन्मूलन</string>
     <string msgid="368094699078615544" name="s1">"इमेज सेव करें"</string>
     <string msgid="4550830452390689489" name="s2">"विज्ञापन को तस्वीर गैलरी में इमेज सेव करने का अनुमति देना चाहते हैं?"</string>
     <string msgid="2435407834265420668" name="s3">"मंज़ूरी दें"</string>
@@ -144,28 +146,28 @@
     <string msgid="1566682516266724847" name="s5">"कैलेंडर इवेंट बनाएं"</string>
     <string msgid="5996672174517137271" name="s6">"विज्ञापन को कैलेंडर इवेंट बनाने दें?"</string>
     <string msgid="7163549807207034258" name="s7">"जाँच विज्ञापन"</string>
-    <string name="satate">State budget analysis in perspective of poor</string>
-    <string name="scienceandtechnology">Science and Technology</string>
-    <string name="scientistsandindustrialresaerch">Scientific and Industrial Research</string>
+    <string name="satate">गरीबों के परिप्रेक्ष्य में राज्य का बजट विश्लेषण</string>
+    <string name="scienceandtechnology">विज्ञान और तकनीक</string>
+    <string name="scientistsandindustrialresaerch">वैज्ञानिक और औद्योगिक अनुसंधान</string>
     <string msgid="730395136688082741" name="search_menu_title">"खोजें"</string>
     <string name="select_the_money_range">मनी रेंज का चयन करें</string>
     <string name="select_type_of_help">मदद के प्रकार का चयन करें:</string>
-    <string name="socialdeveopment">Social Development</string>
-    <string name="sports">Sports</string>
+    <string name="socialdeveopment">सामाजिक विकास</string>
+    <string name="sports">खेल</string>
     <string name="stationary_money">स्टेशनरी मनी</string>
     <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="submitted_sucessfully">प्रस्तुत किया गया</string>
-    <string name="sustainabledevelopment">Sustainable Development</string>
+    <string name="sustainabledevelopment">सतत विकास</string>
     <string name="thankyou_for_putting_your_request_on_our_app">हमारे app पर आपके अनुरोध को डालने के लिए धन्यवाद</string>
     <string name="the_best_way_to_persue_happiness_is_to_help_others">खुशी मनाने का सबसे अच्छा तरीका है दूसरों की मदद करना!</string>
     <string name="there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out">हर किसी के लिए एक मुफ्त मंच है और हमेशा समस्या का चयन करना होगा और हम इसे हल करने के लिए पूरी कोशिश करेंगे</string>
-    <string name="tourism">Tourism</string>
-    <string name="tribalaffairs">Tribal affairs</string>
-    <string name="urbandevelopment"><![CDATA[Urban Development & Poverty Alleviation]]></string>
+    <string name="tourism">पर्यटन</string>
+    <string name="tribalaffairs">जनजातीय मामले</string>
+    <string name="urbandevelopment">शहरी विकास और गरीबी उन्मूलन</string>
     <string name="use_camera">कैमरे का उपयोग करें</string>
     <string name="username">उपयोगकर्ता नाम</string>
-    <string name="vocationaltraining">Vocational Training</string>
-    <string name="waterandsaniatation">\"Water and Sanitation \"</string>
-    <string name="waterresuorce">Water resource</string>
-    <string name="youthaffairs">Youth Affairs</string>
+    <string name="vocationaltraining">व्यावसायिक प्रशिक्षण</string>
+    <string name="waterandsaniatation">पानी और सफ़ाई व्यवस्था</string>
+    <string name="waterresuorce">जल स्रोत</string>
+    <string name="youthaffairs">युवा मामले</string>
 </resources>
