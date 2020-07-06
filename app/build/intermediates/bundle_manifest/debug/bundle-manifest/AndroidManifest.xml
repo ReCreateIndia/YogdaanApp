@@ -37,7 +37,9 @@
         <activity android:name="recreate.india.yogdaan.Statuspage" />
         <activity android:name="recreate.india.yogdaan.PaymentActivity" />
         <activity android:name="recreate.india.yogdaan.DonateActivity" />
-        <activity android:name="recreate.india.yogdaan.Volunteer" >
+        <activity
+            android:name="recreate.india.yogdaan.Volunteer"
+            android:parentActivityName="recreate.india.yogdaan.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

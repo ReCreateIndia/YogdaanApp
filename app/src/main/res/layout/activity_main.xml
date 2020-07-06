@@ -80,6 +80,7 @@
                     android:orientation="horizontal"
                     android:weightSum="3"
 
+
                     >
 
                     <LinearLayout
@@ -87,17 +88,14 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical"
+                        android:gravity="center"
                         >
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="77dp"
-                            android:layout_gravity="center"
-                            >
+
 
                             <ImageButton
                                 android:id="@+id/help"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
 
 
                                 android:background="@drawable/heelp"
@@ -107,7 +105,7 @@
                                 android:elevation="7dp"
 
                                 />
-                        </LinearLayout>
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -125,18 +123,14 @@
                         android:layout_width="80dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:layout_marginStart="40dp"
+                        android:layout_marginStart="30dp"
                         android:orientation="vertical"
-                        >
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="77dp"
-                            android:layout_gravity="center"
-                            >
+                        android:gravity="center"                        >
+
                             <ImageButton
                                 android:id="@+id/donate"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
 
                                 android:background="@drawable/donateee"
                                 android:scaleType="centerCrop"
@@ -146,7 +140,7 @@
                                 android:elevation="10dp"
 
                                 />
-                        </LinearLayout>
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -162,21 +156,18 @@
 
                     <LinearLayout
                         android:layout_width="80dp"
-                        android:layout_marginStart="40dp"
+                        android:layout_marginStart="30dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical"
+                        android:gravity="center"
                         >
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            >
+
 
                             <ImageButton
                                 android:id="@+id/ourWork"
-                                android:layout_width="wrap_content"
-                                android:layout_height="78dp"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
 
 
                                 android:background="@drawable/ourworkk"
@@ -188,7 +179,7 @@
 
 
                                 />
-                        </LinearLayout>
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -221,6 +212,7 @@
                     android:orientation="horizontal"
                     android:weightSum="3"
 
+
                     >
                     <LinearLayout
                         android:layout_width="80dp"
@@ -228,15 +220,12 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical"
-                        > <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="77dp"
-                        android:layout_gravity="center"
+                        android:gravity="center"
                         >
                         <ImageButton
                             android:id="@+id/ourHelpers"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
 
                             android:background="@drawable/ourhelperss"
                             android:scaleType="centerCrop"
@@ -245,7 +234,7 @@
                             android:elevation="7dp"
 
                             />
-                    </LinearLayout>
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -260,20 +249,17 @@
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="80dp"
-                        android:layout_marginStart="40dp"
+                        android:layout_marginStart="30dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="vertical"
                         >
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="77dp"
-                            android:layout_gravity="center"
-                            >
+
                             <ImageButton
                                 android:id="@+id/volunteer"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
 
                                 android:background="@drawable/volunt"
                                 android:scaleType="centerCrop"
@@ -282,7 +268,7 @@
                                 android:elevation="7dp"
 
                                 />
-                        </LinearLayout>
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -297,31 +283,28 @@
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="80dp"
-                        android:layout_marginStart="40dp"
+                        android:layout_marginStart="30dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="vertical"
                         >
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="77dp"
-                            android:layout_gravity="center"
-                            >
+
 
 
                             <ImageButton
                                 android:id="@+id/more"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
 
 
-                                android:scaleType="centerCrop"
+
 
                                 android:background="@drawable/more"
                                 android:elevation="7dp"
 
                                 />
-                        </LinearLayout>
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
