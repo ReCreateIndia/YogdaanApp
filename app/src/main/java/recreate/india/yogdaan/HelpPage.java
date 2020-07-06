@@ -54,6 +54,7 @@ import com.google.firebase.firestore.GeoPoint;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.google.rpc.Help;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -97,6 +98,7 @@ public class HelpPage extends AppCompatActivity {
     private ImageView idproof;
     List<Address> addresses;
     private ActionBar actionBar;
+    Map<String, Object> map = new HashMap<>();
 
 
     @SuppressLint("WrongConstant")
@@ -118,6 +120,7 @@ public class HelpPage extends AppCompatActivity {
         ocupation=findViewById(R.id.occupation);
         adress=findViewById(R.id.address);
         TypeOfHelp=findViewById(R.id.TypeOfHelp);
+        getLocation();
 
 
         takeimage = findViewById(R.id.cameraIntent);
@@ -154,6 +157,9 @@ public class HelpPage extends AppCompatActivity {
         submit_request.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(uri==null){
+                    Toast.makeText(HelpPage.this,"no",Toast.LENGTH_SHORT).show();
+                }
                 StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("images");
                 final StorageReference imageFilePath = storageReference.child(uri.getLastPathSegment());
                 imageFilePath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
@@ -163,6 +169,12 @@ public class HelpPage extends AppCompatActivity {
                             @Override
                             public void onSuccess(Uri uri) {
                                 imageDownlaodLink = uri.toString();
+                                map.put("image",imageDownlaodLink);
+                            }
+                        }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+                                Toast.makeText(HelpPage.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                             }
                         });
 
@@ -174,9 +186,6 @@ public class HelpPage extends AppCompatActivity {
                         Toast.makeText(HelpPage.this,"error",Toast.LENGTH_LONG).show();
                     }
                 });
-                if(imageDownlaodLink==null){
-                    Toast.makeText(HelpPage.this,"nhi hua",Toast.LENGTH_LONG).show();
-                }
                 Geocoder geocoder;
                 geocoder = new Geocoder(HelpPage.this, Locale.getDefault());
                 try {
@@ -195,7 +204,6 @@ public class HelpPage extends AppCompatActivity {
 
                 ArrayList<String>NgoInterested=new ArrayList<>();
                 ArrayList<String>NgoNotInterested=new ArrayList<>();
-                Map<String, Object> map = new HashMap<>();
                 map.put("name", name.getText().toString());
                 map.put("lat", lat);
                 map.put("lng", lng);
