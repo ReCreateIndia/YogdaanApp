@@ -1529,6 +1529,7 @@ drawable slide2dots
 drawable slide2image
 drawable sliderback
 drawable spinnerbord
+drawable ss
 drawable suces
 drawable tag
 drawable test_custom_background
