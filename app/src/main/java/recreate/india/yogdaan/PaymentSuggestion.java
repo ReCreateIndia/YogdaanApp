@@ -33,9 +33,9 @@ public class PaymentSuggestion extends AppCompatActivity {
         food=findViewById(R.id.food_money);
         tt1S=findViewById(R.id.textView13S);
         tt2S=findViewById(R.id.stationarymoney);
-        tt3S=findViewById(R.id.food);
-        tt4S=findViewById(R.id.money);
-        tt5S=findViewById(R.id.bookmoney);
+        tt4S=findViewById(R.id.food);
+        tt5S=findViewById(R.id.money);
+        tt3S=findViewById(R.id.bookmoney);
         stationary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -74,7 +74,7 @@
                 android:id="@+id/helpquote"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="The best way to persue happiness is to help others"
+                android:text="@string/we_can_t_help_everyone_but_everyone_can_help_someone"
                 android:textColor="#000000"
                 android:textSize="20sp"
                 android:layout_marginRight="20dp"

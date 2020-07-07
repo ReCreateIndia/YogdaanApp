@@ -51,31 +51,38 @@
 
     //listItemSingle.xml
     <string name="Description">ਵੇਰਵਾ</string>
-    <string name="there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out">There is a free platform for everyone and always will be just select the problem and we will do or best to sort it out</string>
-    <string name="need_help_for_others">Need help for others</string>
-    <string name="need_help_for_yourself">Need Help for yourself</string>
-    <string name="enter_information">Enter Information</string>
-    <string name="get_current_location">Get Current Location</string>
-    <string name="or_give_address_below">Or give address below</string>
-    <string name="please_add_any_government_id_proof_like_aadhar_card_pan_card_voter_id_driving_liscence_rashan_card">Please add any government id proof like aadhar card,pan card,voter id,driving liscence,rashan card.</string>
-    <string name="use_camera">Use camera</string>
-    <string name="select_type_of_help">Select Type Of Help :</string>
-    <string name="the_best_way_to_persue_happiness_is_to_help_others">The best way to persue happiness is to help others!</string>
-    <string name="need_help">Need Help</string>
-    <string name="donate_money">Donate Money</string>
-    <string name="donate_by_watching_ads">Donate by watching ads</string>
-    <string name="select_the_money_range">Select the Money Range</string>
-    <string name="stationary_money">Stationary Money</string>
-    <string name="books_money">Books Money</string>
-    <string name="food_money">Food Money</string>
-    <string name="money_directly">Money Directly</string>
-    <string name="enter_amount">Enter Amount</string>
-    <string name="phone_number">Phone Number</string>
-    <string name="next">Next</string>
-    <string name="username">username</string>
-    <string name="a_step_towards_humanity">A step towards Humanity...</string>
-    <string name="submitted_sucessfully">Submitted Sucessfully</string>
-    <string name="thankyou_for_putting_your_request_on_our_app">Thankyou for putting your request on our app.</string>
+    <string name="there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out">ਇੱਥੇ ਹਰੇਕ ਲਈ ਇੱਕ ਮੁਫਤ ਪਲੇਟਫਾਰਮ ਹੈ ਅਤੇ ਹਮੇਸ਼ਾਂ ਸਮੱਸਿਆ ਦੀ ਚੋਣ ਕਰੋਗੇ ਅਤੇ ਅਸੀਂ ਇਸਨੂੰ ਸੁਲਝਾਉਣ ਲਈ ਵਧੀਆ ਜਾਂ ਵਧੀਆ ਕਰਾਂਗੇ</string>
+    <string name="need_help_for_others">ਦੂਜਿਆਂ ਲਈ ਮਦਦ ਚਾਹੀਦੀ ਹੈ</string>
+    <string name="need_help_for_yourself">ਆਪਣੇ ਲਈ ਮਦਦ ਦੀ ਲੋੜ ਹੈ</string>
+    <string name="enter_information">ਜਾਣਕਾਰੀ ਦਰਜ ਕਰੋ</string>
+    <string name="get_current_location">ਮੌਜੂਦਾ ਸਥਿਤੀ ਪ੍ਰਾਪਤ ਕਰੋ</string>
+    <string name="or_give_address_below">ਜਾਂ ਹੇਠਾਂ ਪਤਾ ਦਿਓ</string>
+    <string name="please_add_any_government_id_proof_like_aadhar_card_pan_card_voter_id_driving_liscence_rashan_card">ਕਿਰਪਾ ਕਰਕੇ ਕੋਈ ਵੀ ਸਰਕਾਰੀ ਆਈਡੀ ਪ੍ਰਮਾਣ ਸ਼ਾਮਲ ਕਰੋ ਜਿਵੇਂ ਆਧਾਰ ਕਾਰਡ, ਪੈਨ ਕਾਰਡ, ਵੋਟਰ ਆਈਡੀ, ਡ੍ਰਾਇਵਿੰਗ ਲਿਸੰਸ, ਰਸ਼ਨ ਕਾਰਡ.</string>
+    <string name="use_camera">ਕੈਮਰਾ ਵਰਤੋ</string>
+    <string name="select_type_of_help">ਮਦਦ ਦੀ ਕਿਸਮ ਚੁਣੋ:</string>
+    <string name="the_best_way_to_persue_happiness_is_to_help_others">ਖੁਸ਼ੀਆਂ ਬਣਾਈ ਰੱਖਣ ਦਾ ਸਭ ਤੋਂ ਵਧੀਆ ਤਰੀਕਾ ਹੈ ਦੂਜਿਆਂ ਦੀ ਮਦਦ ਕਰਨਾ!</string>
+    <string name="need_help">ਮਦਦ ਦੀ ਲੋੜ ਹੈ</string>
+    <string name="donate_money">ਪੈਸੇ ਦਾਨ ਕਰੋ</string>
+    <string name="donate_by_watching_ads">ਇਸ਼ਤਿਹਾਰ ਦੇਖ ਕੇ ਦਾਨ ਕਰੋ</string>
+    <string name="select_the_money_range">
+ਮਨੀ ਰੇਂਜ ਨੂੰ ਚੁਣੋ</string>
+    <string name="stationary_money">ਸਟੇਸ਼ਨਰੀ ਪੈਸਾ</string>
+    <string name="books_money">ਕਿਤਾਬਾਂ ਪੈਸੇ</string>
+    <string name="food_money">
+ਭੋਜਨ ਪੈਸੇ</string>
+    <string name="money_directly">
+ਸਿੱਧੇ ਪੈਸੇ</string>
+    <string name="enter_amount">ਰਕਮ ਦਾਖਲ ਕਰੋ</string>
+    <string name="phone_number">ਫੋਨ ਨੰਬਰ</string>
+    <string name="next">
+ਅਗਲਾ</string>
+    <string name="username">
+ਉਪਭੋਗਤਾ ਨਾਮ</string>
+    <string name="a_step_towards_humanity">
+ਮਨੁੱਖਤਾ ਵੱਲ ਇੱਕ ਕਦਮ ...</string>
+    <string name="submitted_sucessfully">
+ਪੇਸ਼ ਕੀਤਾ ਗਿਆ</string>
+    <string name="thankyou_for_putting_your_request_on_our_app">ਸਾਡੀ ਐਪ ਤੇ ਤੁਹਾਡੀ ਬੇਨਤੀ ਪਾਉਣ ਲਈ ਧੰਨਵਾਦ.</string>
     <string name="Select_problem">Select problem</string>
     <string name="Education">Education</string>
     <string name="Food">Food</string>
@@ -136,4 +143,8 @@
     <string name="Marriageofdeprivedgirls">Marriage of deprived girls</string>
     <string name="sustainabledevelopment">Sustainable Development</string>
     <string name="satate">State budget analysis in perspective of poor</string>
+    <string name="we_can_t_help_everyone_but_everyone_can_help_someone">
+ਅਸੀਂ ਹਰ ਕਿਸੇ ਦੀ ਮਦਦ ਨਹੀਂ ਕਰ ਸਕਦੇ ਪਰ ... ਹਰ ਕੋਈ ਕਿਸੇ ਦੀ ਮਦਦ ਕਰ ਸਕਦਾ ਹੈ</string>
+    <string name="if_the_money_we_donate_helps_one_child_or_can_ease_the_pain_of_one_parent_those_funds_are_well_spent">\'
+ਜੇ ਸਾਡੇ ਦੁਆਰਾ ਦਾਨ ਕੀਤਾ ਗਿਆ ਪੈਸਾ ਇਕ ਬੱਚੇ ਦੀ ਮਦਦ ਕਰਦਾ ਹੈ ਜਾਂ ਇਕ ਮਾਂ-ਪਿਓ ਦੇ ਦਰਦ ਨੂੰ ਘੱਟ ਕਰ ਸਕਦਾ ਹੈ, ਉਹ ਫੰਡ ਵਧੀਆ ਖਰਚ ਹੋਏ ਹਨ.\'</string>
 </resources>
