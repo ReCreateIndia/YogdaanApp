@@ -34,7 +34,7 @@ public class DonateActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donate);
-        MobileAds.initialize(this,"ca-app-pub-8657920857471834~5603416632");
+        MobileAds.initialize(this,"ca-app-pub-8657920857471834~5124140148");
         actionBar = this.getActionBar();
         getSupportActionBar().setElevation(0);
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
