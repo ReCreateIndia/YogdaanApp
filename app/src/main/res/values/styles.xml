@@ -3,13 +3,12 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
 
-        <item name="colorPrimary">#ffffff</item>
+        <item name="colorPrimary">@color/green</item>
         <item name="colorPrimaryDark">#000000</item>
         <item name="colorAccent">#000000</item>
         <item name="colorControlNormal">#000000</item>
-        <item name="popupMenuBackground">@android:color/black</item>
         <item name="android:windowContentOverlay">@null</item>
-        <item name="android:actionOverflowButtonStyle">@color/black</item>
+
 
     </style>
     <style name="AppTheme.ActionBar" parent="android:Widget.ActionBar">

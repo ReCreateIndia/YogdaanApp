@@ -311,7 +311,7 @@
     <color name="error_color_material_light">#ff5722</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
-    <color name="green">#013220</color>
+    <color name="green">#006667</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="introslidertext">#1e1c61</color>
@@ -934,7 +934,7 @@
     <string name="hiv">HIV/Aids</string>
     <string name="humanwelfare">human Welfare</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
-    <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-8657920857471834/7271721521</string>
+    <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-8657920857471834/9993323448</string>
     <string name="labourandemployment">Labour and Employment</string>
     <string name="landresource">Land Resource</string>
     <string name="landresuorce">Land Resource</string>
@@ -1044,13 +1044,12 @@
   </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
 
-        <item name="colorPrimary">#ffffff</item>
+        <item name="colorPrimary">@color/green</item>
         <item name="colorPrimaryDark">#000000</item>
         <item name="colorAccent">#000000</item>
         <item name="colorControlNormal">#000000</item>
-        <item name="popupMenuBackground">@android:color/black</item>
         <item name="android:windowContentOverlay">@null</item>
-        <item name="android:actionOverflowButtonStyle">@color/black</item>
+
 
     </style>
     <style name="AppTheme.ActionBar" parent="android:Widget.ActionBar">

@@ -16,7 +16,7 @@ import io.paperdb.Paper;
 public class Introduction_Activity extends AppCompatActivity {
     private ViewPager viewPager;
     private Intro_Adapter intro_adapter;
-    private int[] layouts = {R.layout.introslidelang,R.layout.introslide1,R.layout.introslide2,R.layout.introslide3};
+    private int[] layouts = {R.layout.introslide1,R.layout.introslide2,R.layout.introslide3};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

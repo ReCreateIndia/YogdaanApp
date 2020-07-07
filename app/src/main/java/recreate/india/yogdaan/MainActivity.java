@@ -65,6 +65,13 @@ public class MainActivity extends AppCompatActivity {
         help = findViewById(R.id.help);
         volunteer = findViewById(R.id.volunteer);
         ourWork = findViewById(R.id.ourWork);
+        Help = findViewById(R.id.Help);
+        Our_Work = findViewById(R.id.Our_Work);
+        Volunteers = findViewById(R.id.Volunteers);
+        More = findViewById(R.id.More);
+        Our_Helpers = findViewById(R.id.Our_Helpers);
+        Donate = findViewById(R.id.Donate);
+
         NavigationView navigationView = findViewById(R.id.n1);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -95,12 +102,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        Help = findViewById(R.id.Help);
-        Our_Work = findViewById(R.id.Our_Work);
-        Volunteers = findViewById(R.id.Volunteers);
-        More = findViewById(R.id.More);
-        Our_Helpers = findViewById(R.id.Our_Helpers);
-        Donate = findViewById(R.id.Donate);
+
+
+
+
+
 
         donate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -149,6 +155,7 @@ public class MainActivity extends AppCompatActivity {
         imageslider.setImageList(slideModels, true);
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
+
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
         toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
         drawerLayout.addDrawerListener(toggle);
@@ -157,6 +164,10 @@ public class MainActivity extends AppCompatActivity {
 
         View header = navigationView.getHeaderView(0);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+
+
+
+
 
 
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
@@ -225,6 +236,39 @@ public class MainActivity extends AppCompatActivity {
         logIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(logIntent);
     }
+
+
+  //  @Override
+  /**  public boolean onOptionsItemSelected(@NonNull MenuItem item) {                    DONT KNOW IF THIS IS TO BE INCLUDED
+
+        if(toggle.onOptionsItemSelected(item)){
+            return true;
+        }
+        switch (item.getItemId()) {
+            case R.id.logout: mAuth.signOut(); startActivity(new Intent(MainActivity.this,LoginActivity.class));
+                break;
+//                    case R.id.z2:
+//                        Toast.makeText(MainActivity.this,"MENU 2",Toast.LENGTH_SHORT).show();
+//                        break;
+//                    case R.id.volunteer:
+//                        Toast.makeText(MainActivity.this,"MENU 3",Toast.LENGTH_SHORT).show();
+//                        break;
+//                    case R.id.z4:
+//                        Toast.makeText(MainActivity.this,"MENU 4",Toast.LENGTH_SHORT).show();
+//                        break;
+//                    case R.id.z5:
+//                        Toast.makeText(MainActivity.this,"MENU 5",Toast.LENGTH_SHORT).show();
+//                        break;
+//                    case R.id.z6:
+//                        Toast.makeText(MainActivity.this,"MENU 6",Toast.LENGTH_SHORT).show();
+//                        break;
+//                    case R.id.z7:
+//                        Toast.makeText(MainActivity.this,"MENU 7",Toast.LENGTH_SHORT).show();
+//                        break;
+
+        }
+        return super.onOptionsItemSelected(item);
+    }**/
 
 
 }

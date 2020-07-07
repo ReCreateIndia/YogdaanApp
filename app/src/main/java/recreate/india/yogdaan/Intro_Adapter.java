@@ -119,25 +119,9 @@ public class Intro_Adapter extends PagerAdapter {
 //
 //                }
 //            });
-//        }
-        if(position==0){
-            english=view.findViewById(R.id.langchangetoenglish);
-            hindi=view.findViewById(R.id.langchangetohindi);
-            english.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Paper.book().write("language","en");
-                }
-            });
-            hindi.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Paper.book().write("language","hi");
-                }
-            });
-        }
+//
 
-        if(position==3) {
+        if(position==2) {
             lgn = view.findViewById(R.id.lgn);
             lgn.setOnClickListener(new View.OnClickListener() {
                 @Override
