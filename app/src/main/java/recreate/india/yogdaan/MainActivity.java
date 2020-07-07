@@ -66,39 +66,6 @@ public class MainActivity extends AppCompatActivity {
         help = findViewById(R.id.help);
         volunteer = findViewById(R.id.volunteer);
         ourWork = findViewById(R.id.ourWork);
-        NavigationView navigationView= findViewById(R.id.n1);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.logout: mAuth.signOut(); startActivity(new Intent(MainActivity.this,LoginActivity.class));
-                        break;
-//                    case R.id.z2:
-//                        Toast.makeText(MainActivity.this,"MENU 2",Toast.LENGTH_SHORT).show();
-//                        break;
-//                    case R.id.volunteer:
-//                        Toast.makeText(MainActivity.this,"MENU 3",Toast.LENGTH_SHORT).show();
-//                        break;
-//                    case R.id.z4:
-//                        Toast.makeText(MainActivity.this,"MENU 4",Toast.LENGTH_SHORT).show();
-//                        break;
-//                    case R.id.z5:
-//                        Toast.makeText(MainActivity.this,"MENU 5",Toast.LENGTH_SHORT).show();
-//                        break;
-//                    case R.id.z6:
-//                        Toast.makeText(MainActivity.this,"MENU 6",Toast.LENGTH_SHORT).show();
-//                        break;
-//                    case R.id.z7:
-//                        Toast.makeText(MainActivity.this,"MENU 7",Toast.LENGTH_SHORT).show();
-//                        break;
-
-                }
-
-                return false;
-            }
-        });
-
-
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.abs_layout);
         Help = findViewById(R.id.Help);
@@ -155,29 +122,29 @@ public class MainActivity extends AppCompatActivity {
         imageslider.setImageList(slideModels, true);
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
-        toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
-        toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
-        drawerLayout.addDrawerListener(toggle);
-        toggle.syncState();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        View header = navigationView.getHeaderView(0);
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
+//        toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
+//        drawerLayout.addDrawerListener(toggle);
+//        toggle.syncState();
+   //     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//
+//        View header = navigationView.getHeaderView(0);
+////        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+//
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
 
-        isFirstTime = prefs.getBoolean("isFirstTime", true);
-        if (isFirstTime) {
+       isFirstTime = prefs.getBoolean("isFirstTime", true);
+       if (isFirstTime) {
             onFirst();
-        } else {
-            FirebaseUser currentUser = mAuth.getCurrentUser();
-            if (currentUser == null) {
-                gotoLoginActivity();
+       } else {
+           FirebaseUser currentUser = mAuth.getCurrentUser();
+           if (currentUser == null){
+               gotoLoginActivity();
             }
-        }
+       }
         Paper.init(this);
         String language = Paper.book().read("language");
         if (language == null)
@@ -242,12 +209,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        if(toggle.onOptionsItemSelected(item)){
-            return true;
-        }
+//        if(toggle.onOptionsItemSelected(item)){
+//            return true;
+//        }
         switch (item.getItemId()) {
-            case R.id.logout: mAuth.signOut(); startActivity(new Intent(MainActivity.this,LoginActivity.class));
-                break;
+                    case R.id.logout: mAuth.signOut(); startActivity(new Intent(MainActivity.this,LoginActivity.class));
+                        break;
 //                    case R.id.z2:
 //                        Toast.makeText(MainActivity.this,"MENU 2",Toast.LENGTH_SHORT).show();
 //                        break;
@@ -259,12 +226,6 @@ public class MainActivity extends AppCompatActivity {
 //                        break;
 //                    case R.id.z5:
 //                        Toast.makeText(MainActivity.this,"MENU 5",Toast.LENGTH_SHORT).show();
-//                        break;
-//                    case R.id.z6:
-//                        Toast.makeText(MainActivity.this,"MENU 6",Toast.LENGTH_SHORT).show();
-//                        break;
-//                    case R.id.z7:
-//                        Toast.makeText(MainActivity.this,"MENU 7",Toast.LENGTH_SHORT).show();
 //                        break;
 
         }

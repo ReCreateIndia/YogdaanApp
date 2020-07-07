@@ -112,6 +112,10 @@
         "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\loginbutton.png"
     },
     {
+        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_language.xml.flat",
+        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_language.xml"
+    },
+    {
         "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_d1.jpg.flat",
         "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable\\d1.jpg"
     },
@@ -786,10 +790,6 @@
     {
         "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_back.png.flat",
         "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\back.png"
-    },
-    {
-        "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_introslidelang.xml.flat",
-        "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\layout\\introslidelang.xml"
     },
     {
         "merged": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_baseline_keyboard_backspace_24.png.flat",

@@ -1897,6 +1897,8 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selectlanguage
+id selectlanguageasap
+id selectlinearlayout
 id send
 id shortcut
 id showCustom
@@ -2074,6 +2076,7 @@ layout activity_blog
 layout activity_donate
 layout activity_help_page
 layout activity_introduction_
+layout activity_language
 layout activity_login
 layout activity_main
 layout activity_otp
@@ -2109,7 +2112,6 @@ layout image_slider
 layout introslide1
 layout introslide2
 layout introslide3
-layout introslidelang
 layout list_item_single
 layout menu_header
 layout mtrl_alert_dialog
