@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#006766"
+    android:background="#33333e"
     tools:context=".SplashScreen"
     android:layout_gravity="center_horizontal|center_vertical"
     android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
@@ -14,7 +14,7 @@
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:src="@drawable/logoyogdaan"
+            android:src="@drawable/ss"
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

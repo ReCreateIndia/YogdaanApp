@@ -1,5 +1,6 @@
 package recreate.india.yogdaan;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -28,14 +29,19 @@ public class PaymentActivity extends AppCompatActivity {
     private EditText amount, note;
     TextView tt;
     private Button send;
-    String TAG = "main",upiVirtualID = "virensaroha123@okhdfcbank";
+    String TAG = "main",upiVirtualID = "817165728@ybl";
     final int UPI_PAYMENT = 0;
     private EditText namepay,phonenopay;
+    private ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
+        actionBar = this.getActionBar();
+        getSupportActionBar().setElevation(0);
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.abs_layout);
         Bundle bundle = getIntent().getExtras();
         String ammount  = bundle.getString("amount");
 
@@ -63,7 +69,7 @@ public class PaymentActivity extends AppCompatActivity {
 //                    Toast.makeText(PaymentActivity.this, "Note is invalid", Toast.LENGTH_SHORT).show();
 //                }
                 else {
-                    payUsingUpi("viren n" ,amount.getText().toString() );
+                    payUsingUpi("Anubhav" ,amount.getText().toString() );
 //                            note.getText().toString(),
 
                 }
@@ -91,10 +97,10 @@ public class PaymentActivity extends AppCompatActivity {
     }
 
     void payUsingUpi(String name, /*String note,*/ String amount) {
-        Log.e("main", "name " + "--up--" + "virensaroha123@okhdfcbank" + "--" + note + "--" + amount);
+        Log.e("main", "name " + "--up--" + "817165728@ybl" + "--" + note + "--" + amount);
 
         Uri uri = Uri.parse("upi://pay").buildUpon()
-                .appendQueryParameter("pa", "virensaroha123@okhdfcbank")
+                .appendQueryParameter("pa", "817165728@ybl")
                 .appendQueryParameter("pn", name)
 //                         .appendQueryParameter("mc", "your-merchant-code")
 //                         .appendQueryParameter("tr", "your-transaction-ref-id")
@@ -105,7 +111,6 @@ public class PaymentActivity extends AppCompatActivity {
                 .build();
         Intent upiPayIntent = new Intent(Intent.ACTION_VIEW);
         upiPayIntent.setData(uri);
-
         Intent chooser = Intent.createChooser(upiPayIntent, "Pay With");
 
         if (null != chooser.resolveActivity(getPackageManager())) {

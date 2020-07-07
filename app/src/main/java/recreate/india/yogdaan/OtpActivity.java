@@ -1,5 +1,6 @@
 package recreate.india.yogdaan;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -37,11 +38,16 @@ public class OtpActivity extends AppCompatActivity {
     private PhoneAuthProvider.ForceResendingToken mResendToken;
     private Button resendBtn;
     TextView otp_title,otp_desc;
+    private ActionBar actionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otp);
+        actionBar = this.getActionBar();
+        getSupportActionBar().setElevation(0);
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.abs_layout);
         otp_btn = findViewById(R.id.verify_btn);
         mPhoneNumber = getIntent().getStringExtra("phone_number");
         otp_progressbar = findViewById(R.id.otp_progress);

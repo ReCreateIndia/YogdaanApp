@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:iconTint="#000000">
         <item
             android:id="@+id/YourDonation"
             android:icon="@drawable/ic_keyboard_return_black_24dp"
@@ -34,6 +35,5 @@
             android:title="logout">
 
         </item>
-    </group>
 
 </menu>

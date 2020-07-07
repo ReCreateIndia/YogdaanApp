@@ -16,6 +16,7 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
 
 import Helper.LocaleHelper;
 import io.paperdb.Paper;
@@ -33,6 +34,7 @@ public class DonateActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donate);
+        MobileAds.initialize(this,"ca-app-pub-8657920857471834~5603416632");
         actionBar = this.getActionBar();
         getSupportActionBar().setElevation(0);
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
@@ -45,7 +47,6 @@ public class DonateActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 counter++;
-
                 loadInterstitial();
                 showInterstitial();
             }
