@@ -157,11 +157,9 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
 
         toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
-        toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
+
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
-
-
         View header = navigationView.getHeaderView(0);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
@@ -239,7 +237,7 @@ public class MainActivity extends AppCompatActivity {
 
 
   //  @Override
-  /**  public boolean onOptionsItemSelected(@NonNull MenuItem item) {                    DONT KNOW IF THIS IS TO BE INCLUDED
+   public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         if(toggle.onOptionsItemSelected(item)){
             return true;
@@ -268,7 +266,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
         return super.onOptionsItemSelected(item);
-    }**/
+    }
 
 
 }

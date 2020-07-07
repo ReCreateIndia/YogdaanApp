@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -39,11 +40,23 @@ public class OtpActivity extends AppCompatActivity {
     private Button resendBtn;
     TextView otp_title,otp_desc;
     private ActionBar actionBar;
+    private int counter;
+    private TextView timer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otp);
+        timer=findViewById(R.id.timer);
+        new CountDownTimer(30000, 1000){
+            public void onTick(long millisUntilFinished){
+                timer.setText(String.valueOf(counter));
+                counter++;
+            }
+            public  void onFinish(){
+                timer.setText("press resend otp");
+            }
+        }.start();
         actionBar = this.getActionBar();
         getSupportActionBar().setElevation(0);
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
