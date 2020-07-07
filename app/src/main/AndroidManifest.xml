@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="recreate.india.yogdaan"
-    android:versionCode="100"
-    android:versionName="2.0">
+    package="recreate.india.yogdaan">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -29,16 +27,17 @@
         <activity android:name=".PaymentActivity" />
         <activity android:name=".DonateActivity" />
         <activity android:name=".Volunteer"></activity>
-        <activity android:name=".TandC" />
         <activity
             android:name=".SplashScreen"
             android:configChanges="orientation|keyboardHidden"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".BlogActivity" />
         <activity
@@ -47,8 +46,14 @@
         <activity
             android:name=".LoginActivity"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
-        <activity android:name=".MainActivity"></activity>
         <activity android:name=".HelpPage"></activity>
+        <activity android:name=".MainActivity"
+            > <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+        </activity>
         <activity android:name=".OtpActivity" />
         <activity android:name=".OurHelpers" />
 

@@ -14,7 +14,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -27,7 +26,6 @@ import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -135,16 +133,16 @@ public class MainActivity extends AppCompatActivity {
 //        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
-
-       isFirstTime = prefs.getBoolean("isFirstTime", true);
-       if (isFirstTime) {
-            onFirst();
-       } else {
-           FirebaseUser currentUser = mAuth.getCurrentUser();
-           if (currentUser == null){
-               gotoLoginActivity();
-            }
-       }
+//
+//       isFirstTime = prefs.getBoolean("isFirstTime", true);
+//       if (isFirstTime) {
+//            onFirst();
+//       } else {
+//           FirebaseUser currentUser = mAuth.getCurrentUser();
+//           if (currentUser == null){
+//               gotoLoginActivity();
+//            }
+//       }
         Paper.init(this);
         String language = Paper.book().read("language");
         if (language == null)

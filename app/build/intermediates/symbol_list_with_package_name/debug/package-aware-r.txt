@@ -1634,7 +1634,6 @@ id async
 id auto
 id barrier
 id beginning
-id bengali
 id blocking
 id bookmoney
 id books
@@ -1726,6 +1725,7 @@ id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
+id gujarati
 id help
 id helpquote
 id hideable
@@ -1751,6 +1751,7 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id kannada
 id labeled
 id langchangetoenglish
 id langchangetohindi
@@ -1774,6 +1775,8 @@ id ll2
 id ll8
 id lll22
 id logout
+id malayalam
+id marathi
 id masked
 id media_actions
 id messag324e
@@ -1814,6 +1817,7 @@ id n1
 id name
 id namepay
 id navigation_header_container
+id nepali
 id never
 id new_desc
 id new_post
@@ -1827,6 +1831,7 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id occupation
+id odiya
 id off
 id on
 id order
@@ -1939,6 +1944,8 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id tamil
+id telgue
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id text
