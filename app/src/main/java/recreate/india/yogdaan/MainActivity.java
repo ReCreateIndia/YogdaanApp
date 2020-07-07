@@ -9,11 +9,11 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -26,6 +26,7 @@ import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,14 +65,48 @@ public class MainActivity extends AppCompatActivity {
         help = findViewById(R.id.help);
         volunteer = findViewById(R.id.volunteer);
         ourWork = findViewById(R.id.ourWork);
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
-        getSupportActionBar().setCustomView(R.layout.abs_layout);
         Help = findViewById(R.id.Help);
         Our_Work = findViewById(R.id.Our_Work);
         Volunteers = findViewById(R.id.Volunteers);
         More = findViewById(R.id.More);
         Our_Helpers = findViewById(R.id.Our_Helpers);
         Donate = findViewById(R.id.Donate);
+
+        NavigationView navigationView = findViewById(R.id.n1);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.logout:
+                        mAuth.signOut();
+                        gotoLoginActivity();
+                        break;
+                    case R.id.YourDonation:
+                        Toast.makeText(MainActivity.this, "YourDonation", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.Certificates:
+                        Toast.makeText(MainActivity.this, "Certificates", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.Status:
+                        Toast.makeText(MainActivity.this, "Status", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.selectlanguage:
+                        Toast.makeText(MainActivity.this, "selectlanguage", Toast.LENGTH_SHORT).show();
+                        break;
+
+
+                }
+
+                return false;
+            }
+        });
+
+
+
+
+
+
+
 
         donate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -120,29 +155,30 @@ public class MainActivity extends AppCompatActivity {
         imageslider.setImageList(slideModels, true);
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
-//        toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
-//        toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
-//        drawerLayout.addDrawerListener(toggle);
-//        toggle.syncState();
-   //     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//
-//        View header = navigationView.getHeaderView(0);
-////        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
-//
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        toggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
+
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+        View header = navigationView.getHeaderView(0);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+
+
+
+
+
 
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
-//
-//       isFirstTime = prefs.getBoolean("isFirstTime", true);
-//       if (isFirstTime) {
-//            onFirst();
-//       } else {
-//           FirebaseUser currentUser = mAuth.getCurrentUser();
-//           if (currentUser == null){
-//               gotoLoginActivity();
-//            }
-//       }
+
+        isFirstTime = prefs.getBoolean("isFirstTime", true);
+        if (isFirstTime) {
+            onFirst();
+        } else {
+            FirebaseUser currentUser = mAuth.getCurrentUser();
+            if (currentUser == null) {
+                gotoLoginActivity();
+            }
+        }
         Paper.init(this);
         String language = Paper.book().read("language");
         if (language == null)
@@ -157,14 +193,14 @@ public class MainActivity extends AppCompatActivity {
                 .setTitle("Terms and Conditions")
                 .setMessage("T&C")
                 .setNegativeButton("Decline", new DialogInterface.OnClickListener() {
-                    @Override
+                    //@Override
                     public void onClick(DialogInterface dialog, int which) {
                         finish();
                         System.exit(0);
                     }
                 })
                 .setPositiveButton("Accept", new DialogInterface.OnClickListener() {
-                    @Override
+                   // @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
                         gotoLoginActivity();
@@ -178,9 +214,9 @@ public class MainActivity extends AppCompatActivity {
         editor.apply();
 
 
-
     }
-    public void updateView(String lang){
+
+    public void updateView(String lang) {
         Context context = LocaleHelper.setLocale(this, lang);
         Resources resources = context.getResources();
 
@@ -198,21 +234,17 @@ public class MainActivity extends AppCompatActivity {
         logIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(logIntent);
     }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.nav_menu,menu);
-        return super.onCreateOptionsMenu(menu);
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-//        if(toggle.onOptionsItemSelected(item)){
-//            return true;
-//        }
+  //  @Override
+   public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        if(toggle.onOptionsItemSelected(item)){
+            return true;
+        }
         switch (item.getItemId()) {
-                    case R.id.logout: mAuth.signOut(); startActivity(new Intent(MainActivity.this,LoginActivity.class));
-                        break;
+            case R.id.logout: mAuth.signOut(); startActivity(new Intent(MainActivity.this,LoginActivity.class));
+                break;
 //                    case R.id.z2:
 //                        Toast.makeText(MainActivity.this,"MENU 2",Toast.LENGTH_SHORT).show();
 //                        break;
@@ -225,9 +257,16 @@ public class MainActivity extends AppCompatActivity {
 //                    case R.id.z5:
 //                        Toast.makeText(MainActivity.this,"MENU 5",Toast.LENGTH_SHORT).show();
 //                        break;
+//                    case R.id.z6:
+//                        Toast.makeText(MainActivity.this,"MENU 6",Toast.LENGTH_SHORT).show();
+//                        break;
+//                    case R.id.z7:
+//                        Toast.makeText(MainActivity.this,"MENU 7",Toast.LENGTH_SHORT).show();
+//                        break;
 
         }
         return super.onOptionsItemSelected(item);
     }
+
 
 }

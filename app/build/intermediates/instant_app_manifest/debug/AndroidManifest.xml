@@ -38,39 +38,38 @@
         <activity android:name="recreate.india.yogdaan.PaymentSuggestion" />
         <activity android:name="recreate.india.yogdaan.Statuspage" />
         <activity android:name="recreate.india.yogdaan.PaymentActivity" />
-        <activity android:name="recreate.india.yogdaan.DonateActivity" />
-        <activity android:name="recreate.india.yogdaan.Volunteer" />
-        <activity
-            android:name="recreate.india.yogdaan.SplashScreen"
-            android:configChanges="orientation|keyboardHidden"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+        <activity android:name="recreate.india.yogdaan.DonateActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="recreate.india.yogdaan.Volunteer" />
+        <activity
+            android:name="recreate.india.yogdaan.SplashScreen"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+        </activity>
         <activity android:name="recreate.india.yogdaan.BlogActivity" />
         <activity
             android:name="recreate.india.yogdaan.Introduction_Activity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+        </activity>
         <activity
             android:name="recreate.india.yogdaan.LoginActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity android:name="recreate.india.yogdaan.HelpPage" />
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+        </activity>
+        <activity android:name="recreate.india.yogdaan.HelpPage" >
+        </activity>
         <activity android:name="recreate.india.yogdaan.MainActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name="recreate.india.yogdaan.OtpActivity" />
         <activity android:name="recreate.india.yogdaan.OurHelpers" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-8657920857471834~5124140148" />
+            android:value="ca-app-pub-8657920857471834~5603416632" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
