@@ -1634,7 +1634,6 @@ id async
 id auto
 id barrier
 id beginning
-id bengali
 id blocking
 id bookmoney
 id books
@@ -1726,6 +1725,7 @@ id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
+id gujarati
 id help
 id helpquote
 id hideable
@@ -1751,6 +1751,7 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id kannada
 id labeled
 id langchangetoenglish
 id langchangetohindi
@@ -1774,6 +1775,8 @@ id ll2
 id ll8
 id lll22
 id logout
+id malayalam
+id marathi
 id masked
 id media_actions
 id messag324e
@@ -1814,6 +1817,7 @@ id n1
 id name
 id namepay
 id navigation_header_container
+id nepali
 id never
 id new_desc
 id new_post
@@ -1827,6 +1831,7 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id occupation
+id odiya
 id off
 id on
 id order
@@ -1937,6 +1942,8 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id tamil
+id telgue
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id text
@@ -2316,6 +2323,7 @@ string hide_bottom_view_on_scroll_behavior
 string hiv
 string humanwelfare
 string icon_content_description
+string if_the_money_we_donate_helps_one_child_or_can_ease_the_pain_of_one_parent_those_funds_are_well_spent
 string interstitial_ad_unit_id
 string labourandemployment
 string landresource
@@ -2409,6 +2417,7 @@ string username
 string vocationaltraining
 string waterandsaniatation
 string waterresuorce
+string we_can_t_help_everyone_but_everyone_can_help_someone
 string womenandem
 string youthaffairs
 style AlertDialog_AppCompat
