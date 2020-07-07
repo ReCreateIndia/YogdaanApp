@@ -32,10 +32,7 @@
 
         <activity android:name=".Volunteer"
           >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
 
 
@@ -50,7 +47,7 @@
 
 
         <activity android:name=".BlogActivity" />
-        <activity android:name=".Introduction_Activity">
+        <activity android:name=".Introduction_Activity" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
 
         </activity>
         <activity

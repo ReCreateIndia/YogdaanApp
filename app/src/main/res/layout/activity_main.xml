@@ -93,7 +93,7 @@
 
                             <ImageButton
                                 android:id="@+id/help"
-                                android:layout_width="80dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="80dp"
 
 
@@ -128,7 +128,7 @@
 
                             <ImageButton
                                 android:id="@+id/donate"
-                                android:layout_width="80dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="80dp"
 
                                 android:background="@drawable/donateee"
@@ -165,7 +165,7 @@
 
                             <ImageButton
                                 android:id="@+id/ourWork"
-                                android:layout_width="80dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="80dp"
 
 
@@ -223,7 +223,7 @@
                         >
                         <ImageButton
                             android:id="@+id/ourHelpers"
-                            android:layout_width="80dp"
+                            android:layout_width="match_parent"
                             android:layout_height="80dp"
 
                             android:background="@drawable/ourhelperss"
@@ -257,7 +257,7 @@
 
                             <ImageButton
                                 android:id="@+id/volunteer"
-                                android:layout_width="80dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="80dp"
 
                                 android:background="@drawable/volunt"
@@ -293,7 +293,7 @@
 
                             <ImageButton
                                 android:id="@+id/more"
-                                android:layout_width="80dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="80dp"
 
 

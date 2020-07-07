@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,12 +8,15 @@
     android:orientation="vertical"
     android:background="#ffffff"
     tools:context=".DonateActivity"
+    android:weightSum="10"
 
-   ><ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <RelativeLayout
+   >
+    <ScrollView
         android:layout_width="match_parent"
+        android:layout_height="0dp"
+            android:layout_weight="9">
+        <RelativeLayout
+            android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <LinearLayout
@@ -127,10 +130,17 @@
 
 
                     />  </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                </ScrollView>
 
 
-
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                >
 
             <com.google.android.gms.ads.AdView
                 android:layout_gravity="bottom"
@@ -141,8 +151,8 @@
                 android:layout_height="wrap_content"
                 ads:adSize="BANNER"
                 ads:adUnitId="ca-app-pub-8657920857471834/6724926610"
+
                 />
-        </LinearLayout>
-    </RelativeLayout>
-</ScrollView>
-</RelativeLayout>
+</LinearLayout>
+
+</LinearLayout>

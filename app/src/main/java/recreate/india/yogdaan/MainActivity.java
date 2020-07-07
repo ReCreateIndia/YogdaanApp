@@ -153,15 +153,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
 
-        isFirstTime = prefs.getBoolean("isFirstTime", true);
-        if (isFirstTime) {
+       isFirstTime = prefs.getBoolean("isFirstTime", true);
+       if (isFirstTime) {
             onFirst();
-        } else {
-            FirebaseUser currentUser = mAuth.getCurrentUser();
-            if (currentUser == null) {
-                gotoLoginActivity();
+       } else {
+           FirebaseUser currentUser = mAuth.getCurrentUser();
+           if (currentUser == null){
+               gotoLoginActivity();
             }
-        }
+       }
         Paper.init(this);
         String language = Paper.book().read("language");
         if (language == null)

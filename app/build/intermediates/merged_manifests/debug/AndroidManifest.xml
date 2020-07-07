@@ -39,11 +39,6 @@
         <activity android:name="recreate.india.yogdaan.PaymentActivity" />
         <activity android:name="recreate.india.yogdaan.DonateActivity" />
         <activity android:name="recreate.india.yogdaan.Volunteer" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name="recreate.india.yogdaan.TandC" />
         <activity
@@ -52,7 +47,9 @@
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
         </activity>
         <activity android:name="recreate.india.yogdaan.BlogActivity" />
-        <activity android:name="recreate.india.yogdaan.Introduction_Activity" >
+        <activity
+            android:name="recreate.india.yogdaan.Introduction_Activity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
         </activity>
         <activity
             android:name="recreate.india.yogdaan.LoginActivity"
