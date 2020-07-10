@@ -162,30 +162,36 @@ public class HelpPage extends AppCompatActivity {
                 }
                 StorageReference storageReference = FirebaseStorage.getInstance().getReference().child("images");
                 final StorageReference imageFilePath = storageReference.child(uri.getLastPathSegment());
-                imageFilePath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                imageFilePath.putFile(uri).addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
                     @Override
-                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                        imageFilePath.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                            @Override
-                            public void onSuccess(Uri uri) {
-                                imageDownlaodLink = uri.toString();
-                                map.put("image",imageDownlaodLink);
-                            }
-                        }).addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                Toast.makeText(HelpPage.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-                            }
-                        });
+                    public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
+                        if(!task.isSuccessful()){
+                            Toast.makeText(HelpPage.this,"error",Toast.LENGTH_SHORT).show();
+                        }
+                        else{
+                            imageFilePath.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                @Override
+                                public void onSuccess(Uri uri) {
+                                    imageDownlaodLink = uri.toString();
+                                    if (imageDownlaodLink==null){
+                                        Toast.makeText(HelpPage.this,"error",Toast.LENGTH_LONG).show();
+                                    }
+                                    else{
+                                        map.put("image",imageDownlaodLink);
+                                    }
+                                    map.put("image",imageDownlaodLink);
+                                }
+                            }).addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Toast.makeText(HelpPage.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                                }
+                            });
 
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        // something goes wrong uploading picture
-                        Toast.makeText(HelpPage.this,"error",Toast.LENGTH_LONG).show();
+                        }
                     }
                 });
+
                 Geocoder geocoder;
                 geocoder = new Geocoder(HelpPage.this, Locale.getDefault());
                 try {
@@ -210,10 +216,10 @@ public class HelpPage extends AppCompatActivity {
                 map.put("city", city);
                 map.put("state", state);
                 map.put("complete_address", address);
-                map.put("help_domain", radioButton.getText().toString());
+              //  map.put("help_domain", radioButton.getText().toString());
                 map.put("phone number", firebaseUser.getPhoneNumber());
-                map.put("image",imageDownlaodLink);
                 map.put("day",1);
+                map.put("image",imageDownlaodLink);
                 map.put("NgoInterested",NgoInterested);
                 map.put("NgoNotInterested",NgoNotInterested);
 
@@ -522,8 +528,8 @@ public class HelpPage extends AppCompatActivity {
                 requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, PERMISSION_REQUEST_CODE);
             }
         }
-        if(requestCode==005 && grantResults[0]==PackageManager.PERMISSION_GRANTED){
-
+        if(requestCode==004 && grantResults[0]==PackageManager.PERMISSION_GRANTED){
+            openCamera();
         }
 
     }

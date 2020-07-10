@@ -42,7 +42,7 @@ public class language extends AppCompatActivity {
         select.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(language.this,Introduction_Activity.class));
+                startActivity(new Intent(language.this,NewIntroActivity.class));
             }
         });
     }
