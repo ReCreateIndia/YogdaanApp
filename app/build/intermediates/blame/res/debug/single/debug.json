@@ -284,6 +284,10 @@
         "source": "C:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_menu_24.png"
     },
     {
+        "merged": "C:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_new_intro.xml.flat",
+        "source": "C:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_new_intro.xml"
+    },
+    {
         "merged": "C:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash_screen.xml.flat",
         "source": "C:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
     },
@@ -670,6 +674,10 @@
     {
         "merged": "C:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_d5.jpg.flat",
         "source": "C:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\drawable\\d5.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_singleintroslide.xml.flat",
+        "source": "C:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\src\\main\\res\\layout\\singleintroslide.xml"
     },
     {
         "merged": "C:\\Users\\Prachi Singhal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_android_black_24dp.png.flat",

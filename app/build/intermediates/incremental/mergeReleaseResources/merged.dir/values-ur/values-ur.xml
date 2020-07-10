@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="Add_Some_Description">کچھ تفصیل شامل کریں</string>
+    <string name="Address">پتہ</string>
+    <string name="Agriculture">Agriculture</string>
+    <string name="Amount">رقم</string>
+    <string name="Dalitup">Dalit Upliftment</string>
+    <string name="Date_Of_Birth">پیدائش کی تاریخ</string>
+    <string name="Description">تفصیل</string>
+    <string name="Diffrentabledperson">Differently abled Person</string>
+    <string name="Donate">عطیہ کریں</string>
+    <string name="Donate_Now">ابھی عطیہ کیجیے</string>
+    <string name="Education">Education</string>
+    <string name="Egovernance">E-governance</string>
+    <string name="Enter_OTP">OTP درج کریں</string>
+    <string name="Food">Food</string>
+    <string name="Generate_OTP">OTP بنائیں</string>
+    <string name="Housing">Housing</string>
+    <string name="Humanrights">Human Rights</string>
+    <string name="Informationtech">Information Technology</string>
+    <string name="Marriageofdeprivedgirls">Marriage of deprived girls</string>
+    <string name="Medical_faciilities">Medical faciltites</string>
+    <string name="More">مزید</string>
+    <string name="Name">نام</string>
+    <string name="NeedMoney">Need Money</string>
+    <string name="Need_blood">Need Blood</string>
+    <string name="Net_Credit">نیٹ کریڈٹ</string>
+    <string name="Net_Value">موجودہ قیمت</string>
+    <string name="Occupation">قبضہ</string>
+    <string name="Oldpeople">Old people</string>
+    <string name="Our_Helpers">ہمارے مددگار</string>
+    <string name="Our_Work">ہمارا کام</string>
+    <string name="Please_Enter_Your_Phone_Number_For_Verification">براہ کرم تصدیق کے لئے اپنا فون نمبر درج کریں</string>
+    <string name="Resend_OTP">او ٹی پی کو دوبارہ بھیجیں</string>
+    <string name="Select_Problem">مسئلہ منتخب کریں</string>
+    <string name="Select_problem">Select problem</string>
+    <string name="Submit">جمع کرائیں</string>
+    <string name="Type_Of_Work">کام کی نوعیت</string>
+    <string name="Verify_OTP">OTP کی تصدیق کریں</string>
+    <string name="Verify_Your_Number">اپنے نمبر کی تصدیق کریں</string>
+    <string name="Volunteers">رضا کار</string>
+    <string name="We_Have_Sent_You_An_OTP_For_Phone_Number_Verification">ہم نے فون نمبر کی توثیق کے لئے آپ کو ایک او ٹی پی بھیجا ہے</string>
+    <string name="Your_Phone_Number">آپ کا فون نمبر</string>
+    <string name="a_step_towards_humanity">A step towards Humanity...</string>
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"گھر کی طرف نیویگیٹ کریں"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"اوپر نیویگیٹ کریں"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"مزید اختیارات"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"ہو گیا"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"سبھی دیکھیں"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"ایک ایپ منتخب کریں"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"آف"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"آن"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+‎"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+‎"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+‎"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+‎"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+‎"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"space"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+‎"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+‎"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"تلاش کریں…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"استفسار صاف کریں"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"تلاش کا استفسار"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"تلاش کریں"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"استفسار جمع کرائیں"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"صوتی تلاش"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"اس کے ساتھ اشتراک کریں"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> کے ساتھ اشتراک کریں"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"سکیڑیں"</string>
+    <string name="animalhusbandry">Animals Husbandry,Dairying,Fisheries</string>
+    <string name="app_name">Yogdaan</string>
+    <string name="artandculture"><![CDATA[Art & culture]]></string>
+    <string name="awarenessofinsurance">Awareness of Insurance</string>
+    <string name="biotechnology">Biotechnology</string>
+    <string name="books_money">Books Money</string>
+    <string name="childdevelopment">Child Development</string>
+    <string name="civicissues">Civic issues</string>
+    <string name="close">بند کریں</string>
+    <string name="clothing">clothing</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"فعال کریں"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"‏جب تک آپ Google Play سروسز فعال نہیں کر لیتے، <ns1:g id="APP_NAME">%1$s</ns1:g> کام نہیں کرے گی۔"</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"‏Google Play سروسز فعال کریں"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"انسٹال کریں"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"‏<ns1:g id="APP_NAME">%1$s</ns1:g> Google Play سروسز کے بغیر نہیں چلے گی، جو آپ کے آلہ سے غائب ہیں۔"</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"‏Google Play سروسز حاصل کریں"</string>
+    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"‏Google Play سروسز کی دستیابی"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"‏Google Play سروسز کی خرابی"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"‏<ns1:g id="APP_NAME">%1$s</ns1:g> کو Google Play سروسز کے ساتھ مسئلہ پیش آ رہا ہے۔ براہ کرم دوبارہ کوشش کریں۔"</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"‏<ns1:g id="APP_NAME">%1$s</ns1:g> Google Play سروسز کے بغیر نہیں چلے گی، جن کی آپ کا آلہ معاونت نہیں کرتا۔"</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"اپ ڈیٹ کریں"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"‏جب تک آپ Google Play سروسز اپ ڈیٹ نہیں کر لیتے ہیں <ns1:g id="APP_NAME">%1$s</ns1:g> تب تک نہیں چلے گی۔"</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"‏Google Play سروسز اپ ڈیٹ کریں"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"‏<ns1:g id="APP_NAME">%1$s</ns1:g> Google Play سروسز کے بغیر نہیں چلے گی، جو فی الحال اپ ڈیٹ ہو رہی ہیں۔"</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"‏Google Play سروسز کے نئے ورژن کی ضرورت ہے۔ یہ تھوڑی دیر میں خود ہی اپنے آپ کو اپ ڈیٹ کر لے گا۔"</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"فون پر کھولیں"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"سائن ان کریں"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"‏Google کے ساتھ سائن ان کریں"</string>
+    <string name="communitydevelopment">Community Development</string>
+    <string name="consumerrights">Consumer Rights</string>
+    <string name="cooperativeandresourcebuilding">cooperative and Resource Building</string>
+    <string name="disastermanagement">Disaster Management</string>
+    <string name="donate_by_watching_ads">Donate by watching ads</string>
+    <string name="donate_money">Donate Money</string>
+    <string name="drinkingwater">Drinking Water</string>
+    <string name="eleraning">E-learning</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_information">Enter Information</string>
+    <string name="enterpreneurship">Enterpreneurship Community</string>
+    <string name="environmentandforests">Environment and Forests</string>
+    <string name="food_money">Food Money</string>
+    <string name="foodprocessing">Food Processing</string>
+    <string name="get_current_location">Get Current Location</string>
+    <string name="healthandfamilywelfare">Health And Family Welfare</string>
+    <string name="hiv">HIV/Aids</string>
+    <string name="humanwelfare">human Welfare</string>
+    <string name="if_the_money_we_donate_helps_one_child_or_can_ease_the_pain_of_one_parent_those_funds_are_well_spent">\'If the money we donate helps one child or can ease the pain of one parent,Those funds are well spent.\'</string>
+    <string name="labourandemployment">Labour and Employment</string>
+    <string name="landresource">Land Resource</string>
+    <string name="landresuorce">Land Resource</string>
+    <string name="legalawareness">Legal Awareness and AID</string>
+    <string name="micro">Micro Small and Minor Enterprises</string>
+    <string name="microfinnce">Micro Finance (SHGs)</string>
+    <string name="minorityissues">Minority issues</string>
+    <string name="money_directly">Money Directly</string>
+    <string name="need_help">مدد چاہیے</string>
+    <string name="need_help_for_others">Need help for others</string>
+    <string name="need_help_for_yourself">Need Help for yourself</string>
+    <string name="newrenwavle">New and Renewable Energy</string>
+    <string name="next">Next</string>
+    <string name="nutition">Nutrition</string>
+    <string name="open">کھلا</string>
+    <string name="or_give_address_below">Or give address below</string>
+    <string name="panchaytiraj">Panchayati Raj</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="please_add_any_government_id_proof_like_aadhar_card_pan_card_voter_id_driving_liscence_rashan_card">Please add any government id proof like aadhar card,pan card,voter id,driving liscence,rashan card.</string>
+    <string name="prisionerissues">Prisioner\'s issues</string>
+    <string name="righttoinformationandadvoccay">Right to Information and Advocacy</string>
+    <string name="ruraldevelopment"><![CDATA[Rural Development & Poverty Alleviation]]></string>
+    <string msgid="368094699078615544" name="s1">"تصویر محفوظ کریں"</string>
+    <string msgid="4550830452390689489" name="s2">"اشتہار کو تصویری گیلری میں تصویر محفوظ کرنے کی اجازت دیں؟"</string>
+    <string msgid="2435407834265420668" name="s3">"قبول کریں"</string>
+    <string msgid="9167523597401839819" name="s4">"مسترد کریں"</string>
+    <string msgid="1566682516266724847" name="s5">"کیلنڈر ایونٹ بنائیں"</string>
+    <string msgid="5996672174517137271" name="s6">"اشتہار کو ایک کیلنڈر ایونٹ بنانے کی اجازت دیں؟"</string>
+    <string msgid="7163549807207034258" name="s7">"اشتہار ٹیسٹ کریں"</string>
+    <string name="satate">State budget analysis in perspective of poor</string>
+    <string name="scienceandtechnology">Science and Technology</string>
+    <string name="scientistsandindustrialresaerch">Scientific and Industrial Research</string>
+    <string msgid="730395136688082741" name="search_menu_title">"تلاش کریں"</string>
+    <string name="select_the_money_range">Select the Money Range</string>
+    <string name="select_type_of_help">Select Type Of Help :</string>
+    <string name="socialdeveopment">Social Development</string>
+    <string name="sports">Sports</string>
+    <string name="stationary_money">Stationary Money</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"+999"</string>
+    <string name="submitted_sucessfully">Submitted Sucessfully</string>
+    <string name="sustainabledevelopment">Sustainable Development</string>
+    <string name="thankyou_for_putting_your_request_on_our_app">Thankyou for putting your request on our app.</string>
+    <string name="the_best_way_to_persue_happiness_is_to_help_others">The best way to persue happiness is to help others!</string>
+    <string name="there_is_a_free_platform_for_everyone_and_always_will_be_just_select_the_problem_and_we_will_do_or_best_to_sort_it_out">There is a free platform for everyone and always will be just select the problem and we will do or best to sort it out</string>
+    <string name="tourism">Tourism</string>
+    <string name="tribalaffairs">Tribal affairs</string>
+    <string name="urbandevelopment"><![CDATA[Urban Development & Poverty Alleviation]]></string>
+    <string name="use_camera">Use camera</string>
+    <string name="username">username</string>
+    <string name="vocationaltraining">Vocational Training</string>
+    <string name="waterandsaniatation">\"Water and Sanitation \"</string>
+    <string name="waterresuorce">Water resource</string>
+    <string name="we_can_t_help_everyone_but_everyone_can_help_someone">We can\'t help everyone but... everyone can help someone</string>
+    <string name="youthaffairs">Youth Affairs</string>
+</resources>
