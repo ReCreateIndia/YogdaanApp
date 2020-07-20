@@ -63,7 +63,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="260dp"
-                android:src="@drawable/img1"/>
+                android:src="@drawable/img11"/>
 
         </LinearLayout>
         <LinearLayout

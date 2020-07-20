@@ -1,7 +1,6 @@
 package recreate.india.yogdaan;
 
 import android.content.Context;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,8 +25,9 @@ public class NewIntroSliderAdapter extends PagerAdapter {
             R.drawable.p2,
             R.drawable.p3
     };
-    public String[] slide_texts={
-            "first","second","third"
+
+    public String[] slide_texts12={
+            "We rise by lifting others","Giving is the greatest act of grace","Today is another chance to get better"
     };
     @Override
     public int getCount() {
@@ -45,9 +45,12 @@ public class NewIntroSliderAdapter extends PagerAdapter {
         layoutInflater=(LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
         View view=layoutInflater.inflate(R.layout.singleintroslide,container,false);
         ImageView imageView=view.findViewById(R.id.slideimages);
-        TextView textView=view.findViewById(R.id.slidetexts);
+        TextView textView1=view.findViewById(R.id.slidetest1);
+
+
         imageView.setImageResource(slide_images[position]);
-        textView.setText(slide_texts[position]);
+
+        textView1.setText(slide_texts12[position]);
         container.addView(view);
         return view;
     }

@@ -1912,7 +1912,7 @@ int id showTitle 0x7f0a016d
 int id skipCollapsed 0x7f0a016e
 int id slide 0x7f0a016f
 int id slideimages 0x7f0a0170
-int id slidetexts 0x7f0a0171
+int id slidetest1 0x7f0a0171
 int id smallLabel 0x7f0a0172
 int id snackbar_action 0x7f0a0173
 int id snackbar_text 0x7f0a0174

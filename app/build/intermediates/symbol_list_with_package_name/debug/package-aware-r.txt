@@ -1913,7 +1913,7 @@ id showTitle
 id skipCollapsed
 id slide
 id slideimages
-id slidetexts
+id slidetest1
 id smallLabel
 id snackbar_action
 id snackbar_text
