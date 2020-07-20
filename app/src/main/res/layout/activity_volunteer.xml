@@ -34,7 +34,7 @@
             android:layout_marginTop="4dp"
 
 
-            android:background="@drawable/img2"
+            android:background="#330033"
 
 
             android:orientation="vertical"

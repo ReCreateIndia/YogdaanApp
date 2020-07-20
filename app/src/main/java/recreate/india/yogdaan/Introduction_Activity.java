@@ -26,7 +26,5 @@ public class Introduction_Activity extends AppCompatActivity {
         viewPager = findViewById(R.id.viewpager);
         intro_adapter = new Intro_Adapter(Introduction_Activity.this,layouts, Introduction_Activity.this);
         viewPager.setAdapter(intro_adapter);
-
     }
-
 }

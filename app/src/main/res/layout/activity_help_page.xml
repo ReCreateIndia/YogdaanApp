@@ -63,7 +63,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="260dp"
-                android:src="@drawable/img1"/>
+                android:background="#006766"/>
 
         </LinearLayout>
         <LinearLayout
@@ -227,6 +227,7 @@
                         ></EditText>
 
                     <Button
+                        android:visibility="gone"
                         android:layout_marginTop="30dp"
                         android:id="@+id/getCurrentLocation"
                         android:layout_width="220dp"

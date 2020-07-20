@@ -29,7 +29,6 @@ public class OurHelpers extends AppCompatActivity {
     private RecyclerView ourhelpersview;
     FirestoreRecyclerAdapter adapter;
     private ActionBar actionBar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

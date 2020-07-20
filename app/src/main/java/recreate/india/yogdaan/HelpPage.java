@@ -37,6 +37,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -55,7 +56,10 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.google.rpc.Help;
+import com.iceteck.silicompressorr.FileUtils;
+import com.iceteck.silicompressorr.SiliCompressor;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -99,6 +103,7 @@ public class HelpPage extends AppCompatActivity {
     List<Address> addresses;
     private ActionBar actionBar;
     Map<String, Object> map = new HashMap<>();
+    EditText addressfull;
 
 
     @SuppressLint("WrongConstant")
@@ -112,6 +117,7 @@ public class HelpPage extends AppCompatActivity {
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.abs_layout);
         idproof = findViewById(R.id.idProof);
+        addressfull=findViewById(R.id.address);
         name = findViewById(R.id.name);
         enterinfo=findViewById(R.id.enterinfo);
         idd=findViewById(R.id.iddd);
@@ -120,21 +126,24 @@ public class HelpPage extends AppCompatActivity {
         ocupation=findViewById(R.id.occupation);
         adress=findViewById(R.id.address);
         TypeOfHelp=findViewById(R.id.TypeOfHelp);
-        getLocation();
+       // getLocation();
+
 
 
         takeimage = findViewById(R.id.cameraIntent);
         takeimage.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
             public void onClick(View v) {
-                if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) {
-                    if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED ||
-                            checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-                        String[] permissions = {Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE};
-                        requestPermissions(permissions, 004);
-                    } else {
-                        openCamera();
-                    }
+                if (Build.VERSION.SDK_INT > Build.VERSION_CODES.BASE) {
+                        if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED ||
+                                checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                            String[] permissions = {Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE};
+                            requestPermissions(permissions, 004);
+                        } else {
+                            openCamera();
+                        }
+
                 } else {
                     openCamera();
                 }
@@ -192,30 +201,30 @@ public class HelpPage extends AppCompatActivity {
                     }
                 });
 
-                Geocoder geocoder;
-                geocoder = new Geocoder(HelpPage.this, Locale.getDefault());
-                try {
-                    addresses = geocoder.getFromLocation(lat, lng, 1); // Here 1 represent max location result to returned, by documents it recommended 1 to 5
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
-                String address = addresses.get(0).getAddressLine(0); // If any additional address line present than only, check with max available address lines by getMaxAddressLineIndex()
-                String city = addresses.get(0).getLocality();
-                String state = addresses.get(0).getAdminArea();
-                String country = addresses.get(0).getCountryName();
-                String postalCode = addresses.get(0).getPostalCode();
-                String knownName = addresses.get(0).getFeatureName();
+//                Geocoder geocoder;
+//                geocoder = new Geocoder(HelpPage.this, Locale.getDefault());
+//                try {
+//                    addresses = geocoder.getFromLocation(lat, lng, 1); // Here 1 represent max location result to returned, by documents it recommended 1 to 5
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//
+//                String address = addresses.get(0).getAddressLine(0); // If any additional address line present than only, check with max available address lines by getMaxAddressLineIndex()
+//                String city = addresses.get(0).getLocality();
+//                String state = addresses.get(0).getAdminArea();
+//                String country = addresses.get(0).getCountryName();
+//                String postalCode = addresses.get(0).getPostalCode();
+//                String knownName = addresses.get(0).getFeatureName();
 
 
                 ArrayList<String>NgoInterested=new ArrayList<>();
                 ArrayList<String>NgoNotInterested=new ArrayList<>();
                 map.put("name", name.getText().toString());
-                map.put("lat", lat);
-                map.put("lng", lng);
-                map.put("city", city);
-                map.put("state", state);
-                map.put("complete_address", address);
+//                map.put("lat", lat);
+//                map.put("lng", lng);
+//                map.put("city", city);
+              //  map.put("state", state);
+                map.put("complete_address", addressfull.getText().toString());
               //  map.put("help_domain", radioButton.getText().toString());
                 map.put("phone number", firebaseUser.getPhoneNumber());
                 map.put("day",1);
@@ -234,14 +243,15 @@ public class HelpPage extends AppCompatActivity {
                 });
             }
         });
-        get_current_location = findViewById(R.id.getCurrentLocation);
-        get_current_location.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                initGoogleMap();
-                getLocation();
-            }
-        });
+//        get_current_location = findViewById(R.id.getCurrentLocation);
+//        get_current_location.setOnClickListener(new View.OnClickListener() {
+//            @RequiresApi(api = Build.VERSION_CODES.M)
+//            @Override
+//            public void onClick(View v) {
+//                initGoogleMap();
+//                getLocation();
+//            }
+//        });
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
             OnGPS();
@@ -406,6 +416,14 @@ public class HelpPage extends AppCompatActivity {
 
     }
 
+    private void compressAndUpload() {
+        if(uri!=null){
+            File file=new File(SiliCompressor.with(this)
+                    .compress(FileUtils.getPath(this,uri),new File(this.getCacheDir(),"temp")));
+            uri=Uri.fromFile(file);
+        }
+    }
+
     private void updateView(String language) {
         Context context = LocaleHelper.setLocale(this,language);
         Resources resources = context.getResources();
@@ -422,7 +440,7 @@ public class HelpPage extends AppCompatActivity {
         orr.setText(resources.getString(R.string.or_give_address_below));
 
         TypeOfHelp.setText(resources.getString(R.string.select_type_of_help));
-        get_current_location.setText(resources.getString(R.string.get_current_location));
+       // get_current_location.setText(resources.getString(R.string.get_current_location));
         name.setHint(resources.getString(R.string.Name));
         ocupation.setHint(resources.getString(R.string.Occupation));
         adress.setHint(resources.getString(R.string.Address));
@@ -440,6 +458,7 @@ public class HelpPage extends AppCompatActivity {
         startActivityForResult(cameraIntent, 0033);
 
     }
+    @RequiresApi(api = Build.VERSION_CODES.M)
     private void initGoogleMap() {
 
         if (isGPSEnabled()) {
@@ -504,12 +523,19 @@ public class HelpPage extends AppCompatActivity {
     }
 
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     private void requestLocationPermission() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.BASE) {
                 requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, PERMISSION_REQUEST_CODE);
             }
+            else{
+              //  getLocation();
+            }
+        }
+        else{
+           // getLocation();
         }
     }
 
@@ -519,7 +545,7 @@ public class HelpPage extends AppCompatActivity {
 
         if (requestCode == PERMISSION_REQUEST_CODE && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
             mLocationPermissionGranted = true;
-            getLocation();
+          //  getLocation();
             submit_request.setVisibility(View.VISIBLE);
 
         }
@@ -534,6 +560,7 @@ public class HelpPage extends AppCompatActivity {
 
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -554,30 +581,32 @@ public class HelpPage extends AppCompatActivity {
         if(resultCode==RESULT_OK){
             idproof.setVisibility(View.VISIBLE);
             idproof.setImageURI(uri);
+            compressAndUpload();
         }
     }
 
-    private void getLocation() {
-        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return;
-        }
-        fusedLocationProviderClient.getLastLocation().addOnSuccessListener(new OnSuccessListener<Location>() {
-            @Override
-            public void onSuccess(Location location) {
-                GeoPoint geoPoint = new GeoPoint(location.getLatitude(), location.getLongitude());
-                lat = geoPoint.getLatitude();
-                lng = geoPoint.getLongitude();
-            }
-        });
-    }
+//    @SuppressLint("MissingPermission")
+//    private void getLocation() {
+//        fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
+//        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+//            // TODO: Consider calling
+//            //    ActivityCompat#requestPermissions
+//            // here to request the missing permissions, and then overriding
+//            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+//            //                                          int[] grantResults)
+//            // to handle the case where the user grants the permission. See the documentation
+//            // for ActivityCompat#requestPermissions for more details.
+//            return;
+//        }
+//        fusedLocationProviderClient.getLastLocation().addOnSuccessListener(new OnSuccessListener<Location>() {
+//            @Override
+//            public void onSuccess(Location location) {
+//                GeoPoint geoPoint = new GeoPoint(location.getLatitude(), location.getLongitude());
+//                lat = geoPoint.getLatitude();
+//                lng = geoPoint.getLongitude();
+//            }
+//        });
+//    }
     public void Shownewpopup(){
         epicdialog.setContentView(R.layout.new_card);
         closenew=(ImageView) epicdialog.findViewById(R.id.closePopyu);
