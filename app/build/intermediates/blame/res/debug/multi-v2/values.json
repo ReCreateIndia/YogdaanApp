@@ -4,25 +4,6 @@
             "outputFile": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Anubhav goyal\\.gradle\\caches\\transforms-2\\files-2.1\\0e8aa26fb7724d023aef41776b04181a\\jetified-ImageSlideshow-0.0.6\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "11",
-                        "endColumns": "24",
-                        "endOffsets": "536"
-                    },
-                    "to": {
-                        "startLines": "6120",
-                        "startColumns": "4",
-                        "startOffsets": "398495",
-                        "endLines": "6129",
-                        "endColumns": "24",
-                        "endOffsets": "398976"
-                    }
-                },
-                {
                     "source": "C:\\Users\\Anubhav goyal\\AndroidStudioProjects\\YogdaanApp\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
@@ -95,6 +76,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Users\\Anubhav goyal\\.gradle\\caches\\transforms-2\\files-2.1\\b3530fbc20df68713fd9d3d09f178746\\jetified-glide-4.8.0\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "57",
+                        "endOffsets": "108"
+                    },
+                    "to": {
+                        "startLines": "735",
+                        "startColumns": "4",
+                        "startOffsets": "47881",
+                        "endColumns": "57",
+                        "endOffsets": "47934"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Anubhav goyal\\.gradle\\caches\\transforms-2\\files-2.1\\31792b341daae454da09525b8d30698b\\coordinatorlayout-1.1.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,6,16",
@@ -131,20 +129,22 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Anubhav goyal\\.gradle\\caches\\transforms-2\\files-2.1\\8780e90451dc6fbfc841e48447ecb05f\\jetified-glide-4.8.0\\res\\values\\values.xml",
+                    "source": "C:\\Users\\Anubhav goyal\\.gradle\\caches\\transforms-2\\files-2.1\\b7b78f74cedbf4c29ae215854f797075\\jetified-ImageSlideshow-0.0.6\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
-                        "endColumns": "57",
-                        "endOffsets": "108"
+                        "endLines": "11",
+                        "endColumns": "24",
+                        "endOffsets": "536"
                     },
                     "to": {
-                        "startLines": "735",
+                        "startLines": "6120",
                         "startColumns": "4",
-                        "startOffsets": "47881",
-                        "endColumns": "57",
-                        "endOffsets": "47934"
+                        "startOffsets": "398495",
+                        "endLines": "6129",
+                        "endColumns": "24",
+                        "endOffsets": "398976"
                     }
                 },
                 {

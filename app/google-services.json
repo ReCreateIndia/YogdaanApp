@@ -1,0 +1,65 @@
+{
+  "project_info": {
+    "project_number": "812802346911",
+    "firebase_url": "https://yogdaan-268ac.firebaseio.com",
+    "project_id": "yogdaan-268ac",
+    "storage_bucket": "yogdaan-268ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812802346911:android:ce5c68ead43a21797037aa",
+        "android_client_info": {
+          "package_name": "recreate.india.yogdaan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812802346911-7p0spirko5qk2qqgh8qiabd81fbq4had.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "recreate.india.yogdaan",
+            "certificate_hash": "894ea858a077083167049cce4d23a0421a47f3f2"
+          }
+        },
+        {
+          "client_id": "812802346911-f6piisi5bll7f3rtkvr3he4lk36s9hf7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "recreate.india.yogdaan",
+            "certificate_hash": "a7a4db4a670d2c7d27fe6780b2b70a98128a5909"
+          }
+        },
+        {
+          "client_id": "812802346911-ski527nqmjtq2q1jeqodkksjl0qep8t7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "recreate.india.yogdaan",
+            "certificate_hash": "eb535cf76d55946e864d219f01b116f2d0de370a"
+          }
+        },
+        {
+          "client_id": "812802346911-gs45r46n6ir8n9tjdr4ff7o008omk38p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzmuiPB1YFDE9hmHO22zr6WaziQB2UEyU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812802346911-gs45r46n6ir8n9tjdr4ff7o008omk38p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-8169027776894810~7067472313"
+    }
+  ],
+  "configuration_version": "1"
+}

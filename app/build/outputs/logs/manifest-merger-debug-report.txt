@@ -5,12 +5,12 @@ INJECTED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\ma
 INJECTED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:2:1-65:12
 INJECTED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:2:1-65:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1cc324bca91cb281f85c4c1528b9e48b\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1267f4e70017a3ceff02fc74addae9ac\jetified-silicompressor-2.2.3\AndroidManifest.xml:2:1-29:12
-MERGED from [com.github.denzcoskun:ImageSlideshow:0.0.6] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\0e8aa26fb7724d023aef41776b04181a\jetified-ImageSlideshow-0.0.6\AndroidManifest.xml:2:1-11:12
+MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f8ae2dedbced790a245e9570f16f60a9\jetified-silicompressor-2.2.3\AndroidManifest.xml:2:1-29:12
+MERGED from [com.github.denzcoskun:ImageSlideshow:0.0.6] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b7b78f74cedbf4c29ae215854f797075\jetified-ImageSlideshow-0.0.6\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b85b7e0481f3222852aee40ec4c0fa26\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\95c27f1e561f59170f577bf124144243\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\99263ae0355f528cdb252f81976d504b\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
-MERGED from [com.firebaseui:firebase-ui-firestore:4.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\52322a2cf87cc395cece6a3a26ed24de\jetified-firebase-ui-firestore-4.3.1\AndroidManifest.xml:2:1-13:12
+MERGED from [com.firebaseui:firebase-ui-firestore:4.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\9228b65b7e69e4e85dd4bdcd5313f9b2\jetified-firebase-ui-firestore-4.3.1\AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\57eaa9415bddadcf0bb4e692468635f4\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:15:1-39:12
 MERGED from [com.google.firebase:firebase-database:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f41aa971764c4aef5caf485efddbcecd\jetified-firebase-database-19.3.0\AndroidManifest.xml:15:1-38:12
@@ -22,7 +22,7 @@ MERGED from [androidx.browser:browser:1.0.0] C:\Users\Anubhav goyal\.gradle\cach
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\92ce3a89a1e2e98c17f9b4d15e21ae72\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b8218be3342096e0f8fa79ecbd3bd4d7\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [io.paperdb:paperdb:2.6] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\c8a24481b7e67a5ea41392fbf06f7366\jetified-paperdb-2.6\AndroidManifest.xml:2:1-14:12
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\8780e90451dc6fbfc841e48447ecb05f\jetified-glide-4.8.0\AndroidManifest.xml:2:1-12:12
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3530fbc20df68713fd9d3d09f178746\jetified-glide-4.8.0\AndroidManifest.xml:2:1-12:12
 MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\0f531e27d36f966ff60e67ec864464e0\jetified-play-services-location-17.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\40901ca6ce3fedd904480108591740da\jetified-firebase-auth-interop-19.0.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\9f50104a3ed305ca2fc55bd80a29800d\jetified-firebase-common-19.3.0\AndroidManifest.xml:15:1-39:12
@@ -56,11 +56,11 @@ MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\An
 MERGED from [androidx.core:core:1.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b2b51ad2129f7ae88186ad90508b79ab\core-1.1.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\23efeaea9ad0d45302c6f534d3b29411\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\fca13ad2738c8e8d0f18f8babb0b2876\jetified-firebase-components-16.0.0\AndroidManifest.xml:15:1-23:12
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3cfdd4a7ced58c4138f518d12f2a1f0\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\a5b0a339faee4cce8bb6f35eb8f172b8\jetified-picasso-2.71828\AndroidManifest.xml:2:1-14:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\c7b6252082af7c3db8c761dc5fc777cc\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.firebaseui:firebase-ui-common:4.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\528bd07597ac9305027517fcdc30ee57\jetified-firebase-ui-common-4.3.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.firebaseui:firebase-ui-common:4.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\e24adf37c4dc4a2dab8a2f6ee96002b6\jetified-firebase-ui-common-4.3.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\52ef9db1c0322222b8c6b52f7d7fc8cf\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\be7814d24d40ac64c7136f668c0bd13b\jetified-gifdecoder-4.8.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\da8f62601b40f57c0685297c448ee275\jetified-gifdecoder-4.8.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\0b8086a4eb91a0b51b9c558c5af06d6e\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\468ce79092f15593026d29383e329c87\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b55ae32354d6a01c1a54b392cc10599e\print-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -118,14 +118,14 @@ MERGED from [io.grpc:grpc-android:1.21.0] C:\Users\Anubhav goyal\.gradle\caches\
 		ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:10:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:11:5-80
-MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1267f4e70017a3ceff02fc74addae9ac\jetified-silicompressor-2.2.3\AndroidManifest.xml:11:5-80
-MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1267f4e70017a3ceff02fc74addae9ac\jetified-silicompressor-2.2.3\AndroidManifest.xml:11:5-80
+MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f8ae2dedbced790a245e9570f16f60a9\jetified-silicompressor-2.2.3\AndroidManifest.xml:11:5-80
+MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f8ae2dedbced790a245e9570f16f60a9\jetified-silicompressor-2.2.3\AndroidManifest.xml:11:5-80
 	android:name
 		ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:11:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:12:5-81
-MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1267f4e70017a3ceff02fc74addae9ac\jetified-silicompressor-2.2.3\AndroidManifest.xml:12:5-81
-MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1267f4e70017a3ceff02fc74addae9ac\jetified-silicompressor-2.2.3\AndroidManifest.xml:12:5-81
+MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f8ae2dedbced790a245e9570f16f60a9\jetified-silicompressor-2.2.3\AndroidManifest.xml:12:5-81
+MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f8ae2dedbced790a245e9570f16f60a9\jetified-silicompressor-2.2.3\AndroidManifest.xml:12:5-81
 	android:name
 		ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:12:22-78
 uses-permission#android.permission.CAMERA
@@ -134,8 +134,8 @@ ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\
 		ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:15:22-62
 application
 ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml:17:5-63:19
-MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1267f4e70017a3ceff02fc74addae9ac\jetified-silicompressor-2.2.3\AndroidManifest.xml:14:5-27:19
-MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1267f4e70017a3ceff02fc74addae9ac\jetified-silicompressor-2.2.3\AndroidManifest.xml:14:5-27:19
+MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f8ae2dedbced790a245e9570f16f60a9\jetified-silicompressor-2.2.3\AndroidManifest.xml:14:5-27:19
+MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f8ae2dedbced790a245e9570f16f60a9\jetified-silicompressor-2.2.3\AndroidManifest.xml:14:5-27:19
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b85b7e0481f3222852aee40ec4c0fa26\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b85b7e0481f3222852aee40ec4c0fa26\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\99263ae0355f528cdb252f81976d504b\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -152,8 +152,8 @@ MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Anubhav goyal\.gradle\
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\50f185d7e9bd37b6d01b14d383ccac39\jetified-circleimageview-3.1.0\AndroidManifest.xml:9:5-20
 MERGED from [io.paperdb:paperdb:2.6] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\c8a24481b7e67a5ea41392fbf06f7366\jetified-paperdb-2.6\AndroidManifest.xml:12:5-20
 MERGED from [io.paperdb:paperdb:2.6] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\c8a24481b7e67a5ea41392fbf06f7366\jetified-paperdb-2.6\AndroidManifest.xml:12:5-20
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\8780e90451dc6fbfc841e48447ecb05f\jetified-glide-4.8.0\AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\8780e90451dc6fbfc841e48447ecb05f\jetified-glide-4.8.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3530fbc20df68713fd9d3d09f178746\jetified-glide-4.8.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3530fbc20df68713fd9d3d09f178746\jetified-glide-4.8.0\AndroidManifest.xml:10:5-20
 MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\0f531e27d36f966ff60e67ec864464e0\jetified-play-services-location-17.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\0f531e27d36f966ff60e67ec864464e0\jetified-play-services-location-17.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\40901ca6ce3fedd904480108591740da\jetified-firebase-auth-interop-19.0.0\AndroidManifest.xml:7:5-8:19
@@ -178,10 +178,10 @@ MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Anub
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\ad072bd06501b4ced252e97ed9ee745e\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.core:core:1.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b2b51ad2129f7ae88186ad90508b79ab\core-1.1.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b2b51ad2129f7ae88186ad90508b79ab\core-1.1.0\AndroidManifest.xml:24:5-89
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3cfdd4a7ced58c4138f518d12f2a1f0\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3cfdd4a7ced58c4138f518d12f2a1f0\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\be7814d24d40ac64c7136f668c0bd13b\jetified-gifdecoder-4.8.0\AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\be7814d24d40ac64c7136f668c0bd13b\jetified-gifdecoder-4.8.0\AndroidManifest.xml:9:5-20
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\a5b0a339faee4cce8bb6f35eb8f172b8\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\a5b0a339faee4cce8bb6f35eb8f172b8\jetified-picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\da8f62601b40f57c0685297c448ee275\jetified-gifdecoder-4.8.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\da8f62601b40f57c0685297c448ee275\jetified-gifdecoder-4.8.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\0b8086a4eb91a0b51b9c558c5af06d6e\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\0b8086a4eb91a0b51b9c558c5af06d6e\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [com.google.android.gms:play-services-ads-base:19.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\5205b2911033c4392a613bcceeeb4980\jetified-play-services-ads-base-19.1.0\AndroidManifest.xml:7:5-20
@@ -284,18 +284,18 @@ INJECTED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\ma
 INJECTED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1cc324bca91cb281f85c4c1528b9e48b\multidex-2.0.0\AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1cc324bca91cb281f85c4c1528b9e48b\multidex-2.0.0\AndroidManifest.xml:20:5-43
-MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1267f4e70017a3ceff02fc74addae9ac\jetified-silicompressor-2.2.3\AndroidManifest.xml:7:5-9:41
-MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1267f4e70017a3ceff02fc74addae9ac\jetified-silicompressor-2.2.3\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.denzcoskun:ImageSlideshow:0.0.6] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\0e8aa26fb7724d023aef41776b04181a\jetified-ImageSlideshow-0.0.6\AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.denzcoskun:ImageSlideshow:0.0.6] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\0e8aa26fb7724d023aef41776b04181a\jetified-ImageSlideshow-0.0.6\AndroidManifest.xml:7:5-9:41
+MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f8ae2dedbced790a245e9570f16f60a9\jetified-silicompressor-2.2.3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f8ae2dedbced790a245e9570f16f60a9\jetified-silicompressor-2.2.3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.denzcoskun:ImageSlideshow:0.0.6] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b7b78f74cedbf4c29ae215854f797075\jetified-ImageSlideshow-0.0.6\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.denzcoskun:ImageSlideshow:0.0.6] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b7b78f74cedbf4c29ae215854f797075\jetified-ImageSlideshow-0.0.6\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b85b7e0481f3222852aee40ec4c0fa26\material-1.1.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b85b7e0481f3222852aee40ec4c0fa26\material-1.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\95c27f1e561f59170f577bf124144243\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\95c27f1e561f59170f577bf124144243\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\99263ae0355f528cdb252f81976d504b\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\99263ae0355f528cdb252f81976d504b\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
-MERGED from [com.firebaseui:firebase-ui-firestore:4.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\52322a2cf87cc395cece6a3a26ed24de\jetified-firebase-ui-firestore-4.3.1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.firebaseui:firebase-ui-firestore:4.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\52322a2cf87cc395cece6a3a26ed24de\jetified-firebase-ui-firestore-4.3.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-firestore:4.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\9228b65b7e69e4e85dd4bdcd5313f9b2\jetified-firebase-ui-firestore-4.3.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-firestore:4.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\9228b65b7e69e4e85dd4bdcd5313f9b2\jetified-firebase-ui-firestore-4.3.1\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\57eaa9415bddadcf0bb4e692468635f4\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\57eaa9415bddadcf0bb4e692468635f4\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:20:5-22:41
@@ -318,8 +318,8 @@ MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Anubhav goyal\.g
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b8218be3342096e0f8fa79ecbd3bd4d7\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [io.paperdb:paperdb:2.6] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\c8a24481b7e67a5ea41392fbf06f7366\jetified-paperdb-2.6\AndroidManifest.xml:8:5-10:41
 MERGED from [io.paperdb:paperdb:2.6] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\c8a24481b7e67a5ea41392fbf06f7366\jetified-paperdb-2.6\AndroidManifest.xml:8:5-10:41
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\8780e90451dc6fbfc841e48447ecb05f\jetified-glide-4.8.0\AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\8780e90451dc6fbfc841e48447ecb05f\jetified-glide-4.8.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3530fbc20df68713fd9d3d09f178746\jetified-glide-4.8.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3530fbc20df68713fd9d3d09f178746\jetified-glide-4.8.0\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\0f531e27d36f966ff60e67ec864464e0\jetified-play-services-location-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\0f531e27d36f966ff60e67ec864464e0\jetified-play-services-location-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\40901ca6ce3fedd904480108591740da\jetified-firebase-auth-interop-19.0.0\AndroidManifest.xml:5:5-44
@@ -386,16 +386,16 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Anubhav goyal\
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\23efeaea9ad0d45302c6f534d3b29411\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\fca13ad2738c8e8d0f18f8babb0b2876\jetified-firebase-components-16.0.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\fca13ad2738c8e8d0f18f8babb0b2876\jetified-firebase-components-16.0.0\AndroidManifest.xml:19:5-21:41
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3cfdd4a7ced58c4138f518d12f2a1f0\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3cfdd4a7ced58c4138f518d12f2a1f0\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\a5b0a339faee4cce8bb6f35eb8f172b8\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\a5b0a339faee4cce8bb6f35eb8f172b8\jetified-picasso-2.71828\AndroidManifest.xml:5:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\c7b6252082af7c3db8c761dc5fc777cc\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\c7b6252082af7c3db8c761dc5fc777cc\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.firebaseui:firebase-ui-common:4.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\528bd07597ac9305027517fcdc30ee57\jetified-firebase-ui-common-4.3.1\AndroidManifest.xml:7:5-9:41
-MERGED from [com.firebaseui:firebase-ui-common:4.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\528bd07597ac9305027517fcdc30ee57\jetified-firebase-ui-common-4.3.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-common:4.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\e24adf37c4dc4a2dab8a2f6ee96002b6\jetified-firebase-ui-common-4.3.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-common:4.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\e24adf37c4dc4a2dab8a2f6ee96002b6\jetified-firebase-ui-common-4.3.1\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\52ef9db1c0322222b8c6b52f7d7fc8cf\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\52ef9db1c0322222b8c6b52f7d7fc8cf\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\be7814d24d40ac64c7136f668c0bd13b\jetified-gifdecoder-4.8.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\be7814d24d40ac64c7136f668c0bd13b\jetified-gifdecoder-4.8.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\da8f62601b40f57c0685297c448ee275\jetified-gifdecoder-4.8.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\da8f62601b40f57c0685297c448ee275\jetified-gifdecoder-4.8.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\0b8086a4eb91a0b51b9c558c5af06d6e\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\0b8086a4eb91a0b51b9c558c5af06d6e\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\468ce79092f15593026d29383e329c87\documentfile-1.0.0\AndroidManifest.xml:20:5-44
@@ -437,23 +437,23 @@ INJECTED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\ma
 		ADDED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Anubhav goyal\AndroidStudioProjects\YogdaanApp\app\src\main\AndroidManifest.xml
 provider#com.iceteck.silicompressorr.provider.GenericFileProvider
-ADDED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1267f4e70017a3ceff02fc74addae9ac\jetified-silicompressor-2.2.3\AndroidManifest.xml:18:9-26:20
+ADDED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f8ae2dedbced790a245e9570f16f60a9\jetified-silicompressor-2.2.3\AndroidManifest.xml:18:9-26:20
 	android:grantUriPermissions
-		ADDED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1267f4e70017a3ceff02fc74addae9ac\jetified-silicompressor-2.2.3\AndroidManifest.xml:22:13-47
+		ADDED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f8ae2dedbced790a245e9570f16f60a9\jetified-silicompressor-2.2.3\AndroidManifest.xml:22:13-47
 	android:authorities
-		ADDED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1267f4e70017a3ceff02fc74addae9ac\jetified-silicompressor-2.2.3\AndroidManifest.xml:20:13-83
+		ADDED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f8ae2dedbced790a245e9570f16f60a9\jetified-silicompressor-2.2.3\AndroidManifest.xml:20:13-83
 	android:exported
-		ADDED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1267f4e70017a3ceff02fc74addae9ac\jetified-silicompressor-2.2.3\AndroidManifest.xml:21:13-37
+		ADDED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f8ae2dedbced790a245e9570f16f60a9\jetified-silicompressor-2.2.3\AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1267f4e70017a3ceff02fc74addae9ac\jetified-silicompressor-2.2.3\AndroidManifest.xml:19:13-84
+		ADDED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f8ae2dedbced790a245e9570f16f60a9\jetified-silicompressor-2.2.3\AndroidManifest.xml:19:13-84
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1267f4e70017a3ceff02fc74addae9ac\jetified-silicompressor-2.2.3\AndroidManifest.xml:23:13-25:58
+ADDED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f8ae2dedbced790a245e9570f16f60a9\jetified-silicompressor-2.2.3\AndroidManifest.xml:23:13-25:58
 	android:resource
-		ADDED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1267f4e70017a3ceff02fc74addae9ac\jetified-silicompressor-2.2.3\AndroidManifest.xml:25:17-55
+		ADDED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f8ae2dedbced790a245e9570f16f60a9\jetified-silicompressor-2.2.3\AndroidManifest.xml:25:17-55
 	android:name
-		ADDED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\1267f4e70017a3ceff02fc74addae9ac\jetified-silicompressor-2.2.3\AndroidManifest.xml:24:17-67
+		ADDED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f8ae2dedbced790a245e9570f16f60a9\jetified-silicompressor-2.2.3\AndroidManifest.xml:24:17-67
 uses-permission#android.permission.INTERNET
-ADDED from [com.firebaseui:firebase-ui-firestore:4.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\52322a2cf87cc395cece6a3a26ed24de\jetified-firebase-ui-firestore-4.3.1\AndroidManifest.xml:11:5-67
+ADDED from [com.firebaseui:firebase-ui-firestore:4.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\9228b65b7e69e4e85dd4bdcd5313f9b2\jetified-firebase-ui-firestore-4.3.1\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:27:5-67
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:27:5-67
 MERGED from [com.google.firebase:firebase-database:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f41aa971764c4aef5caf485efddbcecd\jetified-firebase-database-19.3.0\AndroidManifest.xml:26:5-67
@@ -465,7 +465,7 @@ MERGED from [com.google.android.gms:play-services-ads-lite:19.1.0] C:\Users\Anub
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\c85c0aa0a711f97439d19f9269e5b7bf\jetified-play-services-measurement-sdk-api-17.1.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.1.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\c85c0aa0a711f97439d19f9269e5b7bf\jetified-play-services-measurement-sdk-api-17.1.0\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from [com.firebaseui:firebase-ui-firestore:4.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\52322a2cf87cc395cece6a3a26ed24de\jetified-firebase-ui-firestore-4.3.1\AndroidManifest.xml:11:22-64
+		ADDED from [com.firebaseui:firebase-ui-firestore:4.3.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\9228b65b7e69e4e85dd4bdcd5313f9b2\jetified-firebase-ui-firestore-4.3.1\AndroidManifest.xml:11:22-64
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b338bb93c259f5f56bb62754a45d233c\jetified-firebase-storage-19.1.1\AndroidManifest.xml:30:9-36:19
 MERGED from [com.google.firebase:firebase-database:19.3.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\f41aa971764c4aef5caf485efddbcecd\jetified-firebase-database-19.3.0\AndroidManifest.xml:29:9-35:19
@@ -573,10 +573,10 @@ ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Anubh
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\ad072bd06501b4ced252e97ed9ee745e\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
 provider#com.squareup.picasso.PicassoProvider
-ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3cfdd4a7ced58c4138f518d12f2a1f0\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\a5b0a339faee4cce8bb6f35eb8f172b8\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
 	android:authorities
-		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3cfdd4a7ced58c4138f518d12f2a1f0\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\a5b0a339faee4cce8bb6f35eb8f172b8\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
 	android:exported
-		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3cfdd4a7ced58c4138f518d12f2a1f0\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\a5b0a339faee4cce8bb6f35eb8f172b8\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
 	android:name
-		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\b3cfdd4a7ced58c4138f518d12f2a1f0\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Anubhav goyal\.gradle\caches\transforms-2\files-2.1\a5b0a339faee4cce8bb6f35eb8f172b8\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
