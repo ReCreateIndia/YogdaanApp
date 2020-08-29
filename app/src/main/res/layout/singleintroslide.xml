@@ -4,27 +4,50 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical"
+    >
+
+
+
 
     <ImageView
         android:id="@+id/slideimages"
-        android:layout_width="415dp"
-        android:layout_height="381dp"
-        app:layout_constraintBottom_toTopOf="@+id/slidetexts"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="100dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.476"
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
+
+
+
     <TextView
-        android:id="@+id/slidetexts"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="184dp"
-        android:text="TextView"
+        android:id="@+id/slidetest1"
+        android:layout_below="@id/slideimages"
+        app:layout_constraintTop_toBottomOf="@id/slideimages"
+
+        android:text="We rise by lifting others"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

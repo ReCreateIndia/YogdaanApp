@@ -8,9 +8,7 @@
     android:orientation="vertical"
     android:background="#ffffff"
     tools:context=".DonateActivity"
-    android:weightSum="10"
-
-   >
+    android:weightSum="10">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -31,7 +29,11 @@
                 android:orientation="vertical"
 
                 android:id="@+id/lll22"
-                android:background="#330033"
+
+
+
+                android:background="@drawable/img11"
+
 
 
                 tools:ignore="MissingConstraints"

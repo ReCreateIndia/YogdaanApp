@@ -1473,8 +1473,8 @@ drawable ic_person_black_24dp
 drawable ic_remove_circle_outline_black_24dp
 drawable ic_settings_black_24dp
 drawable imageswitchernavidot1
-drawable img1
-drawable img2
+drawable img11
+drawable img22
 drawable input
 drawable lang_background
 drawable langbord
@@ -1913,7 +1913,7 @@ id showTitle
 id skipCollapsed
 id slide
 id slideimages
-id slidetexts
+id slidetest1
 id smallLabel
 id snackbar_action
 id snackbar_text
